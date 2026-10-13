@@ -1,0 +1,17 @@
+<%-- 공통 푸터 + 스크립트 --%>
+</main>
+<footer class="bk-footer">
+    <div class="container" style="max-width: 860px">
+        <p class="mb-1 fw-bold"><spring:message code="footer.disclaimer"/></p>
+        <p class="mb-1"><spring:message code="footer.source"/></p>
+        <p class="mb-0">
+            <spring:message code="footer.links"/>:
+            <a href="https://www.siheung.go.kr" target="_blank" rel="noopener"><spring:message code="footer.bokjion"/></a> ·
+            <a href="https://www.siheung.go.kr" target="_blank" rel="noopener"><spring:message code="footer.wellinfo"/></a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="${ctx}/static/js/bokji.js"></script>
+</body>
+</html>

@@ -49,6 +49,14 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <url-pattern>*.jspf</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+
     <session-config>
         <session-timeout>60</session-timeout>
     </session-config>

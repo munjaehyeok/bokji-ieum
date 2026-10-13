@@ -1,0 +1,155 @@
+/* 복지이음 커스텀 스타일 — Bootstrap 5 위에 1파일만 (테마 프레임워크 금지) */
+:root {
+    --bk-primary: #0B6E4F;   /* 신뢰·복지 녹색 */
+    --bk-primary-dark: #095C42;
+    --bk-match: #2E7D32;     /* 일치 */
+    --bk-check: #F4A259;     /* 확인필요 */
+    --bk-check-text: #8A5212;
+    --bk-bg: #FAFAF7;
+    --bk-text: #1F2937;
+    --bk-radius: 12px;
+}
+
+html { font-size: 16px; } /* [글자 크게] 토글이 112.5% / 125%로 조정 */
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+        "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+    background: var(--bk-bg);
+    color: var(--bk-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main { flex: 1 0 auto; }
+
+/* ---------- 공통: 버튼·터치 타깃 44px+ ---------- */
+.btn { min-height: 44px; border-radius: 10px; font-weight: 600; }
+.btn-bk {
+    background: var(--bk-primary); border-color: var(--bk-primary); color: #fff;
+}
+.btn-bk:hover, .btn-bk:focus { background: var(--bk-primary-dark); border-color: var(--bk-primary-dark); color: #fff; }
+.btn-bk-outline { border: 2px solid var(--bk-primary); color: var(--bk-primary); background: #fff; }
+.btn-bk-outline:hover, .btn-bk-outline:focus { background: var(--bk-primary); color: #fff; }
+a { color: var(--bk-primary); }
+.form-control, .form-select { min-height: 44px; font-size: 1rem; }
+.form-check-input { width: 1.4em; height: 1.4em; margin-top: .15em; }
+.form-check-label { padding-left: .25rem; }
+.form-check { min-height: 44px; display: flex; align-items: center; }
+
+/* ---------- 상단바 ---------- */
+.bk-topbar {
+    background: #fff; border-bottom: 1px solid #e5e7eb;
+    padding: .5rem 0;
+}
+.bk-logo { font-size: 1.35rem; font-weight: 800; color: var(--bk-primary); text-decoration: none; }
+.bk-lang a {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; min-width: 44px; padding: 0 .5rem;
+    text-decoration: none; color: var(--bk-text); border-radius: 8px; font-size: .95rem;
+}
+.bk-lang a.active { background: var(--bk-primary); color: #fff; font-weight: 700; }
+.bk-lang a:hover { background: #eef2ef; }
+.bk-lang a.active:hover { background: var(--bk-primary); }
+
+/* ---------- 푸터 ---------- */
+.bk-footer {
+    background: #fff; border-top: 1px solid #e5e7eb;
+    padding: 1.25rem 0; margin-top: 2.5rem; font-size: .95rem; color: #4b5563;
+}
+.bk-footer a { color: var(--bk-primary); }
+
+/* ---------- 랜딩 ---------- */
+.bk-hero { text-align: center; padding: 3.5rem 0 2rem; }
+.bk-hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.35; }
+.bk-hero .bk-sub { font-size: 1.15rem; color: #4b5563; margin-top: .75rem; }
+.bk-start-btn { font-size: 1.35rem; padding: 1rem 2.5rem; margin-top: 1.75rem; }
+.bk-chip {
+    display: inline-block; background: #fff; border: 1px solid #d1d5db;
+    border-radius: 999px; padding: .6rem 1.1rem; margin: .25rem; font-size: 1rem;
+}
+
+/* ---------- 조건 입력 (스텝) ---------- */
+.bk-progress { display: flex; align-items: center; gap: .4rem; margin-bottom: 1.5rem; }
+.bk-dot { width: 14px; height: 14px; border-radius: 50%; background: #d1d5db; }
+.bk-dot.done { background: var(--bk-primary); }
+.bk-progress-text { margin-left: .5rem; font-weight: 700; color: var(--bk-primary); }
+.bk-step { display: none; }
+.bk-step.active { display: block; }
+.bk-step h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; }
+.bk-step .hint { color: #6b7280; margin-bottom: 1rem; }
+.bk-choice-grid { display: flex; flex-wrap: wrap; gap: .5rem; }
+.bk-choice {
+    position: relative; display: flex; align-items: center;
+    border: 2px solid #d1d5db; border-radius: 10px; background: #fff;
+    padding: .65rem 1rem; min-height: 52px; cursor: pointer; font-size: 1.05rem;
+}
+.bk-choice input { margin-right: .6rem; width: 1.3em; height: 1.3em; flex-shrink: 0; }
+.bk-choice:has(input:checked) { border-color: var(--bk-primary); background: #eef7f3; font-weight: 700; }
+.bk-choice:focus-within { outline: 3px solid rgba(11,110,79,.4); outline-offset: 1px; }
+.bk-step-nav { display: flex; justify-content: space-between; gap: .75rem; margin-top: 2rem; }
+.bk-member-card { border: 1px solid #d1d5db; border-radius: var(--bk-radius); background: #fff; padding: 1rem; margin-bottom: 1rem; }
+
+/* ---------- 결과 ---------- */
+.bk-summary {
+    background: #eef7f3; border: 1px solid #cfe5db; border-radius: var(--bk-radius);
+    padding: .75rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+}
+.bk-tabs .nav-link { color: var(--bk-text); min-height: 44px; font-weight: 600; }
+.bk-tabs .nav-link.active { background: var(--bk-primary); color: #fff; }
+.bk-filter { display: flex; flex-wrap: wrap; gap: .4rem; }
+.bk-filter button {
+    border: 1px solid #d1d5db; background: #fff; border-radius: 999px;
+    padding: .4rem 1rem; min-height: 44px; font-size: .95rem;
+}
+.bk-filter button.active { background: var(--bk-primary); border-color: var(--bk-primary); color: #fff; font-weight: 700; }
+.bk-card {
+    background: #fff; border: 1px solid #e5e7eb; border-radius: var(--bk-radius);
+    padding: 1rem 1.15rem; margin-bottom: .9rem; box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    display: block; text-decoration: none; color: var(--bk-text);
+}
+.bk-card:hover { border-color: var(--bk-primary); color: var(--bk-text); }
+.bk-card h3 { font-size: 1.15rem; font-weight: 700; margin: 0; color: var(--bk-primary); }
+.bk-card .org { color: #4b5563; font-size: .95rem; margin: .15rem 0 .35rem; }
+.bk-card .summary1 {
+    margin: 0 0 .4rem; overflow: hidden; display: -webkit-box;
+    -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+}
+.bk-badge-provider {
+    font-size: .8rem; font-weight: 700; border-radius: 6px; padding: .2rem .5rem;
+    background: #e5e7eb; color: #374151; vertical-align: middle;
+}
+.bk-tag { display: inline-block; font-size: .9rem; border-radius: 6px; padding: .15rem .5rem; margin: .1rem .2rem .1rem 0; }
+.bk-tag-match { background: #e7f2e8; color: var(--bk-match); font-weight: 600; }
+.bk-tag-check { background: #fdeedd; color: var(--bk-check-text); font-weight: 600; }
+.bk-tag-miss { background: #fdecea; color: #b02a37; font-weight: 600; }
+.bk-date { font-size: .88rem; color: #6b7280; }
+.bk-badge-old { background: var(--bk-check); color: #3d2500; font-size: .8rem; font-weight: 700; border-radius: 6px; padding: .15rem .5rem; }
+
+/* ---------- 상세 ---------- */
+.bk-section { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--bk-radius); padding: 1.1rem 1.25rem; margin-bottom: 1rem; }
+.bk-section h2 { font-size: 1.2rem; font-weight: 700; color: var(--bk-primary); margin-bottom: .75rem; }
+.bk-judge-table td, .bk-judge-table th { padding: .6rem .5rem; vertical-align: middle; }
+.bk-tel-btn { font-size: 1.15rem; }
+.bk-disclaimer { background: #fdeedd; border: 1px solid var(--bk-check); border-radius: var(--bk-radius); padding: .75rem 1rem; }
+.bk-ws { white-space: pre-line; }
+
+/* ---------- 관리자 ---------- */
+.bk-admin-nav { background: var(--bk-primary); }
+.bk-admin-nav a { color: #fff; }
+.bk-admin-table th { white-space: nowrap; }
+
+/* ---------- 인쇄 ---------- */
+@media print {
+    .bk-topbar, .bk-footer, .bk-noprint { display: none !important; }
+    body { background: #fff; }
+    .bk-section { border: none; padding: .25rem 0; }
+}
+
+/* ---------- 모바일 (400px 가로 스크롤 없음) ---------- */
+@media (max-width: 480px) {
+    .bk-hero h1 { font-size: 1.6rem; }
+    .bk-start-btn { width: 100%; }
+    .bk-step-nav { flex-direction: column-reverse; }
+    .bk-step-nav .btn { width: 100%; }
+}
