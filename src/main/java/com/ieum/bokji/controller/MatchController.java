@@ -65,24 +65,26 @@ public class MatchController {
 
     @GetMapping("/match/result")
     public String result(@RequestParam(required = false) String category,
+                         @RequestParam(required = false) String sort,
                          HttpSession session, Model model, Locale locale) {
         MatchCondition cond = (MatchCondition) session.getAttribute(SESSION_KEY);
         if (cond == null) {
             return "redirect:/match";
         }
         Map<String, List<MatchResultRow>> resultsByMember = new LinkedHashMap<>();
-        List<MatchResultRow> mine = matchService.match(cond, category, locale);
+        List<MatchResultRow> mine = matchService.match(cond, category, locale, sort);
         resultsByMember.put("나", mine);
         int i = 1;
         for (MatchCondition m : cond.getMembers()) {
             String key = m.getRelation() != null ? m.getRelation() : "가구원" + i;
-            resultsByMember.put(key, matchService.match(m, category, locale));
+            resultsByMember.put(key, matchService.match(m, category, locale, sort));
             i++;
         }
         matchService.logMatch(cond, mine.size(), HashUtil.sessionHash(session));
         model.addAttribute("condition", cond);
         model.addAttribute("resultsByMember", resultsByMember);
         model.addAttribute("category", category);
+        model.addAttribute("sort", sort);
         return "match/result";
     }
 
@@ -90,6 +92,7 @@ public class MatchController {
     @GetMapping("/match/result/list")
     @ResponseBody
     public List<MatchResultRow> list(@RequestParam(required = false) String category,
+                                     @RequestParam(required = false) String sort,
                                      @RequestParam(defaultValue = "0") int member,
                                      HttpSession session, Locale locale) {
         MatchCondition cond = (MatchCondition) session.getAttribute(SESSION_KEY);
@@ -100,7 +103,7 @@ public class MatchController {
         if (member >= 1 && member <= cond.getMembers().size()) {
             target = cond.getMembers().get(member - 1);
         }
-        return matchService.match(target, category, locale);
+        return matchService.match(target, category, locale, sort);
     }
 
     private static boolean invalidBirthYear(Integer y, int thisYear) {

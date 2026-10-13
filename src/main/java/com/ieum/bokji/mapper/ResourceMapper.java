@@ -12,7 +12,8 @@ public interface ResourceMapper {
     /** 매칭 엔진 — 판정·점수·태그 전부 SQL 산출 (resource-mapper.xml). */
     List<MatchResultRow> findMatches(@Param("cond") MatchCondition cond,
                                      @Param("category") String category,
-                                     @Param("lang") String lang);
+                                     @Param("lang") String lang,
+                                     @Param("sort") String sort);
 
     /** 단일 자원 판정 — WHERE 제외 없이 1건에 동일 판정 적용(불일치 태그 포함). */
     MatchResultRow findOneWithJudge(@Param("id") int id,

@@ -31,7 +31,12 @@ public class MatchService {
     private MessageSource messageSource;
 
     public List<MatchResultRow> match(MatchCondition cond, String category, Locale locale) {
-        List<MatchResultRow> rows = resourceMapper.findMatches(cond, category, locale.getLanguage());
+        return match(cond, category, locale, null);
+    }
+
+    /** sort: null/기본=추천순(점수), "latest"=기준일 최신순. */
+    public List<MatchResultRow> match(MatchCondition cond, String category, Locale locale, String sort) {
+        List<MatchResultRow> rows = resourceMapper.findMatches(cond, category, locale.getLanguage(), sort);
         for (MatchResultRow row : rows) {
             applyLabels(row, locale);
         }

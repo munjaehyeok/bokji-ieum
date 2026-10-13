@@ -137,7 +137,8 @@
             <include refid="judgeWhere"/>
             <if test="category != null and category != ''">AND r.category = #{category}</if>
         ) m
-        ORDER BY m.score DESC,
+        ORDER BY <if test="sort == 'latest'">m.data_base_date DESC,</if>
+                 m.score DESC,
                  <if test="lang != null and lang != 'ko'">(m.nationality = 'F') DESC,</if>
                  (CASE WHEN m.need_check_csv = '' THEN 0
                        ELSE LENGTH(m.need_check_csv) - LENGTH(REPLACE(m.need_check_csv, ',', '')) + 1

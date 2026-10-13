@@ -139,6 +139,7 @@
         var R = window.BK_RESULT;
         var curMember = 0;
         var curCat = R.category || '';
+        var curSort = R.sort || '';
         var countEl = document.getElementById('bkCount');
 
         function esc(s) {
@@ -178,7 +179,8 @@
             var pane = activePane();
             pane.innerHTML = '<p class="text-secondary py-4">' + esc(R.msg.loading) + '</p>';
             fetch(R.ctx + '/match/result/list?member=' + curMember
-                    + (curCat ? '&category=' + encodeURIComponent(curCat) : ''))
+                    + (curCat ? '&category=' + encodeURIComponent(curCat) : '')
+                    + (curSort ? '&sort=' + encodeURIComponent(curSort) : ''))
                 .then(function (res) { if (!res.ok) throw new Error(); return res.json(); })
                 .then(function (rows) {
                     pane.innerHTML = rows.length
@@ -219,6 +221,18 @@
             curCat = btn.dataset.cat;
             refresh();
         });
+        var sortToggle = document.getElementById('bkSortToggle');
+        if (sortToggle) {
+            sortToggle.addEventListener('click', function (e) {
+                var btn = e.target.closest('[data-sort]');
+                if (!btn) return;
+                sortToggle.querySelectorAll('button').forEach(function (b) {
+                    b.classList.toggle('active', b === btn);
+                });
+                curSort = btn.dataset.sort;
+                refresh();
+            });
+        }
     }
 
     /* ---------- 상세: 전화·신청URL·인쇄 비콘(A) + 제보 모달 ---------- */

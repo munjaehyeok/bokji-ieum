@@ -45,11 +45,17 @@
 </c:if>
 
 <%-- 분야 필터 --%>
-<div class="bk-filter mb-3" id="bkCatFilter" role="group" aria-label="category filter">
+<div class="bk-filter mb-2" id="bkCatFilter" role="group" aria-label="category filter">
     <button type="button" data-cat="" class="${empty category ? 'active' : ''}"><spring:message code="cat.ALL"/></button>
     <c:forTokens items="JOB,HOUSE,DAILY,HEALTH,MIND,CARE,EDU,CULTURE,RIGHTS" delims="," var="cat">
         <button type="button" data-cat="${cat}" class="${category == cat ? 'active' : ''}"><spring:message code="cat.${cat}"/></button>
     </c:forTokens>
+</div>
+
+<%-- 정렬 --%>
+<div class="bk-filter mb-3" id="bkSortToggle" role="group" aria-label="sort">
+    <button type="button" data-sort="" class="${empty sort ? 'active' : ''}"><spring:message code="sort.recommend"/></button>
+    <button type="button" data-sort="latest" class="${sort == 'latest' ? 'active' : ''}"><spring:message code="sort.latest"/></button>
 </div>
 
 <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite"></h1>
@@ -103,6 +109,7 @@
 window.BK_RESULT = {
     ctx: '${ctx}',
     category: '<c:out value="${category}"/>',
+    sort: '<c:out value="${sort}"/>',
     msg: {
         count: '<spring:message code="result.count" arguments="@N@" javaScriptEscape="true"/>',
         matched: '<spring:message code="result.matched" javaScriptEscape="true"/>',
