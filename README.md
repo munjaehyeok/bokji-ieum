@@ -1,6 +1,6 @@
 # 복지이음 (bokji-ieum)
 
-> 시흥시 복지자원 **744건**(공공 198·민간 546)을 로그인 없이 **1분 조건 입력 → 규칙 기반 자격 판정 → 추천 이유와 신청 안내**로 이어 주는 웹 서비스.
+> 시흥시 복지자원 **768건**(공공 222·민간 546)을 로그인 없이 **1분 조건 입력 → 규칙 기반 자격 판정 → 추천 이유와 신청 안내**로 이어 주는 웹 서비스.
 > 웹서비스프로그래밍 팀 프로젝트 — 팀 **이음** (김재민·문재혁·이병화·이윤재) · CE 경진대회 출품작.
 
 기존 시흥시 복지 앱(복지온)이 "목록 검색"에 그치는 것을 보완해, **내 조건에 맞는 것만 골라 주고 왜 맞는지(✅일치/⚠️확인필요)까지 보여 주는 것**이 핵심이다. 생성형 AI 없이 결정표 기반 규칙 매칭만 사용한다 — 판정 근거를 100% 설명·재현할 수 있다.
@@ -26,6 +26,7 @@ docker compose up -d                                   # MySQL 8 기동
 cp src/main/resources/config.properties.example src/main/resources/config.properties
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/seed.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql
 ./mvnw cargo:run                                       # http://localhost:8080
 ```
 
@@ -36,7 +37,7 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 
 | 항목 | 결과 |
 |---|---|
-| 데이터 | 시흥시 종합안내서 744건 **전량** 적재 (규칙 기반 자동 태깅 + 리뷰 게이트 2회) |
+| 데이터 | 시흥시 종합안내서 744건 **전량** 적재 (규칙 기반 자동 태깅 + 리뷰 게이트 2회) + 복지로 API 27건 반영(2026-10-14: 신규 24·갱신 3) = **768건** |
 | 판정 정확도 | 결정표 단위 테스트 **40/40 PASS** |
 | 시나리오 | S1~S6 **6/6 통과** |
 | 통합·보안 | XSS 제거·CSRF 403·제보 토큰+429·비로그인 차단 — 전 항목 PASS |
@@ -54,7 +55,7 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 
 ## 알려진 한계 (정직하게)
 
-- 전 자원 '오래된 자료' 뱃지 = 원본이 2022 하반기 기준이라 **정상 동작** (복지로 API 대조가 설계된 갱신 경로)
+- 종합안내서 분(744건)의 '오래된 자료' 뱃지 = 원본이 2022 하반기 기준이라 **정상 동작**. 설계된 갱신 경로인 **복지로 지자체복지서비스 API 대조를 실제 수행**(2026-10-14)해 공공 27건을 2026년 기준으로 반영했고(`src/main/resources/sql/api-update-20261014.sql`), 민간 546건은 종합안내서 개정판이 나와야 갱신 가능
 - en/zh/vi 번역은 기계번역 초벌(화면에 고지), 성별 전용 조건은 '확인 필요'로만 표시
 - 미구현(설계상 권장/선택): 회원·즐겨찾기, 뉴스 수집, 관리자 통계
 

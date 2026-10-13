@@ -1,0 +1,28 @@
+servId,API 서비스명,최종수정,DB id,DB 자원명,유사도,판정,복지로 링크
+WLF00002503,외국인주민 긴급지원,20220822,99,외국인주민 긴급지원(생계비),0.86,매칭,https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002503&wlfareInfoReldBztpCd=02
+WLF00005461,신혼부부 전세대출금 이자지원 사업,20260704,66,신혼부부 전세대출금 이자지원사업,0.92,매칭,https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005461&wlfareInfoReldBztpCd=02
+WLF00004826,시흥형 집수리 지원 사업,20260704,67,시흥형 집수리지원사업,0.75,매칭,https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004826&wlfareInfoReldBztpCd=02
+WLF00000806,무료급식 지원,20260804,116,경로식당 무료급식,0.57,유사-확인필요,https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000806&wlfareInfoReldBztpCd=02
+WLF00004050,시흥시 국가보훈대상자 지원,20250531,,,0.40,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004050&wlfareInfoReldBztpCd=02
+WLF00005509,시흥시 산후조리비 지원,20260630,,,0.50,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005509&wlfareInfoReldBztpCd=02
+WLF00005386,출생축하금 지원,20260630,,,0.50,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005386&wlfareInfoReldBztpCd=02
+WLF00004964,시흥시 노동취약계층 유급병가 지원사업,20260711,,,0.40,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004964&wlfareInfoReldBztpCd=02
+WLF00002502,시흥형 주거비 지원 사업,20260711,,,-,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002502&wlfareInfoReldBztpCd=02
+WLF00002995,결혼이민자 한국사회 이해증진,20260717,,,0.33,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002995&wlfareInfoReldBztpCd=02
+WLF00005910,시흥시 어르신 기본교통비 지원사업,20260723,,,0.29,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005910&wlfareInfoReldBztpCd=02
+WLF00004680,시흥형 기본교통비 지원 사업,20260723,,,0.50,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004680&wlfareInfoReldBztpCd=02
+WLF00005480,중증장애인활동지원 사업(자체),20260729,,,0.53,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005480&wlfareInfoReldBztpCd=02
+WLF00004715,장애학생 교내활동지원 사업,20260729,,,0.50,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004715&wlfareInfoReldBztpCd=02
+WLF00001620,장애인 복지카드(A형) 발급 수수료 지원사업,20260729,,,0.40,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001620&wlfareInfoReldBztpCd=02
+WLF00000810,장애인보장구수리센터운영,20260729,,,0.38,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000810&wlfareInfoReldBztpCd=02
+WLF00002504,인공달팽이관재활치료,20260729,,,0.53,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002504&wlfareInfoReldBztpCd=02
+WLF00001372,장애인특별운송사업,20260729,,,0.40,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001372&wlfareInfoReldBztpCd=02
+WLF00001390,재가장애인 복지증진,20260729,,,0.47,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001390&wlfareInfoReldBztpCd=02
+WLF00003822,장애인 재활프로그램,20260729,,,-,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003822&wlfareInfoReldBztpCd=02
+WLF00005755,시흥시 사회복지 종사자 복지포인트 지원,20260815,,,0.34,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005755&wlfareInfoReldBztpCd=02
+WLF00005239,누구나 돌봄! 시흥돌봄SOS센터 운영,20260815,,,0.28,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005239&wlfareInfoReldBztpCd=02
+WLF00003851,"(경기도 외 타시도)중, 고등학교 신입생 교복비 지원사업",20260815,,,0.20,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003851&wlfareInfoReldBztpCd=02
+WLF00001391,효도수당,20260815,,,0.33,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001391&wlfareInfoReldBztpCd=02
+WLF00000809,유기 및 위기아동지원,20260822,,,0.44,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000809&wlfareInfoReldBztpCd=02
+WLF00004481,취약계층 인플루엔자 예방접종 지원사업,20260903,,,0.35,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004481&wlfareInfoReldBztpCd=02
+WLF00002805,무연고 사망자 장제처리,20260904,,,0.33,신규(DB에 없음),https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002805&wlfareInfoReldBztpCd=02

@@ -24,6 +24,7 @@ cp src/main/resources/config.properties.example src/main/resources/config.proper
 ```bash
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/seed.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql   # 복지로 API 최신화분(신규 24·갱신 3)
 ```
 (`--default-character-set=utf8mb4` 필수 — 빼면 한글이 깨진다. schema.sql은 기존 테이블을 DROP 후 재생성하므로 재적재에도 그대로 쓴다.)
 
