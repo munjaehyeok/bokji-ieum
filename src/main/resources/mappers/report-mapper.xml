@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ieum.bokji.mapper.ReportMapper">
+
+    <insert id="insert" parameterType="Report" useGeneratedKeys="true" keyProperty="reportId">
+        INSERT INTO report (resource_id, content) VALUES (#{resourceId}, #{content})
+    </insert>
+
+    <sql id="filter">
+        <where>
+            <if test="status != null">p.status = #{status}</if>
+        </where>
+    </sql>
+
+    <select id="list" parameterType="PageParam" resultType="Report">
+        SELECT p.*, r.name AS resource_name
+        FROM report p
+        JOIN resource r ON r.resource_id = p.resource_id
+        <include refid="filter"/>
+        ORDER BY p.report_id DESC
+        LIMIT #{size} OFFSET #{offset}
+    </select>
+
+    <select id="count" parameterType="PageParam" resultType="int">
+        SELECT COUNT(*) FROM report p
+        <include refid="filter"/>
+    </select>
+
+    <update id="updateStatus">
+        UPDATE report
+        SET status = #{status}, admin_memo = #{memo}, processed_at = NOW()
+        WHERE report_id = #{id}
+    </update>
+</mapper>

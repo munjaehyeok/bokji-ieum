@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ieum.bokji.mapper.LogMapper">
+
+    <insert id="insertEvent">
+        INSERT INTO event_log (session_hash, event, resource_id)
+        VALUES (#{sessionHash}, #{event}, #{resourceId})
+    </insert>
+
+    <insert id="insertMatch">
+        INSERT INTO match_log
+            (session_hash, age_band, dong, household_types, income_rank,
+             disability, nationality, edu_work, result_count)
+        VALUES
+            (#{sessionHash}, #{ageBand}, #{dong}, #{householdTypes}, #{incomeRank},
+             #{disability}, #{nationality}, #{eduWork}, #{resultCount})
+    </insert>
+</mapper>
