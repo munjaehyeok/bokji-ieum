@@ -6,7 +6,8 @@
         <p class="mb-1"><spring:message code="footer.source"/></p>
         <p class="mb-0">
             <spring:message code="footer.links"/>:
-            <a href="https://www.siheung.go.kr" target="_blank" rel="noopener"><spring:message code="footer.bokjion"/></a> ·
+            <%-- 복지온: 시 공식 발표(2026-10 정식 운영) 주소. 웰인포: 공식 URL 미확인 — 시 누리집 유지 --%>
+            <a href="https://www.siheung.go.kr/bokjion/" target="_blank" rel="noopener"><spring:message code="footer.bokjion"/></a> ·
             <a href="https://www.siheung.go.kr" target="_blank" rel="noopener"><spring:message code="footer.wellinfo"/></a>
         </p>
     </div>

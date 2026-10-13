@@ -254,6 +254,7 @@
                 var body = new URLSearchParams();
                 body.append('resourceId', D.resourceId);
                 body.append('content', content);
+                body.append('_token', D.token);
                 fetch(D.ctx + '/reports', { method: 'POST', body: body })
                     .then(function (res) {
                         if (res.ok) {

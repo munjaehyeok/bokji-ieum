@@ -22,6 +22,7 @@ public class ReportController {
 
     private static final int DAILY_LIMIT = 5;
     private static final String QUOTA_KEY = "reportQuota"; // "yyyy-MM-dd:n"
+    public static final String TOKEN_KEY = "reportToken";  // 공개 세션 토큰 (상세 진입 시 발급)
 
     @Autowired
     private ReportMapper reportMapper;
@@ -32,7 +33,13 @@ public class ReportController {
     @ResponseBody
     public Map<String, Object> create(@RequestParam int resourceId,
                                       @RequestParam String content,
+                                      @RequestParam(value = "_token", required = false) String token,
                                       HttpSession session, HttpServletResponse response) {
+        String sessionToken = (String) session.getAttribute(TOKEN_KEY);
+        if (sessionToken == null || !sessionToken.equals(token)) {
+            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+            return Map.of("ok", false, "error", "token");
+        }
         String clean = TextUtil.clean(content);
         if (clean == null || clean.isEmpty() || clean.length() > 500) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);

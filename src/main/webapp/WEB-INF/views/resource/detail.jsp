@@ -186,6 +186,7 @@
 window.BK_DETAIL = {
     ctx: '${ctx}',
     resourceId: ${resource.resourceId},
+    token: '<c:out value="${sessionScope.reportToken}"/>',
     msg: {
         ok: '<spring:message code="report.ok" javaScriptEscape="true"/>',
         fail: '<spring:message code="report.fail" javaScriptEscape="true"/>',

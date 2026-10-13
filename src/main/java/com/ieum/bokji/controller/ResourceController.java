@@ -29,6 +29,10 @@ public class ResourceController {
         if (row == null || !"A".equals(row.getStatus())) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "resource not found");
         }
+        // 제보용 공개 세션 토큰 발급 (설계01 §5: 제보는 토큰+횟수 제한)
+        if (session.getAttribute(ReportController.TOKEN_KEY) == null) {
+            session.setAttribute(ReportController.TOKEN_KEY, java.util.UUID.randomUUID().toString());
+        }
         model.addAttribute("resource", row);
         model.addAttribute("judged", cond != null);
         return "resource/detail";
