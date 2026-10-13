@@ -6,7 +6,7 @@
 
 <div class="bk-hero">
     <h1><spring:message code="landing.headline"/></h1>
-    <p class="bk-sub"><spring:message code="landing.sub"/></p>
+    <p class="bk-sub"><spring:message code="landing.sub" arguments="${resourceCount}"/></p>
     <a class="btn btn-bk bk-start-btn" href="${ctx}/match">
         <spring:message code="landing.start"/> &rarr;
     </a>

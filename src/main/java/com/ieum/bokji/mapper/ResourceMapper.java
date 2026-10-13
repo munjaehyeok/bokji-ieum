@@ -26,6 +26,9 @@ public interface ResourceMapper {
 
     int adminCount(PageParam p);
 
+    /** 랜딩 문구용 활성 자원 수. */
+    int activeCount();
+
     int insert(Resource r);
 
     int update(Resource r);

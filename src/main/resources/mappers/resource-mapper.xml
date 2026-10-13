@@ -218,6 +218,10 @@
         <include refid="adminFilter"/>
     </select>
 
+    <select id="activeCount" resultType="int">
+        SELECT COUNT(*) FROM resource WHERE status = 'A'
+    </select>
+
     <insert id="insert" parameterType="Resource" useGeneratedKeys="true" keyProperty="resourceId">
         INSERT INTO resource
             (name, category, sub_category, service_type, provider_type, org_name, dept_name,
