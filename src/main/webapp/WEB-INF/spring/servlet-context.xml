@@ -25,14 +25,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!-- 다국어: messages_{ko,en,zh,vi}.properties -->
-    <bean id="messageSource"
-          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:messages/messages"/>
-        <property name="defaultEncoding" value="UTF-8"/>
-        <property name="fallbackToSystemLocale" value="false"/>
-    </bean>
-
+    <!-- messageSource는 root-context에 있음 (Service 레이어도 태그 라벨 변환에 사용) -->
     <bean id="localeResolver"
           class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
         <property name="defaultLocale" value="ko"/>

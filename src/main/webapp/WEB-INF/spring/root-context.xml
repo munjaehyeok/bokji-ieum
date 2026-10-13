@@ -35,14 +35,23 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:mappers/*.xml"/>
         <property name="typeAliasesPackage" value="com.ieum.bokji.dto"/>
-        <property name="configurationProperties">
-            <props>
-                <prop key="mapUnderscoreToCamelCase">true</prop>
-            </props>
+        <!-- 주의: configurationProperties는 ${} 치환 변수일 뿐 설정이 아님 — configuration 빈으로 지정해야 적용된다 -->
+        <property name="configuration">
+            <bean class="org.apache.ibatis.session.Configuration">
+                <property name="mapUnderscoreToCamelCase" value="true"/>
+            </bean>
         </property>
     </bean>
 
     <mybatis-spring:scan base-package="com.ieum.bokji.mapper"/>
+
+    <!-- 다국어: messages_{ko,en,zh,vi}.properties — Service(태그 라벨)와 뷰가 함께 쓰므로 root에 둔다 -->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:messages/messages"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="fallbackToSystemLocale" value="false"/>
+    </bean>
 
     <!-- 트랜잭션 -->
     <bean id="transactionManager"
