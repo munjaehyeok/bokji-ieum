@@ -20,12 +20,13 @@ cp src/main/resources/config.properties.example src/main/resources/config.proper
 ```
 (기본값 그대로면 수정 불필요. `config.properties`는 git에 올라가지 않는다.)
 
-## 4. 스키마·시드 적재 (744건 전량)
+## 4. 스키마·시드 적재 (792건)
 ```bash
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/seed.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql        # 복지로 API 최신화분(신규 24·갱신 3)
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/facility-refresh-20261014.sql  # 시설현황 대조(연락처 59건 등)
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/gov24-update-20261014.sql       # 보조금24 반영(신규 24·검증 18)
 ```
 (`--default-character-set=utf8mb4` 필수 — 빼면 한글이 깨진다. schema.sql은 기존 테이블을 DROP 후 재생성하므로 재적재에도 그대로 쓴다.)
 
