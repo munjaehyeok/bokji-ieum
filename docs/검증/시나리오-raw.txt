@@ -1,0 +1,145 @@
+===== S1 =====
+--- S1 TOP10:
+rank=1 id=599 score=8 nc=2 matched=[AGE,DONG,HOUSEHOLD,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=홀몸어르신친구만들기
+rank=2 id=127 score=6 nc=1 matched=[AGE,DONG,INCOME] needCheck=[NOTE] name=저소득 어르신 무료급식
+rank=3 id=128 score=6 nc=1 matched=[AGE,DONG,INCOME] needCheck=[NOTE] name=일상생활정서지원서비스
+rank=4 id=131 score=6 nc=1 matched=[AGE,DONG,INCOME] needCheck=[NOTE] name=저소득 재가노인 식사배달
+rank=5 id=74 score=5 nc=1 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL] name=기초생활수급노인 월동난방비 지원
+rank=6 id=115 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=경로식당 밑반찬 배달
+rank=7 id=116 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=경로식당 무료급식
+rank=8 id=170 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=급식지원,밑반찬지원
+rank=9 id=171 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=긴급지원
+rank=10 id=172 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=후원금품 지원
+--- S1 기대 자원 순위:
+id=599 rank=1 score=8 nc=2 matched=[AGE,DONG,HOUSEHOLD,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=홀몸어르신친구만들기
+id=127 rank=2 score=6 nc=1 matched=[AGE,DONG,INCOME] needCheck=[NOTE] name=저소득 어르신 무료급식
+id=325 rank=18 score=4 nc=1 matched=[AGE,DONG] needCheck=[NOTE] name=노인맞춤돌봄서비스
+id=116 rank=7 score=5 nc=2 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL,NOTE] name=경로식당 무료급식
+id=38 rank=47 score=3 nc=1 matched=[AGE] needCheck=[NOTE] name=노인사회활동지원사업
+--- S1 전체 건수: 311
+===== S2 =====
+--- S2 TOP10:
+rank=1 id=294 score=6 nc=0 matched=[AGE,DONG,HOUSEHOLD] needCheck=[] name=살맛나는 나의 터전
+rank=2 id=326 score=4 nc=1 matched=[AGE,DONG] needCheck=[NOTE] name=노인맞춤돌봄서비스
+rank=3 id=125 score=4 nc=2 matched=[AGE,DONG] needCheck=[INCOME,NOTE] name=결식예방사업
+rank=4 id=614 score=3 nc=0 matched=[AGE] needCheck=[] name=경기도 어르신 즐김터 '동행마실'
+rank=5 id=645 score=3 nc=0 matched=[AGE] needCheck=[] name=인생2막지원사업
+rank=6 id=646 score=3 nc=0 matched=[AGE] needCheck=[] name=생활권평생학습지원사업
+rank=7 id=651 score=3 nc=0 matched=[AGE] needCheck=[] name=찾아가는 어르신 마을복지관
+rank=8 id=652 score=3 nc=0 matched=[AGE] needCheck=[] name=애(愛)코봉사단
+rank=9 id=653 score=3 nc=0 matched=[AGE] needCheck=[] name=국민연금수급자봉사단 '해피시니어'
+rank=10 id=654 score=3 nc=0 matched=[AGE] needCheck=[] name=선배시민 마을미디어활동가
+--- S2 기대 자원 순위:
+id=125 rank=3 score=4 nc=2 matched=[AGE,DONG] needCheck=[INCOME,NOTE] name=결식예방사업
+id=326 rank=2 score=4 nc=1 matched=[AGE,DONG] needCheck=[NOTE] name=노인맞춤돌봄서비스
+id=115 rank=36 score=3 nc=2 matched=[AGE] needCheck=[INCOME,NOTE] name=경로식당 밑반찬 배달
+id=116 rank=37 score=3 nc=2 matched=[AGE] needCheck=[INCOME,NOTE] name=경로식당 무료급식
+id=74 rank=27 score=3 nc=1 matched=[AGE] needCheck=[INCOME] name=기초생활수급노인 월동난방비 지원
+--- S2 전체 건수: 382
+===== S3 =====
+--- S3 TOP10:
+rank=1 id=4 score=7 nc=2 matched=[AGE,INCOME,EDUWORK] needCheck=[INCOME_DETAIL,NOTE] name=시흥형 공공일자리 사업
+rank=2 id=5 score=7 nc=2 matched=[AGE,INCOME,EDUWORK] needCheck=[INCOME_DETAIL,NOTE] name=지역공동체 일자리 사업
+rank=3 id=21 score=5 nc=0 matched=[AGE,EDUWORK] needCheck=[] name=창업공간 지원
+rank=4 id=22 score=5 nc=0 matched=[AGE,EDUWORK] needCheck=[] name=창업 보조금
+rank=5 id=320 score=5 nc=1 matched=[AGE,INCOME] needCheck=[INCOME_DETAIL] name=가사·간병방문지원서비스
+rank=6 id=39 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인일자리지원(일반형)
+rank=7 id=40 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인일자리지원(시간제일자리)
+rank=8 id=41 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=일자리지원(복지일자리)
+rank=9 id=44 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=발달장애인 요양보호사 보조일자리
+rank=10 id=59 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인복지일자리사업
+--- S3 기대 자원 순위:
+id=4 rank=1 score=7 nc=2 matched=[AGE,INCOME,EDUWORK] needCheck=[INCOME_DETAIL,NOTE] name=시흥형 공공일자리 사업
+id=5 rank=2 score=7 nc=2 matched=[AGE,INCOME,EDUWORK] needCheck=[INCOME_DETAIL,NOTE] name=지역공동체 일자리 사업
+id=3 rank=18 score=4 nc=2 matched=[INCOME,EDUWORK] needCheck=[INCOME_DETAIL,NOTE] name=취업교육 지원
+id=1 rank=72 score=2 nc=1 matched=[EDUWORK] needCheck=[NOTE] name=구인·구직 취업 상담 및 알선
+id=550 rank=19 score=3 nc=0 matched=[AGE] needCheck=[] name=청년육성 프로그램 운영
+--- S3 전체 건수: 379
+===== S4 =====
+--- S4 TOP10:
+rank=1 id=730 score=3 nc=0 matched=[AGE] needCheck=[] name=학교폭력예방교육 및 성폭력(예방)교육
+rank=2 id=267 score=3 nc=0 matched=[AGE] needCheck=[] name=인터넷중독 진단 및 상담
+rank=3 id=266 score=3 nc=0 matched=[AGE] needCheck=[] name=자살예방교육
+rank=4 id=265 score=3 nc=0 matched=[AGE] needCheck=[] name=인터넷중독예방교육
+rank=5 id=248 score=3 nc=0 matched=[AGE] needCheck=[] name=찾아가는 마음건강상담소 '마음, 안녕'
+rank=6 id=263 score=3 nc=0 matched=[AGE] needCheck=[] name=청소년전화상담
+rank=7 id=550 score=3 nc=0 matched=[AGE] needCheck=[] name=청년육성 프로그램 운영
+rank=8 id=553 score=3 nc=0 matched=[AGE] needCheck=[] name=청년문화인재 육성프로그램
+rank=9 id=554 score=3 nc=0 matched=[AGE] needCheck=[] name=청년문화기획 교육과정
+rank=10 id=42 score=3 nc=0 matched=[AGE] needCheck=[] name=장애인복지일자리직무지도원파견
+--- S4 기대 자원 순위:
+id=110 rank=50 score=3 nc=2 matched=[AGE] needCheck=[INCOME,NOTE] name=청소년 특별지원
+id=248 rank=5 score=3 nc=0 matched=[AGE] needCheck=[] name=찾아가는 마음건강상담소 '마음, 안녕'
+id=249 rank=40 score=3 nc=1 matched=[AGE] needCheck=[NOTE] name=온라인 마음건강상담소 '마음, 카톡'
+id=362 rank=55 score=2 nc=1 matched=[EDUWORK] needCheck=[NOTE] name=가정위탁 학습활동지원
+id=608 rank=54 score=2 nc=0 matched=[EDUWORK] needCheck=[] name=우리마을미디어 NEWS, 공감
+--- S4 전체 건수: 405
+===== S5 =====
+--- S5-본인(member=0) TOP10:
+rank=1 id=42 score=3 nc=0 matched=[AGE] needCheck=[] name=장애인복지일자리직무지도원파견
+rank=2 id=248 score=3 nc=0 matched=[AGE] needCheck=[] name=찾아가는 마음건강상담소 '마음, 안녕'
+rank=3 id=550 score=3 nc=0 matched=[AGE] needCheck=[] name=청년육성 프로그램 운영
+rank=4 id=553 score=3 nc=0 matched=[AGE] needCheck=[] name=청년문화인재 육성프로그램
+rank=5 id=554 score=3 nc=0 matched=[AGE] needCheck=[] name=청년문화기획 교육과정
+rank=6 id=320 score=3 nc=1 matched=[AGE] needCheck=[INCOME] name=가사·간병방문지원서비스
+rank=7 id=321 score=3 nc=1 matched=[AGE] needCheck=[NOTE] name=노숙인의 자활·자립 지원
+rank=8 id=339 score=3 nc=1 matched=[AGE] needCheck=[DISABILITY] name=시흥시장애인맞춤형돌봄서비스
+rank=9 id=340 score=3 nc=1 matched=[AGE] needCheck=[DISABILITY] name=맞춤형도우미서비스
+rank=10 id=341 score=3 nc=1 matched=[AGE] needCheck=[DISABILITY] name=장애인활동지원
+--- S5-본인(member=0) 기대 자원 순위:
+id=520 rank=50 score=2 nc=2 matched=[HOUSEHOLD] needCheck=[INCOME,NOTE] name=다문화가족 방문교육사업
+id=523 rank=51 score=2 nc=2 matched=[HOUSEHOLD] needCheck=[EDUWORK,NOTE] name=시흥다문화엄마학교
+id=663 rank=44 score=2 nc=1 matched=[HOUSEHOLD] needCheck=[NOTE] name=(다가온)결혼이민자 수공예교실
+--- S5-본인(member=0) 전체 건수: 462
+--- S5-자녀1(member=1) TOP10:
+rank=1 id=383 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=2 id=384 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=3 id=385 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=4 id=386 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=5 id=387 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=6 id=388 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=7 id=389 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=8 id=390 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=9 id=391 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+rank=10 id=392 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+--- S5-자녀1(member=1) 기대 자원 순위:
+id=383 rank=1 score=7 nc=2 matched=[AGE,HOUSEHOLD,EDUWORK] needCheck=[INCOME,DISABILITY] name=지역아동센터 방과후 돌봄 지원
+id=374 rank=48 score=4 nc=4 matched=[HOUSEHOLD,EDUWORK] needCheck=[DONG,INCOME,DISABILITY,NOTE] name=청소년 방과후 아카데미 운영 지원 사업
+--- S5-자녀1(member=1) 전체 건수: 544
+--- S5-자녀2(member=2) TOP10:
+rank=1 id=383 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=2 id=384 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=3 id=385 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=4 id=386 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=5 id=387 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=6 id=388 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=7 id=389 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=8 id=390 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=9 id=391 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+rank=10 id=392 score=5 nc=3 matched=[AGE,HOUSEHOLD] needCheck=[INCOME,DISABILITY,EDUWORK] name=지역아동센터 방과후 돌봄 지원
+--- S5-자녀2(member=2) 기대 자원 순위:
+id=521 rank=78 score=2 nc=1 matched=[HOUSEHOLD] needCheck=[NOTE] name=이중언어 가족환경조성사업
+id=664 rank=80 score=2 nc=1 matched=[HOUSEHOLD] needCheck=[NOTE] name=(다가온)팝콘상담(아동미술활동)
+--- S5-자녀2(member=2) 전체 건수: 536
+===== S6 =====
+--- S6 TOP10:
+rank=1 id=36 score=5 nc=2 matched=[NATIONALITY,EDUWORK] needCheck=[HOUSEHOLD,NOTE] name=Employment Training for Marriage Immigrants
+rank=2 id=21 score=5 nc=0 matched=[AGE,EDUWORK] needCheck=[] name=창업공간 지원
+rank=3 id=22 score=5 nc=0 matched=[AGE,EDUWORK] needCheck=[] name=창업 보조금
+rank=4 id=39 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인일자리지원(일반형)
+rank=5 id=41 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=일자리지원(복지일자리)
+rank=6 id=59 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인복지일자리사업
+rank=7 id=44 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=발달장애인 요양보호사 보조일자리
+rank=8 id=40 score=5 nc=1 matched=[AGE,EDUWORK] needCheck=[DISABILITY] name=장애인일자리지원(시간제일자리)
+rank=9 id=4 score=5 nc=2 matched=[AGE,EDUWORK] needCheck=[INCOME,NOTE] name=시흥형 공공일자리 사업
+rank=10 id=5 score=5 nc=2 matched=[AGE,EDUWORK] needCheck=[INCOME,NOTE] name=지역공동체 일자리 사업
+--- S6 기대 자원 순위:
+id=36 rank=1 score=5 nc=2 matched=[NATIONALITY,EDUWORK] needCheck=[HOUSEHOLD,NOTE] name=Employment Training for Marriage Immigrants
+id=519 rank=24 score=3 nc=2 matched=[NATIONALITY] needCheck=[HOUSEHOLD,NOTE] name=Korean Language Education for Marriage Immigrants
+id=526 rank=25 score=3 nc=2 matched=[NATIONALITY] needCheck=[HOUSEHOLD,NOTE] name=Korean Language Education for Empowerment of Marriage Immigrants
+id=99 rank=20 score=3 nc=2 matched=[NATIONALITY] needCheck=[INCOME,NOTE] name=Emergency Support for Foreign Residents (Living Expenses)
+id=547 rank=12 score=3 nc=0 matched=[NATIONALITY] needCheck=[] name=Culture Clubs for Foreign Residents
+--- S6 전체 건수: 415
+--- S6 영어 화면 라벨 확인 (/match/result?lang=en 발췌):
+<h1>매칭 결과<
+<h2>나 — 415개의 복지가 조건과 맞습니다<

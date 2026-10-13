@@ -20,13 +20,12 @@ cp src/main/resources/config.properties.example src/main/resources/config.proper
 ```
 (기본값 그대로면 수정 불필요. `config.properties`는 git에 올라가지 않는다.)
 
-## 4. 스키마·시드 적재
-`src/main/resources/sql/`에 schema.sql, seed-codes.sql이 들어오면:
+## 4. 스키마·시드 적재 (744건 전량)
 ```bash
-docker exec -i bokji-mysql mysql -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
-docker exec -i bokji-mysql mysql -ubokji -pbokji11 bokji < src/main/resources/sql/seed-codes.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/seed.sql
 ```
-(아직 없으면 건너뛴다 — 데이터 엔지니어 산출물 대기 중. DB 없이도 WAS는 뜬다.)
+(`--default-character-set=utf8mb4` 필수 — 빼면 한글이 깨진다. schema.sql은 기존 테이블을 DROP 후 재생성하므로 재적재에도 그대로 쓴다.)
 
 ## 5. 서버 기동
 ```bash

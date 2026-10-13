@@ -1,0 +1,59 @@
+## [1] 공개 URL 스위프
+GET / -> 200 ; 핵심문구: 복지, 1분 안에 — 복지이음
+GET /match -> 200 ; birthYear 필드: 1
+POST /match(정상) -> 302 loc=http://localhost:8080/match/result
+GET /match/result -> 200 ; 카드 수 추정: 311
+GET /match/result/list -> 200 ; JSON 길이: 311
+GET /resources/1 -> 200 ; 제목 존재: 3
+POST /events(A) -> 200 ; body: {"ok":true}
+POST /reports(정상) -> 200 ; body: {"ok":true,"reportId":2}
+GET /news -> 404 (설계상 권장 — 미구현이면 404 기록)
+
+## [2] 경계 입력
+birthYear 빈값 -> 302 loc=http://localhost:8080/match/result;jsessionid=F051B80D2EF217094116C68FC53C773F
+birthYear=1850 -> 302 loc=http://localhost:8080/match;jsessionid=9385D3FFDC3451FB4833347AFD9E5F37?error=birthYear
+birthYear=2030 -> 302 loc=http://localhost:8080/match;jsessionid=A6D65318C18974D32C2ADBB5365C75E3?error=birthYear
+전 필드 모름(파라미터 없음) -> 302 loc=http://localhost:8080/match/result;jsessionid=430DE98DE7E3E6DAC1233EA3A8A4DA0D ; list 건수: 723
+NONE 조합(hh=NONE&ew=NONE) -> 302 ; list 건수: 581
+가구원 3명 결과 탭: 
+GET /resources/99999 -> 404
+조건 없이 /match/result -> 302 loc=http://localhost:8080/match;jsessionid=1A0E0E1498DE97F3093413A776DE3864
+## [3] 보안 스모크
+XSS 제보 저장 -> 200 ; body: {"ok":true,"reportId":3}
+제보 2~5건째(한도 내):
+   -> 200
+   -> 200
+   -> 200
+   -> 200
+제보 6건째 -> 429 ; body: {"error":"limit","ok":false}
+
+비로그인 /admin/resources -> 302 loc=http://localhost:8080/admin/login
+관리자 로그인 -> 302 loc=http://localhost:8080/admin/resources
+로그인 후 CSRF 없는 POST(/admin/reports/상태변경) -> 403
+스크래핑한 _csrf 토큰 존재: YES(36자)
+CSRF 포함 POST -> 302 loc=http://localhost:8080/admin/reports
+제보 목록에 <script> 원문 노출 여부: 0 (0이어야 함)
+제보 목록 내 XSS 제보 저장형태: 악성스크립트테스트
+
+## 반사 XSS
+/match/result?category=<script> 원문 반사: 0 (0이어야 함) / 이스케이프 출력: 1
+/match?error=<script> 원문 반사: 0 (0이어야 함) / 이스케이프 출력: 1
+## [1b] 관리자 URL 스위프 (로그인 세션 유지)
+GET /admin/login -> 200 ; 폼: 1
+GET /admin/resources -> 200 ; 744 표기: 744 ; 행 존재: 41
+GET /admin/resources?q=급식 -> 200 ; 검색결과 '급식' 출현: 11
+GET /admin/resources/new -> 200 ; _csrf 필드: 1
+GET /admin/resources/1/edit -> 200 ; 기존값 로드: 2
+POST /admin/resources/1/status (status=A, _csrf) -> 302 loc=http://localhost:8080/admin/resources
+GET /admin/reports -> 200
+GET /admin/stats -> 404 (설계상 선택)
+GET /admin/logout -> 302 loc=http://localhost:8080/admin/login
+
+## [4] i18n 정적 문구 (S6 이관 항목 재확인)
+[en] 한국어 '매칭 결과' 잔존: 0 / 페이지 타이틀·헤더: <title>Matching results — Bokji-ieum <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite">  / 본인 탭 라벨: 
+[zh] 한국어 '매칭 결과' 잔존: 0 / 페이지 타이틀·헤더: <title>匹配结果 — 福祉之连 <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite">  / 본인 탭 라벨: 
+[vi] 한국어 '매칭 결과' 잔존: 0 / 페이지 타이틀·헤더: <title>Kết quả phù hợp — Bokji-ieum <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite">  / 본인 탭 라벨: 
+[en] 결과 헤더 문구: Matching results welfare programs match your conditions', 
+[en] 탭 라벨 원문: <divclass="bk-pane"id="bkPane0"data-member="0"data-count="415">
+
+## [5] 퍼널 로그
