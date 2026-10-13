@@ -17,12 +17,7 @@
 <%-- 지원 내용 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.support"/></h2>
-    <p class="bk-ws mb-0">
-        <c:choose>
-            <c:when test="${not empty resource.summaryTr}"><c:out value="${resource.summaryTr}"/></c:when>
-            <c:otherwise><c:out value="${resource.supportContent}"/></c:otherwise>
-        </c:choose>
-    </p>
+    <p class="bk-ws mb-0"><c:choose><c:when test="${not empty resource.summaryTr}"><c:out value="${resource.summaryTr}"/></c:when><c:otherwise><c:out value="${fn:trim(resource.supportContent)}"/></c:otherwise></c:choose></p>
 </section>
 
 <%-- 자격 판정표 (조건 입력 후에만) --%>
@@ -77,12 +72,7 @@
 <%-- 신청 방법·서류 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.apply"/></h2>
-    <p class="bk-ws">
-        <c:choose>
-            <c:when test="${not empty resource.applyMethod}"><c:out value="${resource.applyMethod}"/></c:when>
-            <c:otherwise><spring:message code="detail.askOrg"/></c:otherwise>
-        </c:choose>
-    </p>
+    <p class="bk-ws"><c:choose><c:when test="${not empty resource.applyMethod}"><c:out value="${fn:trim(resource.applyMethod)}"/></c:when><c:otherwise><spring:message code="detail.askOrg"/></c:otherwise></c:choose></p>
     <p><strong><spring:message code="detail.docs"/>:</strong>
         <c:choose>
             <c:when test="${not empty resource.documents}"><c:out value="${resource.documents}"/></c:when>
