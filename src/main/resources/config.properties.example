@@ -1,0 +1,4 @@
+# 복사해서 같은 폴더에 config.properties로 저장 (config.properties는 .gitignore 등재)
+db.url=jdbc:mysql://127.0.0.1:3306/bokji?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+db.username=bokji
+db.password=bokji11

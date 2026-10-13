@@ -1,0 +1,16 @@
+# Build
+target/
+
+# 비밀값 (예시는 config.properties.example)
+src/main/resources/config.properties
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Maven wrapper 다운로드 jar는 포함(팀원 Maven 설치 불필요) — 제외하지 않음

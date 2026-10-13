@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: bokji-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bokji
+      MYSQL_USER: bokji
+      MYSQL_PASSWORD: bokji11
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - bokji-mysql-data:/var/lib/mysql
+
+volumes:
+  bokji-mysql-data:

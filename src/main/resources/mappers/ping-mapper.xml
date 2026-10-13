@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ieum.bokji.mapper.PingMapper">
+
+    <!-- 설정 검증용. 실제 매칭 SQL은 resource-mapper.xml(다음 단계)에. -->
+    <select id="ping" resultType="int">
+        SELECT 1
+    </select>
+
+</mapper>
