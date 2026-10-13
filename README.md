@@ -63,3 +63,5 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 ## 남은 일정
 
 EC2 배포(11/19) → 사용성 테스트 9명(11/20~22) → 최종 제출(11/29)
+
+**데이터 후속 과제**: ① 시흥시 복지정책과에 **종합안내서 2026년판(2022판 양식 그대로) 공문 요청** — 수령 시 `docs/데이터/tools/parse_tag.py` 재실행으로 전량 교체 가능. ② 보조금24 API(공공데이터 15113968) 활용신청 후 시흥시 등록 혜택 추출·대조
