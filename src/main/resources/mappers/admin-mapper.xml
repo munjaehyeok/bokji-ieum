@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ieum.bokji.mapper.AdminMapper">
+
+    <select id="findByLoginId" resultType="AdminUser">
+        SELECT admin_id, login_id, pw_hash, name
+        FROM admin_user
+        WHERE login_id = #{loginId}
+    </select>
+
+    <select id="count" resultType="int">
+        SELECT COUNT(*) FROM admin_user
+    </select>
+
+    <insert id="insert">
+        INSERT INTO admin_user (login_id, pw_hash, name)
+        VALUES (#{loginId}, #{pwHash}, #{name})
+    </insert>
+
+    <insert id="insertHistory">
+        INSERT INTO resource_history (resource_id, admin_id, action, changed_summary)
+        VALUES (#{resourceId}, #{adminId}, #{action}, #{summary})
+    </insert>
+</mapper>
