@@ -57,7 +57,6 @@ a { color: var(--bk-primary); }
 .bk-hero .bk-sub { font-size: 1.1rem; color: #4a5559; margin-top: .9rem; max-width: 32em; }
 .bk-start-btn { font-size: 1.2rem; padding: .85rem 2rem; margin-top: 1.5rem; }
 .bk-chip { display: block; padding: .55rem 0; border-top: 1px solid var(--bk-line); font-size: 1rem; }
-.bk-chip::before { content: "예) "; color: #8a8f8c; }
 section[aria-label=examples] { text-align: left !important; }
 
 /* ---------- 조건 입력 (스텝) ---------- */
@@ -106,7 +105,7 @@ section[aria-label=examples] { text-align: left !important; }
 .bk-tag-match { border-left-color: var(--bk-match); color: var(--bk-match); }
 .bk-tag-check { border-left-color: var(--bk-check); color: var(--bk-check-text); }
 .bk-tag-miss { border-left-color: #a33a3a; color: #a33a3a; }
-.bk-date { font-size: .86rem; color: #6b7377; font-variant-numeric: tabular-nums; }
+.bk-date { font-size: .86rem; color: #525c60; font-variant-numeric: tabular-nums; }
 .bk-badge-old { color: var(--bk-check-text); font-size: .8rem; font-weight: 700; border: 1px solid var(--bk-check); border-radius: 2px; padding: 0 .35rem; margin-left: .25rem; }
 
 /* ---------- 상세 ---------- */
