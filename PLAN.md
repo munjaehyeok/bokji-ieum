@@ -12,4 +12,5 @@
 | T5 | 우선순위 본문 대조 + 대장 | 구현 | docs/데이터/수집/본문검증대장.csv, docs/데이터/수집/본문검증로그.md, src/main/resources/sql/reliability-content.sql | T1 | 대장 역추적 | 본문 |
 | T6 | 발표 수치 재정의·결과 문서 | 구현 | docs/검증/발표숫자.md, docs/검증/데이터신뢰도-결과.md | T3, T5 | 집계 SQL | 통합 |
 | T7 | 본문 대장 독립 검증(역추적·전후값·미확인 구분 단언) | 테스트 | docs/검증/ledger-check.py | T0 | 구현 후 통과 | 본문 |
-| T8 | 위험 태깅 점검: 180% rank, INCOME_DETAIL/NOTE 표시, 연령·OR·가구원 위험 목록 | 구현 | src/main/resources/sql/reliability-risk.sql, docs/데이터/수집/위험태깅점검.csv | T2 | match-regression 확장 | 위험 |
+| T8 | 위험 태깅 점검: 180% rank, INCOME_DETAIL/NOTE 표시, 연령·OR·가구원 위험 목록 | 구현 | docs/데이터/수집/위험태깅점검.csv | T2 | T9 | 위험 |
+| T9 | 위험 태깅 회귀 확장(180% rank 4·rank=NULL+uncertain 표시 단언) | 테스트 | docs/검증/match-regression.py | T2 | 구현 후 통과 | 위험 |
