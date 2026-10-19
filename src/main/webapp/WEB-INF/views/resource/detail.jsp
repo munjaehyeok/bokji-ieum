@@ -78,14 +78,14 @@
         </c:choose>
     </p>
     <p class="mb-1 text-secondary">
-        <c:if test="${not empty resource.applicant}"><spring:message code="detail.applicant"/>: <c:out value="${resource.applicant}"/> · </c:if>
+        <c:if test="${not empty resource.applicant}"><spring:message code="detail.applicant"/>: <spring:message code="val.${fn:trim(resource.applicant)}" text="${fn:trim(resource.applicant)}" htmlEscape="true"/> · </c:if>
         <c:if test="${not empty resource.decisionPeriod}"><spring:message code="detail.decision"/>: <c:out value="${resource.decisionPeriod}"/> · </c:if>
-        <c:if test="${not empty resource.serviceCycle}"><spring:message code="detail.cycle"/>: <c:out value="${resource.serviceCycle}"/></c:if>
+        <c:if test="${not empty resource.serviceCycle}"><spring:message code="detail.cycle"/>: <spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${fn:trim(resource.serviceCycle)}" htmlEscape="true"/></c:if>
     </p>
     <c:if test="${not empty resource.costFlag}">
         <p class="mb-1 text-secondary"><spring:message code="detail.cost"/>:
             <spring:message code="cost.${resource.costFlag}" text="${resource.costFlag}" htmlEscape="true"/>
-            <c:if test="${not empty resource.costAmount}"> — <c:out value="${resource.costAmount}"/></c:if>
+            <c:if test="${not empty resource.costAmount and not fn:contains('-|무료|해당없음|0', fn:trim(resource.costAmount))}"> — <c:out value="${resource.costAmount}"/></c:if>
         </p>
     </c:if>
     <c:if test="${not empty resource.applyUrl}">
@@ -119,7 +119,7 @@
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.source"/></h2>
     <p class="mb-0">
-        <c:if test="${not empty resource.sourceName}"><c:out value="${resource.sourceName}"/> · </c:if>
+        <c:if test="${not empty resource.sourceName}"><spring:message code="src.${fn:substring(resource.sourceName,0,3)}" text="${resource.sourceName}" htmlEscape="true"/> · </c:if>
         <c:if test="${not empty resource.dataBaseDate}">
             <spring:message code="result.baseDate"/> <c:out value="${resource.dataBaseDate}"/>
         </c:if>

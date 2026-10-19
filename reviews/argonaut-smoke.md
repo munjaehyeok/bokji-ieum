@@ -54,3 +54,8 @@
 - P2: LinkText.normalizeUrl을 "http(s) 그대로 / 스킴 없는 도메인 형태만 https:// 보정 / 그 밖(상대경로·mailto·javascript·문장)은 null=링크 없음"으로 제한. 컨트롤러가 null이면 apply_url 버튼도 숨김. 단위 점검 docs/검증/LinkTextCheck.java 12/12 PASS(유효·무효 URL, 태그 이스케이프, 속성 탈출 시도), link-regression 3/3, compare-regression 9/9.
 - P1 모바일: id=34를 390px(iframe)로 열어 확인 — `reviews/screens/apply-link-34-mobile390.jpg`. innerWidth/scrollWidth 390/390, 링크 href=https://www.bokjiro.go.kr/ target=_blank rel=noopener, 줄바꿈 정상. 링크 클릭 영역 높이는 본문 글줄(약 19px)이라 인라인 텍스트 링크 수준(별도 44px 터치 영역 없음 — 전화·신청 버튼은 기존 44px).
 - 콘솔 0건. 네트워크: 이 로드의 앱 자원(css v=8·js·icons.svg·상세 문서)과 CDN 자원 모두 200, 4xx/5xx 없음(performance 항목 기준, 일부 CDN은 상태 미노출).
+
+## 다국어 한글 잔존 정리 (2026-10-20, 화면 층만)
+- 점검·판정은 docs/검증/다국어-한글잔존-점검.md. 본문 데이터의 한글은 데이터 문제로 두고, 값이 코드처럼 반복되는 '본인'·'상시'·'일시', 출처명 3종, 비용 중복 표시만 detail.jsp·messages로 수정. SQL·판정 불변.
+- 확인: en·zh·vi·ko 상세(id=34)의 출처·신청권자·제공 시기 문구, en id=599 화면(`reviews/screens/i18n-detail-en.jpg`), 콘솔 0건. 회귀 compare 9/9·link 3/3·match 전부 PASS.
+- 미확인: 모바일 폭·큰 글자·결과 목록 화면의 이번 변경 영향(목록은 미변경), 네트워크 별도 수집(HTML 요청만 200으로 확인).
