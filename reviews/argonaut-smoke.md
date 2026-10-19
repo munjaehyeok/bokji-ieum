@@ -28,3 +28,10 @@
 - 모바일 390(iframe) + 글자 125%(루트 폰트 20px): 랜딩·결과 2개 화면 — `reviews/screens/icons-mobile390-bigfont125.jpg`. 세 프레임 모두 innerWidth/scrollWidth/clientWidth = 390/390/390(가로 스크롤 없음). 분야 필터 칩은 줄바꿈되며 아이콘·글자 정렬 유지. 세 번째 프레임은 `?lang=vi`로 열었으나 화면은 한국어로 표시(세션 언어가 이미 ko로 돌아가 있었음) — 이번 증거에 vi 새 아이콘 배치는 없다.
 - 콘솔: 이 실행 구간 메시지 0건. 네트워크(127.0.0.1): GET/POST 모두 200(또는 304), icons.svg 200, css v=6·js 200. 4xx/5xx 없음. 핵심 흐름: 랜딩 → POST /match 200 → 결과 표시.
 - 미확인: en/zh/vi에서의 새 아이콘 배치(문구가 길어 줄바꿈이 달라질 수 있음), 관리자 화면.
+
+## 상세 판정표: 내 조건 vs 공고 조건 (2026-10-20, css v=7)
+- 변경: JudgeCompare.java(신규, 표시 전용 — 판정은 SQL 태그 그대로), ResourceController(model "compare"), detail.jsp 판정표를 항목/내 조건/공고 조건/판정 4열로, messages 4개 언어 compare.* 키, bokji.css(좁은 폭에서 항목별 쌓기). SQL·매칭 로직 불변.
+- 회귀: docs/검증/compare-regression.py 6/6 PASS(일치·불일치·확인필요·모름 입력·en), match-regression 전부 PASS(792/23), age-hint-regression 전부 PASS.
+- 화면: 데스크톱 reviews/screens/compare-detail-desktop.jpg, 모바일 390(iframe, scrollWidth 390=390) compare-detail-mobile390.jpg. 콘솔 메시지 0건(모바일 구간).
+- 미확인: en/zh/vi 상세 화면 캡처(문구는 회귀로 en만 검사), 큰 글자 125%, 가구원 여러 명일 때(상세는 세션의 본인 조건만 사용 — 기존 동작), 네트워크 4xx/5xx 별도 수집.
+- 알려진 표시 한계: '소득' 일치 행의 공고 조건은 DB의 income_rank를 문구로 옮긴 것(예: rank 3 = 중위소득 100% 이하)이며 원문 기준은 아래 '지원 기준(원문)'이 정본.

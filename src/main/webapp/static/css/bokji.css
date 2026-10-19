@@ -143,3 +143,13 @@ section[aria-label=examples] { text-align: left !important; }
 .bk-hero { position: relative; }
 .bk-hero-art { display: block; width: min(320px, 70%); aspect-ratio: 220 / 120; color: var(--bk-primary); margin-bottom: 1.25rem; }
 .bk-filter button.active .bk-ico { color: var(--bk-primary); }
+
+/* 판정표: 좁은 화면에서는 항목별로 쌓아 보여 줌 */
+.bk-judge-table th[scope=row] { font-weight: 700; }
+@media (max-width: 575px) {
+    .bk-judge-table thead { display: none; }
+    .bk-judge-table, .bk-judge-table tbody, .bk-judge-table tr, .bk-judge-table td, .bk-judge-table th[scope=row] { display: block; width: 100%; }
+    .bk-judge-table tr { border-top: 1px solid var(--bk-line); padding: .5rem 0; }
+    .bk-judge-table td, .bk-judge-table th[scope=row] { border: 0; padding: .1rem 0; }
+    .bk-judge-table td[data-label]::before { content: attr(data-label) " · "; color: #525c60; font-size: .85rem; }
+}

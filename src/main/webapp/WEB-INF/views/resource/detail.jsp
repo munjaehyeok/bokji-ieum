@@ -28,30 +28,28 @@
             <thead>
             <tr>
                 <th scope="col"><spring:message code="detail.judge.item"/></th>
+                <th scope="col"><spring:message code="compare.mine"/></th>
+                <th scope="col"><spring:message code="compare.theirs"/></th>
                 <th scope="col"><spring:message code="detail.judge.result"/></th>
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="t" items="${resource.matchedLabels}">
+            <c:forEach var="ln" items="${compare}">
                 <tr>
-                    <td><c:out value="${t}"/></td>
-                    <td><span class="bk-tag bk-tag-match"><spring:message code="judge.match"/></span></td>
+                    <th scope="row"><c:out value="${ln.item}"/></th>
+                    <td data-label="<spring:message code="compare.mine"/>"><c:out value="${ln.mine}"/></td>
+                    <td data-label="<spring:message code="compare.theirs"/>"><c:out value="${ln.theirs}"/></td>
+                    <td data-label="<spring:message code="detail.judge.result"/>">
+                        <c:choose>
+                            <c:when test="${ln.status == 'match'}"><span class="bk-tag bk-tag-match"><spring:message code="judge.match"/></span></c:when>
+                            <c:when test="${ln.status == 'check'}"><span class="bk-tag bk-tag-check"><spring:message code="judge.check"/></span></c:when>
+                            <c:otherwise><span class="bk-tag bk-tag-miss"><spring:message code="judge.mismatch"/></span></c:otherwise>
+                        </c:choose>
+                    </td>
                 </tr>
             </c:forEach>
-            <c:forEach var="t" items="${resource.needCheckLabels}">
-                <tr>
-                    <td><c:out value="${t}"/></td>
-                    <td><span class="bk-tag bk-tag-check"><spring:message code="judge.check"/></span></td>
-                </tr>
-            </c:forEach>
-            <c:forEach var="t" items="${resource.mismatchedLabels}">
-                <tr>
-                    <td><c:out value="${t}"/></td>
-                    <td><span class="bk-tag bk-tag-miss">&#10060; <spring:message code="judge.mismatch"/></span></td>
-                </tr>
-            </c:forEach>
-            <c:if test="${empty resource.matchedLabels and empty resource.needCheckLabels and empty resource.mismatchedLabels}">
-                <tr><td colspan="2"><spring:message code="detail.judge.none"/></td></tr>
+            <c:if test="${empty compare}">
+                <tr><td colspan="4"><spring:message code="detail.judge.none"/></td></tr>
             </c:if>
             </tbody>
         </table>

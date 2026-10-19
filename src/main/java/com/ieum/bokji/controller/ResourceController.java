@@ -2,6 +2,7 @@ package com.ieum.bokji.controller;
 
 import com.ieum.bokji.dto.MatchCondition;
 import com.ieum.bokji.dto.MatchResultRow;
+import com.ieum.bokji.service.JudgeCompare;
 import com.ieum.bokji.service.MatchService;
 import java.util.Locale;
 import javax.servlet.http.HttpSession;
@@ -19,6 +20,8 @@ public class ResourceController {
 
     @Autowired
     private MatchService matchService;
+    @Autowired
+    private JudgeCompare judgeCompare;
 
     @GetMapping("/resources/{id}")
     public String detail(@PathVariable int id, HttpSession session, Model model, Locale locale) {
@@ -35,6 +38,7 @@ public class ResourceController {
         }
         model.addAttribute("resource", row);
         model.addAttribute("judged", cond != null);
+        if (cond != null) model.addAttribute("compare", judgeCompare.build(row, cond, locale));
         return "resource/detail";
     }
 }
