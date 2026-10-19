@@ -46,9 +46,9 @@
 
 <%-- 분야 필터 --%>
 <div class="bk-filter mb-2" id="bkCatFilter" role="group" aria-label="category filter">
-    <button type="button" data-cat="" class="${empty category ? 'active' : ''}"><spring:message code="cat.ALL"/></button>
+    <button type="button" data-cat="" class="${empty category ? 'active' : ''}"><svg class="bk-ico" aria-hidden="true"><use href="${ctx}/static/img/icons.svg#cat-ALL"/></svg><spring:message code="cat.ALL"/></button>
     <c:forTokens items="JOB,HOUSE,DAILY,HEALTH,MIND,CARE,EDU,CULTURE,RIGHTS" delims="," var="cat">
-        <button type="button" data-cat="${cat}" class="${category == cat ? 'active' : ''}"><spring:message code="cat.${cat}"/></button>
+        <button type="button" data-cat="${cat}" class="${category == cat ? 'active' : ''}"><svg class="bk-ico" aria-hidden="true"><use href="${ctx}/static/img/icons.svg#cat-${cat}"/></svg><spring:message code="cat.${cat}"/></button>
     </c:forTokens>
 </div>
 

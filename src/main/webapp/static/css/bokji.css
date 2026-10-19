@@ -135,3 +135,11 @@ section[aria-label=examples] { text-align: left !important; }
     .bk-step-nav { flex-direction: column-reverse; }
     .bk-step-nav .btn { width: 100%; }
 }
+
+/* ---------- 아이콘·일러스트 (static/img/icons.svg 스프라이트) ---------- */
+.bk-ico { width: 1.15em; height: 1.15em; margin-right: .35em; vertical-align: -.2em; flex-shrink: 0; }
+.bk-logo { display: inline-flex; align-items: center; gap: .4rem; }
+.bk-logo-mark { width: 1.6rem; height: 1.6rem; }
+.bk-hero { position: relative; }
+.bk-hero-art { display: block; width: min(320px, 70%); aspect-ratio: 220 / 120; color: var(--bk-primary); margin-bottom: 1.25rem; }
+.bk-filter button.active .bk-ico { color: var(--bk-primary); }
