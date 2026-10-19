@@ -60,3 +60,7 @@
 - 확인: en·zh·vi·ko 상세(id=34)의 출처·신청권자·제공 시기 문구, en id=599 화면(`reviews/screens/i18n-detail-en.jpg`), 콘솔 0건. 회귀 compare 9/9·link 3/3·match 전부 PASS.
 - 미확인: 모바일 폭·큰 글자·결과 목록 화면의 이번 변경 영향(목록은 미변경), 네트워크 별도 수집(HTML 요청만 200으로 확인).
 - 비용 숨김 조건은 정확 일치('-','무료','해당없음','0')로 확정(초안의 부분 문자열 판정은 폐기). 확인: id=269 '최대8만원'·id=14 '지원금의 10% 이상'은 그대로 표시, id=1('-')·15('0')는 비용 구분만 표시.
+
+### 보완 실행 (R-018 P1 대응)
+- 모바일 390(iframe) en·zh·vi 상세(id=34) 동시 확인 — `reviews/screens/i18n-detail-mobile390-en-zh-vi.jpg`. 세 프레임 innerWidth/scrollWidth 390/390, html lang=en/zh/vi, 앱 요청(상세 문서·css·js·svg) 상태 200만(4xx/5xx 없음, performance 항목 기준). 콘솔 0건. 신청권자·제공 시기·출처·비용이 각 언어로 표시되고 줄바꿈 정상, 신청방법 링크(www. bokjiro. go. kr) 유지.
+- 본문 데이터(사업명·지원 내용 등)는 한국어 그대로 — 점검표대로 데이터 과제.
