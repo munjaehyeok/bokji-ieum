@@ -17,11 +17,11 @@ GROUPS = {  # 집단어 -> 힌트가 붙는 나이 판정(스펙 표)
     ('청년',): lambda a: a < 19 or a >= 40,
 }
 
-def match(age, **extra):
+def match(age, sort='', **extra):
     cond = dict(birthYear=YEAR - age, incomeRank=0, disability='U', nationality='K'); cond.update(extra)
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(cond).encode()).read()
-    return json.load(op.open(base + '/match/result/list?member=0'))
+    return json.load(op.open(base + '/match/result/list?member=0' + (('&sort=' + sort) if sort else '')))
 
 def check(name, ok, detail=''):
     global fail
@@ -48,12 +48,14 @@ def has_age_tag(r):  # 태그명 '연령'(tag.AGE). 힌트 라벨은 제외
     return any(l.startswith('연령') and l != HINT for l in list(r['matchedLabels']) + list(r['needCheckLabels']))
 def expected(r, age):
     if r.get('resourceId') in APPLICANT_MIXED: return None  # 스펙: 행 name에 든 집단어 전부가 불일치일 때만 True. 해당 집단어 없으면 None
-    hits = [f for ws, f in GROUPS.items() if any(w in nm(r) for w in ws)]
+    n = nm(r).replace('아동발달지원센터', '')
+    if '성인' in n: return None   # 스펙: 성인이 있으면 힌트 억제
+    hits = [f for ws, f in GROUPS.items() if any(w in n for w in ws)]
     return None if not hits else all(f(age) for f in hits)
 
 # 1) 어르신 사업: 8세 -> 힌트, 70세 -> 힌트 없음. 사업이 여러 개면 age 태그 없고 '어르신'만(다른 집단어 없음) 든 행 전부(all)
 def pure(rows, word, others):
-    return [r for r in rows if r.get('resourceId') not in APPLICANT_MIXED and word in nm(r) and not has_age_tag(r) and not any(o in nm(r) for o in others)]
+    return [r for r in rows if '성인' not in nm(r) and '아동발달지원센터' not in nm(r) and r.get('resourceId') not in APPLICANT_MIXED and word in nm(r) and not has_age_tag(r) and not any(o in nm(r) for o in others)]
 OTHERS = lambda w: [x for ws in GROUPS for x in ws if x != w]
 r8, r70 = match(8), match(70)
 t8 = pure(r8, '어르신', OTHERS('어르신')); t70 = pure(r70, '어르신', OTHERS('어르신'))
@@ -72,18 +74,44 @@ for word, age, want in BOUNDS:
     grp = next(ws for ws in GROUPS if word in ws)
     tgt = pure(rows, word, [x for x in sum(map(list, GROUPS), []) if x not in grp])
     if not tgt:
-        check(f'2 {word} {age}세: 대상 행 존재(없으면 시드 없음 -> 정보성 PASS)', True); continue
+        check(f'2 {word} {age}세: 대상 행 존재(시드에 없으면 테스트 준비 실패)', False); continue
     check(f'2 {word} {age}세: 힌트 {"있음" if want else "없음"} (대상 {len(tgt)}건 all)', all(hint(r) == want for r in tgt),
           str([nm(r) for r in tgt if hint(r) != want][:3]))
 
-# 3) 연령 모름: 본인 birthYear 공란은 서버가 거부(redirect) -> 결과 목록에 힌트가 있을 수 없음
-try:
+# 3) 연령 모름: /match는 birthYear 공란을 허용한다(invalidBirthYear는 NULL 통과). 정상 응답·비어 있지 않음·힌트 없음. 통신/파싱 실패는 FAIL.
+op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+op.open(base + '/match', urllib.parse.urlencode(dict(incomeRank=0, disability='U', nationality='K')).encode()).read()
+rows = json.load(op.open(base + '/match/result/list?member=0'))
+check('3 연령 모름: 결과가 비어 있지 않고 힌트 없음', len(rows) > 0 and not any(hint(r) for r in rows), str(len(rows)))
+
+# 3b) 통제 사례: id=309(기관명 '아동발달지원센터' + 성인 대상)는 성인에게 힌트 없음
+r30 = match(30)
+r309 = [r for r in r30 if r['resourceId'] == 309]
+check('3b 오탐 사례 id=309 성인(30세): 노출되고 힌트 없음', len(r309) == 1 and not hint(r309[0]), str(r309 and r309[0]['needCheckLabels']))
+
+# 3c) 노출 불변: AGE_HINT 도입 전 측정값(docs/검증/필터유효성-측정.md)과 같아야 한다
+BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 532),
+        ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 482),
+        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 463),
+        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 529),
+        ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 452),
+        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 377)]
+for label, c, n in BASE:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-    op.open(base + '/match', urllib.parse.urlencode(dict(incomeRank=0, disability='U', nationality='K')).encode()).read()
-    rows = json.load(op.open(base + '/match/result/list?member=0'))
-    check('3 연령 모름(birthYear 공란): 힌트 없음', not any(hint(r) for r in rows))
-except Exception as e:  # 결과 JSON 없음/거부도 '힌트 없음'과 양립
-    check('3 연령 모름(birthYear 공란): 거부되어 힌트 없음', True, str(e))
+    op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
+    got = len(json.load(op.open(base + '/match/result/list?member=0')))
+    check(f'3c 노출 불변 {label}: {n}건', got == n, f'{got}')
+
+# 3d) 안정 분할: 일치 묶음이 항상 먼저, 묶음 안 순서는 정렬 기준(추천순=score, 최신순=기준일) 유지
+for sort in ('', 'latest'):
+    for age in (8, 30, 70):
+        rows = match(age, sort=sort)
+        m = [bool(r['matchedLabels']) for r in rows]
+        check(f'3d 분할 sort={sort or "추천"} {age}세: 일치 묶음이 먼저', m == sorted(m, reverse=True))
+        for grp in (True, False):
+            g = [r for r in rows if bool(r['matchedLabels']) == grp]
+            key = (lambda r: r['dataBaseDate'] or '') if sort else (lambda r: r['score'])
+            check(f'3d 묶음 내 순서 sort={sort or "추천"} {age}세 일치={grp}', all(key(g[i]) >= key(g[i + 1]) for i in range(len(g) - 1)))
 
 # 4) 구조 단언 (연령 0~100 샘플 전수 + 7명 대표 사용자 포함). 노출 건수 상수 없음
 for age in (0, 8, 9, 18, 19, 24, 25, 30, 39, 40, 59, 60, 70, 85):

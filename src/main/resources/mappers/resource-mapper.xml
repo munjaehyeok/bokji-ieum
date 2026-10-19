@@ -33,14 +33,15 @@
     </sql>
 
     <!-- 연령 대상 힌트(SPEC '연령 대상 힌트'): 연령 태그 없는 행에서 사업명·대상의 집단어와 사용자 연령이 맞지 않을 가능성이 크면
-         제외하지 않고 확인필요만 붙인다. 집단어가 여러 개면 모두 불일치일 때만. ponytail: 집단어 4종 정규식 고정, 늘리려면 이 한 곳만 수정 -->
+         제외하지 않고 확인필요만 붙인다. 집단어가 여러 개면 모두 불일치일 때만. applicant=신청권자(대상과 다를 수 있음). 기관명 '아동발달지원센터'는 집단어에서 제외, '성인'이 있으면 억제. ponytail: 집단어 4종 정규식 고정, 늘리려면 이 한 곳만 수정 -->
     <sql id="ageHintCond">
         r.age_min IS NULL AND r.age_max IS NULL AND #{cond.age} IS NOT NULL
-        AND CONCAT_WS(' ', r.name, r.applicant) REGEXP '어르신|노인|경로|아동|영유아|유아|어린이|신생아|영아|청소년|청년'
-        AND NOT (CONCAT_WS(' ', r.name, r.applicant) REGEXP '어르신|노인|경로' AND #{cond.age} &gt;= 60)
-        AND NOT (CONCAT_WS(' ', r.name, r.applicant) REGEXP '아동|영유아|유아|어린이|신생아|영아' AND #{cond.age} &lt;= 18)
-        AND NOT (CONCAT_WS(' ', r.name, r.applicant) REGEXP '청소년' AND #{cond.age} BETWEEN 9 AND 24)
-        AND NOT (CONCAT_WS(' ', r.name, r.applicant) REGEXP '청년' AND #{cond.age} BETWEEN 19 AND 39)
+        AND REPLACE(CONCAT_WS(' ', r.name, r.applicant), '아동발달지원센터', '') REGEXP '어르신|노인|경로|아동|영유아|유아|어린이|신생아|영아|청소년|청년'
+        AND NOT (REPLACE(CONCAT_WS(' ', r.name, r.applicant), '아동발달지원센터', '') REGEXP '어르신|노인|경로' AND #{cond.age} &gt;= 60)
+        AND NOT (REPLACE(CONCAT_WS(' ', r.name, r.applicant), '아동발달지원센터', '') REGEXP '아동|영유아|유아|어린이|신생아|영아' AND #{cond.age} &lt;= 18)
+        AND NOT (REPLACE(CONCAT_WS(' ', r.name, r.applicant), '아동발달지원센터', '') REGEXP '청소년' AND #{cond.age} BETWEEN 9 AND 24)
+        AND NOT (REPLACE(CONCAT_WS(' ', r.name, r.applicant), '아동발달지원센터', '') REGEXP '청년' AND #{cond.age} BETWEEN 19 AND 39)
+        AND NOT (CONCAT_WS(' ', r.name, r.applicant) REGEXP '성인')
     </sql>
 
     <!-- ===== 판정 산출 컬럼: score + matched_csv + need_check_csv ===== -->
