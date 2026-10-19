@@ -16,5 +16,5 @@
 | T9 | 위험 태깅 회귀 확장(180% rank 4·rank=NULL+uncertain 표시 단언) | 테스트 | docs/검증/match-regression.py | T2 | 구현 후 통과 | 위험 |
 | T10 | AGE_HINT 판정(매퍼 + 4개 언어 태그명) | 구현 | src/main/resources/mappers/resource-mapper.xml, src/main/resources/messages | T0 | T11 | 힌트 |
 | T11 | AGE_HINT 회귀(스펙에서 독립 작성: 노출 불변, 표 기반 단언) | 테스트 | docs/검증/age-hint-regression.py | T0 | 구현 후 통과 | 힌트 |
-| T12 | 결과 목록 일치/확인필요 구분 헤더(최초 렌더·AJAX) | 구현 | src/main/webapp/WEB-INF/views/match, src/main/webapp/static/js/bokji.js, src/main/webapp/static/css/bokji.css | T10 | T13 | 구분 |
+| T12 | 결과 목록 일치/확인필요 구분 헤더(최초 렌더·AJAX) | 구현 | src/main/webapp/WEB-INF/views/match, src/main/webapp/static/js/bokji.js, src/main/webapp/static/css/bokji.css | T3, T10 | T13 | 구분 |
 | T13 | 시나리오·디자인 QA(7명 + 4개 언어 + 데스크톱/모바일 + 신청 흐름) | 테스트 | reviews/argonaut-qa.md | T0 | 구현 후 통과 | 구분 |
