@@ -4,6 +4,7 @@ import com.ieum.bokji.dto.MatchCondition;
 import com.ieum.bokji.dto.MatchResultRow;
 import com.ieum.bokji.service.JudgeCompare;
 import com.ieum.bokji.service.MatchService;
+import com.ieum.bokji.util.LinkText;
 import java.util.Locale;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,8 @@ public class ResourceController {
         if (session.getAttribute(ReportController.TOKEN_KEY) == null) {
             session.setAttribute(ReportController.TOKEN_KEY, java.util.UUID.randomUUID().toString());
         }
+        row.setApplyUrl(LinkText.normalizeUrl(row.getApplyUrl()));
+        model.addAttribute("applyMethodHtml", LinkText.toHtml(row.getApplyMethod()));
         model.addAttribute("resource", row);
         model.addAttribute("judged", cond != null);
         if (cond != null) model.addAttribute("compare", judgeCompare.build(row, cond, locale));

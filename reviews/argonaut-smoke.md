@@ -42,3 +42,10 @@
 - 회귀: compare-regression.py 9/9 PASS (269·95·182 사례 추가), match-regression PASS.
 - P1-3 네트워크: 이 실행(입력 POST → 상세 /resources/269, css v=8)의 127.0.0.1 요청 모두 200(결과 페이지 요청 1건은 수집 시점 pending 표시), 4xx/5xx 없음. 콘솔 0건.
 - 미확인: en/zh/vi 상세 캡처, 글자 125%.
+
+## 신청 방법 링크화 (2026-10-20)
+- 원인 확인: 원래 plain text 출력(c:out)이었음. 신청방법 본문에 URL이 든 행 89건, apply_url 버튼은 136건뿐이고, apply_url 중 스킴 없는 값("www.bokjiro.go.kr", 예 id=94)은 상대경로 링크가 되는 결함도 있었음.
+- 변경: util/LinkText.java(전체 HTML 이스케이프 후 http/https·www 주소만 `<a target=_blank rel=noopener>`로, "www. bokjiro. go. kr"처럼 점 뒤 공백도 한 주소로 정규화, 문장 끝 구두점 제외), ResourceController(applyMethodHtml, apply_url 스킴 없으면 https:// 보정), detail.jsp 신청방법 출력. SQL·판정 불변.
+- 회귀: docs/검증/link-regression.py 3/3 PASS, compare-regression 9/9 유지.
+- 화면: reviews/screens/apply-link-34.jpg (id=34 '복지로(www. bokjiro. go. kr)'가 링크로 표시). 콘솔 0건, 해당 요청 200.
+- 미확인: 모바일·en/zh/vi 화면(링크 마크업은 언어 공통), 실제 외부 사이트 클릭 이동, 관리자 입력 폼에서 스킴 없는 URL 저장 방지(표시 단계에서만 보정).

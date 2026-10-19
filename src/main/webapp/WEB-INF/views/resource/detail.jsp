@@ -70,7 +70,7 @@
 <%-- 신청 방법·서류 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.apply"/></h2>
-    <p class="bk-ws"><c:choose><c:when test="${not empty resource.applyMethod}"><c:out value="${fn:trim(resource.applyMethod)}"/></c:when><c:otherwise><spring:message code="detail.askOrg"/></c:otherwise></c:choose></p>
+    <p class="bk-ws"><c:choose><c:when test="${not empty resource.applyMethod}">${applyMethodHtml}</c:when><c:otherwise><spring:message code="detail.askOrg"/></c:otherwise></c:choose></p>
     <p><strong><spring:message code="detail.docs"/>:</strong>
         <c:choose>
             <c:when test="${not empty resource.documents}"><c:out value="${resource.documents}"/></c:when>
