@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """AGE_HINT('연령 대상 확인') 계약 회귀 검증 (SPEC.md '연령 대상 힌트' 표 기준, 구현 비참조).
 usage: python3 -I age-hint-regression.py <base_url>   종료코드 = FAIL 수.
-한계: 본인(member=0)은 birthYear 필수(미입력 시 /match가 error=birthYear로 redirect)라 '연령 모름'을
-  본인으로 표현할 수 없다. 구성원 birthYear 공란 + member=N 경로는 폼/세션 계약이 불확실해 생략 -> 단언 3은
-  '입력이 거부되어 결과가 없음'만 확인한다.
-노출 건수 상수는 두지 않는다(WHERE 불변은 구조적 단언 4a/4b/5로 대체)."""
+기대값은 DB(docker 컨테이너 bokji-verify)의 실제 name/applicant/age 필드와 SPEC 표로 파이썬에서 계산한다(구현 비참조).
+DB를 읽지 못하면 SKIP이 아니라 FAIL이다. 연령 NULL 입력은 서버가 허용한다(단언 3).
+노출 건수는 AGE_HINT 도입 전 측정값(필터유효성-측정.md)과 같아야 한다(단언 3c). 한계: 개수 일치는 ID 집합 동등성의 대리 지표다."""
 import sys, json, datetime, urllib.request, urllib.parse, http.cookiejar
 base = sys.argv[1].rstrip('/')
 fail = 0
@@ -28,34 +27,36 @@ def check(name, ok, detail=''):
     print(('PASS ' if ok else 'FAIL ') + name + (f'  [{detail}]' if detail and not ok else ''))
     fail += (not ok)
 
-# applicant는 JSON에 없다. 이름과 다른 집단어가 applicant에 있으면 스펙의 '하나라도 맞으면 힌트 없음'이 적용되므로
-# 이름만으로 판정할 수 없는 행을 DB(docker 컨테이너 bokji-verify)에서 읽어 제외한다. 컨테이너가 없으면 제외 없이 진행한다.
+# DB 필드로 기대값 계산: id -> (name, applicant, age 태그 유무). 읽기 실패는 FAIL.
 import subprocess
-def _mixed():
-    q = ("select resource_id from resource where status='A' and age_min is null and age_max is null "
-         "and applicant regexp '어르신|노인|경로|아동|영유아|유아|어린이|신생아|영아|청소년|청년'")
-    try:
-        out = subprocess.run(['docker', 'exec', 'bokji-verify', 'mysql', '-uroot', '-pverify', '--default-character-set=utf8mb4',
-                              'bokji', '-N', '-e', q], capture_output=True, text=True, timeout=30).stdout
-        return {int(x) for x in out.split()}
-    except Exception:
-        return set()
-APPLICANT_MIXED = _mixed()
+def _load():
+    q = "select resource_id, replace(replace(name,'\\t',' '),'\\n',' '), replace(replace(coalesce(applicant,''),'\\t',' '),'\\n',' '), (age_min is not null or age_max is not null) from resource where status='A'"
+    r = subprocess.run(['docker', 'exec', 'bokji-verify', 'mysql', '-uroot', '-pverify', '--default-character-set=utf8mb4', 'bokji', '-N', '-e', q],
+                       capture_output=True, text=True, timeout=60)
+    rows = {}
+    for line in r.stdout.splitlines():
+        i, n, a, t = (line.split('\t') + ['', '', ''])[:4]
+        rows[int(i)] = (n, a, t == '1')
+    return r.returncode, rows
+_rc, DB = _load()
+check('0 DB 필드 읽기(기대값 계산 전제)', _rc == 0 and len(DB) >= 700, f'rc={_rc} rows={len(DB)}')
 
 def nm(r): return r.get('name') or r.get('displayName') or ''
 def hint(r): return HINT in r['needCheckLabels']
 def has_age_tag(r):  # 태그명 '연령'(tag.AGE). 힌트 라벨은 제외
     return any(l.startswith('연령') and l != HINT for l in list(r['matchedLabels']) + list(r['needCheckLabels']))
-def expected(r, age):
-    if r.get('resourceId') in APPLICANT_MIXED: return None  # 스펙: 행 name에 든 집단어 전부가 불일치일 때만 True. 해당 집단어 없으면 None
-    n = nm(r).replace('아동발달지원센터', '')
-    if '성인' in n: return None   # 스펙: 성인이 있으면 힌트 억제
-    hits = [f for ws, f in GROUPS.items() if any(w in n for w in ws)]
-    return None if not hits else all(f(age) for f in hits)
+def text(r):
+    n, ap, _ = DB.get(r['resourceId'], (nm(r), '', False))
+    return (n + ' ' + ap).replace('아동발달지원센터', '')
+def expected(r, age):  # 스펙: age 태그 없음 + 성인 없음 + 집단어 있음 + 모든 집단 불일치일 때만 True. 해당 없으면 None(힌트 없어야 하는 쪽은 False로 별도 단언)
+    t = text(r)
+    if '성인' in (DB.get(r['resourceId'], (nm(r), '', False))[0] + DB.get(r['resourceId'], ('', '', False))[1]): return False
+    hits = [f for ws, f in GROUPS.items() if any(w in t for w in ws)]
+    return False if not hits else all(f(age) for f in hits)
 
 # 1) 어르신 사업: 8세 -> 힌트, 70세 -> 힌트 없음. 사업이 여러 개면 age 태그 없고 '어르신'만(다른 집단어 없음) 든 행 전부(all)
 def pure(rows, word, others):
-    return [r for r in rows if '성인' not in nm(r) and '아동발달지원센터' not in nm(r) and r.get('resourceId') not in APPLICANT_MIXED and word in nm(r) and not has_age_tag(r) and not any(o in nm(r) for o in others)]
+    return [r for r in rows if '성인' not in text(r) and word in text(r) and not has_age_tag(r) and not any(o in text(r) for o in others)]
 OTHERS = lambda w: [x for ws in GROUPS for x in ws if x != w]
 r8, r70 = match(8), match(70)
 t8 = pure(r8, '어르신', OTHERS('어르신')); t70 = pure(r70, '어르신', OTHERS('어르신'))
@@ -123,12 +124,25 @@ for age in (0, 8, 9, 18, 19, 24, 25, 30, 39, 40, 59, 60, 70, 85):
     ids = [r['resourceId'] for r in rows]
     check(f'4c {age}세: resourceId 중복 없음/비어있지 않음', len(ids) == len(set(ids)) and len(ids) > 0)
     exp = [(nm(r), expected(r, age), hint(r)) for r in rows if not has_age_tag(r)]
-    bad = [e for e in exp if e[1] is not None and e[1] != e[2]]
-    check(f'4d {age}세: age 태그 없는 행의 힌트 = 스펙 표(집단어 전부 불일치) 판정', not bad, str(bad[:3]))
-    # 집단어 없는 행에는 힌트 없음 (applicant 기반 힌트는 JSON에 applicant가 없어 name 기준으로만 불가 -> 힌트 허용)
+    bad = [e for e in exp if e[1] != e[2]]
+    check(f'4d {age}세: age 태그 없는 모든 행의 힌트 = 스펙 계산값(name+applicant, 성인 억제, 모든 집단 불일치)', not bad, f'{len(bad)}건 {bad[:3]}')
 
 # 5) AGE_HINT는 matchedLabels에 절대 없다 (원문 태그명 포함)
 allrows = [r for rows in cache.values() for r in rows]
 check('5 matchedLabels에 연령 대상 확인/AGE_HINT 없음', all(HINT not in r['matchedLabels'] and 'AGE_HINT' not in r['matchedLabels'] for r in allrows))
 check('5 needCheckLabels에 원문 키 AGE_HINT 노출 없음(번역 누락 방지)', all('AGE_HINT' not in r['needCheckLabels'] for r in allrows))
+# 6) 통제 사례군이 실제 데이터에 존재해야 한다(없으면 FAIL): 신청권자만 집단어 / 이름·신청권자 집단 상이 / 성인 억제
+def _cat(f): return [i for i, (n, a, t) in DB.items() if not t and f(n.replace('아동발달지원센터', ''), a)]
+G = [w for ws in GROUPS for w in ws]
+only_app = _cat(lambda n, a: not any(w in n for w in G) and any(w in a for w in G) and '성인' not in n + a)
+mixed = _cat(lambda n, a: any(w in n for w in G) and any(w in a for w in G) and '성인' not in n + a)
+adult = _cat(lambda n, a: any(w in n + a for w in G) and '성인' in n + a)
+for label, ids in (('신청권자만 집단어', only_app), ('이름·신청권자 모두 집단어', mixed), ('성인 억제', adult)):
+    check(f'6 통제 사례군 존재: {label} ({len(ids)}건)', len(ids) > 0)
+# 사례군별 실제 응답 검증(4d가 전체 행을 계산값과 대조하므로 여기서는 대표 연령 2개로 사례군 단위 확인)
+for age in (8, 70):
+    byid = {r['resourceId']: r for r in cache.setdefault(age, match(age))}
+    for label, ids in (('신청권자만', only_app), ('혼합', mixed), ('성인 억제', adult)):
+        bad = [i for i in ids if i in byid and hint(byid[i]) != expected(byid[i], age)]
+        check(f'6 {age}세 {label} 사례군: 모든 행이 계산값과 일치', not bad, str(bad[:5]))
 sys.exit(fail)
