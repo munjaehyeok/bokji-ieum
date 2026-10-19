@@ -35,13 +35,13 @@
             <c:forEach var="t" items="${resource.matchedLabels}">
                 <tr>
                     <td><c:out value="${t}"/></td>
-                    <td><span class="bk-tag bk-tag-match">&#9989; <spring:message code="judge.match"/></span></td>
+                    <td><span class="bk-tag bk-tag-match"><spring:message code="judge.match"/></span></td>
                 </tr>
             </c:forEach>
             <c:forEach var="t" items="${resource.needCheckLabels}">
                 <tr>
                     <td><c:out value="${t}"/></td>
-                    <td><span class="bk-tag bk-tag-check">&#9888;&#65039; <spring:message code="judge.check"/></span></td>
+                    <td><span class="bk-tag bk-tag-check"><spring:message code="judge.check"/></span></td>
                 </tr>
             </c:forEach>
             <c:forEach var="t" items="${resource.mismatchedLabels}">
@@ -126,7 +126,7 @@
             <spring:message code="result.baseDate"/> <c:out value="${resource.dataBaseDate}"/>
         </c:if>
         <c:if test="${resource.oldData}">
-            <span class="bk-badge-old">&#9888;&#65039; <spring:message code="result.oldData"/></span>
+            <span class="bk-badge-old"><spring:message code="result.oldData"/></span>
         </c:if>
         <c:if test="${not empty resource.lastVerifiedDate}">
             · <spring:message code="detail.verified"/> <c:out value="${resource.lastVerifiedDate}"/>

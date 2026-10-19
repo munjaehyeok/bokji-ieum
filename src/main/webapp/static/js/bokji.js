@@ -162,17 +162,17 @@
             h += '<p class="summary1">' + esc(row.summaryTr || row.supportContent) + '</p>';
             h += '<div>';
             if (row.matchedLabels && row.matchedLabels.length) {
-                h += '<span class="bk-tag bk-tag-match">✅ ' + esc(R.msg.matched) + ': '
+                h += '<span class="bk-tag bk-tag-match">' + esc(R.msg.matched) + ': '
                     + row.matchedLabels.map(esc).join(' · ') + '</span> ';
             }
             if (row.needCheckLabels && row.needCheckLabels.length) {
-                h += '<span class="bk-tag bk-tag-check">⚠️ ' + esc(R.msg.needCheck) + ': '
+                h += '<span class="bk-tag bk-tag-check">' + esc(R.msg.needCheck) + ': '
                     + row.needCheckLabels.map(esc).join(' · ') + '</span>';
             }
             h += '</div><div class="bk-date mt-1">';
             if (row.dataBaseDate) h += esc(R.msg.baseDate) + ' ' + esc(row.dataBaseDate) + ' ';
             if (row.lastVerifiedDate) h += '· ' + esc(R.msg.verified) + ' ' + esc(row.lastVerifiedDate) + ' ';
-            if (row.oldData) h += '<span class="bk-badge-old">⚠️ ' + esc(R.msg.oldData) + '</span>';
+            if (row.oldData) h += '<span class="bk-badge-old">' + esc(R.msg.oldData) + '</span>';
             h += '</div></a>';
             return h;
         }

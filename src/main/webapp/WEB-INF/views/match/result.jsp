@@ -92,12 +92,12 @@
                 </p>
                 <div>
                     <c:if test="${not empty row.matchedLabels}">
-                        <span class="bk-tag bk-tag-match">&#9989; <spring:message code="result.matched"/>:
+                        <span class="bk-tag bk-tag-match"><spring:message code="result.matched"/>:
                             <c:forEach var="t" items="${row.matchedLabels}" varStatus="ts"><c:out value="${t}"/><c:if test="${!ts.last}"> · </c:if></c:forEach>
                         </span>
                     </c:if>
                     <c:if test="${not empty row.needCheckLabels}">
-                        <span class="bk-tag bk-tag-check">&#9888;&#65039; <spring:message code="result.needCheck"/>:
+                        <span class="bk-tag bk-tag-check"><spring:message code="result.needCheck"/>:
                             <c:forEach var="t" items="${row.needCheckLabels}" varStatus="ts"><c:out value="${t}"/><c:if test="${!ts.last}"> · </c:if></c:forEach>
                         </span>
                     </c:if>
@@ -110,7 +110,7 @@
                         · <spring:message code="detail.verified"/> <c:out value="${row.lastVerifiedDate}"/>
                     </c:if>
                     <c:if test="${row.oldData}">
-                        <span class="bk-badge-old">&#9888;&#65039; <spring:message code="result.oldData"/></span>
+                        <span class="bk-badge-old"><spring:message code="result.oldData"/></span>
                     </c:if>
                 </div>
             </a>
