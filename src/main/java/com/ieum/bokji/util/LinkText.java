@@ -35,11 +35,14 @@ public final class LinkText {
         return sb.toString();
     }
 
-    /** 스킴 없는 주소(www…)에 https:// 를 붙인다. 이미 http(s)가 아니면 그대로 두지 않고 https를 붙인다(상대경로 방지). */
+    private static final Pattern BARE_HOST = Pattern.compile("^(?:www\\.)?[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)+(?::\\d+)?(?:[/?#]\\S*)?$");
+
+    /** http(s)는 그대로, 스킴 없는 웹 주소(도메인 형태)는 https:// 를 붙인다. 그 밖의 값(상대경로·mailto 등)은 null — 링크를 만들지 않는다. */
     public static String normalizeUrl(String url) {
         if (url == null) return null;
         String u = url.trim();
-        if (u.isEmpty()) return u;
-        return u.matches("(?i)^https?://.*") ? u : "https://" + u;
+        if (u.isEmpty()) return null;
+        if (u.matches("(?i)^https?://\\S+$")) return u;
+        return BARE_HOST.matcher(u).matches() ? "https://" + u : null;
     }
 }

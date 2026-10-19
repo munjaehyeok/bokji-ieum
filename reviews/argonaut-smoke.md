@@ -49,3 +49,8 @@
 - 회귀: docs/검증/link-regression.py 3/3 PASS, compare-regression 9/9 유지.
 - 화면: reviews/screens/apply-link-34.jpg (id=34 '복지로(www. bokjiro. go. kr)'가 링크로 표시). 콘솔 0건, 해당 요청 200.
 - 미확인: 모바일·en/zh/vi 화면(링크 마크업은 언어 공통), 실제 외부 사이트 클릭 이동, 관리자 입력 폼에서 스킴 없는 URL 저장 방지(표시 단계에서만 보정).
+
+### 보완 실행 (R-016 대응)
+- P2: LinkText.normalizeUrl을 "http(s) 그대로 / 스킴 없는 도메인 형태만 https:// 보정 / 그 밖(상대경로·mailto·javascript·문장)은 null=링크 없음"으로 제한. 컨트롤러가 null이면 apply_url 버튼도 숨김. 단위 점검 docs/검증/LinkTextCheck.java 12/12 PASS(유효·무효 URL, 태그 이스케이프, 속성 탈출 시도), link-regression 3/3, compare-regression 9/9.
+- P1 모바일: id=34를 390px(iframe)로 열어 확인 — `reviews/screens/apply-link-34-mobile390.jpg`. innerWidth/scrollWidth 390/390, 링크 href=https://www.bokjiro.go.kr/ target=_blank rel=noopener, 줄바꿈 정상. 링크 클릭 영역 높이는 본문 글줄(약 19px)이라 인라인 텍스트 링크 수준(별도 44px 터치 영역 없음 — 전화·신청 버튼은 기존 44px).
+- 콘솔 0건. 네트워크: 이 로드의 앱 자원(css v=8·js·icons.svg·상세 문서)과 CDN 자원 모두 200, 4xx/5xx 없음(performance 항목 기준, 일부 CDN은 상태 미노출).
