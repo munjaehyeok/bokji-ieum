@@ -68,7 +68,16 @@
         <c:if test="${empty entry.value}">
             <p class="text-secondary py-4"><spring:message code="result.empty"/></p>
         </c:if>
+        <c:set var="grp" value="" />
         <c:forEach var="row" items="${entry.value}">
+            <c:if test="${not empty entry.value[0].matchedLabels and grp == '' and not empty row.matchedLabels}">
+                <h2 class="bk-group"><spring:message code="result.groupMatched"/></h2>
+                <c:set var="grp" value="m" />
+            </c:if>
+            <c:if test="${not empty entry.value[0].matchedLabels and grp == 'm' and empty row.matchedLabels}">
+                <h2 class="bk-group"><spring:message code="result.groupOther"/></h2>
+                <c:set var="grp" value="o" />
+            </c:if>
             <a class="bk-card" href="${ctx}/resources/${row.resourceId}">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                     <h3><c:out value="${row.displayName}"/></h3>
@@ -120,6 +129,8 @@ window.BK_RESULT = {
         needCheck: '<spring:message code="result.needCheck" javaScriptEscape="true"/>',
         baseDate: '<spring:message code="result.baseDate" javaScriptEscape="true"/>',
         verified: '<spring:message code="detail.verified" javaScriptEscape="true"/>',
+        groupMatched: '<spring:message code="result.groupMatched" javaScriptEscape="true"/>',
+        groupOther: '<spring:message code="result.groupOther" javaScriptEscape="true"/>',
         oldData: '<spring:message code="result.oldData" javaScriptEscape="true"/>',
         empty: '<spring:message code="result.empty" javaScriptEscape="true"/>',
         loading: '<spring:message code="result.loading" javaScriptEscape="true"/>',

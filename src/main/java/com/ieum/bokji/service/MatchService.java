@@ -40,7 +40,11 @@ public class MatchService {
         for (MatchResultRow row : rows) {
             applyLabels(row, locale);
         }
-        return rows;
+        // 일치 항목이 있는 행을 먼저(안정 분할: 각 묶음 안의 정렬은 그대로). 결과 화면의 두 머리글 구분과 대응.
+        List<MatchResultRow> ordered = new ArrayList<>(rows.size());
+        for (MatchResultRow row : rows) if (!row.getMatchedLabels().isEmpty()) ordered.add(row);
+        for (MatchResultRow row : rows) if (row.getMatchedLabels().isEmpty()) ordered.add(row);
+        return ordered;
     }
 
     public MatchResultRow judgeOne(int id, MatchCondition cond, Locale locale) {

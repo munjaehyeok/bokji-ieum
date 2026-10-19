@@ -153,3 +153,6 @@ a { color: var(--bk-primary); }
     .bk-step-nav { flex-direction: column-reverse; }
     .bk-step-nav .btn { width: 100%; }
 }
+
+.bk-group { font-size: 1.05rem; font-weight: 700; color: var(--bk-primary-dark); margin: 1.25rem 0 .5rem; padding-bottom: .35rem; border-bottom: 2px solid var(--bk-border, #e5e7eb); }
+.bk-group:first-child { margin-top: .25rem; }

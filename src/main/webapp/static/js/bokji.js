@@ -176,6 +176,19 @@
             h += '</div></a>';
             return h;
         }
+        // 일치 묶음이 있을 때만 머리글 2개(서버 렌더와 동일 규칙)
+        function listHtml(rows) {
+            if (!rows.length || !(rows[0].matchedLabels && rows[0].matchedLabels.length)) return rows.map(cardHtml).join('');
+            var h = '<h2 class="bk-group">' + esc(R.msg.groupMatched) + '</h2>', other = false;
+            rows.forEach(function (r) {
+                if (!other && !(r.matchedLabels && r.matchedLabels.length)) {
+                    other = true;
+                    h += '<h2 class="bk-group">' + esc(R.msg.groupOther) + '</h2>';
+                }
+                h += cardHtml(r);
+            });
+            return h;
+        }
         function refresh() {
             var pane = activePane();
             pane.innerHTML = '<p class="text-secondary py-4">' + esc(R.msg.loading) + '</p>';
@@ -185,7 +198,7 @@
                 .then(function (res) { if (!res.ok) throw new Error(); return res.json(); })
                 .then(function (rows) {
                     pane.innerHTML = rows.length
-                        ? rows.map(cardHtml).join('')
+                        ? listHtml(rows)
                         : '<p class="text-secondary py-4">' + esc(R.msg.empty) + '</p>';
                     setCount(rows.length);
                 })
