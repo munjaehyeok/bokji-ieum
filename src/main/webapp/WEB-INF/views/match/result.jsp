@@ -57,6 +57,7 @@
     <button type="button" data-sort="" class="${empty sort ? 'active' : ''}"><spring:message code="sort.recommend"/></button>
     <button type="button" data-sort="latest" class="${sort == 'latest' ? 'active' : ''}"><spring:message code="sort.latest"/></button>
 </div>
+<p class="bk-date mb-3"><spring:message code="result.scopeNote"/></p>
 
 <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite"></h1>
 
@@ -96,6 +97,9 @@
                     <c:if test="${not empty row.dataBaseDate}">
                         <spring:message code="result.baseDate"/> <c:out value="${row.dataBaseDate}"/>
                     </c:if>
+                    <c:if test="${not empty row.lastVerifiedDate}">
+                        · <spring:message code="detail.verified"/> <c:out value="${row.lastVerifiedDate}"/>
+                    </c:if>
                     <c:if test="${row.oldData}">
                         <span class="bk-badge-old">&#9888;&#65039; <spring:message code="result.oldData"/></span>
                     </c:if>
@@ -115,6 +119,7 @@ window.BK_RESULT = {
         matched: '<spring:message code="result.matched" javaScriptEscape="true"/>',
         needCheck: '<spring:message code="result.needCheck" javaScriptEscape="true"/>',
         baseDate: '<spring:message code="result.baseDate" javaScriptEscape="true"/>',
+        verified: '<spring:message code="detail.verified" javaScriptEscape="true"/>',
         oldData: '<spring:message code="result.oldData" javaScriptEscape="true"/>',
         empty: '<spring:message code="result.empty" javaScriptEscape="true"/>',
         loading: '<spring:message code="result.loading" javaScriptEscape="true"/>',

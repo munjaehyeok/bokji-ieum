@@ -132,6 +132,7 @@
             · <spring:message code="detail.verified"/> <c:out value="${resource.lastVerifiedDate}"/>
         </c:if>
     </p>
+    <p class="bk-date mt-2 mb-0"><spring:message code="result.scopeNote"/></p>
 </section>
 
 <%-- 액션 --%>

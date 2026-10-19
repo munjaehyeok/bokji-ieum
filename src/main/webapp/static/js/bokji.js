@@ -171,6 +171,7 @@
             }
             h += '</div><div class="bk-date mt-1">';
             if (row.dataBaseDate) h += esc(R.msg.baseDate) + ' ' + esc(row.dataBaseDate) + ' ';
+            if (row.lastVerifiedDate) h += '· ' + esc(R.msg.verified) + ' ' + esc(row.lastVerifiedDate) + ' ';
             if (row.oldData) h += '<span class="bk-badge-old">⚠️ ' + esc(R.msg.oldData) + '</span>';
             h += '</div></a>';
             return h;
