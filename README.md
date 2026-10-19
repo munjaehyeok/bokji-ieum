@@ -29,6 +29,8 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/facility-refresh-20261014.sql
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/gov24-update-20261014.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-tagging.sql
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-provenance.sql
 ./mvnw cargo:run                                       # http://localhost:8080
 ```
 

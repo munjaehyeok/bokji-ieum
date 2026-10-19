@@ -27,6 +27,8 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql        # 복지로 API 최신화분(신규 24·갱신 3)
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/facility-refresh-20261014.sql  # 시설현황 대조(연락처 59건 등)
 docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/gov24-update-20261014.sql       # 보조금24 반영(신규 24·검증 18)
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-tagging.sql       # 신뢰도 보정(연령·택일 오태깅 3건 해제)
+docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-provenance.sql       # 신뢰도 보정(본문 미대조 기준일 16건 복원)
 ```
 (`--default-character-set=utf8mb4` 필수 — 빼면 한글이 깨진다. schema.sql은 기존 테이블을 DROP 후 재생성하므로 재적재에도 그대로 쓴다.)
 
