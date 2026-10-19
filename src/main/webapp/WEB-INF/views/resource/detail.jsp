@@ -85,7 +85,7 @@
     <c:if test="${not empty resource.costFlag}">
         <p class="mb-1 text-secondary"><spring:message code="detail.cost"/>:
             <spring:message code="cost.${resource.costFlag}" text="${resource.costFlag}" htmlEscape="true"/>
-            <c:if test="${not empty resource.costAmount and not fn:contains('-|무료|해당없음|0', fn:trim(resource.costAmount))}"> — <c:out value="${resource.costAmount}"/></c:if>
+            <c:if test="${not empty resource.costAmount and not (fn:trim(resource.costAmount) eq '-' or fn:trim(resource.costAmount) eq '무료' or fn:trim(resource.costAmount) eq '해당없음' or fn:trim(resource.costAmount) eq '0')}"> — <c:out value="${resource.costAmount}"/></c:if>
         </p>
     </c:if>
     <c:if test="${not empty resource.applyUrl}">
