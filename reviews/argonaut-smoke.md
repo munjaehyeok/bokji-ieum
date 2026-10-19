@@ -23,3 +23,8 @@
 - 변경: static/img/icons.svg(직접 그린 SVG 스프라이트: 로고, 분야 10종, 랜딩 일러스트), top.jspf 로고, result.jsp 분야 필터, index.jsp 히어로. 문화·여가 아이콘은 음표로 교체(점선 티켓 폐기). 장식용이라 aria-hidden, 의미는 글자가 전달. SQL·로직 불변.
 - 확인: 한국어 랜딩(데스크톱 1440), 결과 화면 필터 줄(icons-filter-ko.png), icons.svg 200 image/svg+xml, POST /match → 결과 정상.
 - 미확인: 모바일 390·글자 125%·en/zh/vi에서의 새 아이콘 배치, 콘솔·네트워크 재수집(이번엔 하지 않음).
+
+### 보완 실행 (R-012 P1 대응, css v=6)
+- 모바일 390(iframe) + 글자 125%(루트 폰트 20px): 랜딩·결과 2개 화면 — `reviews/screens/icons-mobile390-bigfont125.jpg`. 세 프레임 모두 innerWidth/scrollWidth/clientWidth = 390/390/390(가로 스크롤 없음). 분야 필터 칩은 줄바꿈되며 아이콘·글자 정렬 유지. 세 번째 프레임은 `?lang=vi`로 열었으나 화면은 한국어로 표시(세션 언어가 이미 ko로 돌아가 있었음) — 이번 증거에 vi 새 아이콘 배치는 없다.
+- 콘솔: 이 실행 구간 메시지 0건. 네트워크(127.0.0.1): GET/POST 모두 200(또는 304), icons.svg 200, css v=6·js 200. 4xx/5xx 없음. 핵심 흐름: 랜딩 → POST /match 200 → 결과 표시.
+- 미확인: en/zh/vi에서의 새 아이콘 배치(문구가 길어 줄바꿈이 달라질 수 있음), 관리자 화면.
