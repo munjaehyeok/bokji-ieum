@@ -35,3 +35,10 @@
 - 화면: 데스크톱 reviews/screens/compare-detail-desktop.jpg, 모바일 390(iframe, scrollWidth 390=390) compare-detail-mobile390.jpg. 콘솔 메시지 0건(모바일 구간).
 - 미확인: en/zh/vi 상세 화면 캡처(문구는 회귀로 en만 검사), 큰 글자 125%, 가구원 여러 명일 때(상세는 세션의 본인 조건만 사용 — 기존 동작), 네트워크 4xx/5xx 별도 수집.
 - 알려진 표시 한계: '소득' 일치 행의 공고 조건은 DB의 income_rank를 문구로 옮긴 것(예: rank 3 = 중위소득 100% 이하)이며 원문 기준은 아래 '지원 기준(원문)'이 정본.
+
+### 보완 실행 (R-014 P1 3건 대응, css v=8)
+- P1-1: 공고 조건의 소득 문구를 "분류 구간: … (원문 기준은 아래 '지원 기준(원문)' 참고)"로 바꿔 rank를 공고 상한으로 단정하지 않음. id=269(원문 180%)는 "중위소득 150% 이하 구간"으로 분류됨과 원문 안내를 함께 표시 — `reviews/screens/compare-detail-269-tier.jpg`. id=95(80%)도 같은 처리.
+- P1-2: rank NULL + income_uncertain='Y'(23건) 자원은 SQL이 소득 태그를 만들지 않으므로 JudgeCompare가 표시 전용 '소득' 행(확인 필요, 원문 확인 안내)을 더함. 판정 재계산은 아님(SQL 불변).
+- 회귀: compare-regression.py 9/9 PASS (269·95·182 사례 추가), match-regression PASS.
+- P1-3 네트워크: 이 실행(입력 POST → 상세 /resources/269, css v=8)의 127.0.0.1 요청 모두 200(결과 페이지 요청 1건은 수집 시점 pending 표시), 4xx/5xx 없음. 콘솔 0건.
+- 미확인: en/zh/vi 상세 캡처, 글자 125%.

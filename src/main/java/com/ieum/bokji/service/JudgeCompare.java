@@ -37,6 +37,10 @@ public class JudgeCompare {
         add(out, r.getMatchedCsv(), "match", r, c, l);
         add(out, r.getNeedCheckCsv(), "check", r, c, l);
         add(out, r.getMismatchedCsv(), "miss", r, c, l);
+        // rank 없이 소득 기준만 불확실한 자원(건강보험료·재산 등)은 SQL이 소득 태그를 만들지 않으므로 표시 전용 행을 더한다.
+        if (r.getIncomeRank() == null && "Y".equals(r.getIncomeUncertain())) {
+            out.add(new Line(ms.getMessage("tag.INCOME", null, "INCOME", l), incomeMine(c, l), m("compare.incomeRaw", l), "check"));
+        }
         return out;
     }
 
@@ -62,9 +66,10 @@ public class JudgeCompare {
                     break;
                 case "INCOME":
                 case "INCOME_DETAIL":
-                    mine = c.getIncomeRank() == 0 ? m("compare.unknown", l) : m("income." + c.getIncomeRank(), l);
+                    mine = incomeMine(c, l);
+                    // rank는 태깅 구간일 뿐 공고 원문의 상한과 다를 수 있다(예: 180% → 4구간). 구간임을 밝히고 원문으로 안내.
                     theirs = "INCOME_DETAIL".equals(tag) || r.getIncomeRank() == null
-                            ? m("compare.incomeDetail", l) : m("compare.income." + r.getIncomeRank(), l);
+                            ? m("compare.incomeDetail", l) : m("compare.income.tier", l, m("compare.income." + r.getIncomeRank(), l));
                     break;
                 case "DISABILITY":
                     mine = m("compare.dis." + c.getDisability(), l);
@@ -87,6 +92,10 @@ public class JudgeCompare {
             }
             out.add(new Line(ms.getMessage("tag." + tag, null, tag, l), mine, theirs, status));
         }
+    }
+
+    private String incomeMine(MatchCondition c, Locale l) {
+        return c.getIncomeRank() == 0 ? m("compare.unknown", l) : m("income." + c.getIncomeRank(), l);
     }
 
     private String ageRange(MatchResultRow r, Locale l) {
