@@ -18,3 +18,6 @@
 | T11 | AGE_HINT 회귀(스펙에서 독립 작성: 노출 불변, 표 기반 단언) | 테스트 | docs/검증/age-hint-regression.py | T0 | 구현 후 통과 | 힌트 |
 | T12 | 결과 목록 일치/확인필요 구분 헤더(최초 렌더·AJAX) | 구현 | src/main/webapp/WEB-INF/views/match, src/main/webapp/static/js/bokji.js, src/main/webapp/static/css/bokji.css | T3, T10 | T13 | 구분 |
 | T13 | 시나리오·디자인 QA(7명 + 4개 언어 + 데스크톱/모바일 + 신청 흐름) | 테스트 | reviews/argonaut-qa.md | T0 | 구현 후 통과 | 구분 |
+
+## 상태 (2026-10-19)
+T0~T4·T9~T13 완료(Codex R-004, R-007 APPROVE). T8 종결: 소득 결정표 유지(사람 확정), 문서 충돌 정정. T6 재집계 완료. T5/T7: 도구·대상 목록·빈 대장까지(대조 0건, 데이터 교체 예정). 남은 것: 사람 승인(화면 문구·연령표·병합·배포).

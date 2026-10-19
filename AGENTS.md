@@ -55,7 +55,7 @@
 ## 이 프로젝트 (복지이음) 고정 규칙
 - 서비스: 시흥시 복지자원 매칭 웹(Spring MVC 5 + MyBatis + MySQL 8, `./mvnw cargo:run`, 포트 8080). 설계서 `docs/설계/`.
 - **범위: 시흥시 자원만.** 중앙부처·전국 민간 데이터 수록 금지(팀 확정, 재제안 금지).
-- **태깅 원칙**: 애매하면 '확인필요', 틀리게 제외 금지. 소득: 기준이 구간(수급/차상위/중위100·150)으로 명시된 경우만 income_rank, 그 외(기초연금·보험료·180% 등)는 rank 비우고 income_uncertain='Y'(게이트1 D4). 명시된 `만 N세 이상/이하`만 연령 필드.
+- **태깅 원칙**: 애매하면 '확인필요', 틀리게 제외 금지. 소득은 **설계서 결정표(02·03)를 따른다(사람 확정 2026-10-19)**: 구간(수급 1·차상위 2·중위100 3·중위150 4)이 명시되면 그 랭크, 구간 밖이지만 상한이 있는 기준(예: 중위 180%)은 rank=4 + income_uncertain='Y'(rank 4는 어떤 입력에서도 제외하지 않고 '그 이상' 입력에는 확인필요), 구간이 아닌 기준(기초연금·건강보험료·재산)은 rank 비움 + income_uncertain='Y'(게이트1 D4). 명시된 `만 N세 이상/이하`만 연령 필드(연령 대상 힌트는 필드가 아니라 확인필요 표시, SPEC 참조).
 - mysql 접속 시 `--default-character-set=utf8mb4` 필수.
 - `src/main/resources/config.properties`(DB 계정·API serviceKey)는 gitignore. 커밋·로그·리뷰 산출물에 키 노출 금지. 이 worktree에는 없음 — 메인 폴더에서 복사.
 - 브리지: Codex에게 줄 맥락은 `bridge/BRIEF.md`, 지휘 요청은 `./bridge/direct.sh <질문파일>` → `reviews/direction-*.md`.
