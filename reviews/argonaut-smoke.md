@@ -69,3 +69,10 @@
 - 변경: bokji.css 끝에 `@media (prefers-reduced-motion: no-preference)` 블록 하나(움직임 줄이기 설정이면 전부 꺼짐), index.jsp 화살표 span. JS·SQL·판정 불변. 내용: 버튼/칩/탭 색 전환·눌림(1px), 시작 버튼 화살표 이동, 랜딩 일러스트→제목→설명 순 등장, 입력 단계 전환(8px 상승 페이드)과 진행 막대 채움, 결과 카드 앞 12개 순차 등장(.03s 간격, 이후 카드는 애니메이션 없음 — 서버가 513장을 한 번에 그림), 건수 페이드, 상세 판정표 행 순차 등장. 전부 0.5s 이하, 튕김·회전·무한 반복 없음.
 - 확인: 랜딩 computed animationName(art=bk-fade, h1=bk-rise), 결과 4번째 카드 delay=0.12s, 분야 필터 클릭 후 AJAX로 다시 그린 카드에도 bk-rise 적용(19건), 콘솔 0건, 가로 스크롤 없음(1440=1440). 모바일 390 iframe 4화면(랜딩·입력·결과·상세) 모두 scrollWidth 390, 문서 응답 200.
 - 한계: 정지 캡처로는 움직임을 볼 수 없어 눈으로 본 확인은 아님(사람이 브라우저에서 한 번 봐야 함). prefers-reduced-motion: reduce 상태는 에뮬레이션하지 못했고 CSS 구조(블록 밖에는 애니메이션 없음)로만 확인. 캡처 motion-result-after-filter.jpg는 최종 상태 화면.
+
+### 보완 실행 (R-020 P1 대응, css v=10, 같은 실행)
+- 핵심 흐름(실제 클릭·키 입력): 랜딩 [내 복지 찾기 시작] 클릭 → 1/7 출생연도 1946 입력 → Enter로 단계 이동(2/7 …) → 7/7 [결과 보기] 클릭 → 결과 604건 → 첫 카드 클릭 → 상세(/resources/37) 도달.
+- 데스크톱 캡처: reviews/screens/motion-landing-desktop.jpg, motion-form-step1-desktop.jpg, motion-form-step7-desktop.jpg(진행 막대 7/7 채워짐), motion-result-desktop.jpg, motion-detail-desktop.jpg.
+- 모바일 390 캡처(랜딩·입력·결과·상세 4화면, iframe): reviews/screens/motion-mobile390-landing-form-result-detail.jpg, 네 화면 모두 innerWidth/scrollWidth 390/390.
+- 콘솔: 이 흐름 전체에서 메시지 0건. 네트워크(127.0.0.1) 17건 전부 200/304(결과 페이지 요청 1건은 수집 시점 pending 표기), 4xx/5xx 없음.
+- 움직임 줄이기: 브라우저에서 reduce 모드를 켜지는 못했다. 대신 로드된 bokji.css의 CSSOM을 직접 조회해 `animation`/`transition`이 있는 최상위(미디어 밖) 규칙이 0개이고 32개 규칙이 모두 `(prefers-reduced-motion: no-preference)` 블록 안에 있음을 확인 — reduce 설정이면 이 블록이 적용되지 않으므로 모션이 꺼지는 구조. (이전의 단일 캡처 motion-result-after-filter.jpg는 삭제하고 위 캡처로 대체.)
