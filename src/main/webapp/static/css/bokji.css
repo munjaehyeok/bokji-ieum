@@ -153,3 +153,46 @@ section[aria-label=examples] { text-align: left !important; }
     .bk-judge-table td, .bk-judge-table th[scope=row] { border: 0; padding: .1rem 0; }
     .bk-judge-table td[data-label]::before { content: attr(data-label) " · "; color: #525c60; font-size: .85rem; }
 }
+
+/* ---------- 모션: 짧고 목적 있는 것만(상태 전환·등장). 움직임 줄이기 설정이면 전부 끈다 ---------- */
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes bk-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @keyframes bk-fade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes bk-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* 버튼·칩·링크: 색 전환과 눌림 */
+    .btn, .bk-filter button, .bk-lang a, .bk-tabs .nav-link { transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .08s ease; }
+    .btn:active, .bk-filter button:active { transform: translateY(1px); }
+    .bk-filter button { transition: color .18s ease, border-color .18s ease; }
+
+    /* 시작 버튼 화살표 */
+    .bk-arrow { display: inline-block; transition: transform .2s ease; }
+    .btn:hover .bk-arrow, .btn:focus-visible .bk-arrow { transform: translateX(4px); }
+
+    /* 랜딩 등장: 일러스트 → 제목 → 설명·버튼 순으로 */
+    .bk-hero-art { animation: bk-fade .6s ease both; }
+    .bk-hero h1 { animation: bk-rise .5s .08s ease both; }
+    .bk-hero .bk-sub, .bk-hero .bk-start-btn, .bk-hero p { animation: bk-rise .5s .18s ease both; }
+
+    /* 입력 단계: 새 단계가 아래에서 살짝 올라옴, 진행 막대는 채워짐 */
+    .bk-step.active { animation: bk-rise .28s ease both; }
+    .bk-dot { transition: background-color .3s ease; }
+    .bk-dot.done { animation: bk-grow .3s ease both; transform-origin: left; }
+    .bk-choice { transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease; }
+
+    /* 결과: 카드가 차례로 등장(앞 8개만 지연, 이후는 동시에) */
+    .bk-card { animation: bk-rise .32s ease both; transition: background-color .18s ease; }
+    .bk-card:nth-child(2) { animation-delay: .03s; } .bk-card:nth-child(3) { animation-delay: .06s; }
+    .bk-card:nth-child(4) { animation-delay: .09s; } .bk-card:nth-child(5) { animation-delay: .12s; }
+    .bk-card:nth-child(6) { animation-delay: .15s; } .bk-card:nth-child(7) { animation-delay: .18s; }
+    .bk-card:nth-child(8) { animation-delay: .21s; }
+    .bk-card:nth-child(n+13) { animation: none; } /* 서버가 수백 장을 한 번에 그리므로 화면에 보이는 앞쪽만 */
+    .bk-card .bk-tag { transition: border-color .18s ease; }
+    #bkCount { animation: bk-fade .35s ease both; }
+
+    /* 상세: 판정표 행이 위에서부터 차례로 */
+    .bk-judge-table tbody tr { animation: bk-fade .3s ease both; }
+    .bk-judge-table tbody tr:nth-child(2) { animation-delay: .05s; } .bk-judge-table tbody tr:nth-child(3) { animation-delay: .1s; }
+    .bk-judge-table tbody tr:nth-child(4) { animation-delay: .15s; } .bk-judge-table tbody tr:nth-child(5) { animation-delay: .2s; }
+    .bk-judge-table tbody tr:nth-child(6) { animation-delay: .25s; }
+}

@@ -64,3 +64,8 @@
 ### 보완 실행 (R-018 P1 대응)
 - 모바일 390(iframe) en·zh·vi 상세(id=34) 동시 확인 — `reviews/screens/i18n-detail-mobile390-en-zh-vi.jpg`. 세 프레임 innerWidth/scrollWidth 390/390, html lang=en/zh/vi, 앱 요청(상세 문서·css·js·svg) 상태 200만(4xx/5xx 없음, performance 항목 기준). 콘솔 0건. 신청권자·제공 시기·출처·비용이 각 언어로 표시되고 줄바꿈 정상, 신청방법 링크(www. bokjiro. go. kr) 유지.
 - 본문 데이터(사업명·지원 내용 등)는 한국어 그대로 — 점검표대로 데이터 과제.
+
+## 모션(애니메이션) 추가 (2026-10-20, css v=10)
+- 변경: bokji.css 끝에 `@media (prefers-reduced-motion: no-preference)` 블록 하나(움직임 줄이기 설정이면 전부 꺼짐), index.jsp 화살표 span. JS·SQL·판정 불변. 내용: 버튼/칩/탭 색 전환·눌림(1px), 시작 버튼 화살표 이동, 랜딩 일러스트→제목→설명 순 등장, 입력 단계 전환(8px 상승 페이드)과 진행 막대 채움, 결과 카드 앞 12개 순차 등장(.03s 간격, 이후 카드는 애니메이션 없음 — 서버가 513장을 한 번에 그림), 건수 페이드, 상세 판정표 행 순차 등장. 전부 0.5s 이하, 튕김·회전·무한 반복 없음.
+- 확인: 랜딩 computed animationName(art=bk-fade, h1=bk-rise), 결과 4번째 카드 delay=0.12s, 분야 필터 클릭 후 AJAX로 다시 그린 카드에도 bk-rise 적용(19건), 콘솔 0건, 가로 스크롤 없음(1440=1440). 모바일 390 iframe 4화면(랜딩·입력·결과·상세) 모두 scrollWidth 390, 문서 응답 200.
+- 한계: 정지 캡처로는 움직임을 볼 수 없어 눈으로 본 확인은 아님(사람이 브라우저에서 한 번 봐야 함). prefers-reduced-motion: reduce 상태는 에뮬레이션하지 못했고 CSS 구조(블록 밖에는 애니메이션 없음)로만 확인. 캡처 motion-result-after-filter.jpg는 최종 상태 화면.
