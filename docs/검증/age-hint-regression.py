@@ -91,18 +91,26 @@ r309 = [r for r in r30 if r['resourceId'] == 309]
 check('3b 오탐 사례 id=309 성인(30세): 노출되고 힌트 없음', len(r309) == 1 and not hint(r309[0]), str(r309 and r309[0]['needCheckLabels']))
 
 # 3c) 노출 불변: AGE_HINT 도입 전 측정값(docs/검증/필터유효성-측정.md)과 같아야 한다
-# 2026-10-23: id181(F 오태깅 해제)로 내국인(K) 입력의 노출이 각 +1 — 기대값 갱신(변경 전 532/463/529/377)
-BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 533),
-        ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 482),
-        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 464),
-        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 530),
+# 2026-10-23: id181(R-024)·479·755(R-025) F 오태깅 해제로 내국인(K) 입력 노출 증가 — 기대값 갱신(변경 전 532/482/463/529/377; 80세는 755만 +1)
+BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 535),
+        ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 483),
+        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 466),
+        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 532),
         ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 452),
-        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 378)]
+        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 380)]
 for label, c, n in BASE:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
     got = len(json.load(op.open(base + '/match/result/list?member=0')))
     check(f'3c 노출 불변 {label}: {n}건', got == n, f'{got}')
+
+# 3c-2) F 오태깅 해제분이 내국인(K) 입력에서 id 단위로 실제 노출·외국인(F) 입력에도 유지되는가
+for label, c, want in [('8세 K', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), {181, 479, 755}),
+                       ('80세 K', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K'), {181, 755})]:
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
+    got = {r['resourceId'] for r in json.load(op.open(base + '/match/result/list?member=0'))}
+    check(f'3c-2 F 해제분 노출 {label}', want <= got, str(sorted(want - got)))
 
 # 3d) 안정 분할: 일치 묶음이 항상 먼저, 묶음 안 순서는 정렬 기준(추천순=score, 최신순=기준일) 유지
 for sort in ('', 'latest'):

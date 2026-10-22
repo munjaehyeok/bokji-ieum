@@ -35,3 +35,17 @@ UPDATE resource
  WHERE resource_id = 181
    AND name = '고위험 임산부 의료비 지원사업'
    AND nationality = 'F';
+
+-- 신뢰도 보정 3 (2026-10-23, R-025): 'F(외국인 전용)'이나 원문이 내국인(비이주배경·선주민)도 대상으로 명시한 2건. 내국인 오제외 방지로 F 해제 + 확인필요.
+-- 멱등: 이미 NULL이면 변화 없음. 원문 보존. (다문화·외국인 병기만 있는 나머지 F 행은 원문이 내국인 포함을 명시하지 않아 유지)
+UPDATE resource
+   SET nationality = NULL,
+       uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 원문이 비이주배경(내국인) 아동도 대상으로 명시 — 외국인 전용이 아님, 확인 필요'),
+       updated_at = NOW()
+ WHERE resource_id = 479 AND name = '이주배경청소년문화지원사업' AND nationality = 'F';
+
+UPDATE resource
+   SET nationality = NULL,
+       uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 참여대상에 관내 선주민(내국인)이 포함 — 외국인 전용이 아님, 확인 필요'),
+       updated_at = NOW()
+ WHERE resource_id = 755 AND name = '결혼이민자 한국사회 이해증진' AND nationality = 'F';
