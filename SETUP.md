@@ -34,8 +34,10 @@ docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji
 
 ## 5. 서버 기동
 ```bash
-./mvnw cargo:run        # Windows: mvnw.cmd cargo:run
+# 관리자 화면이 필요하면 로컬용 임의 비밀번호를 환경변수로 준다(빈 DB에서만 admin 생성, 값은 저장소·로그에 남기지 않음)
+BOKJI_ADMIN_INITIAL_PASSWORD='<직접 정한 값>' ./mvnw cargo:run        # Windows: set 후 mvnw.cmd cargo:run
 ```
+변수가 없으면 관리자 계정이 만들어지지 않는다. 이미 admin이 있는 DB는 자동으로 바뀌지 않는다.
 첫 실행은 의존성·Tomcat 9 다운로드로 수 분 걸린다. 이후 http://localhost:8080/ 접속.
 종료: Ctrl+C
 

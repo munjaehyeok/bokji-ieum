@@ -24,3 +24,14 @@ UPDATE resource
  WHERE name = '효도수당'
    AND source_name = '복지로 지자체복지서비스 API'
    AND age_min IS NOT NULL;
+
+-- 신뢰도 보정 2 (2026-10-23, R-024 교차확인): '외국인 전용(F)'으로 태깅됐으나 원문은 "외국 국적인 및 국외 이주자"를 지원제외로 두고
+-- 영주권·결혼이주(F5·F6) 등 일부만 예외 허용 — 내국인 임산부가 목록에서 제외되는 오제외(false negative)였다. F 태그를 해제하고 확인필요로 남긴다.
+-- 멱등: 이미 NULL이면 변화 없음. 원문(eligibility_raw)은 보존.
+UPDATE resource
+   SET nationality = NULL,
+       uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 외국 국적자는 원칙적 지원제외(영주권·결혼이주 F5·F6·난민 등 예외 허용) — 외국인 전용이 아님, 확인 필요'),
+       updated_at = NOW()
+ WHERE resource_id = 181
+   AND name = '고위험 임산부 의료비 지원사업'
+   AND nationality = 'F';

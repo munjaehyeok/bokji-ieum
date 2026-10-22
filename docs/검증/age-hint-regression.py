@@ -91,12 +91,13 @@ r309 = [r for r in r30 if r['resourceId'] == 309]
 check('3b 오탐 사례 id=309 성인(30세): 노출되고 힌트 없음', len(r309) == 1 and not hint(r309[0]), str(r309 and r309[0]['needCheckLabels']))
 
 # 3c) 노출 불변: AGE_HINT 도입 전 측정값(docs/검증/필터유효성-측정.md)과 같아야 한다
-BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 532),
+# 2026-10-23: id181(F 오태깅 해제)로 내국인(K) 입력의 노출이 각 +1 — 기대값 갱신(변경 전 532/463/529/377)
+BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 533),
         ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 482),
-        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 463),
-        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 529),
+        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 464),
+        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 530),
         ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 452),
-        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 377)]
+        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 378)]
 for label, c, n in BASE:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
