@@ -91,22 +91,24 @@ r309 = [r for r in r30 if r['resourceId'] == 309]
 check('3b 오탐 사례 id=309 성인(30세): 노출되고 힌트 없음', len(r309) == 1 and not hint(r309[0]), str(r309 and r309[0]['needCheckLabels']))
 
 # 3c) 노출 불변: AGE_HINT 도입 전 측정값(docs/검증/필터유효성-측정.md)과 같아야 한다
-# 2026-10-23: id181(R-024)·479·755(R-025) F 오태깅 해제로 내국인(K) 입력 노출 증가 — 기대값 갱신(변경 전 532/482/463/529/377; 80세는 755만 +1)
-BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 535),
+# 2026-10-23: id181(R-024)·479·755(R-025) F 오태깅 해제로 내국인(K) 입력 노출 증가 — 기대값 갱신(변경 전 532/482/463/529/377; 80세는 755만 +1; R-026 다문화가족 5건 해제로 추가 증가)
+BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 540),
         ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 483),
-        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 466),
-        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 532),
+        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 471),
+        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 537),
         ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 452),
-        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 380)]
+        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 384)]
 for label, c, n in BASE:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
     got = len(json.load(op.open(base + '/match/result/list?member=0')))
     check(f'3c 노출 불변 {label}: {n}건', got == n, f'{got}')
 
-# 3c-2) F 오태깅 해제분이 내국인(K) 입력에서 id 단위로 실제 노출·외국인(F) 입력에도 유지되는가
+# 3c-2) F 오태깅 해제분이 내국인(K) 입력에서 id 단위로 실제 노출되고 외국인(F) 입력에도 유지되는가
 for label, c, want in [('8세 K', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), {181, 479, 755}),
-                       ('80세 K', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K'), {181, 755})]:
+                       ('80세 K', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K'), {181, 755}),
+                       ('30세 K 다문화', dict(birthYear=1996, incomeRank=0, disability='N', nationality='K'), {100, 103, 104, 260, 530}),
+                       ('30세 F', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), {100, 103, 104, 260, 530, 755, 479})]:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
     got = {r['resourceId'] for r in json.load(op.open(base + '/match/result/list?member=0'))}

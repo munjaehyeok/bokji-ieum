@@ -28,10 +28,11 @@ ok "후속 정상 최신화 보존(750: 2026-10-21)" "$(Q "select data_base_date
 Q "update resource set data_base_date='2022-12-31' where resource_id=15; update resource set last_verified_date=NULL where resource_id=315; update resource set data_base_date='2026-08-15' where resource_id=750;" >/dev/null   # 스냅샷 기준 상태로 복귀
 
 ok "데이터 분할: 활성−F전용 = 국적 NULL·K 수" "$(Q "select count(*)-sum(nationality='F') from resource where status='A'")" "$(Q "select count(*) from resource where status='A' and (nationality is null or nationality<>'F')")"
-ok "고정 수치 활성/PUB/PRV/F전용" "$(Q "select concat(count(*),'/',sum(provider_type='PUB'),'/',sum(provider_type='PRV'),'/',sum(nationality='F')) from resource where status='A'")" "792/246/546/20"
+ok "고정 수치 활성/PUB/PRV/F전용" "$(Q "select concat(count(*),'/',sum(provider_type='PUB'),'/',sum(provider_type='PRV'),'/',sum(nationality='F')) from resource where status='A'")" "792/246/546/15"
 ok "고정 수치 기준일 2026/2022" "$(Q "select concat(sum(year(data_base_date)=2026),'/',sum(year(data_base_date)=2022)) from resource where status='A'")" "47/744"
 ok "181 고위험임산부: F 태그 해제·메모 1회(R-024)" "$(Q "select concat(ifnull(nationality,'NULL'),'/',((length(uncertain_note)-length(replace(uncertain_note,'외국인 전용이 아님',''))) div length('외국인 전용이 아님'))) from resource where resource_id=181")" "NULL/1"
 ok "479·755: F 태그 해제(R-025)" "$(Q "select count(*) from resource where resource_id in (479,755) and nationality is null and uncertain_note like '%외국인 전용이 아님%'")" 2
+ok "100·103·104·260·530: F 태그 해제(R-026)" "$(Q "select count(*) from resource where resource_id in (100,103,104,260,530) and nationality is null and uncertain_note like '%다문화가족%'")" 5
 ok "집수리: 연령 태그 없음" "$(Q "select count(*) from resource where name='동네관리소 간단 집수리 지원' and age_min is not null")" 0
 ok "전동보장구보험: 연령·장애 태그 없음" "$(Q "select count(*) from resource where name='장애인 전동보장구 배상책임보험' and (age_min is not null or disability is not null)")" 0
 ok "효도수당: 연령 태그 없음" "$(Q "select count(*) from resource where name='효도수당' and age_min is not null")" 0

@@ -49,3 +49,14 @@ UPDATE resource
        uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 참여대상에 관내 선주민(내국인)이 포함 — 외국인 전용이 아님, 확인 필요'),
        updated_at = NOW()
  WHERE resource_id = 755 AND name = '결혼이민자 한국사회 이해증진' AND nationality = 'F';
+
+-- 신뢰도 보정 4 (2026-10-23, R-026): 대상을 '다문화가족/가정'으로 적은 F 행 5건. 다문화가족지원법상 다문화가족은 국적 취득자(귀화자) 가족을 포함하므로
+-- 한국 국적 구성원이 있을 수 있다 — F(외국인 전용)가 내국인을 제외하지 않도록 해제하고 확인필요로 남긴다. (결혼이민자·외국인만 명시한 행은 유지)
+-- 멱등: 이미 NULL이면 변화 없음. 원문 보존.
+UPDATE resource
+   SET nationality = NULL,
+       uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 대상이 다문화가족(귀화자 포함 가능) — 외국인 전용으로 단정할 수 없음, 확인 필요'),
+       updated_at = NOW()
+ WHERE resource_id IN (100, 103, 104, 260, 530)
+   AND name IN ('다문화가족 사례관리','다문화가족 서포터즈사업','다문화가정 통번역서비스','결혼이민자가족코칭상담사파견사업','다문화교육지원')
+   AND nationality = 'F';
