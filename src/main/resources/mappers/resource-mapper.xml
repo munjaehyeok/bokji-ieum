@@ -211,6 +211,76 @@
         WHERE r.resource_id = #{id}
     </select>
 
+    <!-- ===== 탐색 모드(docs/설계/07-탐색모드.md): 자격 판정이 아닌 둘러보기 필터. 축 안 OR, 축 사이 AND. 모든 값 바인딩 ===== -->
+    <sql id="browseWhere">
+        r.status = 'A'
+        <if test="s.cat.size() > 0">AND r.category IN <foreach collection="s.cat" item="c" open="(" separator="," close=")">#{c}</foreach></if>
+        <if test="s.lifeRanges.size() > 0">
+            AND (
+              ((r.age_min IS NOT NULL OR r.age_max IS NOT NULL) AND (
+                <foreach collection="s.lifeRanges" item="rg" separator=" OR ">
+                  (COALESCE(r.age_min, 0) &lt;= #{rg.hi} AND COALESCE(r.age_max, 200) &gt;= #{rg.lo})
+                </foreach>))
+              <if test="!s.strict">OR (r.age_min IS NULL AND r.age_max IS NULL)</if>
+            )
+        </if>
+        <if test="s.age != null">
+            AND (
+              ((r.age_min IS NOT NULL OR r.age_max IS NOT NULL) AND #{s.age} BETWEEN COALESCE(r.age_min, 0) AND COALESCE(r.age_max, 200))
+              <if test="!s.strict">OR (r.age_min IS NULL AND r.age_max IS NULL)</if>
+            )
+        </if>
+        <if test="s.hh.size() > 0">
+            AND (
+            <foreach collection="s.hh" item="h" separator=" OR ">
+                <choose>
+                    <when test="h == 'LOW'">(r.income_rank IN (1, 2)<if test="s.incx"> OR r.income_uncertain = 'Y'</if>)</when>
+                    <when test="h == 'DIS'">r.disability = 'Y'</when>
+                    <when test="h == 'FOR'">r.nationality = 'F'</when>
+                    <otherwise>FIND_IN_SET(#{h}, r.household_types)</otherwise>
+                </choose>
+            </foreach>)
+        </if>
+        <if test="s.dong != null">AND (r.dong_codes IS NULL OR FIND_IN_SET(#{s.dong}, r.dong_codes))</if>
+        <foreach collection="s.words" item="w">
+            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, r.org_name, r.applicant) LIKE CONCAT('%', #{w}, '%')
+        </foreach>
+        <foreach collection="s.exWords" item="w">
+            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, r.org_name, r.applicant) NOT LIKE CONCAT('%', #{w}, '%')
+        </foreach>
+        <if test="s.online">AND r.apply_method REGEXP '온라인|인터넷 ?신청|복지로|정부24|e보건소|누리집 ?신청|홈페이지 ?신청'</if>
+        <if test="s.idsMode">AND r.resource_id IN <foreach collection="s.ids" item="id" open="(" separator="," close=")">#{id}</foreach></if>
+    </sql>
+
+    <select id="browseCount" resultType="int">
+        SELECT COUNT(*) FROM resource r
+        LEFT JOIN resource_i18n i ON i.resource_id = r.resource_id AND i.lang = #{lang}
+        WHERE <include refid="browseWhere"/>
+    </select>
+
+    <select id="browse" resultType="MatchResultRow">
+        SELECT r.*, <include refid="displayCols"/>
+        FROM resource r
+        LEFT JOIN resource_i18n i ON i.resource_id = r.resource_id AND i.lang = #{lang}
+        <if test="s.sort == 'popular'">
+        LEFT JOIN (SELECT resource_id, COUNT(*) AS pop FROM event_log WHERE event = 'D' AND resource_id IS NOT NULL GROUP BY resource_id) p
+               ON p.resource_id = r.resource_id
+        </if>
+        WHERE <include refid="browseWhere"/>
+        ORDER BY
+        <choose>
+            <when test="s.sort == 'latest'">(r.data_base_date IS NULL), r.data_base_date DESC,</when>
+            <when test="s.sort == 'popular'">COALESCE(p.pop, 0) DESC,</when>
+        </choose>
+        r.name, r.resource_id
+        LIMIT #{s.limit} OFFSET #{s.offset}
+    </select>
+
+    <!-- 인기순 신뢰도: 상세 조회(D) 이벤트 총수 -->
+    <select id="popularSample" resultType="int">
+        SELECT COUNT(*) FROM event_log WHERE event = 'D' AND resource_id IS NOT NULL
+    </select>
+
     <!-- ===== 관리자 ===== -->
     <sql id="adminFilter">
         <where>

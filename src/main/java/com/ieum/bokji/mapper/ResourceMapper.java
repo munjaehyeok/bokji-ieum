@@ -23,6 +23,14 @@ public interface ResourceMapper {
     /** 판정 없는 단순 조회 (i18n 폴백 포함). */
     MatchResultRow findById(@Param("id") int id, @Param("lang") String lang);
 
+    /** 탐색 모드(07-탐색모드.md): 필터·정렬·페이징. 판정 아님. */
+    List<MatchResultRow> browse(@Param("s") com.ieum.bokji.dto.ResourceSearch s, @Param("lang") String lang);
+
+    int browseCount(@Param("s") com.ieum.bokji.dto.ResourceSearch s, @Param("lang") String lang);
+
+    /** 인기순 표본 크기(상세 조회 이벤트 수). */
+    int popularSample();
+
     List<Resource> adminList(PageParam p);
 
     int adminCount(PageParam p);

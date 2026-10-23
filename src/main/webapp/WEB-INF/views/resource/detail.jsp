@@ -14,6 +14,21 @@
     <c:if test="${not empty resource.subCategory}"> · <c:out value="${resource.subCategory}"/></c:if>
 </p>
 
+<%-- 한눈에 보기: 담당·주기·제공유형·문의 (값이 없으면 칸 자체를 만들지 않는다 — 추정해 채우지 않음) --%>
+<div class="bk-facts d-flex flex-wrap align-items-start gap-3 mb-3">
+    <dl class="bk-xmeta mb-0" aria-label="<spring:message code='detail.facts'/>">
+        <c:if test="${not empty resource.deptName}"><div><dt><spring:message code="card.dept"/></dt><dd><c:out value="${resource.deptName}"/></dd></div></c:if>
+        <c:if test="${not empty resource.serviceCycle and fn:length(resource.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${fn:trim(resource.serviceCycle)}" htmlEscape="true"/></dd></div></c:if>
+        <c:if test="${not empty resource.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><c:out value="${resource.serviceType}"/></dd></div></c:if>
+        <c:if test="${not empty resource.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(resource.phone, ',')[0])}"/></dd></div></c:if>
+    </dl>
+    <button type="button" class="bk-fav ms-auto bk-noprint" data-id="${resource.resourceId}" aria-pressed="false"
+            data-on="<spring:message code='explore.favOn'/>" data-off="<spring:message code='explore.fav'/>" aria-label="<spring:message code='explore.fav'/>" hidden>
+        <svg aria-hidden="true"><use href="${ctx}/static/img/icons.svg#fav"/></svg>
+    </button>
+</div>
+<p class="bk-date" id="bkFavMsg" hidden><spring:message code="explore.favUnavailable"/></p>
+
 <%-- 지원 내용 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.support"/></h2>
@@ -139,7 +154,8 @@
     <button type="button" class="btn btn-bk-outline" data-bs-toggle="modal" data-bs-target="#bkReportModal">
         <spring:message code="detail.report"/>
     </button>
-    <a class="btn btn-outline-secondary ms-auto" href="${ctx}/match/result"><spring:message code="detail.back"/></a>
+    <a class="btn btn-outline-secondary ms-auto" href="${ctx}/resources"><spring:message code="detail.backList"/></a>
+    <c:if test="${judged}"><a class="btn btn-outline-secondary" href="${ctx}/match/result"><spring:message code="detail.back"/></a></c:if>
 </div>
 
 <div class="bk-disclaimer">&#8251; <spring:message code="footer.disclaimer"/></div>

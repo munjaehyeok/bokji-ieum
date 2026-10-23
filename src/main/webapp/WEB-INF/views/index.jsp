@@ -11,6 +11,7 @@
     <a class="btn btn-bk bk-start-btn" href="${ctx}/match">
         <spring:message code="landing.start"/> <span class="bk-arrow">&rarr;</span>
     </a>
+    <p class="mt-3"><a class="bk-browse-link" href="${ctx}/resources"><spring:message code="landing.browse"/> <span class="bk-arrow">&rarr;</span></a></p>
     <p class="mt-3 text-secondary"><spring:message code="landing.privacy"/></p>
     <c:if test="${langCode != 'ko'}">
         <p class="mt-2 small text-secondary"><spring:message code="mt.notice"/></p>

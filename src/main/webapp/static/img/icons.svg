@@ -13,4 +13,5 @@
 <symbol id="cat-RIGHTS" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3.5v16M7 20.5h10M4 7h16M4 7l-2 6h4zM20 7l-2 6h4z" stroke-linejoin="miter"/></g></symbol>
 <!-- 랜딩 일러스트: 선으로 이어지는 두 집 -->
 <symbol id="hero" viewBox="0 0 220 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="miter"><path d="M12 108h196"/><path d="M24 108V62l30-26 30 26v46M44 108V84h20v24"/><path d="M136 108V70l26-22 26 22v38M152 108V88h20v20" /><path d="M84 62c20-22 32-22 52 8" stroke-dasharray="1 7" stroke-linecap="round"/><circle cx="110" cy="38" r="9"/></g></symbol>
+<symbol id="fav" viewBox="0 0 24 24"><path d="M12 20.5 4.2 12.8a4.9 4.9 0 0 1 0-6.9 4.9 4.9 0 0 1 6.9 0l.9.9.9-.9a4.9 4.9 0 0 1 6.9 0 4.9 4.9 0 0 1 0 6.9z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="miter"/></symbol>
 </svg>
