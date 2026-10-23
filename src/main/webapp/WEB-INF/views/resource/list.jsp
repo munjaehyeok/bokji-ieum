@@ -66,7 +66,7 @@
 
 <div class="bk-explore-bar">
     <h2 class="bk-explore-count" id="bkExploreCount" aria-live="polite"><spring:message code="explore.count" arguments="${total}"/></h2>
-    <div class="bk-filter" role="group" aria-label="sort">
+    <div class="bk-filter" role="group" aria-label="<spring:message code='explore.sortLabel'/>">
         <a class="${s.sort == '' ? 'active' : ''}" href="${ctx}/resources?${baseQuery}"><spring:message code="explore.sort.name"/></a>
         <a class="${s.sort == 'latest' ? 'active' : ''}" href="${ctx}/resources?${baseQuery}${empty baseQuery ? '' : '&'}sort=latest"><spring:message code="sort.latest"/></a>
         <a class="${s.sort == 'popular' ? 'active' : ''}" href="${ctx}/resources?${baseQuery}${empty baseQuery ? '' : '&'}sort=popular"><spring:message code="explore.sort.popular"/></a>
@@ -113,7 +113,7 @@
 </c:if>
 
 <c:if test="${lastPage > 1}">
-    <nav class="bk-pager" aria-label="pagination">
+    <nav class="bk-pager" aria-label="<spring:message code='explore.pagerLabel'/>">
         <c:if test="${s.page > 1}"><a href="${ctx}/resources?${baseQuery}${empty baseQuery ? '' : '&'}${s.sort != '' ? 'sort='.concat(s.sort).concat('&') : ''}page=${s.page - 1}" rel="prev">&larr; <spring:message code="explore.prev"/></a></c:if>
         <span aria-current="page">${s.page} / ${lastPage}</span>
         <c:if test="${s.page < lastPage}"><a href="${ctx}/resources?${baseQuery}${empty baseQuery ? '' : '&'}${s.sort != '' ? 'sort='.concat(s.sort).concat('&') : ''}page=${s.page + 1}" rel="next"><spring:message code="explore.next"/> &rarr;</a></c:if>
