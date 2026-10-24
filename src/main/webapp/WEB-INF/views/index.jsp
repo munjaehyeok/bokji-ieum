@@ -19,7 +19,7 @@
 </div>
 
 <hr>
-<section aria-label="examples" class="text-center">
+<section aria-label="<spring:message code='landing.examples'/>" class="text-center">
     <p class="fw-bold mb-2"><spring:message code="landing.examples"/></p>
     <span class="bk-chip"><spring:message code="landing.chip1"/></span>
     <span class="bk-chip"><spring:message code="landing.chip2"/></span>

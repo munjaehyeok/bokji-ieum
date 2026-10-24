@@ -167,7 +167,7 @@
             <form id="bkReportForm">
                 <div class="modal-header">
                     <h2 class="modal-title fs-5" id="bkReportTitle"><spring:message code="report.title"/></h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="<spring:message code='common.close'/>"></button>
                 </div>
                 <div class="modal-body">
                     <p class="hint"><spring:message code="report.desc"/></p>

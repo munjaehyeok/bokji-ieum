@@ -37,3 +37,8 @@
 - **키보드·모션·인쇄 구조**: `:focus-visible` 규칙 9, `prefers-reduced-motion` 2, `@media print` 3, 본문 건너뛰기 링크 존재. 실제 Tab 순회·스크린리더 발화는 미검증.
 - **회귀 재실행**: `resource-search-regression.py` ALL PASS(인기순 검사를 조회 표본 30건 이상/미만 두 경우 모두 맞게 수정 — 브라우징으로 D 이벤트가 46건이 되어 기존 '표본 부족 대체' 단언이 깨졌던 것, 코드 결함 아님), match 20/20, age-hint FAIL 0, compare 10, link 4, `./mvnw -q test` 통과.
 - 남은 격차: 원본 픽셀 비교 없음(색·구조 참고만), 결과 화면의 원본 대응 화면 없음, 인쇄 미리보기 실캡처 없음.
+
+## 2026-10-24 R-029 P2 반영
+- 결과 화면 `aria-label="category filter"`/`"sort"`, 홈 `examples`, 상세 모달 `close`를 메시지 키(`result.catLabel`·`explore.sortLabel`·`landing.examples`·`common.close`)로 교체. vi 결과 화면 DOM에서 영어 전용 aria-label 0(헤더 검색·언어·메뉴·위/아래 버튼은 이미 다국어). 남은 영어 `aria-label`은 관리자 화면(한국어 전용)뿐.
+- 대비·넘침 측정을 재현 가능한 스크립트로 저장: `docs/검증/contrast-check.js`(8화면×1280/390). 결과 화면 포함 재측정 413쌍 미달 0, 넘침 0.
+- 회귀·빌드·테스트 전부 통과(search ALL PASS, match 20, age-hint FAIL 0, compare 10, link 4, mvn test 통과).

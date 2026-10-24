@@ -45,7 +45,7 @@
 </c:if>
 
 <%-- 분야 필터 --%>
-<div class="bk-filter mb-2" id="bkCatFilter" role="group" aria-label="category filter">
+<div class="bk-filter mb-2" id="bkCatFilter" role="group" aria-label="<spring:message code='result.catLabel'/>">
     <button type="button" data-cat="" class="${empty category ? 'active' : ''}"><svg class="bk-ico" aria-hidden="true"><use href="${ctx}/static/img/icons.svg#cat-ALL"/></svg><spring:message code="cat.ALL"/></button>
     <c:forTokens items="JOB,HOUSE,DAILY,HEALTH,MIND,CARE,EDU,CULTURE,RIGHTS" delims="," var="cat">
         <button type="button" data-cat="${cat}" class="${category == cat ? 'active' : ''}"><svg class="bk-ico" aria-hidden="true"><use href="${ctx}/static/img/icons.svg#cat-${cat}"/></svg><spring:message code="cat.${cat}"/></button>
@@ -53,7 +53,7 @@
 </div>
 
 <%-- 정렬 --%>
-<div class="bk-filter mb-3" id="bkSortToggle" role="group" aria-label="sort">
+<div class="bk-filter mb-3" id="bkSortToggle" role="group" aria-label="<spring:message code='explore.sortLabel'/>">
     <button type="button" data-sort="" class="${empty sort ? 'active' : ''}"><spring:message code="sort.recommend"/></button>
     <button type="button" data-sort="latest" class="${sort == 'latest' ? 'active' : ''}"><spring:message code="sort.latest"/></button>
 </div>
