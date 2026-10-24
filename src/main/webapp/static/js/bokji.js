@@ -16,6 +16,27 @@
         });
     }
 
+    /* ---------- 공통: 페이지 위/아래로 이동 ---------- */
+    var toTop = document.getElementById('bkScrollTop');
+    var toBottom = document.getElementById('bkScrollBottom');
+    if (toTop && toBottom) {
+        var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var movePage = function (where) {
+            window.scrollTo({ top: where === 'top' ? 0 : document.documentElement.scrollHeight, behavior: reducedMotion ? 'auto' : 'smooth' });
+        };
+        var updatePageControls = function () {
+            var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+            var bottom = document.documentElement.scrollHeight - window.innerHeight;
+            toTop.hidden = y < 240;
+            toBottom.hidden = bottom < 240 || y >= bottom - 80;
+        };
+        toTop.addEventListener('click', function () { movePage('top'); });
+        toBottom.addEventListener('click', function () { movePage('bottom'); });
+        window.addEventListener('scroll', updatePageControls, { passive: true });
+        window.addEventListener('resize', updatePageControls);
+        updatePageControls();
+    }
+
     /* ---------- 공통: '해당 없음'(NONE) 상호 배타 체크박스 ---------- */
     function bindNoneGroup(group) {
         group.addEventListener('change', function (e) {
