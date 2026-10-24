@@ -109,7 +109,13 @@ st, h = fetch(q(sort='latest')); ds = re.findall(r'사업내용 기준\s*(\d{4}-
 check('8 최신순: 기준일 내림차순', ds == sorted(ds, reverse=True) and len(ds) > 0, str(ds[:3]))
 t_pop, got_pop = all_ids(q(sort='popular'))
 st, h = fetch(q(sort='popular'))
-check('8 인기순: 표본 부족이면 이름순 대체 + 안내', ('표본 부족' in h) and ids(h) == order[:12])
+sample = int((sql("select count(*) from event_log where event='D' and resource_id is not null") or ['0'])[0])
+if sample < 30:
+    check('8 인기순: 표본 부족(<30)이면 이름순 대체 + 안내', ('표본 부족' in h) and ids(h) == order[:12])
+else:
+    pop = {int(a): int(b) for a, b in (l.split('\t') for l in sql("select resource_id,count(*) from event_log where event='D' and resource_id is not null group by resource_id"))}
+    exp = [i for _, i in sorted(((-pop.get(i, 0), n), i) for n, i in enumerate(order))]
+    check('8 인기순: 표본 충분(>=30)이면 조회 수 내림차순(동률은 이름순)·안내 없음', ids(h) == exp[:12] and '표본 부족' not in h, str(ids(h)[:4]))
 check('8 인기순도 전체 유지(중복·누락 없음)', set(got_pop) == act and len(got_pop) == len(set(got_pop)))
 
 # 9) 잘못된 입력은 SQL 오류 없이 무시

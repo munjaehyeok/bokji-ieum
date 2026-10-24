@@ -456,3 +456,7 @@ section[aria-label=examples] > p { grid-column: 1 / -1; margin: 0 0 .2rem !impor
 .bk-check { min-width: 0; overflow-wrap: anywhere; }
 @media (min-width: 576px) { .bk-axis { display: block; } }
 .bk-hero h1 { word-break: keep-all; text-wrap: balance; }
+
+/* 대비 AA 보정(2026-10-24 실측): Bootstrap .text-secondary(#6c757d)가 #F6F7FB 위에서 4.38:1 → 5.9:1 */
+.text-secondary { color: #55606d !important; }
+.btn-outline-secondary { --bs-btn-color: #55606d; --bs-btn-border-color: #55606d; --bs-btn-hover-bg: #55606d; --bs-btn-hover-border-color: #55606d; --bs-btn-hover-color: #fff; --bs-btn-active-bg: #444e5a; --bs-btn-active-border-color: #444e5a; --bs-btn-active-color: #fff; }

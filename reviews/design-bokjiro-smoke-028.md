@@ -30,3 +30,10 @@
 - 콘솔 에러 0. 헤더 검색(`q`) → `/resources?q=…` 동작(80건), 스크롤 시 위/아래 버튼 표시.
 - 회귀(재빌드 후): resource-search ALL PASS, match 20/20, age-hint FAIL 0, compare 10, link 4.
 - 미검증: 결과(`/match/result`) 화면 시각 비교, 입력 7단계 완주 캡처, 대비 AA 수치 측정, 키보드·스크린리더, 원본 대비 픽셀 비교. Codex 리뷰는 세션 종료로 받지 못함(R-028 미실시).
+
+## 2026-10-24 (오후) Claude 추가 실측 — 새 Codex 탭 R-028이 REVISE(브라우저 검증 일부만 수행)한 뒤
+- **대비 AA 실측**: 8개 화면(`/`, `/match`, `/match/result`, `/resources`, `/resources/181`, `?lang=en`, `?lang=zh`, `?lang=vi`) × 1280·390px에서 서로 다른 글자색·배경·크기 조합 398쌍 측정. 처음에는 Bootstrap `.text-secondary`(#6c757d)가 #F6F7FB 위에서 4.38:1로 미달, `.btn-outline-secondary`도 동일 색 → `#55606d`(약 5.9:1)로 보정(`bokji.css` 끝, v=16). 보정 후 **0건 미달**.
+- **390px 가로 넘침**: 위 16개 조합 scrollWidth = 너비(넘침 0). 글자 125% 확대(iframe, `/resources`·`/match/result`·`/resources/181` @390)도 390.
+- **키보드·모션·인쇄 구조**: `:focus-visible` 규칙 9, `prefers-reduced-motion` 2, `@media print` 3, 본문 건너뛰기 링크 존재. 실제 Tab 순회·스크린리더 발화는 미검증.
+- **회귀 재실행**: `resource-search-regression.py` ALL PASS(인기순 검사를 조회 표본 30건 이상/미만 두 경우 모두 맞게 수정 — 브라우징으로 D 이벤트가 46건이 되어 기존 '표본 부족 대체' 단언이 깨졌던 것, 코드 결함 아님), match 20/20, age-hint FAIL 0, compare 10, link 4, `./mvnw -q test` 통과.
+- 남은 격차: 원본 픽셀 비교 없음(색·구조 참고만), 결과 화면의 원본 대응 화면 없음, 인쇄 미리보기 실캡처 없음.
