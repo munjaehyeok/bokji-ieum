@@ -501,3 +501,48 @@ body { background: #fff; color: var(--bk-text); }
 .bk-how, .bk-how-card h3, .bk-how-card p, .bk-mock-opt, .bk-mock-tag { word-break: keep-all; overflow-wrap: break-word; }
 .bk-chips { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .75rem; }
 .bk-chips .bk-chip { min-height: 64px; justify-content: center; margin: 0; }
+
+/* ===== R-035 라운드1: 토스페이먼츠식 슬림 1단 헤더 + 좌정렬 히어로 (기능은 그대로, 위치만 재배치) ===== */
+@media (min-width: 992px) {
+    .bk-site-header { display: flex; align-items: center; gap: 1.6rem; width: 100%; padding: 0 max(1.5rem, calc((100% - 1200px) / 2)); min-height: 60px; border-bottom: 1px solid var(--bk-line); box-sizing: border-box; }
+    .bk-site-header .bk-head-main { display: contents; }
+    .bk-site-header .bk-logo { order: 1; }
+    .bk-site-header .bk-primary-nav { order: 2; width: auto; margin: 0; min-height: 60px; border-top: 0; gap: 0; }
+    .bk-site-header .bk-primary-nav a { min-height: 60px; padding: 0 .9rem; font-weight: 500; font-size: .95rem; }
+    .bk-site-header .bk-primary-nav a[aria-current="page"] { font-weight: 700; }
+    .bk-site-header .bk-primary-nav a[aria-current="page"]::after { left: .9rem; right: .9rem; }
+    .bk-site-header .bk-nav-restart { display: none; }
+    .bk-site-header .bk-site-search { order: 3; margin-left: auto; width: 230px; }
+    .bk-site-header .bk-head-tools { order: 4; flex-direction: row; align-items: center; gap: .6rem; }
+}
+.bk-topbar { border-bottom: 1px solid var(--bk-line); }
+
+.bk-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 2rem; align-items: center; text-align: left; margin: 0 0 2rem; padding: clamp(2.5rem, 7vw, 5.5rem) clamp(1.25rem, 5vw, 4rem); border: 0; border-radius: 24px; background: var(--bk-tint); box-shadow: none; }
+.bk-hero > * { grid-column: 1; text-align: left; }
+.bk-hero .bk-hero-art { grid-column: 2; grid-row: 1 / span 7; width: min(240px, 28vw); margin: 0; opacity: .95; }
+.bk-hero h1 { margin: 0; max-width: 14ch; font-size: clamp(2.1rem, 4.6vw, 3rem); font-weight: 800; line-height: 1.3; letter-spacing: -.045em; text-align: left; color: #111; }
+.bk-hero .bk-sub { margin: 1rem 0 0; max-width: 32rem; text-align: left; color: var(--bk-muted); }
+.bk-hero .bk-cta { justify-content: flex-start; margin-top: 1.8rem; }
+.bk-hero .bk-cta .bk-start-btn { min-width: 0; min-height: 48px; padding: 0 1.3rem; border-radius: 10px; font-size: 1rem; }
+.bk-hero > p { text-align: left; }
+@media (max-width: 640px) {
+    .bk-hero { grid-template-columns: 1fr; }
+    .bk-hero .bk-hero-art { grid-column: 1; grid-row: auto; width: 150px; margin-bottom: 1rem; }
+    .bk-hero .bk-cta .bk-start-btn { flex: 1 1 100%; }
+}
+
+/* ===== R-035 라운드1: 질문·결과·탐색을 같은 가벼운 카드 언어로 (경계·그림자 축소, 위계는 여백과 글자 크기로) ===== */
+.bk-progress { padding: 0; border: 0; background: transparent; margin-bottom: 1.6rem; }
+.bk-progress-text { margin-left: auto; color: var(--bk-muted); font-weight: 600; }
+.bk-step.active { min-height: 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.bk-step h2 { margin-bottom: .6rem; }
+.bk-step .hint { color: var(--bk-muted); margin-bottom: 1.2rem; }
+.bk-choice { border-radius: 12px; border-width: 1px; border-color: var(--bk-ctl); box-shadow: none; }
+.bk-choice:has(input:checked) { border-width: 1.5px; box-shadow: none; }
+.bk-summary { background: var(--bk-tint); border: 0; border-radius: 14px; box-shadow: none; }
+.bk-group { background: transparent; border: 0; border-left: 0; padding: 0; margin: 2rem 0 .5rem; font-size: 1.15rem; color: var(--bk-text); }
+.bk-card, .bk-xcard { box-shadow: none; border-color: var(--bk-line); border-radius: 16px; }
+.bk-card:hover, .bk-xcard:hover { box-shadow: 0 6px 20px rgba(31, 36, 48, .08); transform: none; }
+.bk-card h3 { color: var(--bk-text); font-size: 1.1rem; }
+.bk-card:hover h3 { color: var(--bk-primary-dark); }
+.bk-explore-form { box-shadow: none; border-top-width: 1px; border-top-color: var(--bk-line); background: var(--bk-tint); border-radius: 16px; }

@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <c:set var="pageTitle"><spring:message code="landing.headline"/></c:set>
+<c:set var="pageWide" value="true"/>
 <%@ include file="common/top.jspf" %>
 
 <div class="bk-hero">

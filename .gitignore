@@ -15,3 +15,4 @@ src/main/resources/config.properties
 
 # Maven wrapper 다운로드 jar는 포함(팀원 Maven 설치 불필요) — 제외하지 않음
 bridge/.codex-tab
+reviews/ref-local/
