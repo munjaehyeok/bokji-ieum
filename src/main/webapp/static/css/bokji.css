@@ -546,3 +546,12 @@ body { background: #fff; color: var(--bk-text); }
 .bk-card h3 { color: var(--bk-text); font-size: 1.1rem; }
 .bk-card:hover h3 { color: var(--bk-primary-dark); }
 .bk-explore-form { box-shadow: none; border-top-width: 1px; border-top-color: var(--bk-line); background: var(--bk-tint); border-radius: 16px; }
+
+/* ===== R-036 라운드2: 열린 히어로 캔버스(틴트가 화면 폭 끝까지), 중국어·베트남어 제목 잘림 방지 ===== */
+.bk-hero { overflow: visible; border-radius: 0; padding-block: clamp(2rem, 5vw, 3.5rem); box-shadow: 0 0 0 100vmax var(--bk-tint); clip-path: inset(0 -100vmax); }
+.bk-hero h1 { overflow-wrap: anywhere; }
+html[lang="zh"] .bk-hero h1, html[lang="vi"] .bk-hero h1, html[lang="en"] .bk-hero h1 { word-break: normal; max-width: 18ch; }
+html[lang="zh"] .bk-hero h1 { max-width: 12em; }
+html[lang="zh"] .bk-how, html[lang="zh"] .bk-how-card h3, html[lang="zh"] .bk-how-card p,
+html[lang="vi"] .bk-how, html[lang="vi"] .bk-how-card h3, html[lang="vi"] .bk-how-card p,
+html[lang="en"] .bk-how, html[lang="en"] .bk-how-card h3, html[lang="en"] .bk-how-card p { word-break: normal; overflow-wrap: break-word; }
