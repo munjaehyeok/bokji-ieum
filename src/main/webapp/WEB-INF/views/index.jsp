@@ -20,12 +20,50 @@
     </c:if>
 </div>
 
+<section class="bk-how" aria-labelledby="bkHowT">
+    <h2 id="bkHowT"><spring:message code="home.how.t"/></h2>
+    <p class="bk-how-sub"><spring:message code="home.how.s"/></p>
+    <div class="bk-how-grid">
+        <article class="bk-how-card">
+            <span class="bk-pill"><spring:message code="home.how.ex"/> 1</span>
+            <h3><spring:message code="home.how.h1"/></h3>
+            <p><spring:message code="home.how.d1"/></p>
+            <div class="bk-mock" aria-hidden="true">
+                <small><spring:message code="home.how.m1a"/></small>
+                <div class="bk-mock-num"><spring:message code="home.how.m1b"/></div>
+                <div class="bk-mock-opt"><spring:message code="home.how.m1c"/></div>
+            </div>
+        </article>
+        <article class="bk-how-card">
+            <span class="bk-pill"><spring:message code="home.how.ex"/> 2</span>
+            <h3><spring:message code="home.how.h2"/></h3>
+            <p><spring:message code="home.how.d2"/></p>
+            <div class="bk-mock" aria-hidden="true">
+                <div class="bk-mock-opt on"><spring:message code="home.how.m2a"/></div>
+                <div class="bk-mock-opt"><spring:message code="home.how.m2b"/></div>
+                <div class="bk-mock-opt"><spring:message code="home.how.m2c"/></div>
+            </div>
+        </article>
+        <article class="bk-how-card">
+            <span class="bk-pill"><spring:message code="home.how.ex"/> 3</span>
+            <h3><spring:message code="home.how.h3"/></h3>
+            <p><spring:message code="home.how.d3"/></p>
+            <div class="bk-mock" aria-hidden="true">
+                <div class="bk-mock-tag ok">&#10003; <spring:message code="home.how.m3a"/></div>
+                <div class="bk-mock-tag warn">&#9888; <spring:message code="home.how.m3b"/></div>
+            </div>
+        </article>
+    </div>
+</section>
+
 <hr>
 <section aria-label="<spring:message code='landing.examples'/>" class="text-center">
     <p class="fw-bold mb-2"><spring:message code="landing.examples"/></p>
+    <div class="bk-chips">
     <span class="bk-chip"><spring:message code="landing.chip1"/></span>
     <span class="bk-chip"><spring:message code="landing.chip2"/></span>
     <span class="bk-chip"><spring:message code="landing.chip3"/></span>
+    </div>
 </section>
 
 <%@ include file="common/foot.jspf" %>
