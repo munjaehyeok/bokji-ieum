@@ -17,7 +17,7 @@
     <button type="button" id="bkScrollBottom" aria-label="<spring:message code='nav.scrollBottom'/>" title="<spring:message code='nav.scrollBottom'/>" hidden><span aria-hidden="true">↓</span></button>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="${ctx}/static/js/bokji.js?v=3"></script>
+<script src="${ctx}/static/js/bokji.js?v=4"></script>
 <script src="${ctx}/static/js/resource-favorites.js?v=1"></script>
 </body>
 </html>

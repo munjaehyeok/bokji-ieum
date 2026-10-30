@@ -60,11 +60,12 @@
 <p class="bk-date mb-3"><spring:message code="result.scopeNote"/></p>
 
 <h1 class="fs-4 fw-bold" id="bkCount" aria-live="polite"></h1>
+<p class="bk-date mb-3"><spring:message code="result.finalCheck"/></p>
 
 <%-- 결과 패널 (서버 렌더 초기값, 탭·필터 전환은 AJAX) --%>
 <c:forEach var="entry" items="${resultsByMember}" varStatus="st">
     <div class="bk-pane" id="bkPane${st.index}" data-member="${st.index}"
-         data-count="${fn:length(entry.value)}" ${st.index > 0 ? 'hidden' : ''}>
+         data-count="${fn:length(entry.value)}" data-check="<c:set var="k" value="0"/><c:forEach var="r0" items="${entry.value}"><c:if test="${not empty r0.needCheckLabels}"><c:set var="k" value="${k + 1}"/></c:if></c:forEach>${k}" ${st.index > 0 ? 'hidden' : ''}>
         <c:if test="${empty entry.value}">
             <p class="text-secondary py-4"><spring:message code="result.empty"/></p>
         </c:if>
@@ -124,7 +125,7 @@ window.BK_RESULT = {
     category: '<c:out value="${category}"/>',
     sort: '<c:out value="${sort}"/>',
     msg: {
-        count: '<spring:message code="result.count" arguments="@N@" javaScriptEscape="true"/>',
+        count: '<spring:message code="result.countMK" javaScriptEscape="true"/>',
         matched: '<spring:message code="result.matched" javaScriptEscape="true"/>',
         needCheck: '<spring:message code="result.needCheck" javaScriptEscape="true"/>',
         baseDate: '<spring:message code="result.baseDate" javaScriptEscape="true"/>',

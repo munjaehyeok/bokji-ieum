@@ -76,6 +76,8 @@
             stepLive.textContent = txt;
             prevBtn.style.visibility = cur === 1 ? 'hidden' : 'visible';
             nextBtn.hidden = cur === 7;
+            var nowBtn = document.getElementById('bkNow');
+            if (nowBtn) nowBtn.hidden = cur === 7;
             submitBtn.hidden = cur !== 7;
             if (focusHeading) {
                 var h = form.querySelector('.bk-step.active h2');
@@ -151,7 +153,8 @@
         if (err) {
             show(err.dataset.error === 'memberBirthYear' ? 7 : 1, false);
         } else {
-            show(1, false);
+            var sp = /[?&]step=([1-7])\b/.exec(location.search);
+            show(sp ? parseInt(sp[1], 10) : 1, false);
         }
     }
 
@@ -168,8 +171,8 @@
                 return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
             });
         }
-        function setCount(n) {
-            countEl.textContent = R.msg.count.replace('@N@', n);
+        function setCount(n, k) {
+            countEl.textContent = R.msg.count.replace('@M@', n - k).replace('@K@', k);
         }
         function activePane() {
             return document.getElementById('bkPane' + curMember);
@@ -221,14 +224,14 @@
                     pane.innerHTML = rows.length
                         ? listHtml(rows)
                         : '<p class="text-secondary py-4">' + esc(R.msg.empty) + '</p>';
-                    setCount(rows.length);
+                    setCount(rows.length, rows.filter(function (r) { return r.needCheckLabels && r.needCheckLabels.length; }).length);
                 })
                 .catch(function () {
                     pane.innerHTML = '<p class="text-danger py-4">' + esc(R.msg.fail) + '</p>';
                 });
         }
 
-        setCount(activePane() ? activePane().dataset.count : 0);
+        setCount(activePane() ? +activePane().dataset.count : 0, activePane() ? +activePane().dataset.check : 0);
 
         var tabs = document.getElementById('bkMemberTabs');
         if (tabs) {

@@ -53,6 +53,7 @@
     <%-- Q3 가구 상황 --%>
     <section class="bk-step" data-step="3" data-q="3">
         <h2 tabindex="-1"><spring:message code="form.q3"/></h2>
+        <p class="hint"><spring:message code="form.q3.why"/></p>
         <div class="bk-choice-grid" data-none-group>
             <c:forTokens items="ONE,SPAR,MCHD,MCUL,NKOR,PREG,NONE" delims="," var="hh">
                 <label class="bk-choice">
@@ -67,6 +68,7 @@
     <%-- Q4 소득 --%>
     <section class="bk-step" data-step="4" data-q="4">
         <h2 tabindex="-1"><spring:message code="form.q4"/></h2>
+        <p class="hint"><spring:message code="form.q4.why"/></p>
         <div class="bk-choice-grid flex-column align-items-stretch" style="max-width: 420px">
             <c:forEach var="r" begin="0" end="4">
                 <label class="bk-choice">
@@ -192,6 +194,7 @@
             <button type="submit" class="btn btn-bk" id="bkSubmit"><spring:message code="form.submit"/></button>
         </div>
     </div>
+    <p class="bk-now-row"><button type="submit" class="bk-now" id="bkNow"><spring:message code="form.now"/></button></p>
     <p class="text-secondary mt-3"><spring:message code="landing.privacy"/></p>
 </form>
 

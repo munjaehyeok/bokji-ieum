@@ -8,10 +8,12 @@
     <svg class="bk-hero-art" aria-hidden="true"><use href="${ctx}/static/img/icons.svg#hero"/></svg>
     <h1><spring:message code="landing.headline"/></h1>
     <p class="bk-sub"><spring:message code="landing.sub" arguments="${resourceCount}"/></p>
-    <a class="btn btn-bk bk-start-btn" href="${ctx}/match">
-        <spring:message code="landing.start"/> <span class="bk-arrow">&rarr;</span>
-    </a>
-    <p class="mt-3"><a class="bk-browse-link" href="${ctx}/resources"><spring:message code="landing.browse"/> <span class="bk-arrow">&rarr;</span></a></p>
+    <div class="bk-cta">
+        <a class="btn btn-bk bk-start-btn" href="${ctx}/match"><spring:message code="landing.startShort"/></a>
+        <a class="btn btn-bk-outline bk-start-btn" href="${ctx}/resources"><spring:message code="landing.browseShort"/></a>
+    </div>
+    <p class="mt-2"><a class="bk-browse-link" href="${ctx}/match?step=7"><spring:message code="landing.family"/></a></p>
+    <p class="mt-2 text-secondary small"><spring:message code="landing.steps"/></p>
     <p class="mt-3 text-secondary"><spring:message code="landing.privacy"/></p>
     <c:if test="${langCode != 'ko'}">
         <p class="mt-2 small text-secondary"><spring:message code="mt.notice"/></p>

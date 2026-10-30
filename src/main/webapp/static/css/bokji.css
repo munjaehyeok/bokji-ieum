@@ -460,3 +460,23 @@ section[aria-label=examples] > p { grid-column: 1 / -1; margin: 0 0 .2rem !impor
 /* 대비 AA 보정(2026-10-24 실측): Bootstrap .text-secondary(#6c757d)가 #F6F7FB 위에서 4.38:1 → 5.9:1 */
 .text-secondary { color: #55606d !important; }
 .btn-outline-secondary { --bs-btn-color: #55606d; --bs-btn-border-color: #55606d; --bs-btn-hover-bg: #55606d; --bs-btn-hover-border-color: #55606d; --bs-btn-hover-color: #fff; --bs-btn-active-bg: #444e5a; --bs-btn-active-border-color: #444e5a; --bs-btn-active-color: #fff; }
+
+/* ===== T-029 토스식 UX: 흰 바탕 단일 테마, 큰 버튼, 상태 아이콘 ===== */
+:root { --bk-bg: #FFFFFF; --bk-primary-pale: #FFFFFF; --bk-text: #1F2430; --bk-muted: #5B6472; --bk-line: #E3E6EC; --bk-ctl: #8A93A3; --bk-tint: #F4F6FA; }
+body { background: #fff; color: var(--bk-text); }
+.bk-hero { background: #fff; border-color: var(--bk-line); box-shadow: none; }
+.bk-cta { display: flex; justify-content: center; gap: .75rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.bk-cta .bk-start-btn { margin: 0; min-width: 220px; min-height: 56px; border-radius: 14px; font-weight: 700; }
+.bk-cta .btn-bk-outline { border: 1.5px solid var(--bk-primary); background: var(--bk-primary-soft); }
+.bk-browse-link { color: var(--bk-muted); text-decoration: underline; }
+.bk-choice { min-height: 56px; border: 1.5px solid var(--bk-ctl); border-radius: 14px; }
+.bk-step-nav .btn { min-height: 56px; border-radius: 14px; font-weight: 700; }
+.bk-step h2 { font-size: 1.6rem; line-height: 1.4; text-wrap: balance; }
+.bk-step input[type=number].form-control-lg { min-height: 68px; font-size: 1.8rem; font-weight: 700; border: 2px solid var(--bk-primary); border-radius: 14px; }
+.bk-now-row { text-align: center; margin: 1rem 0 0; }
+.bk-now { background: none; border: 0; padding: .5rem; min-height: 44px; color: var(--bk-muted); text-decoration: underline; font-size: .95rem; }
+.bk-now:hover, .bk-now:focus-visible { color: var(--bk-primary-dark); }
+.bk-card { border-color: var(--bk-line); }
+.bk-tag-match::before { content: "✓ "; }
+.bk-tag-check::before { content: "⚠ "; }
+.bk-tag-check { font-weight: 700; }
