@@ -7,8 +7,8 @@
 ## 검토 범위·방법
 
 - `AGENTS.md`, `bridge/BRIEF.md`, `bridge/R-042-PPT남은칸-재검증.md`와 R-041 리뷰를 기준으로 검토했다. 앞서 읽은 Presentations 스킬의 읽기 전용 검토 지침을 계속 적용했다.
-- 대상: `/Users/jhmun/Desktop/6팀 발표자료_캡처삽입.pptx`, Desktop의 `s17_db.png`·`s9_bokjion.png`, 실제 `resource-mapper.xml`.
-- `/Users/jhmun/miniconda3/bin/python3 -I`의 python-pptx로 읽기만 했다. 두 PNG를 직접 열고 텍스트·기하·crop·비율·해시·SQL 의미를 대조했다. 이 리뷰 파일 외에는 수정·삭제하지 않았다.
+- 대상: `~/Desktop/6팀 발표자료_캡처삽입.pptx`, Desktop의 `s17_db.png`·`s9_bokjion.png`, 실제 `resource-mapper.xml`.
+- `<python>/bin/python3 -I`의 python-pptx로 읽기만 했다. 두 PNG를 직접 열고 텍스트·기하·crop·비율·해시·SQL 의미를 대조했다. 이 리뷰 파일 외에는 수정·삭제하지 않았다.
 - PowerPoint/LibreOffice 렌더·실서비스/복지온 대화 재실행·실행 중 DB 조회는 하지 않았다. 폰트 적합성은 대체 폰트의 정적 추정이다.
 - 10/10 팀 집계의 원기록 및 복지온 이용조건 확인은 요청에 따라 이번 검증 범위 밖이다. 해당 확인을 완료한 것으로 승인하지 않는다. 대외 공개 전 이용조건 확인을 사용자에게 전달한다는 R-042의 후속 사항을 유지한다.
 

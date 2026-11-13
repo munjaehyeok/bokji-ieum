@@ -7,8 +7,8 @@
 ## 범위·방법
 
 - `AGENTS.md`, `bridge/BRIEF.md`, `bridge/R-041-PPT남은칸-검증.md`를 읽고 기존 읽기 전용 리뷰 기준과 Presentations 스킬을 적용했다.
-- 대상: `/Users/jhmun/Desktop/6팀 발표자료_캡처삽입.pptx`, 새 PNG 두 장, 원본 `/Users/jhmun/Downloads/6팀 발표자료.pptx`, 원본 복지온 JPG, 실제 매퍼·서비스 및 저장소 SQL.
-- `/Users/jhmun/miniconda3/bin/python3 -I`의 python-pptx로 읽기만 했다. 새 PNG 두 장과 원본 복지온 JPG를 직접 열었다. PowerPoint/LibreOffice 렌더·실서비스/복지온 대화 재실행·운영 DB 조회는 하지 않았다.
+- 대상: `~/Desktop/6팀 발표자료_캡처삽입.pptx`, 새 PNG 두 장, 원본 `~/Downloads/6팀 발표자료.pptx`, 원본 복지온 JPG, 실제 매퍼·서비스 및 저장소 SQL.
+- `<python>/bin/python3 -I`의 python-pptx로 읽기만 했다. 새 PNG 두 장과 원본 복지온 JPG를 직접 열었다. PowerPoint/LibreOffice 렌더·실서비스/복지온 대화 재실행·운영 DB 조회는 하지 않았다.
 - 저작권 위험은 시흥시 공식 정책과 법령·정부 안내를 웹에서 확인했다. 복지온 URL 본문은 도구의 시간 초과로 가져오지 못해 해당 챗봇 화면의 개별 이용조건은 미확인이다.
 - 이 리뷰 파일 외에는 수정·삭제하지 않았다. 이전 R-040 승인 대상 전체를 다시 심사하거나 다른 슬라이드의 기존 잔존 문구로 범위를 넓히지 않았다.
 

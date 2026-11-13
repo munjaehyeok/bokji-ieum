@@ -7,8 +7,8 @@
 ## 범위와 검증 방식
 
 - `AGENTS.md`, `bridge/BRIEF.md`, `bridge/R-039-PPT캡처삽입-재검증.md`, `REVIEW.md` 및 앞선 R-038 리뷰를 기준으로 검토했다. Presentations 스킬의 읽기 전용 검토 지침을 계속 적용했다.
-- 대상: `/Users/jhmun/Desktop/6팀 발표자료_캡처삽입.pptx`, `/Users/jhmun/Desktop/복지이음_캡처/`의 PNG 9개. 요청 문서의 `scratchpad/shots2/` 사본과 Desktop PNG는 전부 바이트 단위로 같았다.
-- `/Users/jhmun/miniconda3/bin/python3 -I`의 python-pptx로 덱을 읽고 원본 슬롯·경계·crop·비율·텍스트·삽입 이미지 해시를 검사했다. PNG 9개를 모두 직접 열었고, 가장자리 픽셀과 상세 글자의 실제 픽셀 높이도 측정했다.
+- 대상: `~/Desktop/6팀 발표자료_캡처삽입.pptx`, `~/Desktop/복지이음_캡처/`의 PNG 9개. 요청 문서의 `scratchpad/shots2/` 사본과 Desktop PNG는 전부 바이트 단위로 같았다.
+- `<python>/bin/python3 -I`의 python-pptx로 덱을 읽고 원본 슬롯·경계·crop·비율·텍스트·삽입 이미지 해시를 검사했다. PNG 9개를 모두 직접 열었고, 가장자리 픽셀과 상세 글자의 실제 픽셀 높이도 측정했다.
 - PowerPoint/LibreOffice에서 슬라이드를 렌더하지 않았다. 아래 가독성 수치는 PNG와 PPT 배치 크기에서 계산한 값이며, 실제 PowerPoint 렌더를 관찰했다는 뜻이 아니다.
 - R-038의 “다른 슬라이드 잔존 문구”는 R-039가 범위 밖으로 명시했다. 수정·재지적하지 않으며, 이 판정은 덱 전체의 제출 승인이나 병합 승인을 뜻하지 않는다.
 - 이 리뷰 파일 외에는 수정·삭제하지 않았다. 원본 PPTX와 검토 대상 PPTX의 검토 전후 SHA-256도 동일했다.

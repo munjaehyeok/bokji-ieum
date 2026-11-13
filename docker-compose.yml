@@ -14,6 +14,9 @@ services:
       - --collation-server=utf8mb4_unicode_ci
     volumes:
       - bokji-mysql-data:/var/lib/mysql
+      # 빈 볼륨으로 처음 뜰 때 스키마·시드·갱신 SQL을 순서대로 자동 적재 (docker/initdb/01-load-data.sh)
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+      - ./src/main/resources/sql:/sql:ro
 
 volumes:
   bokji-mysql-data:

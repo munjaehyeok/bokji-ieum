@@ -24,16 +24,9 @@ JSP/JSTL · Spring MVC 5.3 (**비-Boot**, web.xml) · MyBatis 3.5 · MySQL 8 (Do
 
 ```bash
 git clone <repo-url> && cd bokji-ieum
-docker compose up -d                                   # MySQL 8 기동
+docker compose up -d                                   # MySQL 8 기동 + 스키마·데이터 792건 자동 적재(최초 1회, 1~2분)
 cp src/main/resources/config.properties.example src/main/resources/config.properties
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/schema.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/seed.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/api-update-20261014.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/facility-refresh-20261014.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/gov24-update-20261014.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-tagging.sql
-docker exec -i bokji-mysql mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < src/main/resources/sql/reliability-provenance.sql
-./mvnw cargo:run                                       # http://localhost:8080
+./mvnw cargo:run                                       # http://localhost:8080  (Windows: mvnw.cmd)
 ```
 
 - 관리자: `/admin/login` — 첫 기동 시 환경변수 `BOKJI_ADMIN_INITIAL_PASSWORD`가 있으면 `admin` 계정을 그 값으로 생성한다(값이 없으면 계정을 만들지 않음, 기존 계정은 변경하지 않음). 예: `BOKJI_ADMIN_INITIAL_PASSWORD=<임의값> ./mvnw cargo:run`

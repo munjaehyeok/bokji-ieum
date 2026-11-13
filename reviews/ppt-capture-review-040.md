@@ -7,8 +7,8 @@
 ## 검토 범위·제약
 
 - `AGENTS.md`, `bridge/BRIEF.md`, `bridge/R-040-PPT캡처삽입-재검증2.md`와 R-038·039 리뷰의 확인 결과를 기준으로 검토했다. 앞서 읽은 Presentations 스킬의 읽기 전용 지침을 계속 적용했다.
-- 대상: `/Users/jhmun/Desktop/6팀 발표자료_캡처삽입.pptx`, `/Users/jhmun/Desktop/복지이음_캡처/`의 PNG 9개와 원본 `/Users/jhmun/Downloads/6팀 발표자료.pptx`의 슬롯.
-- `/Users/jhmun/miniconda3/bin/python3 -I`에서 python-pptx로 읽기만 했다. PNG 9개를 모두 직접 열고, 기하·crop·비율·해시·가장자리 픽셀·일부 글자의 픽셀 높이를 검사했다.
+- 대상: `~/Desktop/6팀 발표자료_캡처삽입.pptx`, `~/Desktop/복지이음_캡처/`의 PNG 9개와 원본 `~/Downloads/6팀 발표자료.pptx`의 슬롯.
+- `<python>/bin/python3 -I`에서 python-pptx로 읽기만 했다. PNG 9개를 모두 직접 열고, 기하·crop·비율·해시·가장자리 픽셀·일부 글자의 픽셀 높이를 검사했다.
 - 실제 PowerPoint/LibreOffice 렌더와 실서비스 브라우저 재실행은 하지 않았다. 화면을 좁히거나 행·필터를 접은 촬영 과정은 재현하지 않았고, 산출물 및 앞선 전체 화면과 대조했다. 따라서 앱 전체가 변경되지 않았다는 보증까지 포함하지 않는다.
 - 이 리뷰 파일 외에는 수정·삭제하지 않았다. 다른 슬라이드의 잔존 문구는 R-038 목록으로 남기며 이번 승인 범위에 포함하지 않는다. 사용자의 최종 PowerPoint 확인·제출 승인·병합 승인은 별개다.
 - 이번이 마지막 재리뷰다. 추가 Codex 재리뷰를 요구하지 않는다.

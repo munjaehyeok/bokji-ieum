@@ -1,6 +1,6 @@
 # R-038 발표자료 캡처 삽입·문구 수정 검증 (읽기 전용, 라운드 1)
 사용자 요청: 6팀 발표자료 PPT에 우리 서버 캡처를 넣었더니 "짤려서 들어간다" → 슬롯 비율에 맞춰 재캡처(잘림 없음)하고, 슬라이드 설명 문구를 실제 화면에 맞게 고침. 사람(사용자)이 PowerPoint로 최종 확인함. 이 환경엔 LibreOffice가 없어 렌더 불가 → 아래는 **기하·텍스트·이미지 대조**로 검증.
-대상: /Users/jhmun/Desktop/6팀 발표자료_캡처삽입.pptx (원본 /Users/jhmun/Downloads/6팀 발표자료.pptx 는 무변경), 캡처 PNG: /private/tmp/claude-501/-Users-jhmun-orca-workspaces-bokji-ieum-argonaut/5efbcbdd-f5f0-4023-8a2a-c626cde71d5c/scratchpad/shots2/ (같은 파일이 ~/Desktop/복지이음_캡처/). 편집한 슬라이드: 13, 15, 17, 18. 읽기 전용: python-pptx(python3 -I)로 열어 확인만, 어떤 파일도 수정 금지, 응답은 reviews/ppt-capture-review-038.md.
+대상: ~/Desktop/6팀 발표자료_캡처삽입.pptx (원본 ~/Downloads/6팀 발표자료.pptx 는 무변경), 캡처 PNG: <tmp> (같은 파일이 ~/Desktop/복지이음_캡처/). 편집한 슬라이드: 13, 15, 17, 18. 읽기 전용: python-pptx(python3 -I)로 열어 확인만, 어떤 파일도 수정 금지, 응답은 reviews/ppt-capture-review-038.md.
 검증 항목:
 1) 그림 4개 슬라이드(13: 3장, 15: 3장, 17: 2장, 18: 1장)의 그림이 해당 박스(원본 placeholder 영역) 안에 있고 슬라이드 경계를 넘지 않는지, srcRect(자르기) 없음, 그림 가로세로비 = PNG 가로세로비(왜곡·잘림 없음).
 2) '[사진 자리]'·'캡처 화면 또는 영상 썸네일' 같은 자리 문구가 편집한 슬라이드에서 남아 있는지(슬라이드 17 오른쪽 '[사진 자리] 판정 로직·DB', 19의 전·후 비교, 9의 복지온 캡처는 의도적으로 남김).
