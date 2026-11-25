@@ -85,19 +85,20 @@ op.open(base + '/match', urllib.parse.urlencode(dict(incomeRank=0, disability='U
 rows = json.load(op.open(base + '/match/result/list?member=0'))
 check('3 연령 모름: 결과가 비어 있지 않고 힌트 없음', len(rows) > 0 and not any(hint(r) for r in rows), str(len(rows)))
 
-# 3b) 통제 사례: id=309(기관명 '아동발달지원센터' + 성인 대상)는 성인에게 힌트 없음
+# 3b) 통제 사례: 이름에 집단어(아동 등)+'성인'이 함께 든 행은 성인에게 힌트 없음. 2025판에는 옛 id=309 사례('아동발달지원센터 성인 심리검사 및 상담')가 없어 이름으로 찾고, 없으면 SKIP.
 r30 = match(30)
-r309 = [r for r in r30 if r['resourceId'] == 309]
-check('3b 오탐 사례 id=309 성인(30세): 노출되고 힌트 없음', len(r309) == 1 and not hint(r309[0]), str(r309 and r309[0]['needCheckLabels']))
+adult = [r for r in r30 if '성인' in r['displayName'] and any(w in r['displayName'] for ws in GROUPS for w in ws)]
+if adult: check('3b 이름에 집단어+성인 행 성인(30세): 힌트 없음', all(not hint(r) for r in adult), str([nm(r) for r in adult if hint(r)][:3]))
+else: print('SKIP 3b 이름에 집단어+성인이 든 행이 2025판 시드에 없음(옛 id=309 사례 소멸); 성인 억제는 4d·6이 계산값으로 검증')
 
 # 3c) 노출 불변: AGE_HINT 도입 전 측정값(docs/검증/필터유효성-측정.md)과 같아야 한다
-# 2026-10-23: id181(R-024)·479·755(R-025) F 오태깅 해제로 내국인(K) 입력 노출 증가 — 기대값 갱신(변경 전 532/482/463/529/377; 80세는 755만 +1; R-026 다문화가족 5건 해제로 추가 증가)
-BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 540),
-        ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 483),
-        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 471),
-        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 537),
-        ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 452),
-        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 384)]
+# 2025판 교체(901건): 건수는 새 데이터 실측으로 재설정(아래 옛 주석은 2022판 이력). 2026-10-23: id181(R-024)·479·755(R-025) F 오태깅 해제로 내국인(K) 입력 노출 증가 — 기대값 갱신(변경 전 532/482/463/529/377; 80세는 755만 +1; R-026 다문화가족 5건 해제로 추가 증가)
+BASE = [('1990년생 전부모름', dict(birthYear=1990, incomeRank=0, disability='U', nationality='K'), 729),
+        ('80세 수급 독거', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K', householdTypes='ONE'), 660),
+        ('8세 아동', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), 686),
+        ('45세 중증장애', dict(birthYear=1981, incomeRank=1, disability='Y', nationality='K'), 720),
+        ('30세 외국인', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), 649),
+        ('40세 일반', dict(birthYear=1986, incomeRank=4, disability='N', nationality='K'), 595)]
 for label, c, n in BASE:
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
@@ -105,13 +106,15 @@ for label, c, n in BASE:
     check(f'3c 노출 불변 {label}: {n}건', got == n, f'{got}')
 
 # 3c-2) F 오태깅 해제분이 내국인(K) 입력에서 id 단위로 실제 노출되고 외국인(F) 입력에도 유지되는가
-for label, c, want in [('8세 K', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), {181, 479, 755}),
-                       ('80세 K', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K'), {181, 755}),
-                       ('30세 K 다문화', dict(birthYear=1996, incomeRank=0, disability='N', nationality='K'), {100, 103, 104, 260, 530}),
-                       ('30세 F', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), {100, 103, 104, 260, 530, 755, 479})]:
+# id 하드코딩 금지: 2025판에서 같은 성격(국적 필드 비움)의 행을 이름으로 대응
+MC = {'다문화가족 서포터즈사업', '결혼이민자가족코칭상담사파견사업', '다문화가족 동아리모임', '다문화가족 방문교육사업'}
+for label, c, want in [('8세 K', dict(birthYear=2018, incomeRank=3, disability='N', nationality='K'), {'고위험 임산부 의료비 지원사업', '이주배경청소년 꿈키움네트워크 사업'}),
+                       ('80세 K', dict(birthYear=1946, incomeRank=1, disability='N', nationality='K'), {'고위험 임산부 의료비 지원사업'}),
+                       ('30세 K 다문화', dict(birthYear=1996, incomeRank=0, disability='N', nationality='K'), MC),
+                       ('30세 F', dict(birthYear=1996, incomeRank=0, disability='N', nationality='F'), MC | {'고위험 임산부 의료비 지원사업'})]:  # 꿈키움은 9~24세 한정이라 30세 제외
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     op.open(base + '/match', urllib.parse.urlencode(c).encode()).read()
-    got = {r['resourceId'] for r in json.load(op.open(base + '/match/result/list?member=0'))}
+    got = {r['displayName'] for r in json.load(op.open(base + '/match/result/list?member=0'))}
     check(f'3c-2 F 해제분 노출 {label}', want <= got, str(sorted(want - got)))
 
 # 3d) 안정 분할: 일치 묶음이 항상 먼저, 묶음 안 순서는 정렬 기준(추천순=score, 최신순=기준일) 유지

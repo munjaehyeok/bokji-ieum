@@ -74,6 +74,13 @@
     </section>
 </c:if>
 
+<%-- 조건 입력 없이 들어온 상세에도 '추가 조건' 안내(출처 병존·연도 한정 등)는 보여 준다 --%>
+<c:if test="${not judged and not empty resource.uncertainNote}">
+    <section class="bk-section">
+        <p class="mb-0"><strong><spring:message code="detail.note"/>:</strong> <c:out value="${resource.uncertainNote}"/></p>
+    </section>
+</c:if>
+
 <%-- 지원 기준 원문 --%>
 <c:if test="${not empty resource.eligibilityRaw}">
     <section class="bk-section">

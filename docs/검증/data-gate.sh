@@ -14,29 +14,32 @@ apply_fix(){ load reliability-tagging.sql; load reliability-provenance.sql; }
 
 M -e "drop database if exists bokji; create database bokji character set utf8mb4" >/dev/null || { echo "FAIL DB 초기화"; exit 1; }
 for f in schema.sql seed.sql api-update-20261014.sql facility-refresh-20261014.sql gov24-update-20261014.sql; do load $f; done
-ok "적재 후 활성 792건(보정 전)" "$(Q "select count(*) from resource where status='A'")" 792
+ok "적재 후 활성 901건(보정 전)" "$(Q "select count(*) from resource where status='A'")" 901
 BEFORE=$(snap); apply_fix; AFTER1=$(snap); apply_fix; AFTER2=$(snap)
 [ "$BEFORE" != "$AFTER1" ] && echo "PASS 보정 SQL이 데이터를 실제로 변경" || { echo "FAIL 보정 SQL 무변화"; FAIL=1; }
 ok "멱등(2회 적용 = 1회 적용)" "$AFTER2" "$AFTER1"
 
-# 정상 최신화(본문 대조 반영·확인일 갱신)가 있었던 뒤 재적용해도 보존되는가
-Q "update resource set data_base_date='2026-10-20' where resource_id=15; update resource set last_verified_date='2026-10-25' where resource_id=315; update resource set data_base_date='2026-10-21' where resource_id=750;" >/dev/null
+# id는 seed 행 순서라 데이터 교체 때마다 바뀐다 — 핵심 행은 이름으로 찾는다(2025판 seed 기준).
+# 정상 최신화(본문 대조 반영)가 있었던 뒤 재적용해도 보존되는가 — 보정 SQL이 실제로 기준일을 바꾸는(복원하는) 행 하나를 골라 검증한다.
+# reliability-provenance 가 2026-09-22 → 2025-05-31 로 복원하는 복지로 행(보조금24 매칭분)을 대상으로 삼는다.
+T=$(Q "select resource_id from resource where source_name like '복지로%' and data_base_date='2025-05-31' limit 1")
+ok "복원 패치 적용: 복지로 행 1건이 본문 기준일 2025-05-31로 복원" "$(Q "select count(*) from resource where source_name like '복지로%' and data_base_date='2025-05-31'")" 1
+Q "update resource set data_base_date='2026-10-20' where resource_id=$T" >/dev/null
 apply_fix
-ok "후속 정상 최신화 보존(15: 2026-10-20)" "$(Q "select data_base_date from resource where resource_id=15")" 2026-10-20
-ok "후속 정상 최신화 보존(315 확인일 2026-10-25)" "$(Q "select last_verified_date from resource where resource_id=315")" 2026-10-25
-ok "후속 정상 최신화 보존(750: 2026-10-21)" "$(Q "select data_base_date from resource where resource_id=750")" 2026-10-21
-Q "update resource set data_base_date='2022-12-31' where resource_id=15; update resource set last_verified_date=NULL where resource_id=315; update resource set data_base_date='2026-08-15' where resource_id=750;" >/dev/null   # 스냅샷 기준 상태로 복귀
-
+ok "후속 정상 최신화 보존(기준일 2026-10-20)" "$(Q "select data_base_date from resource where resource_id=$T")" 2026-10-20
+Q "update resource set data_base_date='2025-05-31' where resource_id=$T" >/dev/null   # 스냅샷 기준 상태로 복귀
+ok "seed 유래 행에 2025 외 기준일 없음" "$(Q "select count(*) from resource where source_name like '시흥시 복지자원%' and year(data_base_date)<>2025")" 0
+ok "id 대역: 안내서 행은 1001~1853(2022판 id와 불충돌)" "$(Q "select concat(min(resource_id),'-',max(resource_id)) from resource where source_name like '시흥시 복지자원%'")" "1001-1853"
+ok "출생축하금 지원: 안내서·복지로 병존 표기가 두 행 모두, 1회씩" "$(Q "select count(*) from resource where name='출생축하금 지원' and uncertain_note like '%다른 출처%' and (length(uncertain_note)-length(replace(uncertain_note,'다른 출처','')))/length('다른 출처')=1")" 2
 ok "데이터 분할: 활성−F전용 = 국적 NULL·K 수" "$(Q "select count(*)-sum(nationality='F') from resource where status='A'")" "$(Q "select count(*) from resource where status='A' and (nationality is null or nationality<>'F')")"
-ok "고정 수치 활성/PUB/PRV/F전용" "$(Q "select concat(count(*),'/',sum(provider_type='PUB'),'/',sum(provider_type='PRV'),'/',sum(nationality='F')) from resource where status='A'")" "792/246/546/15"
-ok "고정 수치 기준일 2026/2022" "$(Q "select concat(sum(year(data_base_date)=2026),'/',sum(year(data_base_date)=2022)) from resource where status='A'")" "47/744"
-ok "181 고위험임산부: F 태그 해제·메모 1회(R-024)" "$(Q "select concat(ifnull(nationality,'NULL'),'/',((length(uncertain_note)-length(replace(uncertain_note,'외국인 전용이 아님',''))) div length('외국인 전용이 아님'))) from resource where resource_id=181")" "NULL/1"
-ok "479·755: F 태그 해제(R-025)" "$(Q "select count(*) from resource where resource_id in (479,755) and nationality is null and uncertain_note like '%외국인 전용이 아님%'")" 2
-ok "100·103·104·260·530: F 태그 해제(R-026)" "$(Q "select count(*) from resource where resource_id in (100,103,104,260,530) and nationality is null and uncertain_note like '%다문화가족%'")" 5
+ok "고정 수치 활성/PUB/PRV/F전용" "$(Q "select concat(count(*),'/',sum(provider_type='PUB'),'/',sum(provider_type='PRV'),'/',sum(nationality='F')) from resource where status='A'")" "901/471/430/7"
+ok "고정 수치 출처별(안내서 853·API 24·보조금24 24)" "$(Q "select group_concat(c order by s) from (select source_name s, count(*) c from resource group by 1) t")" "24,24,853"
+ok "고정 수치 기준일 2026/2025/2022" "$(Q "select concat(sum(year(data_base_date)=2026),'/',sum(year(data_base_date)=2025),'/',sum(year(data_base_date)=2022)) from resource where status='A'")" "47/854/0"
+ok "고위험 임산부: F 태그 없음(R-024)" "$(Q "select count(*) from resource where name like '고위험 임산부%' and nationality is not null")" 0
+ok "국적 F 는 엄격 기준(외국인주민·결혼이민자 등)만 — 다문화가족·이주배경·내/외국인 표기 행은 F 아님(R-025·R-026)" "$(Q "select count(*) from resource where nationality='F' and source_name like '시흥시 복지자원%' and (name like '%다문화가족%' or eligibility_raw like '%내/외국인%' or eligibility_raw like '%비이주%' or eligibility_raw like '%선주민%')")" 0
 ok "집수리: 연령 태그 없음" "$(Q "select count(*) from resource where name='동네관리소 간단 집수리 지원' and age_min is not null")" 0
 ok "전동보장구보험: 연령·장애 태그 없음" "$(Q "select count(*) from resource where name='장애인 전동보장구 배상책임보험' and (age_min is not null or disability is not null)")" 0
 ok "효도수당: 연령 태그 없음" "$(Q "select count(*) from resource where name='효도수당' and age_min is not null")" 0
 ok "해제 3건 메모 보유·중복 없음" "$(Q "select count(*) from resource where name in ('동네관리소 간단 집수리 지원','장애인 전동보장구 배상책임보험','효도수당') and uncertain_note is not null and (length(uncertain_note)-length(replace(uncertain_note,' / ','')))/3 <= 1")" 3
-ok "자원 315: 본문 기준일 2022 복원·목록매칭 확인일 제거" "$(Q "select concat(data_base_date,'/',ifnull(last_verified_date,'NULL')) from resource where resource_id=315")" "2022-12-31/NULL"
-ok "seed 유래 7건 본문 기준일 2022" "$(Q "select count(*) from resource where resource_id in (15,65,66,67,200,234,315) and data_base_date<>'2022-12-31'")" 0
+ok "seed 유래 행 중 기준일 복원 대상(보조금24 매칭)이 2026 기준일로 남지 않음" "$(Q "select count(*) from resource where source_name like '시흥시 복지자원%' and year(data_base_date)=2026")" 0
 exit $FAIL

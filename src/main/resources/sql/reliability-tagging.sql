@@ -32,23 +32,16 @@ UPDATE resource
    SET nationality = NULL,
        uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 외국 국적자는 원칙적 지원제외(영주권·결혼이주 F5·F6·난민 등 예외 허용) — 외국인 전용이 아님, 확인 필요'),
        updated_at = NOW()
- WHERE resource_id = 181
+ WHERE resource_id = 1224
    AND name = '고위험 임산부 의료비 지원사업'
    AND nationality = 'F';
-
--- 신뢰도 보정 3 (2026-10-23, R-025): 'F(외국인 전용)'이나 원문이 내국인(비이주배경·선주민)도 대상으로 명시한 2건. 내국인 오제외 방지로 F 해제 + 확인필요.
--- 멱등: 이미 NULL이면 변화 없음. 원문 보존. (다문화·외국인 병기만 있는 나머지 F 행은 원문이 내국인 포함을 명시하지 않아 유지)
-UPDATE resource
-   SET nationality = NULL,
-       uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 원문이 비이주배경(내국인) 아동도 대상으로 명시 — 외국인 전용이 아님, 확인 필요'),
-       updated_at = NOW()
- WHERE resource_id = 479 AND name = '이주배경청소년문화지원사업' AND nationality = 'F';
+-- [이관 불가로 제거] UPDATE resource    SET nationality = NULL,        uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 원문이 비이주배경(내국인) 
 
 UPDATE resource
    SET nationality = NULL,
        uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 참여대상에 관내 선주민(내국인)이 포함 — 외국인 전용이 아님, 확인 필요'),
        updated_at = NOW()
- WHERE resource_id = 755 AND name = '결혼이민자 한국사회 이해증진' AND nationality = 'F';
+ WHERE resource_id = 1864 AND name = '결혼이민자 한국사회 이해증진' AND nationality = 'F';
 
 -- 신뢰도 보정 4 (2026-10-23, R-026): 대상을 '다문화가족/가정'으로 적은 F 행 5건. 다문화가족지원법상 다문화가족은 국적 취득자(귀화자) 가족을 포함하므로
 -- 한국 국적 구성원이 있을 수 있다 — F(외국인 전용)가 내국인을 제외하지 않도록 해제하고 확인필요로 남긴다. (결혼이민자·외국인만 명시한 행은 유지)
@@ -57,6 +50,14 @@ UPDATE resource
    SET nationality = NULL,
        uncertain_note = CONCAT_WS(' / ', uncertain_note, '국적: 대상이 다문화가족(귀화자 포함 가능) — 외국인 전용으로 단정할 수 없음, 확인 필요'),
        updated_at = NOW()
- WHERE resource_id IN (100, 103, 104, 260, 530)
+ WHERE resource_id IN (1595, 1624)
    AND name IN ('다문화가족 사례관리','다문화가족 서포터즈사업','다문화가정 통번역서비스','결혼이민자가족코칭상담사파견사업','다문화교육지원')
    AND nationality = 'F';
+
+-- 신뢰도 보정 5 (2026-11-25, R-047): 같은 이름 '출생축하금 지원'이 안내서(2025 하반기)와 복지로 API에 병존 — 대상(첫째/둘째 등)·적용 연도·금액이 서로 다를 수 있다.
+-- 멱등: 이미 표기돼 있으면 변화 없음. 원문은 보존.
+UPDATE resource
+   SET uncertain_note = CONCAT_WS(' / ', uncertain_note, '같은 이름의 안내가 다른 출처(안내서·복지로)에도 있음 — 대상(첫째/둘째 등)·적용 연도·금액이 다를 수 있어 담당부서 확인 필요'),
+       updated_at = NOW()
+ WHERE name = '출생축하금 지원'
+   AND (uncertain_note IS NULL OR uncertain_note NOT LIKE '%다른 출처%');

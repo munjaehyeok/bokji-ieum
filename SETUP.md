@@ -1,6 +1,6 @@
 # 다른 컴퓨터에서 실행하기 (처음부터 10분)
 
-이 저장소만 받으면 **소스·DB 스키마·시흥시 복지자원 데이터(792건)** 가 모두 들어 있어, 아래 순서대로 하면 그대로 실행된다.
+이 저장소만 받으면 **소스·DB 스키마·시흥시 복지자원 데이터(2025 하반기 종합안내서 기반, 활성 901건)** 가 모두 들어 있어, 아래 순서대로 하면 그대로 실행된다.
 저장소에 없는 것은 DB 접속 설정 파일(`config.properties`, 예시 파일에서 복사)과 공공데이터포털 인증키(서버 재수집에만 필요, 실행에는 불필요)뿐이다.
 
 ## 0. 필요한 것
@@ -21,12 +21,13 @@ cd bokji-ieum
 ## 2. DB 기동 + 데이터 자동 적재
 ```bash
 docker compose up -d
-docker logs -f bokji-mysql      # "[bokji] 적재 완료: 활성 자원 792건"이 보이면 끝 (Ctrl+C로 로그만 닫기, 1~2분)
+docker logs -f bokji-mysql      # "[bokji] 적재 완료: 활성 자원 901건"이 보이면 끝 (Ctrl+C로 로그만 닫기, 1~2분)
 ```
 - 컨테이너가 **빈 볼륨으로 처음 뜰 때 한 번만** `docker/initdb/01-load-data.sh`가 `src/main/resources/sql/`의 SQL 7개를 정해진 순서로 적재한다.
   순서: `schema → seed → api-update-20261014 → facility-refresh-20261014 → gov24-update-20261014 → reliability-tagging → reliability-provenance`
 - 접속 정보: `127.0.0.1:3306`, DB `bokji`, 계정 `bokji` / `bokji11` (로컬 개발용, 외부에 열지 말 것)
 - 다시 처음부터 적재하려면: `docker compose down -v && docker compose up -d` (**볼륨 삭제 = DB 초기화**)
+  ⚠ **볼륨 삭제는 그 DB의 모든 데이터를 지운다.** 이 저장소의 `bokji-mysql` 볼륨처럼 **버려도 되는 로컬 개발 DB에서만** 쓴다. 신고·관리자·이력 등 지켜야 할 데이터가 있는 DB(운영·공유 DB 포함)에는 `down -v`나 `schema.sql` 재적재를 하지 말고, 먼저 `mysqldump`로 백업한 뒤 팀과 전환 절차(구 id 1~792 → 새 id 1001~1901, 옛 찜·URL은 '없는 자원'이 됨)를 확인한다.
 
 ## 3. 접속 설정 파일
 ```bash
@@ -50,8 +51,8 @@ $env:BOKJI_ADMIN_INITIAL_PASSWORD='<직접 정한 값>'; .\mvnw.cmd cargo:run
 | 확인 | 기대 결과 |
 |---|---|
 | http://localhost:8080/ | "나에게 맞는 시흥시 복지, 1분 안에" 홈 |
-| http://localhost:8080/resources | 둘러보기 목록, 792건(공공 246·민간 546) |
-| `docker exec bokji-mysql mysql -ubokji -pbokji11 bokji -e "select count(*) from resource where status='A'"` | 792 |
+| http://localhost:8080/resources | 둘러보기 목록, 901건(공공 471·민간 430) |
+| `docker exec bokji-mysql mysql -ubokji -pbokji11 bokji -e "select count(*) from resource where status='A'"` | 901 |
 | `/match` → 출생연도만 입력 후 "지금 조건으로 결과 보기" | 결과 화면에 "어긋나는 점이 없는 자원 N건 · 추가 확인이 필요한 자원 K건" |
 | `./mvnw -q test` | 통과 |
 
@@ -75,12 +76,12 @@ done
 Windows PowerShell은 `<` 입력 리다이렉트가 안 되므로 Git Bash를 쓰거나 `mysql ... -e "source schema.sql"` 형태로 한 파일씩 실행한다.
 
 ## 문제 해결
-- **한글이 `???`로 보임**: 적재할 때 `--default-character-set=utf8mb4`가 빠졌다. `docker compose down -v` 후 다시 `up -d`.
-- **적재 로그가 안 보이고 792건이 아님**: 기존 볼륨이 있으면 초기화 스크립트가 다시 돌지 않는다. `docker compose down -v && docker compose up -d`.
+- **한글이 `???`로 보임**: 적재할 때 `--default-character-set=utf8mb4`가 빠졌다. (버려도 되는 로컬 DB라면) `docker compose down -v` 후 다시 `up -d`.
+- **적재 로그가 안 보이고 901건이 아님**: 기존 볼륨이 있으면 초기화 스크립트가 다시 돌지 않는다(예: 이전 792건 DB). 버려도 되는 로컬 DB라면 `docker compose down -v && docker compose up -d`, 아니면 새 볼륨·새 DB 이름으로 적재한다.
 - **포트 3306 충돌**: 로컬 MySQL을 끄거나 `docker-compose.yml`의 `"3306:3306"`을 `"3307:3306"` 등으로 바꾸고 `config.properties`의 `db.url` 포트도 같이 바꾼다.
 - **포트 8080 충돌**: 사용 중 프로세스를 종료하고 다시 실행.
 - **`./mvnw` 권한 오류(Mac/Linux)**: `chmod +x mvnw`.
 - 빌드만 확인: `./mvnw -q package -DskipTests`
 
 ## 더 읽을 것
-[README](README.md) · 설계서 [docs/설계/](docs/설계/) · 검증 스크립트 [docs/검증/](docs/검증/)(`data-gate.sh`는 빈 DB 적재 → 792/246/546/15 수치 점검) · 발표 시연 순서 [docs/데모.md](docs/데모.md)
+[README](README.md) · 설계서 [docs/설계/](docs/설계/) · 검증 스크립트 [docs/검증/](docs/검증/)(`data-gate.sh`는 빈 DB 적재 → 고정 수치 점검(데이터 교체 후 기대값 901/471/430/7)) · 발표 시연 순서 [docs/데모.md](docs/데모.md)
