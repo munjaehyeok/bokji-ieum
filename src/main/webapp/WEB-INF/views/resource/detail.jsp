@@ -121,9 +121,11 @@
 <%-- 담당 기관 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.org"/></h2>
+    <c:set var="orgShown" value="${empty resource.orgNameTr ? resource.orgName : resource.orgNameTr}"/>
+    <c:set var="deptShown" value="${empty resource.deptNameTr ? resource.deptName : resource.deptNameTr}"/>
     <p class="mb-1">
-        <c:out value="${empty resource.orgNameTr ? resource.orgName : resource.orgNameTr}"/>
-        <c:if test="${not empty resource.deptName}"> <c:out value="${empty resource.deptNameTr ? resource.deptName : resource.deptNameTr}"/></c:if>
+        <c:out value="${orgShown}"/>
+        <c:if test="${not empty deptShown and deptShown != orgShown}"> <c:out value="${deptShown}"/></c:if>
     </p>
     <c:if test="${not empty resource.address}">
         <p class="mb-1 text-secondary"><c:out value="${empty resource.addressTr ? resource.address : resource.addressTr}"/></p>
@@ -134,6 +136,18 @@
         <a class="btn btn-bk bk-tel-btn bk-noprint" href="tel:${fn:replace(firstPhone, ' ', '')}" data-beacon="A">
             &#128222; <spring:message code="detail.call"/> <c:out value="${fn:trim(fn:split(empty resource.phoneTr ? resource.phone : resource.phoneTr, ',')[0])}"/>
         </a>
+    </c:if>
+    <%-- 위치 지도: Client ID와 주소가 모두 있을 때만. 주소→좌표 변환 실패 시 JS가 영역을 통째로 지운다. --%>
+    <c:if test="${not empty naverMapClientId and not empty fn:trim(resource.address)}">
+        <div class="bk-orgmap-wrap bk-noprint" id="bkOrgMapWrap" hidden>
+            <div class="bk-orgmap" id="bkOrgMap" role="img"
+                 aria-label="<spring:message code='detail.map.label'/>"
+                 data-client-id="<c:out value='${naverMapClientId}'/>"
+                 data-address="<c:out value='${fn:trim(resource.address)}'/>"
+                 data-name="<c:out value='${orgShown}'/>"
+                 data-notfound="<spring:message code='detail.map.notfound' htmlEscape='true'/>"></div>
+            <a class="bk-orgmap-link" id="bkOrgMapLink" href="#" target="_blank" rel="noopener"><spring:message code="detail.map.open"/> &rarr;</a>
+        </div>
     </c:if>
 </section>
 
@@ -207,4 +221,5 @@ window.BK_DETAIL = {
 };
 </script>
 
+<script src="${ctx}/static/js/org-map.js?v=2"></script>
 <%@ include file="../common/foot.jspf" %>

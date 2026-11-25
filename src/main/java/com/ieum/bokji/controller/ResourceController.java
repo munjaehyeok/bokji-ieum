@@ -8,6 +8,7 @@ import com.ieum.bokji.util.LinkText;
 import java.util.Locale;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +24,9 @@ public class ResourceController {
     private MatchService matchService;
     @Autowired
     private JudgeCompare judgeCompare;
+    @Autowired
+    @Qualifier("naverMapClientId")
+    private String naverMapClientId;
 
     @GetMapping("/resources/{id}")
     public String detail(@PathVariable int id, HttpSession session, Model model, Locale locale) {
@@ -39,6 +43,7 @@ public class ResourceController {
         }
         row.setApplyUrl(LinkText.normalizeUrl(row.getApplyUrl()));
         model.addAttribute("applyMethodHtml", LinkText.toHtml(row.getApplyMethodTr() != null && !row.getApplyMethodTr().trim().isEmpty() ? row.getApplyMethodTr() : row.getApplyMethod()));
+        model.addAttribute("naverMapClientId", naverMapClientId == null ? "" : naverMapClientId.trim());
         model.addAttribute("resource", row);
         model.addAttribute("judged", cond != null);
         if (cond != null) model.addAttribute("compare", judgeCompare.build(row, cond, locale));
