@@ -2,7 +2,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ page import="java.net.URLEncoder" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<%-- 언어 전환 링크: 보던 화면의 검색 조건(쿼리)을 유지하고 lang만 바꾼다 --%>
+<c:set var="langQs" value=""/>
+<c:forEach var="pv" items="${paramValues}"><c:if test="${pv.key ne 'lang'}"><c:forEach var="pval" items="${pv.value}"><c:set var="langQs" value="${langQs}${URLEncoder.encode(pv.key, 'UTF-8')}=${URLEncoder.encode(pval, 'UTF-8')}&amp;"/></c:forEach></c:if></c:forEach>
 <c:set var="langCode" value="${empty pageContext.response.locale.language ? 'ko' : pageContext.response.locale.language}"/>
 <!DOCTYPE html>
 <html lang="${langCode}">
@@ -36,10 +40,10 @@
         </form>
         <div class="bk-head-tools">
             <nav class="bk-lang" aria-label="<spring:message code='nav.languageLabel'/>">
-                <a href="?lang=ko" ${langCode == 'ko' ? 'class="active" aria-current="true"' : ''}>한국어</a>
-                <a href="?lang=en" ${langCode == 'en' ? 'class="active" aria-current="true"' : ''}>EN</a>
-                <a href="?lang=zh" ${langCode == 'zh' ? 'class="active" aria-current="true"' : ''}>中文</a>
-                <a href="?lang=vi" ${langCode == 'vi' ? 'class="active" aria-current="true"' : ''}>Tiếng Việt</a>
+                <a href="?${langQs}lang=ko" ${langCode == 'ko' ? 'class="active" aria-current="true"' : ''}>한국어</a>
+                <a href="?${langQs}lang=en" ${langCode == 'en' ? 'class="active" aria-current="true"' : ''}>EN</a>
+                <a href="?${langQs}lang=zh" ${langCode == 'zh' ? 'class="active" aria-current="true"' : ''}>中文</a>
+                <a href="?${langQs}lang=vi" ${langCode == 'vi' ? 'class="active" aria-current="true"' : ''}>Tiếng Việt</a>
             </nav>
             <button type="button" id="bkFontToggle" class="bk-font-toggle" aria-pressed="false"><spring:message code="nav.fontSize"/></button>
         </div>

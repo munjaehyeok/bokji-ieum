@@ -1,0 +1,852 @@
+{
+ "cef07b62a79dd7f21dfb214224c1f2bd": {
+  "en": "Detailed criteria are separate or vary; Note: -",
+  "zh": "详细标准另行规定或各不相同;备注:-",
+  "vi": "Tiêu chí chi tiết được quy định riêng hoặc khác nhau; Ghi chú: -"
+ },
+ "9c101a481334867a379e2a37c3dca53a": {
+  "en": "1 Geobukseom-jungang-ro, Building C, Room 314",
+  "zh": "龟岛中央路1号,C栋314室",
+  "vi": "1 Geobukseom-jungang-ro, tòa C, phòng 314"
+ },
+ "4bdff67a14bcfe5c3836354fff4a52fe": {
+  "en": "Participants in the Silver School at Gwarim Happy Health Center",
+  "zh": "果林幸福健康中心银发学校的参加者",
+  "vi": "Người tham gia Silver School của Trung tâm Sức khỏe Hạnh phúc Gwarim"
+ },
+ "496dad81b4d2dc2d522c048aa0538cbc": {
+  "en": "Gwarim-dong Community Service Center (dong office) (Customized Welfare Team)",
+  "zh": "果林洞行政福利中心(定制型福利组)",
+  "vi": "Trung tâm hành chính phúc lợi phường Gwarim (Nhóm phúc lợi theo nhu cầu)"
+ },
+ "7e7baa8afb277f20d8670d8a2830504b": {
+  "en": "In person - Gunja-dong Residents' Autonomy Committee office",
+  "zh": "上门办理-君子洞居民自治会办公室",
+  "vi": "Đến trực tiếp - Văn phòng Hội tự quản cư dân phường Gunja"
+ },
+ "3efc8d35b4525285deddf469dd3e7a06": {
+  "en": "Visiting laundry service and wellness check-ins",
+  "zh": "上门洗衣服务及问候探访",
+  "vi": "Dịch vụ giặt giũ tận nơi và thăm hỏi sức khỏe"
+ },
+ "4a0fc10ce8900226d01575b0bf0b8062": {
+  "en": "Bodyweight exercises such as aerobics and stretching",
+  "zh": "有氧操、拉伸等徒手体操",
+  "vi": "Thể dục tay không như aerobic và giãn cơ"
+ },
+ "34875b1231b8c4d18ca7faeb516f8672": {
+  "en": "Basic livelihood recipients and people in welfare blind spots",
+  "zh": "基础生活保障对象及福利死角对象",
+  "vi": "Người nhận trợ cấp sinh hoạt cơ bản và đối tượng thuộc diện chưa được phúc lợi hỗ trợ"
+ },
+ "afd8675ea387cab39fd3e8985e6bfc66": {
+  "en": "Siheung City Mobile Art Museum Program",
+  "zh": "始兴市流动美术馆运营",
+  "vi": "Vận hành Bảo tàng mỹ thuật lưu động của Thành phố Siheung"
+ },
+ "c4c10e2882a3826412f06b08ab8255f3": {
+  "en": "Making Christmas-design wagashi (Japanese sweets)",
+  "zh": "制作圣诞造型和果子(日式点心)",
+  "vi": "Làm bánh wagashi (bánh ngọt Nhật Bản) thiết kế Giáng sinh"
+ },
+ "f0b786d5f54af29c96e49c18b3209d94": {
+  "en": "1) Support application form (1 copy)\n2) ID",
+  "zh": "1)支援申请表1份\n2)身份证件",
+  "vi": "1) Đơn đăng ký hỗ trợ 1 bản\n2) Giấy tờ tùy thân"
+ },
+ "d4dbdcced1e51e31c91e4e94f1c7275d": {
+  "en": "Congenital Hearing Loss Screening and Hearing Aid Support",
+  "zh": "先天性听力障碍检查及助听器支持",
+  "vi": "Khám sàng lọc suy giảm thính lực bẩm sinh và hỗ trợ máy trợ thính"
+ },
+ "260dea286236d88708412caa53ccb286": {
+  "en": "For women (no household type code)",
+  "zh": "面向女性(无家庭类型代码)",
+  "vi": "Dành cho phụ nữ (không có mã loại hình hộ gia đình)"
+ },
+ "598258a9127996594617d0d615a2756b": {
+  "en": "Service (private) providers: 12 locations",
+  "zh": "服务(民间)提供机构 12处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 12 nơi"
+ },
+ "e9e8d3c120ffae5b9c64fa08fb450228": {
+  "en": "Service (private) providers: 4 locations",
+  "zh": "服务(民间)提供机构 4处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 4 nơi"
+ },
+ "ec2ced18dffc27ef789b222f99c6be2d": {
+  "en": "Service (private) providers: 3 locations",
+  "zh": "服务(民间)提供机构 3处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 3 nơi"
+ },
+ "4275f36eee75891b94f8cd1c9e0cd41a": {
+  "en": "Service (private) providers: 2 locations",
+  "zh": "服务(民间)提供机构 2处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 2 nơi"
+ },
+ "2c217d37ed35b5a697a3d89b4fd456d3": {
+  "en": "Ariacare Home Care, Siheung Daeya Center",
+  "zh": "阿里亚关爱上门护理 始兴大野中心",
+  "vi": "Trung tâm Siheung Daeya - Chăm sóc tại nhà Ariacare"
+ },
+ "87ff4da2937d5448b7004d9eb6abd48a": {
+  "en": "1) Health checkup application form for self-sufficiency program participants",
+  "zh": "1)自立自强项目参与者健康检查申请表",
+  "vi": "1) Đơn đăng ký khám sức khỏe dành cho người tham gia chương trình tự lực"
+ },
+ "b1bc0d0abc2adda3555235e9d9112060": {
+  "en": "Local seniors aged 60 or older",
+  "zh": "本地区年满60周岁以上的老年人",
+  "vi": "Người cao tuổi từ đủ 60 tuổi trở lên trong địa phương"
+ },
+ "9286c4112a9b4847a9beb6b979f5ba1f": {
+  "en": "Geomo Comprehensive Social Welfare Center, Customized Senior Care Team",
+  "zh": "巨牟综合社会福利馆 老年人定制照护组",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Geomo, Nhóm chăm sóc người cao tuổi theo nhu cầu"
+ },
+ "519ccd36e122ebd284184dd40703a592": {
+  "en": "60 Plus Program 'Retirement Planning Special Lecture'",
+  "zh": "60 Plus项目“养老规划专题讲座”",
+  "vi": "Chương trình 60 Plus 'Bài giảng chuyên đề thiết kế cuộc sống tuổi già'"
+ },
+ "0c2755f6f7d521af721a2196f90c7e2c": {
+  "en": "214 Janghyeon-neunggok-ro, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市Janghyeon-neunggok路214号",
+  "vi": "214 Janghyeon-neunggok-ro, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "a7562faaa9b5b1d57775f9a25dd08351": {
+  "en": "1087 Siheung-daero, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市始兴大路1087号",
+  "vi": "1087 Siheung-daero, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "7f21938bd2d7e981bf996ff2f3e03c55": {
+  "en": "Our Neighborhood Small Library: Meet the Author",
+  "zh": "我们社区小图书馆 作家见面会",
+  "vi": "Thư viện nhỏ của khu phố chúng ta: Gặp gỡ tác giả"
+ },
+ "52c3274f00f37f51f307eb3caa52b193": {
+  "en": "Book discussion through meeting the author",
+  "zh": "通过与作家见面开展读书讨论",
+  "vi": "Thảo luận sách thông qua buổi gặp gỡ tác giả"
+ },
+ "d7621de4f5164ff431df51b798211f48": {
+  "en": "Jageunjari Comprehensive Social Welfare Center\nVillage Welfare Division",
+  "zh": "小座综合社会福利馆\n社区福利科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari\nPhòng Phúc lợi cộng đồng"
+ },
+ "bb0f15e6ccbcd54c428aa521f2b884ae": {
+  "en": "Jageunjari Comprehensive Social Welfare Center\nVillage Growth Division",
+  "zh": "小座综合社会福利馆\n社区成长科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari\nPhòng Phát triển cộng đồng"
+ },
+ "33efecd617e8a85f4cc0755f835fea12": {
+  "en": "Jageunjari Comprehensive Social Welfare Center Village Growth Division",
+  "zh": "小座综合社会福利馆 社区成长科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari Phòng Phát triển cộng đồng"
+ },
+ "4aa0b3dcd602c56aadcdb7a656d28fce": {
+  "en": "Elementary school students living in the Sinchon area (northern area)",
+  "zh": "居住在新川片区(北部片区)的小学生",
+  "vi": "Học sinh tiểu học sống tại khu vực Sinchon (khu vực phía Bắc)"
+ },
+ "6d9397564fbaeb8fa8e63ffcc9b44278": {
+  "en": "Our Neighborhood Small Library: 'What If' Writing",
+  "zh": "我们社区小图书馆 “如果”写作",
+  "vi": "Thư viện nhỏ của khu phố chúng ta: Viết 'Nếu như'"
+ },
+ "a5ca36cba12f2c07ce994f85b9b1a5fa": {
+  "en": "DREAM Program for Grandparent-Headed Families",
+  "zh": "祖孙家庭支援DREAM项目",
+  "vi": "Dự án DREAM hỗ trợ gia đình ông bà nuôi cháu"
+ },
+ "adadba01fa52987af38c320e91d807a0": {
+  "en": "Local residents interested in environmental protection",
+  "zh": "关心环境保护的本地居民",
+  "vi": "Cư dân địa phương quan tâm đến bảo vệ môi trường"
+ },
+ "0fbdf94884edb1294507b16b28e42c91": {
+  "en": "Hamhyeon Sangsaeng Comprehensive Social Welfare Center\nCase Management Team",
+  "zh": "咸玄共生综合社会福利馆\n个案管理组",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Hamhyeon Sangsaeng\nNhóm quản lý ca"
+ },
+ "28f7b1baa354296325b36495e8aa53d2": {
+  "en": "Raising a Child Together Program",
+  "zh": "我们一起养育一个孩子项目",
+  "vi": "Dự án Cùng nhau nuôi dạy một đứa trẻ"
+ },
+ "2a1762b2425f80a3e7999cda1936ddf6": {
+  "en": "Note: Selection is decided after an initial consultation",
+  "zh": "备注:初次咨询后决定是否入选",
+  "vi": "Ghi chú: Việc lựa chọn được quyết định sau buổi tư vấn ban đầu"
+ },
+ "02b2c38b2bc6ccb2673b9b4128505a88": {
+  "en": "Certificate of National Basic Livelihood Security recipient status and certificate of near-poor household status",
+  "zh": "基础生活保障对象证明及次上位阶层(近贫困家庭)证明",
+  "vi": "Giấy chứng nhận người nhận trợ cấp sinh hoạt cơ bản và giấy chứng nhận hộ cận nghèo (nhóm thu nhập thấp ngay trên ngưỡng sinh hoạt cơ bản)"
+ },
+ "16fc3be63b371d889fd31fee9f4dac17": {
+  "en": "Senior Leisure and Culture Program 'Golden University'",
+  "zh": "老年人休闲文化项目“金光大学”",
+  "vi": "Chương trình văn hóa giải trí cho người cao tuổi 'Đại học Vàng'"
+ },
+ "2fd977cb9a0e55bb213a1e9bf44bc8a6": {
+  "en": "222 Gwangokji-ro, Siheung-si, Building 321",
+  "zh": "始兴市Gwangokji路222号321栋",
+  "vi": "222 Gwangokji-ro, thành phố Siheung, tòa 321"
+ },
+ "03e871f038cc1ebe3a7f4491464e5924": {
+  "en": "Siheung City Childcare Support Center\nI-Mom Cafe",
+  "zh": "始兴市育儿综合支援中心\n爱妈咖啡馆",
+  "vi": "Trung tâm hỗ trợ nuôi dạy trẻ tổng hợp Thành phố Siheung\nQuán cà phê I-Mom"
+ },
+ "28a4a289dca294c495283a2ead7744d8": {
+  "en": "Parents of preschool children in Siheung City",
+  "zh": "始兴市内学龄前儿童的父母",
+  "vi": "Cha mẹ của trẻ chưa đến tuổi đi học trong Thành phố Siheung"
+ },
+ "b0a3c2ca6876204b55eac3cb2e2d08ff": {
+  "en": "(Dagaon) Popcorn Counseling (Children's Art Activities)",
+  "zh": "(Dagaon)爆米花咨询(儿童美术活动)",
+  "vi": "(Dagaon) Tư vấn Popcorn (Hoạt động mỹ thuật cho trẻ em)"
+ },
+ "395589a20b96b4068d3fa0793dc309e9": {
+  "en": "- In person: Siheung City Foreign Residents Welfare Center",
+  "zh": "- 上门办理:始兴市外国人福利中心",
+  "vi": "- Đến trực tiếp: Trung tâm phúc lợi người nước ngoài Thành phố Siheung"
+ },
+ "fffeb04f60c8a4073912ecd4b3a58364": {
+  "en": "Our Neighborhood Small Library: Saisai Library",
+  "zh": "我们社区小图书馆 Saisai图书馆",
+  "vi": "Thư viện nhỏ của khu phố chúng ta: Thư viện Saisai"
+ },
+ "72db6e1fdd0308e5ae23d2bd06c9ace8": {
+  "en": "Jageunjari Comprehensive Social Welfare Center Village Welfare Division",
+  "zh": "小座综合社会福利馆 社区福利科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari Phòng Phúc lợi cộng đồng"
+ },
+ "613bbcb5ef255c211c0bd51bb2f82078": {
+  "en": "Show a disability registration card and a Medical Aid card",
+  "zh": "出示残疾人登记证及医疗救助证",
+  "vi": "Xuất trình thẻ đăng ký người khuyết tật và thẻ trợ cấp y tế"
+ },
+ "eebb2305763b00c58a52f4e7fa8e09e5": {
+  "en": "For families of persons with disabilities — check the original text",
+  "zh": "面向残疾人家庭——请核对原文",
+  "vi": "Dành cho gia đình có người khuyết tật — vui lòng kiểm tra nguyên văn"
+ },
+ "844339281068c9d3b28ffb6b4c5eaba7": {
+  "en": "Siheung Center for Independent Living of Persons with Disabilities 'Susukkotdari' (Lilac)",
+  "zh": "始兴残疾人自立生活中心 Susukkotdari(丁香花)",
+  "vi": "Trung tâm sống tự lập cho người khuyết tật Thành phố Siheung 'Susukkotdari' (Hoa tử đinh hương)"
+ },
+ "b7865e78b3216d7035998acb109445ba": {
+  "en": "Middle and high school students in special education classes living in Siheung City",
+  "zh": "居住在始兴市的特殊班初高中生",
+  "vi": "Học sinh trung học cơ sở và trung học phổ thông học lớp giáo dục đặc biệt sống tại Thành phố Siheung"
+ },
+ "f546d5cbc27c16d2bab31b216dcf432a": {
+  "en": "Persons with disabilities and local residents living in Siheung City",
+  "zh": "居住在始兴市的残疾人及本地居民",
+  "vi": "Người khuyết tật và cư dân địa phương sống tại Thành phố Siheung"
+ },
+ "ce7edc6471893c764ccde9b7fad74276": {
+  "en": "Assistant Care Worker Jobs for Persons with Developmental Disabilities",
+  "zh": "发育障碍者护理员辅助岗位",
+  "vi": "Việc làm hỗ trợ nhân viên chăm sóc dành cho người khuyết tật phát triển"
+ },
+ "a6930de017d4857eb2731a1f1a3dd8c0": {
+  "en": "Gyeonggi Parents' Association of Persons with Disabilities, Siheung Branch (incorporated association)",
+  "zh": "(社团法人)京畿残疾人家长联合会始兴市分会",
+  "vi": "(Pháp nhân xã hội) Hội phụ huynh người khuyết tật Gyeonggi, chi nhánh Thành phố Siheung"
+ },
+ "14b50c3b7176f50f43c53b0094d5bee2": {
+  "en": "Rights-Based Customized Jobs for Persons with Severe Disabilities",
+  "zh": "以权利为中心的重度残疾人定制型岗位",
+  "vi": "Việc làm theo nhu cầu lấy quyền lợi làm trọng tâm dành cho người khuyết tật nặng"
+ },
+ "d02c50395f9fbe53a6990ed79c5e465d": {
+  "en": "Siheung City Living Support Center for Persons with Visual Impairments",
+  "zh": "始兴市视觉障碍者等生活支援中心",
+  "vi": "Trung tâm hỗ trợ đời sống cho người khiếm thị của Thành phố Siheung"
+ },
+ "90bdb483320131c0bf246ea951d28fca": {
+  "en": "The Make Social Cooperative, Siheung Branch",
+  "zh": "The Make社会合作社 始兴分部",
+  "vi": "Hợp tác xã xã hội The Make, chi nhánh Siheung"
+ },
+ "e394504bbfabd998be3254d5fdc68a93": {
+  "en": "Support for Purchasing Incontinence Absorbent Products for Persons with Disabilities",
+  "zh": "残疾人大小便吸收用品购买支持",
+  "vi": "Hỗ trợ mua đồ thấm hút đại tiểu tiện cho người khuyết tật"
+ },
+ "171fcacc94d0e95828255fdd85913bd0": {
+  "en": "Interest Support Program for Newlyweds' Jeonse (Lump-Sum Lease Deposit) Loans",
+  "zh": "新婚夫妇全税房(押金租赁)贷款利息支持项目",
+  "vi": "Chương trình hỗ trợ lãi suất vay jeonse (tiền đặt cọc thuê nhà trọn gói) cho vợ chồng mới cưới"
+ },
+ "6973a6e895d924fab56dc5a8f3d06220": {
+  "en": "Female youth aged 9–24 living outside the home",
+  "zh": "9~24岁离家在外的女性青少年",
+  "vi": "Nữ thanh thiếu niên từ 9 đến 24 tuổi sống ngoài gia đình"
+ },
+ "f4884cdadb17edfb8480d93793e9a90f": {
+  "en": "Male youth aged 9–24 living outside the home",
+  "zh": "9~24岁离家在外的男性青少年",
+  "vi": "Nam thanh thiếu niên từ 9 đến 24 tuổi sống ngoài gia đình"
+ },
+ "bbbbed82c51147cb924fc7fba8c92310": {
+  "en": "Support for Obtaining a Certificate (Barista Level 2)",
+  "zh": "资格证(咖啡师2级)考取支持",
+  "vi": "Hỗ trợ lấy chứng chỉ (Barista cấp 2)"
+ },
+ "ffb38594ccc95fa976413db1a4ef7acd": {
+  "en": "Support for the Barista Level 2 certificate course",
+  "zh": "咖啡师2级资格证课程支持",
+  "vi": "Hỗ trợ khóa học chứng chỉ Barista cấp 2"
+ },
+ "4f4ed979eba346b047932adad9c24151": {
+  "en": "Registered persons with disabilities in the city Registered persons with disabilities in the city",
+  "zh": "市内登记残疾人 市内登记残疾人",
+  "vi": "Người khuyết tật đã đăng ký trong thành phố Người khuyết tật đã đăng ký trong thành phố"
+ },
+ "e2b40fd167949c5c4751476a839cbe0d": {
+  "en": "Direct support (no separate application required)",
+  "zh": "直接支持(无需另行申请)",
+  "vi": "Hỗ trợ trực tiếp (không cần đăng ký riêng)"
+ },
+ "4111a2b2e34e245df27b02028495e020": {
+  "en": "Free Volume-Based Waste Bags (Near-Poor Households)",
+  "zh": "免费提供垃圾计量袋(次上位阶层/近贫困家庭)",
+  "vi": "Hỗ trợ miễn phí túi rác theo thể tích (hộ cận nghèo)"
+ },
+ "462519039df1a85e7521381a4f2ce325": {
+  "en": "Free Volume-Based Waste Bags (Single-Parent Families)",
+  "zh": "免费提供垃圾计量袋(单亲家庭)",
+  "vi": "Hỗ trợ miễn phí túi rác theo thể tích (gia đình đơn thân)"
+ },
+ "49d841b59172c5e9e24d2e1df1c12464": {
+  "en": "Free Volume-Based Waste Bags (Basic Livelihood Recipients)",
+  "zh": "免费提供垃圾计量袋(基础生活保障对象)",
+  "vi": "Hỗ trợ miễn phí túi rác theo thể tích (người nhận trợ cấp sinh hoạt cơ bản)"
+ },
+ "c2c224afc59f5ddb11a89a59cde5e262": {
+  "en": "Application form\nHealth insurance premium payment certificate, etc.",
+  "zh": "申请表\n健康保险费缴纳证明等",
+  "vi": "Đơn đăng ký\nGiấy xác nhận đã đóng phí bảo hiểm y tế, v.v."
+ },
+ "8f98cf631ec5f3abb26c283a771780c9": {
+  "en": "Follow-up Care Services for High Suicide-Risk Groups",
+  "zh": "自杀高危人群后续管理服务",
+  "vi": "Dịch vụ quản lý theo dõi sau đối với nhóm có nguy cơ tự tử cao"
+ },
+ "d15438b8f24697fc1373861d8c1cd2b0": {
+  "en": "Center registration consent form\nDaytime rehabilitation participation application form",
+  "zh": "中心登记同意书\n日间康复参与申请表",
+  "vi": "Giấy đồng ý đăng ký trung tâm\nĐơn đăng ký tham gia phục hồi chức năng ban ngày"
+ },
+ "62ec59c9180f02851e6f409d587f3cc4": {
+  "en": "Center registration consent form\nVocational rehabilitation participation application form",
+  "zh": "中心登记同意书\n职业康复参与申请表",
+  "vi": "Giấy đồng ý đăng ký trung tâm\nĐơn đăng ký tham gia phục hồi chức năng nghề nghiệp"
+ },
+ "edf4191790771fcbe79f4a8314d770b5": {
+  "en": "Illness/diagnosis criteria; health condition criteria",
+  "zh": "疾病/诊断标准;健康状况标准",
+  "vi": "Tiêu chí bệnh/chẩn đoán; tiêu chí tình trạng sức khỏe"
+ },
+ "ee4817247b2ceeeb8fa65d587a58f53c": {
+  "en": "Gyeonggi-do Ordinary People's Financial Welfare Support Center\nSiheung Center",
+  "zh": "京畿道平民金融福利支援中心\n始兴中心",
+  "vi": "Trung tâm hỗ trợ tài chính phúc lợi cho người dân bình dân tỉnh Gyeonggi\nTrung tâm Siheung"
+ },
+ "0f772cc7041bd5c44b69dd162a273b75": {
+  "en": "Gyeonggi-do Ordinary People's Financial Welfare Support Center\nWestern Region",
+  "zh": "京畿道平民金融福利支援中心\n西部片区",
+  "vi": "Trung tâm hỗ trợ tài chính phúc lợi cho người dân bình dân tỉnh Gyeonggi\nKhu vực phía Tây"
+ },
+ "5ea10f45dee711e84759817f2e89b0e6": {
+  "en": "11-2 Mayu-ro 446beon-gil, Siheung-si",
+  "zh": "始兴市Mayu路446街11-2号",
+  "vi": "11-2 Mayu-ro 446beon-gil, thành phố Siheung"
+ },
+ "c875ff3de1a1a8acba0265d6d504b202": {
+  "en": "Within 100% of standard median income; welfare blind spots",
+  "zh": "标准中位收入100%以内,福利死角",
+  "vi": "Trong phạm vi 100% thu nhập trung vị tiêu chuẩn; đối tượng chưa được phúc lợi hỗ trợ"
+ },
+ "c91184dc82d4bb5f444af24139524d24": {
+  "en": "Gas Safety Devices (Timer Cock, CO Alarm)",
+  "zh": "燃气安全装置(定时旋塞、一氧化碳报警器)",
+  "vi": "Thiết bị an toàn khí gas (van hẹn giờ, máy báo CO)"
+ },
+ "5feec60a5ed45cd39f3118fba2e47f19": {
+  "en": "Emergency Safety Care Service application form, ID",
+  "zh": "紧急安全安心服务申请表、身份证件",
+  "vi": "Đơn đăng ký Dịch vụ an toàn khẩn cấp, giấy tờ tùy thân"
+ },
+ "2bf5bce9de057ba0d510142551c5b3fd": {
+  "en": "Transportation support for mobility-vulnerable people who do not use wheelchairs",
+  "zh": "为非轮椅使用的交通弱势群体提供出行工具支持",
+  "vi": "Hỗ trợ phương tiện di chuyển cho người khó di chuyển không dùng xe lăn"
+ },
+ "f36e2e33470865075730d0e90158e043": {
+  "en": "Gyeonggi-do, Gyeonggi Urban Corporation (GH)\nSiheung Urban Corporation",
+  "zh": "京畿道、京畿道市公社\n始兴都市公社",
+  "vi": "Tỉnh Gyeonggi, Công ty đô thị Gyeonggi (GH)\nCông ty đô thị Siheung"
+ },
+ "6fbc28d8a3c8a94ffce5dd00eeb55ece": {
+  "en": "Area check: Geobukseom-dong; Note: -",
+  "zh": "地区确认:龟岛洞;备注:-",
+  "vi": "Xác nhận khu vực: phường Geobukseom; Ghi chú: -"
+ },
+ "8e0f64c17893f2c088656c6620d317c3": {
+  "en": "Gwarim-dong Community Service Center (dong office)\n(Customized Welfare Team)",
+  "zh": "果林洞行政福利中心\n(定制型福利组)",
+  "vi": "Trung tâm hành chính phúc lợi phường Gwarim\n(Nhóm phúc lợi theo nhu cầu)"
+ },
+ "07103eaed1f228c33feccba052c8902b": {
+  "en": "Any resident may apply regardless of income",
+  "zh": "居民无论收入高低均可申请",
+  "vi": "Mọi cư dân đều có thể đăng ký, không phân biệt thu nhập"
+ },
+ "1e12f0ea5a5ef250f8a71bd38290d448": {
+  "en": "94-41 Baegot 4-ro, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市Baegot 4路94-41号",
+  "vi": "94-41 Baegot 4-ro, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "0d690891fbc9d714e6651951ec8556ba": {
+  "en": "Selected through a meeting of the Community Social Security Council",
+  "zh": "通过地区社区保障协议体会议选定",
+  "vi": "Được lựa chọn thông qua cuộc họp của Hội đồng bảo trợ xã hội cộng đồng địa phương"
+ },
+ "3d824591725caaacfad396e7d944a4ac": {
+  "en": "67 Hamsong-ro 29beon-gil, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市Hamsong路29街67号",
+  "vi": "67 Hamsong-ro 29beon-gil, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "b16d357543d55e209e11a5194786637f": {
+  "en": "In person or by phone: Sinchon-dong Community Service Center (dong office)",
+  "zh": "上门或电话办理:新川洞居民中心",
+  "vi": "Đến trực tiếp hoặc gọi điện: Trung tâm cộng đồng phường Sinchon"
+ },
+ "b93bd88fc6df3368bc7d3c7e0fa6d33b": {
+  "en": "Gardening activities that bring healing through care",
+  "zh": "通过关怀获得治愈的园艺活动",
+  "vi": "Hoạt động làm vườn mang lại sự chữa lành thông qua chăm sóc"
+ },
+ "f84ae3f4c2cae1a0ffff02102186698e": {
+  "en": "23 Mokgam-uhoe-ro, Siheung-si, 2nd–3rd floors",
+  "zh": "始兴市Mokgam-uhoe路23号 2~3层",
+  "vi": "23 Mokgam-uhoe-ro, thành phố Siheung, tầng 2~3"
+ },
+ "aba15f797d49e50800d56fe4b7a8a5cf": {
+  "en": "Apply through the Siheung Happiness Support Center One-Click System",
+  "zh": "通过始兴幸福支援中心一键系统申请",
+  "vi": "Đăng ký qua Hệ thống One-Click của Trung tâm hỗ trợ hạnh phúc Siheung"
+ },
+ "2c50fc194e7591dced780e4563a1f44d": {
+  "en": "Diaper and Infant Formula Support Program for Low-Income Households",
+  "zh": "低收入家庭尿布·配方奶粉支援项目",
+  "vi": "Dự án hỗ trợ tã và sữa bột công thức cho hộ thu nhập thấp"
+ },
+ "905138101d1221dedb1e4f95ced52b19": {
+  "en": "Gyeonggi-do Medical Cost Support for Discontinued Infertility Treatment",
+  "zh": "京畿道不孕症治疗中断医疗费支持",
+  "vi": "Hỗ trợ chi phí y tế khi ngừng điều trị hiếm muộn của tỉnh Gyeonggi"
+ },
+ "cbf1106a8563d312e945fea713beb5bb": {
+  "en": "Congenital Metabolic Disorder Screening and Care for Affected Children",
+  "zh": "先天性代谢异常检查及患儿管理",
+  "vi": "Khám sàng lọc rối loạn chuyển hóa bẩm sinh và quản lý trẻ mắc bệnh"
+ },
+ "76822ce317e9fd32dd2d187eed5ef3b4": {
+  "en": "Service (private) providers: 48 locations",
+  "zh": "服务(民间)提供机构 48处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 48 nơi"
+ },
+ "78c3d92080f1a701ca7cd838f3b2b04f": {
+  "en": "Service (private) providers: 37 locations",
+  "zh": "服务(民间)提供机构 37处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 37 nơi"
+ },
+ "4888cb98d8b6debd8badb14c298a5885": {
+  "en": "Service (private) providers: 17 locations",
+  "zh": "服务(民间)提供机构 17处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 17 nơi"
+ },
+ "47d7d0aa988c13fc35ad798475d20ae9": {
+  "en": "Service (private) providers: 13 locations",
+  "zh": "服务(民间)提供机构 13处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 13 nơi"
+ },
+ "d1986353f7fffbd7985fd63b87484fe0": {
+  "en": "Service (private) providers: 11 locations",
+  "zh": "服务(民间)提供机构 11处",
+  "vi": "Cơ quan cung cấp dịch vụ (tư nhân): 11 nơi"
+ },
+ "a24626a950e781b5b0378550275a152d": {
+  "en": "15-5 Sicheong-ro 72beon-gil, Room 101",
+  "zh": "Sicheong路72街15-5号,101室",
+  "vi": "15-5 Sicheong-ro 72beon-gil, phòng 101"
+ },
+ "3135e365f721a31df8a8f2686a5b3a9a": {
+  "en": "26 Wadong-ro, Danwon-gu, Ansan-si, 3rd floor",
+  "zh": "安山市檀园区Wadong路26号,3层",
+  "vi": "26 Wadong-ro, quận Danwon, thành phố Ansan, tầng 3"
+ },
+ "9f3550f568fa8a85299ca5d910c02b86": {
+  "en": "Varies by income level and hours of use",
+  "zh": "根据收入水平及使用时间而有所不同",
+  "vi": "Khác nhau tùy theo mức thu nhập và thời gian sử dụng"
+ },
+ "f355c96250d44dabfb4c01994083b87a": {
+  "en": "6-1 Saejae-ro 7beon-gil, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市Saejae路7街6-1号",
+  "vi": "6-1 Saejae-ro 7beon-gil, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "d5737a7806efa742d8501007f8d5d552": {
+  "en": "Cultural and leisure programs for local seniors",
+  "zh": "为本地老年人开展文化休闲项目",
+  "vi": "Tổ chức chương trình văn hóa giải trí cho người cao tuổi trong địa phương"
+ },
+ "231be2ba41ddbc30739bf5bf6a1314eb": {
+  "en": "Youth Volunteer Club 'Raonjena'",
+  "zh": "青少年志愿服务社团“Raonjena”",
+  "vi": "Câu lạc bộ thanh thiếu niên tình nguyện 'Raonjena'"
+ },
+ "b7b77f1365604dfedc53517a0bb192a0": {
+  "en": "Siheung City Senior Welfare Center\nSocial Participation Support Team",
+  "zh": "始兴市老年综合福利馆\n社会参与支援组",
+  "vi": "Trung tâm phúc lợi tổng hợp người cao tuổi Thành phố Siheung\nNhóm hỗ trợ tham gia xã hội"
+ },
+ "9b0d7809b842f5b1c45e0833ef4ca4ee": {
+  "en": "Once a week: 12,000 won per month",
+  "zh": "每周1次:每月12,000韩元",
+  "vi": "1 lần/tuần: 12,000 won mỗi tháng"
+ },
+ "27e568ec918273ae020c32d9260d7533": {
+  "en": "4 Sicheong-ro 68beon-gil, Siheung-si, Gyeonggi-do",
+  "zh": "京畿道始兴市Sicheong路68街4号",
+  "vi": "4 Sicheong-ro 68beon-gil, thành phố Siheung, tỉnh Gyeonggi"
+ },
+ "79d92eb6dd66fdeda275de4d7044345e": {
+  "en": "Music lessons such as guitar and kalimba",
+  "zh": "提供吉他、卡林巴琴等音乐课程",
+  "vi": "Cung cấp các bài giảng âm nhạc như guitar, kalimba"
+ },
+ "84d946bca3f1fe5bfcc83c51fe19f0f6": {
+  "en": "Apply by phone: 031-404-8112",
+  "zh": "电话申请 031-404-8112",
+  "vi": "Đăng ký qua điện thoại 031-404-8112"
+ },
+ "4867c4dc2c39a6b432eb7fc79f14d42a": {
+  "en": "Application form, consent form for provision of personal information, resident registration copy",
+  "zh": "申请表、个人信息提供同意书、户籍誊本(住民登记誊本)",
+  "vi": "Đơn đăng ký, giấy đồng ý cung cấp thông tin cá nhân, bản sao đăng ký cư trú"
+ },
+ "bffa181327e55d437ba1991c917fb1d1": {
+  "en": "Jageunjari Comprehensive Social Welfare Center\nVillage Community Division",
+  "zh": "小座综合社会福利馆\n社区共同体科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari\nPhòng Cộng đồng làng xã"
+ },
+ "2e10939aaa91d65ae8a9dbb6ed0cfe52": {
+  "en": "Jageunjari Comprehensive Social Welfare Center Village Community Division",
+  "zh": "小座综合社会福利馆 社区共同体科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Jageunjari Phòng Cộng đồng làng xã"
+ },
+ "3119ae1e3a49e2fb08feff6cad579586": {
+  "en": "Crisis/emergency situation requirements; Note: -",
+  "zh": "危机/紧急情况条件;备注:-",
+  "vi": "Điều kiện về tình huống khủng hoảng/khẩn cấp; Ghi chú: -"
+ },
+ "53f6dc51e2a4182d3ceb305b4df70762": {
+  "en": "Our Neighborhood Small Library: Vacation Reading Camp",
+  "zh": "我们社区小图书馆 假期读书营",
+  "vi": "Thư viện nhỏ của khu phố chúng ta: Trại đọc sách kỳ nghỉ"
+ },
+ "708ffc2e7d388dafe165d9be23ec8d8b": {
+  "en": "Guardians with children or teenagers",
+  "zh": "养育儿童、青少年子女的监护人",
+  "vi": "Người giám hộ có con ở độ tuổi thiếu nhi, thanh thiếu niên"
+ },
+ "985536d6b199a3a9243efca457070c73": {
+  "en": "Exercise such as meditation, breathing, and stretching",
+  "zh": "冥想、呼吸、拉伸等运动",
+  "vi": "Vận động như thiền, hít thở, giãn cơ"
+ },
+ "c2cc114cd94b33002f9f72c493adede3": {
+  "en": "Students attending schools in the area",
+  "zh": "就读于本地区学校的学生",
+  "vi": "Học sinh đang theo học tại các trường trong địa phương"
+ },
+ "4dba215e4e56fd8dff2578cccd706a6c": {
+  "en": "Hamhyeon Sangsaeng Comprehensive Social Welfare Center\nHuman Services Division",
+  "zh": "咸玄共生综合社会福利馆\n人类服务科",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Hamhyeon Sangsaeng\nPhòng Dịch vụ con người"
+ },
+ "338877e7240054413163d6f13fb0c525": {
+  "en": "Donated goods for low-income families",
+  "zh": "为低收入家庭提供捐赠物品",
+  "vi": "Hỗ trợ hiện vật quyên góp cho gia đình thu nhập thấp"
+ },
+ "00b087e90d84c6390da78656a0760fab": {
+  "en": "Apply by phone (031-312-8219)",
+  "zh": "电话申请(031-312-8219)",
+  "vi": "Đăng ký qua điện thoại (031-312-8219)"
+ },
+ "cde06ddddcb2727ae5ec14b1ab20eb18": {
+  "en": "Apply by phone (031-313-8219)",
+  "zh": "电话申请(031-313-8219)",
+  "vi": "Đăng ký qua điện thoại (031-313-8219)"
+ },
+ "0f14adb97e7a25897e70a334d17c35f8": {
+  "en": "Apply by phone (031-313-0473)",
+  "zh": "电话申请(031-313-0473)",
+  "vi": "Đăng ký qua điện thoại (031-313-0473)"
+ },
+ "5ef4aa077b55e83de78bd4ab364f6092": {
+  "en": "Children in foster care; adoptive family criteria",
+  "zh": "家庭寄养保护对象;收养家庭标准",
+  "vi": "Trẻ được bảo vệ theo diện gia đình nhận nuôi tạm thời; tiêu chí gia đình nhận con nuôi"
+ },
+ "0eb7e9ff33a0d18cf489c3eccc5ef09d": {
+  "en": "Ainuri Care Center Branch No. 10 (Hajung Branch)",
+  "zh": "爱努里照护中心10号店(下中店)",
+  "vi": "Trung tâm chăm sóc Ainuri chi nhánh số 10 (chi nhánh Hajung)"
+ },
+ "0f307421b766fa91169af31cc41529d6": {
+  "en": "1110 Siheung-daero, Siheung-si, B1 floor",
+  "zh": "始兴市始兴大路1110号,地下1层",
+  "vi": "1110 Siheung-daero, thành phố Siheung, tầng hầm B1"
+ },
+ "ae067938440f351eb34e22dce761b93f": {
+  "en": "Victims of domestic violence and their family members",
+  "zh": "家庭暴力受害者及其家庭成员",
+  "vi": "Nạn nhân bạo lực gia đình và các thành viên trong gia đình"
+ },
+ "51cde65ca7a3044f74fb646e8899e0d7": {
+  "en": "Adult foreign residents who wish to receive education",
+  "zh": "希望接受教育的外国人居民(成人)",
+  "vi": "Cư dân người nước ngoài (người lớn) muốn được học tập"
+ },
+ "fa7f2f8e3e222ea4b40d1b37ff5e6224": {
+  "en": "(Dagaon) Child Care Support and Space Provision",
+  "zh": "(Dagaon)子女照护支持及场地提供",
+  "vi": "(Dagaon) Hỗ trợ chăm sóc con và cung cấp không gian"
+ },
+ "22750ccca9bdaac7faa3ecd6cd9f7559": {
+  "en": "Adult foreign residents who wish to take part in activities",
+  "zh": "希望参加活动的外国人居民(成人)",
+  "vi": "Cư dân người nước ngoài (người lớn) muốn tham gia hoạt động"
+ },
+ "963425b9b1b72fcfc54791ca90dda1a2": {
+  "en": "Capacity-Building Support for Marriage Migrants: Korean Language Education",
+  "zh": "结婚移民者能力提升支持 韩语教育",
+  "vi": "Hỗ trợ nâng cao năng lực cho người nhập cư kết hôn: Giáo dục tiếng Hàn"
+ },
+ "e824c49ca19ca90d44840d12cfbd447c": {
+  "en": "Dream-Growing Network Program for Youth with a Migrant Background",
+  "zh": "移民背景青少年梦想成长网络项目",
+  "vi": "Dự án Mạng lưới nuôi dưỡng ước mơ cho thanh thiếu niên có nền tảng di cư"
+ },
+ "bbb02593828b9a9b9ad5c03d88ed6a95": {
+  "en": "Korean history tour for youth with a migrant background",
+  "zh": "为移民背景青少年举办的韩国历史探访",
+  "vi": "Chuyến tham quan lịch sử Hàn Quốc dành cho thanh thiếu niên có nền tảng di cư"
+ },
+ "79117bce2e1f18b6d4a9d7d627ebe4e5": {
+  "en": "49 Seungji-ro, Siheung-si, Gyeonggi-do, 3rd floor",
+  "zh": "京畿道始兴市Seungji路49号,3层",
+  "vi": "49 Seungji-ro, thành phố Siheung, tỉnh Gyeonggi, tầng 3"
+ },
+ "58471ea279d36076c4edba3da9ec4aad": {
+  "en": "16-10 Daeeun-ro, Siheung-si (Daeya-dong)",
+  "zh": "始兴市Daeeun路16-10号(大野洞)",
+  "vi": "16-10 Daeeun-ro, thành phố Siheung (phường Daeya)"
+ },
+ "c0584798586b210fbcd61648a9580c03": {
+  "en": "Developmental Rehabilitation Service, Language Development Support Service",
+  "zh": "发育康复服务、语言发育支持服务",
+  "vi": "Dịch vụ phục hồi chức năng phát triển, dịch vụ hỗ trợ phát triển ngôn ngữ"
+ },
+ "3afd4e3bf81ffaa1a1d89fefa47aa835": {
+  "en": "Developmental Rehabilitation Service, Language Development Support Service",
+  "zh": "发育康复服务、语言发育支持服务",
+  "vi": "Dịch vụ phục hồi chức năng phát triển, dịch vụ hỗ trợ phát triển ngôn ngữ"
+ },
+ "36545fb761c5bb45c33c44cef081c8d4": {
+  "en": "Application form, ID, disability certificate, etc.",
+  "zh": "申请表、身份证件、残疾证明等",
+  "vi": "Đơn đăng ký, giấy tờ tùy thân, giấy chứng nhận khuyết tật, v.v."
+ },
+ "85ce7b336490aa65c05864ba408aaaf6": {
+  "en": "Welfare Jobs for Persons with Disabilities (Job Coach Dispatch)",
+  "zh": "残疾人福利岗位(派遣职务指导员)",
+  "vi": "Việc làm phúc lợi cho người khuyết tật (cử người hướng dẫn công việc)"
+ },
+ "eca24ca09d9861ae0c58b452d843283c": {
+  "en": "Unemployed registered persons with disabilities aged 18 or older",
+  "zh": "年满18周岁以上未就业的登记残疾人",
+  "vi": "Người khuyết tật đã đăng ký chưa có việc làm từ đủ 18 tuổi trở lên"
+ },
+ "96467e9f006d3b92c2a0fb650b6f0ea6": {
+  "en": "355-1 Sinhyeon-ro, Siheung-si (Bangsan-dong)",
+  "zh": "始兴市Sinhyeon路355-1号(方山洞)",
+  "vi": "355-1 Sinhyeon-ro, thành phố Siheung (phường Bangsan)"
+ },
+ "df5376532430eaa608a144bcb34be81c": {
+  "en": "Gyeonggi Parents' Association of Persons with Disabilities, Siheung Branch (incorporated association)",
+  "zh": "(社团法人)京畿残疾人家长联合会始兴市分会",
+  "vi": "(Pháp nhân xã hội) Hội phụ huynh người khuyết tật Gyeonggi, chi nhánh Thành phố Siheung"
+ },
+ "4e3db58921e500cf418a40ede842cdcc": {
+  "en": "Siheung Center for Independent Living of Persons with Disabilities 'Susukkotdari' (Lilac)",
+  "zh": "始兴残疾人自立生活中心 Susukkotdari(丁香花)",
+  "vi": "Trung tâm sống tự lập cho người khuyết tật Thành phố Siheung 'Susukkotdari' (Hoa tử đinh hương)"
+ },
+ "3faae79ef240190d2435878075276427": {
+  "en": "27-1 Jeongwang-daero 233beon-gil, Siheung-si",
+  "zh": "始兴市Jeongwang大路233街27-1号",
+  "vi": "27-1 Jeongwang-daero 233beon-gil, thành phố Siheung"
+ },
+ "7f4e18fcad88dcae37e962d31a730622": {
+  "en": "Elementary, middle and high school students in special education classes living in Siheung City",
+  "zh": "居住在始兴市的特殊班中小学生(小学、初中、高中)",
+  "vi": "Học sinh tiểu học, trung học cơ sở và trung học phổ thông học lớp giáo dục đặc biệt sống tại Thành phố Siheung"
+ },
+ "1b9590702c9f03c1739ef945d5385743": {
+  "en": "Required documents are explained during the user's in-person consultation",
+  "zh": "用户上门咨询时告知所需材料",
+  "vi": "Giấy tờ cần thiết sẽ được hướng dẫn khi người dùng đến tư vấn trực tiếp"
+ },
+ "d7b4ea19f54cc698f2a435e19890a7ca": {
+  "en": "Interest-Free Deposit Support Program 'Live Together'",
+  "zh": "保证金无息支援项目“一起生活”",
+  "vi": "Dự án hỗ trợ tiền đặt cọc không lãi suất 'Cùng sống'"
+ },
+ "cc68c2f21f9d271e0fb8fc45d1fcfe47": {
+  "en": "Siheung-Style Housing Cost (Child Housing Cost) Support Program",
+  "zh": "始兴型住房费(儿童住房费)支援项目",
+  "vi": "Dự án hỗ trợ chi phí nhà ở kiểu Siheung (chi phí nhà ở cho trẻ em)"
+ },
+ "b9795dc489334a3d698b6924e1dab3e2": {
+  "en": "Housing/lease criteria; separate asset criteria",
+  "zh": "住房/租赁标准;另有财产标准",
+  "vi": "Tiêu chí nhà ở/thuê nhà; tiêu chí tài sản riêng"
+ },
+ "47f6b33ac2612b2fbaebee98e0fe0aa0": {
+  "en": "33 Odong-maeul-ro, Siheung-si, floors 4–5",
+  "zh": "始兴市Odong-maeul路33号,4-5层",
+  "vi": "33 Odong-maeul-ro, thành phố Siheung, tầng 4-5"
+ },
+ "3498755003a69217741602d5abaeea27": {
+  "en": "Youth After-School Academy Operation Support Program",
+  "zh": "青少年课后学院运营支持项目",
+  "vi": "Dự án hỗ trợ vận hành Học viện sau giờ học cho thanh thiếu niên"
+ },
+ "4b2673e944420ed3ba163748f70ceb02": {
+  "en": "Support for work experience and internship programs",
+  "zh": "支持职场体验及实习项目",
+  "vi": "Hỗ trợ chương trình trải nghiệm công việc và thực tập"
+ },
+ "b1d9c9a40843944806aeb5ddaf537d95": {
+  "en": "Young aspiring and early-stage entrepreneurs aged 19–39",
+  "zh": "19~39岁青年预备创业者及初期创业者",
+  "vi": "Thanh niên từ 19~39 tuổi đang chuẩn bị khởi nghiệp và mới khởi nghiệp"
+ },
+ "65e2ee939332c276e2a166ff7befa939": {
+  "en": "Siheung City Basic Transportation Cost Support Program for Seniors",
+  "zh": "始兴市老年人基本交通费支援项目",
+  "vi": "Dự án hỗ trợ chi phí đi lại cơ bản cho người cao tuổi Thành phố Siheung"
+ },
+ "cb1795edd53edf12bc6bbb0cf8d3fdcc": {
+  "en": "Persons eligible for support under the Single-Parent Families Support Act",
+  "zh": "依据《单亲家庭支援法》的支援对象",
+  "vi": "Đối tượng được hỗ trợ theo Luật hỗ trợ gia đình đơn thân"
+ },
+ "fb9107652d6be70616fb85fa5e644809": {
+  "en": "Siheung City School Entrance Preparation Fund for Elementary, Middle and High School Students",
+  "zh": "始兴市中小学(小学、初中、高中)入学准备金支持",
+  "vi": "Hỗ trợ quỹ chuẩn bị nhập học cho học sinh tiểu học, trung học cơ sở và trung học phổ thông Thành phố Siheung"
+ },
+ "aaf47b6cb889fcb49f4fab270c517115": {
+  "en": "Mental Health Care (Treatment Cost Support for Persons with Mental Illness)",
+  "zh": "心理健康关怀(精神疾病患者治疗费支持)",
+  "vi": "Chăm sóc sức khỏe tâm thần (hỗ trợ chi phí điều trị cho người mắc bệnh tâm thần)"
+ },
+ "787d42690edb0e13397f3b4c761dd058": {
+  "en": "Young people living in Siheung City, aged 19 to 34",
+  "zh": "居住在始兴市的青年,满19岁~34岁",
+  "vi": "Thanh niên sống tại Thành phố Siheung, từ đủ 19 đến 34 tuổi"
+ },
+ "b10c91ad3f093cab9818dedc42fa0553": {
+  "en": "Online - Integrated reservation section on the Siheung City Hall website",
+  "zh": "线上-始兴市政府网站综合预约栏",
+  "vi": "Trực tuyến - Mục đặt chỗ tích hợp trên trang web của Tòa thị chính Siheung"
+ },
+ "73c5f056a8de8d2393230ff1de0aa81e": {
+  "en": "Long-term care grade criteria; health condition criteria",
+  "zh": "长期护理等级标准;健康状况标准",
+  "vi": "Tiêu chí hạng chăm sóc dài hạn; tiêu chí tình trạng sức khỏe"
+ },
+ "23f2fc97daaa6adbef4cd64785fc4390": {
+  "en": "Special Education Support for Students with Special Educational Needs",
+  "zh": "面向特殊教育对象的特殊教育支持",
+  "vi": "Hỗ trợ giáo dục đặc biệt cho đối tượng cần giáo dục đặc biệt"
+ },
+ "b85313383fa61628259cf8836ecaab19": {
+  "en": "20 Sicheong-ro, Siheung-si, Gyeonggi, Siheung City Hall",
+  "zh": "京畿始兴市Sicheong路20号,始兴市政府",
+  "vi": "20 Sicheong-ro, thành phố Siheung, Gyeonggi, Tòa thị chính Siheung"
+ },
+ "b42569e016f7403aacfaf72d4d5718f3": {
+  "en": "In person - community service center (dong office) for your address, or the service provider",
+  "zh": "上门办理-户籍所在地行政福利中心、提供机构",
+  "vi": "Đến trực tiếp - Trung tâm hành chính phúc lợi nơi cư trú, cơ quan cung cấp dịch vụ"
+ },
+ "8ab4f16e8751a26150c86c18fc6f4163": {
+  "en": "Siheung City residents with mobility difficulties",
+  "zh": "居住在始兴市、行动不便的本地居民",
+  "vi": "Cư dân Thành phố Siheung gặp khó khăn trong việc đi lại"
+ },
+ "6c2c676a1c9038d66a54a853dc2abfea": {
+  "en": "In person - community service center (dong office) or the relevant organization",
+  "zh": "上门办理-洞行政福利中心、相关机构",
+  "vi": "Đến trực tiếp - Trung tâm hành chính phúc lợi phường, cơ quan liên quan"
+ },
+ "7a4bda1cb9fc9a6fa22cff9e5e7e0bc5": {
+  "en": "Five Senses Talk! Play Talk! Picture Book Playroom",
+  "zh": "五感说!玩耍说!绘本游戏室",
+  "vi": "Năm giác quan nói! Chơi nói! Phòng chơi sách tranh"
+ },
+ "4a07040ae12596532a8cf6643d66b4b0": {
+  "en": "Fun Grows! Imagination Grows! Picture Book Playroom",
+  "zh": "有趣长!想象长!绘本游戏室",
+  "vi": "Vui nhộn lớn lên! Trí tưởng tượng lớn lên! Phòng chơi sách tranh"
+ },
+ "155ed9d790e440e43204a99767cc34dc": {
+  "en": "Recipients are selected by the Gwarim-dong Customized Welfare Team",
+  "zh": "由果林洞定制型福利组选定对象",
+  "vi": "Đối tượng được Nhóm phúc lợi theo nhu cầu phường Gwarim lựa chọn"
+ },
+ "d73c425dac83e2484fa959982b420d5f": {
+  "en": "Blanket Laundry Service for Vulnerable Groups such as Seniors Living Alone",
+  "zh": "独居老人等弱势群体被褥清洗服务",
+  "vi": "Dịch vụ giặt chăn cho nhóm yếu thế như người cao tuổi sống một mình"
+ },
+ "d1421ea54d036a0ddd75960581bfe64a": {
+  "en": "11 Doil-ro 102beon-gil, Siheung-si, 2nd floor",
+  "zh": "始兴市Doil路102街11号,2层",
+  "vi": "11 Doil-ro 102beon-gil, thành phố Siheung, tầng 2"
+ },
+ "a3f8423b69c54bb96e4c406a4e918739": {
+  "en": "None\n(Supporting documents for those eligible for a reduction or exemption)",
+  "zh": "无\n(减免对象需提供证明材料)",
+  "vi": "Không có\n(Đối với người được giảm/miễn cần giấy tờ chứng minh)"
+ },
+ "e2516543147442e7d759240b99d6a1b2": {
+  "en": "46 Sinhyeon-ro, Siheung-si, Residents' Autonomy Center, 2nd floor",
+  "zh": "始兴市Sinhyeon路46号 居民自治中心2层",
+  "vi": "46 Sinhyeon-ro, thành phố Siheung, Trung tâm tự quản cư dân, tầng 2"
+ }
+}

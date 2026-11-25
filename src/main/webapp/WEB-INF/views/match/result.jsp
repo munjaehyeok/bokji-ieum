@@ -84,7 +84,7 @@
                     <h3><c:out value="${row.displayName}"/></h3>
                     <span class="bk-badge-provider"><spring:message code="provider.${row.providerType}" text="${row.providerType}" htmlEscape="true"/></span>
                 </div>
-                <p class="org"><c:out value="${row.orgName}"/><c:if test="${not empty row.deptName}"> <c:out value="${row.deptName}"/></c:if></p>
+                <p class="org"><c:out value="${empty row.orgNameTr ? row.orgName : row.orgNameTr}"/><c:if test="${not empty row.deptName}"> <c:out value="${empty row.deptNameTr ? row.deptName : row.deptNameTr}"/></c:if></p>
                 <p class="summary1">
                     <c:choose>
                         <c:when test="${not empty row.summaryTr}"><c:out value="${row.summaryTr}"/></c:when>

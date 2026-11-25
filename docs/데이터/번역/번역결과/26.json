@@ -1,0 +1,932 @@
+{
+ "5f9429ecec1c88dbe351c4da6a67fd4a": {
+  "en": "2nd–3rd Thursday",
+  "zh": "第2-3周周四",
+  "vi": "Thứ Năm tuần 2–3"
+ },
+ "a84edd7046d1532c956a4d507f76a93c": {
+  "en": "Tue–Sat",
+  "zh": "周二至周六",
+  "vi": "Thứ Ba – Thứ Bảy"
+ },
+ "47f40d0cf2d895e533cac0ef93d693e7": {
+  "en": "Apr, Jul, Aug",
+  "zh": "4月、7月、8月",
+  "vi": "Tháng 4, 7, 8"
+ },
+ "35ca9a97654f2555f694dbc80a98b478": {
+  "en": "Mar–Dec",
+  "zh": "3月~12月",
+  "vi": "Tháng 3–12"
+ },
+ "4e4c9902b0db1c5c674febe17cb0f663": {
+  "en": "Nov 2025",
+  "zh": "2025年11月",
+  "vi": "Tháng 11/2025"
+ },
+ "f72e571ad3c573bdff22301dd8295b92": {
+  "en": "Jan–Jun",
+  "zh": "1月~6月",
+  "vi": "Tháng 1–6"
+ },
+ "a8e247790549039da35aeba93d380512": {
+  "en": "Aug 7–Aug 10",
+  "zh": "8月7日~8月10日",
+  "vi": "7/8 – 10/8"
+ },
+ "5273970647cb2c865faf7c951b01591d": {
+  "en": "May–Oct",
+  "zh": "5月~10月",
+  "vi": "Tháng 5–10"
+ },
+ "3947c28c56f6ecb1fcf5db32d00c59ed": {
+  "en": "May–Aug",
+  "zh": "5月~8月",
+  "vi": "Tháng 5–8"
+ },
+ "b443237a1272a13806406302d633e9c9": {
+  "en": "Mar–Nov",
+  "zh": "3月~11月",
+  "vi": "Tháng 3–11"
+ },
+ "28c3b3666c6b01900d31a4a4fbd94bd0": {
+  "en": "Jun–Nov",
+  "zh": "6月~11月",
+  "vi": "Tháng 6–11"
+ },
+ "00aa6a96ca2fcfdc1abc310bb3bfecd5": {
+  "en": "Every Thursday",
+  "zh": "每周四",
+  "vi": "Thứ Năm hằng tuần"
+ },
+ "8cb23e69161a6a536bc9009a8f37cdf6": {
+  "en": "Recruited 4 times a year",
+  "zh": "每年招募4次",
+  "vi": "Tuyển 4 lần mỗi năm"
+ },
+ "898c2a91d3aa4a11a533738676efa70b": {
+  "en": "Recruited 3 times a year",
+  "zh": "每年招募3次",
+  "vi": "Tuyển 3 lần mỗi năm"
+ },
+ "7ee5b31f42ff3b660f685a0d0ad561e9": {
+  "en": "Sep–Oct",
+  "zh": "9月~10月",
+  "vi": "Tháng 9–10"
+ },
+ "0f05f504d3398b5c4624e6d82f636adf": {
+  "en": "Every Monday–Thursday",
+  "zh": "每周一至周四",
+  "vi": "Thứ Hai – Thứ Năm hằng tuần"
+ },
+ "4c598fb8388b2c58e63565b078c93ec2": {
+  "en": "May–Jul",
+  "zh": "5月~7月",
+  "vi": "Tháng 5–7"
+ },
+ "0af689f0fac148190c5bdaf63c819905": {
+  "en": "Oct",
+  "zh": "10月",
+  "vi": "Tháng 10"
+ },
+ "bfc87fd350f22e67bc0d316a092bc60b": {
+  "en": "Sep–Oct",
+  "zh": "9月~10月",
+  "vi": "Tháng 9–10"
+ },
+ "4a0dd9c54a3f1e17a0faef1d072be533": {
+  "en": "Jan–Dec",
+  "zh": "1月~12月",
+  "vi": "Tháng 1–12"
+ },
+ "4a9d93826dbdcacba823c9e79ff05f77": {
+  "en": "Jul–Oct",
+  "zh": "7月~10月",
+  "vi": "Tháng 7–10"
+ },
+ "dc53c8418d14ae3f218f38ec76a1c338": {
+  "en": "Mar–Nov",
+  "zh": "3月~11月",
+  "vi": "Tháng 3–11"
+ },
+ "27ca8ca4bcf1232a7d38e8f19b939b93": {
+  "en": "Jun",
+  "zh": "6月",
+  "vi": "Tháng 6"
+ },
+ "1e20b97910269270f3dd931891ef5977": {
+  "en": "Oct–Nov",
+  "zh": "10月~11月",
+  "vi": "Tháng 10–11"
+ },
+ "edd1965ce9c2eb2c98bb038bd55bbc11": {
+  "en": "Apr–Nov",
+  "zh": "4月~11月",
+  "vi": "Tháng 4–11"
+ },
+ "d2390203c4a800e83645211a13ee5b3e": {
+  "en": "May–Dec",
+  "zh": "5月~12月",
+  "vi": "Tháng 5–12"
+ },
+ "14446a2f33b5f6cdc78e76a7ef09224c": {
+  "en": "Jan–Dec",
+  "zh": "1月~12月",
+  "vi": "Tháng 1–12"
+ },
+ "e3d8a2a85dabba7a82999ecb65e6d6eb": {
+  "en": "Wednesday (twice a month)",
+  "zh": "周三(每月2次)",
+  "vi": "Thứ Tư (2 lần mỗi tháng)"
+ },
+ "16d6b639a332d39aef6dea0483cfe26e": {
+  "en": "At least once a month",
+  "zh": "每月至少1次",
+  "vi": "Ít nhất 1 lần mỗi tháng"
+ },
+ "63c7480746cd6d75c7a1de98e87c14b1": {
+  "en": "Apr–Dec",
+  "zh": "4月~12月",
+  "vi": "Tháng 4–12"
+ },
+ "2394520bc28de32b5cb3f02db75237ee": {
+  "en": "Nov",
+  "zh": "11月",
+  "vi": "Tháng 11"
+ },
+ "d45ecef535c2f8287a702bfe41df7ca8": {
+  "en": "Apr–Nov",
+  "zh": "4月~11月",
+  "vi": "Tháng 4–11"
+ },
+ "2be5a0e9582502c3af02c3939d9f9bec": {
+  "en": "Applications accepted on the 1st of each month",
+  "zh": "每月1日受理",
+  "vi": "Tiếp nhận vào ngày 1 hằng tháng"
+ },
+ "778eadf2eec78fc178a86d5057d6b225": {
+  "en": "May–Nov",
+  "zh": "5月~11月",
+  "vi": "Tháng 5–11"
+ },
+ "88665f5ad7029492fc82db40aa424c36": {
+  "en": "Oct–Nov",
+  "zh": "10月~11月",
+  "vi": "Tháng 10–11"
+ },
+ "1775e1ba377c892190404e8b7e5cb831": {
+  "en": "Mar–Nov",
+  "zh": "3月~11月",
+  "vi": "Tháng 3–11"
+ },
+ "a8eee7411a6aabf24c9bce46562611ec": {
+  "en": "After the first-half and second-half application periods",
+  "zh": "上、下半年受理后",
+  "vi": "Sau đợt tiếp nhận nửa đầu và nửa cuối năm"
+ },
+ "baa3c9dee1cc0dce769cb8da028222a3": {
+  "en": "3rd Thursday",
+  "zh": "第3周周四",
+  "vi": "Thứ Năm tuần thứ 3"
+ },
+ "40c63cd9d227154c5845203a9431e8d8": {
+  "en": "Once per person",
+  "zh": "每人1次",
+  "vi": "1 lần cho mỗi người"
+ },
+ "ecc099d60bb7e53425e39b804cb6fc0a": {
+  "en": "5–6 times a year",
+  "zh": "每年5~6次",
+  "vi": "5–6 lần mỗi năm"
+ },
+ "49f9bf1c2a9632a4026c525b927f975c": {
+  "en": "Held twice a year",
+  "zh": "每年举办2次",
+  "vi": "Tổ chức 2 lần mỗi năm"
+ },
+ "bf744a0b49d1494ad87b49a6a2c84c57": {
+  "en": "Held once a year",
+  "zh": "每年举办1次",
+  "vi": "Tổ chức 1 lần mỗi năm"
+ },
+ "7c003992ed80f79b35047b1b88cea6ce": {
+  "en": "4 times a year",
+  "zh": "每年4次",
+  "vi": "4 lần mỗi năm"
+ },
+ "95317624a260dd51820961a9fecd73c1": {
+  "en": "1–2 times a year",
+  "zh": "每年1~2次",
+  "vi": "1–2 lần mỗi năm"
+ },
+ "d266c7cade223055bfb8f383cdc70ff0": {
+  "en": "Within 30 days\n(installation date separate)",
+  "zh": "30日内\n(安装日期另计)",
+  "vi": "Trong vòng 30 ngày\n(ngày lắp đặt tính riêng)"
+ },
+ "8cffa0ae6c11f0ef8d6e65a453221bf3": {
+  "en": "7–10 days",
+  "zh": "7~10天",
+  "vi": "7–10 ngày"
+ },
+ "19549c3819242d9f42dde605a568ccfc": {
+  "en": "2–10 days",
+  "zh": "2~10天",
+  "vi": "2–10 ngày"
+ },
+ "79f56fa008af70cb4491eb80d30c4a08": {
+  "en": "1–2 months",
+  "zh": "1~2个月",
+  "vi": "1–2 tháng"
+ },
+ "0a9f4681fdb0ad2d938772b6448e345f": {
+  "en": "70–110 days",
+  "zh": "70–110天",
+  "vi": "70–110 ngày"
+ },
+ "8f3671f78798454121193df0c0b736de": {
+  "en": "20–30 days",
+  "zh": "20–30天",
+  "vi": "20–30 ngày"
+ },
+ "0039402ad6996957377dc7d619b5d4b9": {
+  "en": "60–80 days",
+  "zh": "60–80天",
+  "vi": "60–80 ngày"
+ },
+ "d4532557591c313575fd9f02ee1fff79": {
+  "en": "120 days\n(until capacity is reached)",
+  "zh": "120天\n(额满为止)",
+  "vi": "120 ngày\n(đến khi đủ chỉ tiêu)"
+ },
+ "a112e39f7d4c52c12950dc28cb9f309c": {
+  "en": "Anytime\n(until the recruitment quota is filled)",
+  "zh": "随时\n(至招募名额满为止)",
+  "vi": "Bất cứ lúc nào\n(đến khi đủ số người tuyển)"
+ },
+ "46a7da43821bea226f4eede9a96d12e8": {
+  "en": "May vary depending on the treatment situation",
+  "zh": "可能因治疗情况而有所变动",
+  "vi": "Có thể thay đổi tùy theo tình hình điều trị"
+ },
+ "231df83af5ab21c9af0d51c26277d664": {
+  "en": "7–30 days",
+  "zh": "7~30天",
+  "vi": "7–30 ngày"
+ },
+ "c420e2b075fe15aa1002123733270119": {
+  "en": "7–90 days",
+  "zh": "7~90天",
+  "vi": "7–90 ngày"
+ },
+ "6cfcdeeaf4ea052f7ea8ab537e594581": {
+  "en": "180–300 days",
+  "zh": "180~300天",
+  "vi": "180–300 ngày"
+ },
+ "161f23d7d360f9888eccd6eff74154ca": {
+  "en": "30 days on average",
+  "zh": "平均30天",
+  "vi": "Trung bình 30 ngày"
+ },
+ "0f55c8c4e45a6a350bc65f8a04eafb26": {
+  "en": "Year-round",
+  "zh": "全年",
+  "vi": "Quanh năm"
+ },
+ "a245e6fedccb429c3032c62dab658482": {
+  "en": "None",
+  "zh": "无",
+  "vi": "Không có"
+ },
+ "ccd3e7f15fb0b31fe5753b154302b9a9": {
+  "en": "30 days",
+  "zh": "30天",
+  "vi": "30 ngày"
+ },
+ "34dddaee4ee34bd4b1c5ace8d36b59c9": {
+  "en": "Other (immediate if there is no waiting list at the facility)",
+  "zh": "其他(如设施无等候者,可立即办理)",
+  "vi": "Khác (có thể ngay nếu cơ sở không có người chờ)"
+ },
+ "342401814081eedf43faba88e2b8f89a": {
+  "en": "1,825 days\n(including waiting\ntime depending on capacity)",
+  "zh": "1825天\n(含根据名额\n产生的等候期)",
+  "vi": "1.825 ngày\n(bao gồm thời gian\nchờ tùy theo chỉ tiêu)"
+ },
+ "69539eccf58db13c687a11a102b5b996": {
+  "en": "1,095 days\n(including waiting\ntime depending on capacity)",
+  "zh": "1095天\n(含根据名额\n产生的等候期)",
+  "vi": "1.095 ngày\n(bao gồm thời gian\nchờ tùy theo chỉ tiêu)"
+ },
+ "5ec77553a1212f6deaef25ffb9c8f3af": {
+  "en": "14 days when parts are replaced\nInspection and simple repairs anytime",
+  "zh": "更换零件需14天\n检查及简单维修随时办理",
+  "vi": "14 ngày khi thay linh kiện\nKiểm tra và sửa chữa đơn giản bất cứ lúc nào"
+ },
+ "a6184f825a938608c0ab27f1b16fbaae": {
+  "en": "15 days\n(if the quota is not filled)",
+  "zh": "15天\n(名额未满时)",
+  "vi": "15 ngày\n(nếu chưa đủ chỉ tiêu)"
+ },
+ "136a87c7070d1136ad018294915d73f4": {
+  "en": "14 days\nif there is no waiting list",
+  "zh": "无等候者时\n14天",
+  "vi": "14 ngày\nnếu không có người chờ"
+ },
+ "7120f93dbc3b35393f8dec1bbd2ba2af": {
+  "en": "Reserve by phone 1 day before",
+  "zh": "提前1天电话预约",
+  "vi": "Đặt trước qua điện thoại 1 ngày"
+ },
+ "f54423d9ea9f77e55d1154dd2107f131": {
+  "en": "LH/GH will notify separately",
+  "zh": "LH/GH另行通知",
+  "vi": "LH/GH sẽ thông báo riêng"
+ },
+ "24be68d4ff93941a5c5509034e22f37a": {
+  "en": "Takes 1–2 months",
+  "zh": "需1~2个月",
+  "vi": "Mất 1–2 tháng"
+ },
+ "18d497fd32fd8afdbbc7f2392b213f34": {
+  "en": "Immediate (for children with health insurance, the income and asset review takes 1–2 months)",
+  "zh": "即时(儿童参加健康保险者,收入及财产调查需1~2个月)",
+  "vi": "Ngay lập tức (với trẻ em có bảo hiểm y tế, việc xét thu nhập và tài sản mất 1–2 tháng)"
+ },
+ "973649696266bdc516e81a8c34452c29": {
+  "en": "031-310-3614",
+  "zh": "031-310-3614",
+  "vi": "031-310-3614"
+ },
+ "24b462795c7d76acefe387e8f2ee557b": {
+  "en": "Depends on the facility",
+  "zh": "视设施情况而定",
+  "vi": "Tùy theo cơ sở"
+ },
+ "b2f9dbdb0774fcdc01ffe0ebba88399c": {
+  "en": "Within 30 days\n(there is a recruitment period)",
+  "zh": "30日内\n(设有招募期间)",
+  "vi": "Trong vòng 30 ngày\n(có thời gian tuyển)"
+ },
+ "17c18771616db9c22b611a8ef84686b4": {
+  "en": "Individual or guardian",
+  "zh": "本人或监护人",
+  "vi": "Cá nhân hoặc người giám hộ"
+ },
+ "d8da35cfa7d77189a8287e5cd7a8acc0": {
+  "en": "Individual or group\n(person or group wishing to apply)",
+  "zh": "本人或团体\n(希望申请的个人/团体)",
+  "vi": "Cá nhân hoặc nhóm\n(người/nhóm muốn đăng ký)"
+ },
+ "7d5d14ac257ed098fc22920e17052512": {
+  "en": "Anyone elementary school age or older",
+  "zh": "小学生以上任何人",
+  "vi": "Bất kỳ ai từ học sinh tiểu học trở lên"
+ },
+ "254cd0d4a4991ed5a51ad18cb98400e6": {
+  "en": "Family member or guardian",
+  "zh": "家人或监护人",
+  "vi": "Gia đình hoặc người giám hộ"
+ },
+ "a3cd33e865f88a14900724672e216761": {
+  "en": "Family of a person with dementia or other related persons",
+  "zh": "痴呆症患者家属或其他相关人员",
+  "vi": "Gia đình người bị sa sút trí tuệ hoặc người có liên quan khác"
+ },
+ "5f3c008a60dd57347ed53ac5e7f364c1": {
+  "en": "Teachers",
+  "zh": "教师",
+  "vi": "Giáo viên"
+ },
+ "167e9852ebcbb5392223d1b005745cb0": {
+  "en": "Students, parents, etc.",
+  "zh": "学生、家长等",
+  "vi": "Học sinh, phụ huynh, v.v."
+ },
+ "dc5fd2602fc390f66c0f3233fcd6e28b": {
+  "en": "School staff, community welfare centers, and local government welfare staff",
+  "zh": "教职员工、综合社会福利馆及地方政府福利相关人员",
+  "vi": "Nhân viên trường học, trung tâm phúc lợi xã hội tổng hợp và cán bộ phúc lợi của chính quyền địa phương"
+ },
+ "6cb950bb8ccd8cdfb7af1b6245a9aacf": {
+  "en": "Guardians and school principals",
+  "zh": "监护人及各级学校校长",
+  "vi": "Người giám hộ và hiệu trưởng các trường"
+ },
+ "813ea6f9fead0ab682c328ff02491636": {
+  "en": "The person themselves,\nor a representative (household member on the resident registration, relative of the recipient, etc.)",
+  "zh": "本人、\n代理人(居民登记表上的家庭成员、受助者亲属等)",
+  "vi": "Bản thân người đó,\nhoặc người đại diện (thành viên hộ gia đình trong sổ đăng ký cư trú, người thân của người thụ hưởng, v.v.)"
+ },
+ "6f60236eb23e0792d7ff88c3d14a4554": {
+  "en": "The person themselves or a legal representative",
+  "zh": "本人、法定代理人",
+  "vi": "Bản thân hoặc người đại diện hợp pháp"
+ },
+ "bf63d25dd81d1a2c3a4aa9a8d1fd016b": {
+  "en": "The eligible person, relatives,\ninterested persons (neighbors, etc.),\nor eup/myeon/dong officials",
+  "zh": "对象本人、亲属、\n利害关系人(邻居等)、\n邑面洞公务员",
+  "vi": "Chính người đủ điều kiện, người thân,\nngười có liên quan (hàng xóm, v.v.),\nhoặc cán bộ eup/myeon/dong"
+ },
+ "7b019e0e6ca55d05b2206bdebde9d4f6": {
+  "en": "Not applicable\n(paid automatically to eligible persons)",
+  "zh": "不适用\n(对象自动发放)",
+  "vi": "Không áp dụng\n(chi trả tự động cho đối tượng đủ điều kiện)"
+ },
+ "96d9e62fdacbd8aa40c39014b79f3a6f": {
+  "en": "The person themselves, guardians, etc.",
+  "zh": "本人、监护人等",
+  "vi": "Bản thân, người giám hộ, v.v."
+ },
+ "82f85509b36d0fc83f1f1a8f68654e42": {
+  "en": "The person and the head of household\n(or a household member, or someone authorized by the eligible person)",
+  "zh": "本人及户主\n(或家庭成员、受援助对象委托的人)",
+  "vi": "Bản thân và chủ hộ\n(hoặc thành viên hộ gia đình, hoặc người được đối tượng hỗ trợ ủy quyền)"
+ },
+ "55fa0dc687cc8b794265b5a2df2f5f33": {
+  "en": "The person themselves, or a guardian (if under age 14)",
+  "zh": "本人、监护人(未满14周岁时)",
+  "vi": "Bản thân, hoặc người giám hộ (nếu dưới 14 tuổi)"
+ },
+ "02437858424638ef1c5bcb32e9ac9012": {
+  "en": "Program participants",
+  "zh": "事业对象",
+  "vi": "Đối tượng của chương trình"
+ },
+ "3297cd046ac197504e8e6c984c46bd27": {
+  "en": "Residents of Sinhyeon-dong",
+  "zh": "新岘洞居民",
+  "vi": "Cư dân phường Sinhyeon"
+ },
+ "f59fa084d142727ffbc49828fa1f71c2": {
+  "en": "Elementary schools in Siheung City",
+  "zh": "始兴市小学",
+  "vi": "Các trường tiểu học tại Thành phố Siheung"
+ },
+ "951547e8dc04a72fd9657ee6445f89f0": {
+  "en": "Child's parents, legal custodians, or adults (themselves)",
+  "zh": "儿童的父母、抚养权人、成人(本人)",
+  "vi": "Cha mẹ của trẻ, người có quyền nuôi dưỡng, hoặc người lớn (bản thân)"
+ },
+ "6cbd7b51da41a01ccde864577d699570": {
+  "en": "Pregnant women and families with a newborn",
+  "zh": "孕妇及产后家庭",
+  "vi": "Phụ nữ mang thai và gia đình có em bé mới sinh"
+ },
+ "7efc38d7336bc0edcc933a0209c3318c": {
+  "en": "The mother, relatives, or a legal representative",
+  "zh": "产妇本人、亲属、法定代理人",
+  "vi": "Sản phụ, người thân hoặc người đại diện hợp pháp"
+ },
+ "9828b832b0cf8de303f77de977f0ef6c": {
+  "en": "The eligible person,\nthe eligible person's spouse,\nor a direct ascendant (parent, grandparent)",
+  "zh": "援助对象、\n援助对象的配偶\n或直系尊亲属",
+  "vi": "Đối tượng được hỗ trợ,\nvợ/chồng của đối tượng,\nhoặc ông bà, cha mẹ (trực hệ)"
+ },
+ "1acc631a2343c185f4b36c64b4b6e5b8": {
+  "en": "The person themselves, relatives, and representatives",
+  "zh": "本人、亲属及代理人",
+  "vi": "Bản thân, người thân và người đại diện"
+ },
+ "fa11d3d37c46795ac1fcc803c23c72ba": {
+  "en": "The person themselves and representatives",
+  "zh": "本人及代理人",
+  "vi": "Bản thân và người đại diện"
+ },
+ "424d3cb04b82a8570332424737e253de": {
+  "en": "1) Older adults who want the specialized service (hereafter 'applicant')\n2) Relatives of the applicant (hereafter 'proxy applicant')",
+  "zh": "1) 希望获得特色服务的老年人(以下简称“申请人”)\n2) 申请人的亲属(以下简称“代理申请人”)",
+  "vi": "1) Người cao tuổi muốn sử dụng dịch vụ chuyên biệt (sau đây gọi là 'người đăng ký')\n2) Người thân của người đăng ký (sau đây gọi là 'người đăng ký thay')"
+ },
+ "fb4e39c199b5b4cb9395ec86bed380bb": {
+  "en": "1) Older adults eligible for the Customized Care Service for Seniors (hereafter 'applicant')\n2) Relatives and interested persons of the applicant (hereafter 'proxy applicant')\n3) Eup/myeon/dong officials (application on official authority)",
+  "zh": "1) 具备老年人个性化照护服务申请资格的老年人(以下简称“申请人”)\n2) 申请人的亲属及利害关系人(以下简称“代理申请人”)\n3) 邑面洞公务员(依职权申请)",
+  "vi": "1) Người cao tuổi đủ điều kiện đăng ký Dịch vụ chăm sóc theo nhu cầu cho người cao tuổi (sau đây gọi là 'người đăng ký')\n2) Người thân và người có liên quan của người đăng ký (sau đây gọi là 'người đăng ký thay')\n3) Cán bộ eup/myeon/dong (đăng ký theo thẩm quyền)"
+ },
+ "77428fb22aefa14099f8bf5e86d41587": {
+  "en": "Participants and daycare centers",
+  "zh": "参与者本人及托儿所",
+  "vi": "Người tham gia và nhà trẻ"
+ },
+ "45aed8209bd49399776b24df72b069a0": {
+  "en": "Local officials, program staff, and the Together Care Team",
+  "zh": "主管公务员及事业负责人、共同照护团",
+  "vi": "Cán bộ phụ trách địa bàn, cán bộ phụ trách chương trình và Đội chăm sóc cộng đồng (Gachi Dolbom-dan)"
+ },
+ "e61732725f44946819154e910bb50f5f": {
+  "en": "Welfare center and related organization staff, or the person themselves",
+  "zh": "福利馆及相关机构负责人、本人",
+  "vi": "Cán bộ trung tâm phúc lợi và cơ quan liên quan, hoặc bản thân"
+ },
+ "763c1a146dcaed108e6fa435fbdfa01d": {
+  "en": "Participant's parents or legal custodians",
+  "zh": "参与者的父母、抚养权人",
+  "vi": "Cha mẹ hoặc người có quyền nuôi dưỡng của người tham gia"
+ },
+ "161b927c3811b97d4629cb0b8f9e7d0a": {
+  "en": "Club representatives and participants",
+  "zh": "社团代表及参与者",
+  "vi": "Đại diện câu lạc bộ và người tham gia"
+ },
+ "b4ec47d2a7d2f2f7219c028334749330": {
+  "en": "Youth (high school students)",
+  "zh": "青少年(高中生)",
+  "vi": "Thanh thiếu niên (học sinh trung học phổ thông)"
+ },
+ "49f5a737b00f208f3aa6a5e4634899b7": {
+  "en": "Participants and guardians",
+  "zh": "参与者及监护人",
+  "vi": "Người tham gia và người giám hộ"
+ },
+ "7d42e52594a6bc0c3823c40460bff7c0": {
+  "en": "Participants, guardians, and schools",
+  "zh": "参与者、监护人、学校",
+  "vi": "Người tham gia, người giám hộ và nhà trường"
+ },
+ "353998e4064135a84fc53ba01522bb88": {
+  "en": "Staff member or the person themselves",
+  "zh": "负责人、本人",
+  "vi": "Cán bộ phụ trách hoặc bản thân"
+ },
+ "68468e0daa0d9575c446617506fc0dca": {
+  "en": "The person and guardians,\nstaff of related organizations, etc.",
+  "zh": "本人及监护人、\n相关机构工作人员等",
+  "vi": "Bản thân và người giám hộ,\nnhân viên cơ quan liên quan, v.v."
+ },
+ "2ad1d5385825846d372e63952af245b7": {
+  "en": "The person themselves, local residents, other organizations",
+  "zh": "本人、当地居民、其他机构",
+  "vi": "Bản thân, người dân địa phương, cơ quan khác"
+ },
+ "85b2eda86ef160b6eb0129ab212e5d97": {
+  "en": "The person themselves, local residents, family, other organizations",
+  "zh": "本人、当地居民、家人、其他机构",
+  "vi": "Bản thân, người dân địa phương, gia đình, cơ quan khác"
+ },
+ "0c577b60111ce1e395dff13c6832b5f0": {
+  "en": "Parents or guardians of persons with disabilities",
+  "zh": "残疾人的父母、监护人",
+  "vi": "Cha mẹ hoặc người giám hộ của người khuyết tật"
+ },
+ "9f1cf8f191a7a068b7e3a92078506814": {
+  "en": "Youth and guardians,\neducation welfare workers",
+  "zh": "青少年及监护人、\n教育福利师",
+  "vi": "Thanh thiếu niên và người giám hộ,\nnhân viên phúc lợi giáo dục"
+ },
+ "a0f30467cc80d3bc5287d39ae9d6c7a8": {
+  "en": "Persons with disabilities themselves",
+  "zh": "残疾当事人",
+  "vi": "Chính người khuyết tật"
+ },
+ "10243d0a8a282e3b3154d1ab9fea858b": {
+  "en": "The person themselves and legal representatives",
+  "zh": "本人及法定代理人",
+  "vi": "Bản thân và người đại diện hợp pháp"
+ },
+ "f22755037abdd42994141150c178b2fa": {
+  "en": "The person themselves, people around them, etc.",
+  "zh": "本人、周围人士等。",
+  "vi": "Bản thân, người xung quanh, v.v."
+ },
+ "aca55548f056f067f37e105b0f7480b3": {
+  "en": "Residents aged 60 or older",
+  "zh": "60岁以上居民",
+  "vi": "Cư dân từ 60 tuổi trở lên"
+ },
+ "624b0fcefb4df7c949481ce5f93e1044": {
+  "en": "Families of 2 or more with children or teenagers",
+  "zh": "育有儿童青少年子女的2人以上家庭",
+  "vi": "Gia đình từ 2 người trở lên có con là trẻ em hoặc thanh thiếu niên"
+ },
+ "b08e7b413422a34ab2ec4c87aa5120da": {
+  "en": "Guardians raising children",
+  "zh": "子女抚养监护人",
+  "vi": "Người giám hộ đang nuôi dưỡng con"
+ },
+ "ea57c2bc8312cdf6fb7e9363c436e6b6": {
+  "en": "School teachers and related organizations",
+  "zh": "学校教师、相关机构",
+  "vi": "Giáo viên trường học và cơ quan liên quan"
+ },
+ "c88519c7b5b551b9c47dd84e173a5d42": {
+  "en": "The applicant themselves\nLocal related organizations",
+  "zh": "申请人本人\n当地相关机构",
+  "vi": "Chính người đăng ký\nCác cơ quan liên quan tại địa phương"
+ },
+ "026de6fb62b2dc776cbd13719b0b03bb": {
+  "en": "Child's guardian",
+  "zh": "儿童的监护人",
+  "vi": "Người giám hộ của trẻ"
+ },
+ "b9b86ed23419e2ac4ba22a4d1555f1a9": {
+  "en": "The person themselves, the applicant's relatives, eup/myeon/dong officials, interested persons, service providers",
+  "zh": "本人、申请人的亲属、邑面洞公务员、利害关系人、实施机构",
+  "vi": "Bản thân, người thân của người đăng ký, cán bộ eup/myeon/dong, người có liên quan, cơ quan thực hiện"
+ },
+ "887adeb917cc301a7acd15db8b0ccbc1": {
+  "en": "The person themselves, the applicant's relatives, eup/myeon/dong officials, interested persons, service providers, local community related organizations (referring organizations",
+  "zh": "本人、申请人的亲属、邑面洞公务员、利害关系人、实施机构、社区相关机构(转介机构",
+  "vi": "Bản thân, người thân của người đăng ký, cán bộ eup/myeon/dong, người có liên quan, cơ quan thực hiện, cơ quan liên quan trong cộng đồng (cơ quan giới thiệu"
+ },
+ "708ffc2e7d388dafe165d9be23ec8d8b": {
+  "en": "Guardians with children or teenagers",
+  "zh": "育有儿童期、青少年期子女的监护人",
+  "vi": "Người giám hộ có con ở độ tuổi thiếu nhi hoặc thanh thiếu niên"
+ },
+ "60e41fe3e6cf4f1298a2d3acf4c06b48": {
+  "en": "Learners who cannot read or write (non-literate learners)",
+  "zh": "非识字学习者",
+  "vi": "Người học chưa biết đọc, biết viết"
+ },
+ "29e156ac754c5716d33bbe6aa3720de5": {
+  "en": "Local residents aged 55 or older",
+  "zh": "辖区内55岁以上居民",
+  "vi": "Cư dân trong khu vực từ 55 tuổi trở lên"
+ },
+ "75973f9c7f38303a1c803b84080dc581": {
+  "en": "Households with lower elementary school children facing emotional difficulties,\nwith income at or below 100% of the median income",
+  "zh": "中位收入100%以下、\n有情绪困难的小学低年级家庭",
+  "vi": "Gia đình có con học tiểu học lớp nhỏ gặp khó khăn về tâm lý,\nthu nhập từ 100% trung vị trở xuống"
+ },
+ "c3648e72514487ecc070870699418f1b": {
+  "en": "Child's guardian or staff of related organizations",
+  "zh": "儿童的监护人、相关机构工作人员",
+  "vi": "Người giám hộ của trẻ hoặc nhân viên cơ quan liên quan"
+ },
+ "636cd4a05582ab33973170ac987e99ed": {
+  "en": "Children, their guardians, or staff of related organizations",
+  "zh": "儿童、儿童监护人、相关机构工作人员",
+  "vi": "Trẻ em, người giám hộ của trẻ hoặc nhân viên cơ quan liên quan"
+ },
+ "6de23bd5a194ecf5e804f3f2250031c4": {
+  "en": "The eligible person or guardian",
+  "zh": "对象本人、监护人",
+  "vi": "Đối tượng hoặc người giám hộ"
+ },
+ "cb99622e155250f9604b9aa38ce73896": {
+  "en": "Schools, the Office of Education support center, the person themselves, guardians",
+  "zh": "学校、教育支援厅、本人、监护人",
+  "vi": "Nhà trường, Sở hỗ trợ giáo dục, bản thân, người giám hộ"
+ },
+ "9f0e75ad391e15ddd2678b3f251a7194": {
+  "en": "Participants and guardians",
+  "zh": "参与者、监护人",
+  "vi": "Người tham gia và người giám hộ"
+ },
+ "1b0341d9dcde14ef6edfdb4d01912117": {
+  "en": "Child's legal custodian,\ncommunity service center (dong office)",
+  "zh": "儿童的抚养权人、\n行政福利中心(洞办事处)",
+  "vi": "Người có quyền nuôi dưỡng trẻ,\ntrung tâm hành chính phúc lợi (văn phòng phường)"
+ },
+ "bf26a7d3dd881af132db8f8a9c57ec3a": {
+  "en": "- Community service center (dong office), school, family, acquaintances, etc.\n- Direct application is possible",
+  "zh": "- 行政福利中心(洞办事处)、学校、家人、熟人等\n- 可直接申请",
+  "vi": "- Trung tâm hành chính phúc lợi (văn phòng phường), nhà trường, gia đình, người quen, v.v.\n- Có thể đăng ký trực tiếp"
+ },
+ "a784ea03231446ad7f1f5cdcc300d5af": {
+  "en": "The person themselves, local residents, other organizations",
+  "zh": "本人、当地居民、其他机构",
+  "vi": "Bản thân, người dân địa phương, cơ quan khác"
+ },
+ "7b63ee801c15418e68ec900ac10e5760": {
+  "en": "The person themselves and a case manager",
+  "zh": "本人及个案管理员",
+  "vi": "Bản thân và người quản lý ca"
+ },
+ "9d2b5a9d205dd6dc7200dc5710ad2cec": {
+  "en": "The person themselves and a case manager\nAcquaintances, care workers, etc.",
+  "zh": "本人及个案管理员\n熟人及护理员等",
+  "vi": "Bản thân và người quản lý ca\nNgười quen, nhân viên chăm sóc, v.v."
+ },
+ "b1282394b5dcfb6b0e838fa940d8448b": {
+  "en": "Anyone (no restriction)",
+  "zh": "不限",
+  "vi": "Không giới hạn"
+ },
+ "6c567864daf8e54ee1bcbb454ac565e5": {
+  "en": "Community service center (dong office)\nFamily, acquaintances, etc.",
+  "zh": "行政福利中心(洞办事处)\n家人、熟人等",
+  "vi": "Trung tâm hành chính phúc lợi (văn phòng phường)\nGia đình, người quen, v.v."
+ },
+ "1252b66d248684484957385c1b42740d": {
+  "en": "*Child welfare facility staff\n*Guardian, for children receiving National Basic Livelihood Security",
+  "zh": "*儿童福利设施负责人\n*基础生活保障受助儿童由监护人申请",
+  "vi": "*Cán bộ phụ trách cơ sở phúc lợi trẻ em\n*Người giám hộ, đối với trẻ em thuộc diện hưởng Trợ cấp sinh hoạt cơ bản quốc gia"
+ },
+ "f8d2320dc1be200476249ab036caf35c": {
+  "en": "Children and guardians, officials in charge, schools, neighbors, etc.",
+  "zh": "儿童及监护人、负责公务员、学校、邻居等",
+  "vi": "Trẻ em và người giám hộ, cán bộ phụ trách, nhà trường, hàng xóm, v.v."
+ },
+ "f1ec9ff3acc3d58785fb2d7285c6bd2a": {
+  "en": "Child abuse response officials\nand police",
+  "zh": "儿童虐待专职公务员\n及警察",
+  "vi": "Cán bộ chuyên trách về bạo hành trẻ em\nvà cảnh sát"
+ },
+ "4e0469fea4e9af76e9d4f7f0e5eeefac": {
+  "en": "Child abuse response officials and police",
+  "zh": "儿童虐待专职公务员及警察",
+  "vi": "Cán bộ chuyên trách về bạo hành trẻ em và cảnh sát"
+ },
+ "2ab611f03dd755c9b47ad91165795d8e": {
+  "en": "Parents of adopted children, city/county/district officials, family foster care support center",
+  "zh": "被收养儿童的父母、市郡区负责人、家庭寄养支援中心",
+  "vi": "Cha mẹ của trẻ được nhận nuôi, cán bộ phụ trách thành phố/huyện/quận, trung tâm hỗ trợ chăm sóc thay thế tại gia đình"
+ },
+ "895407c301317a7cf7c59835bc9c16fb": {
+  "en": "Adoption agencies",
+  "zh": "收养机构",
+  "vi": "Cơ quan nhận con nuôi"
+ },
+ "65464bc9fc5f7d44c9db558b4608e5dd": {
+  "en": "Unmarried or divorced single parents themselves, family (blood relatives within the 8th degree, in-laws within the 4th degree), or other related persons (guardians, etc.). For unmarried mothers living in an unmarried mother-child family welfare facility, a person from that facility may apply on their behalf",
+  "zh": "未婚、离婚单亲家长本人、家人(8亲等以内血亲、4亲等以内姻亲)或其他相关人员(监护人等);入住未婚母子家庭福利设施的未婚母亲,可由所入住设施的相关人员代为申请",
+  "vi": "Cha/mẹ đơn thân chưa kết hôn hoặc đã ly hôn, người nhà (họ hàng cùng huyết thống trong phạm vi 8 đời, họ hàng bên thông gia trong phạm vi 4 đời) hoặc người có liên quan khác (người giám hộ, v.v.). Với bà mẹ chưa kết hôn đang ở cơ sở phúc lợi gia đình mẹ đơn thân và con, người liên quan của cơ sở đó có thể đăng ký thay"
+ },
+ "3aafeb953ddf67af20213e138ab0af71": {
+  "en": "Child abuse response officials",
+  "zh": "儿童虐待专职公务员",
+  "vi": "Cán bộ chuyên trách về bạo hành trẻ em"
+ },
+ "147ccfe4b4f55f67c4427054faeb6618": {
+  "en": "The person themselves or a representative of a minor",
+  "zh": "本人或未成年人代理人",
+  "vi": "Bản thân hoặc người đại diện của trẻ vị thành niên"
+ },
+ "69f27505f09b28100fbf84f5f47fda8c": {
+  "en": "Child's parents, legal custodians, or related organizations",
+  "zh": "儿童的父母、抚养权人、相关机构",
+  "vi": "Cha mẹ của trẻ, người có quyền nuôi dưỡng, cơ quan liên quan"
+ },
+ "ac5dc4db154a0d463eef29d8ded3cdbe": {
+  "en": "Child's parents, legal custodians, or childcare staff",
+  "zh": "儿童的父母、抚养权人、保育教职员工",
+  "vi": "Cha mẹ của trẻ, người có quyền nuôi dưỡng, nhân viên nhà trẻ"
+ },
+ "46e45b8dbd479f9a1f237cad4c4afb7b": {
+  "en": "Victims of domestic violence or sexual violence",
+  "zh": "家庭暴力、性暴力受害者",
+  "vi": "Nạn nhân bạo lực gia đình hoặc bạo lực tình dục"
+ },
+ "301215fce36bf16b8e58301acf6860ae": {
+  "en": "Victims of domestic violence",
+  "zh": "家庭暴力受害者",
+  "vi": "Nạn nhân bạo lực gia đình"
+ },
+ "9a1100b90d1483b5f71334f8a28c096a": {
+  "en": "Foreign residents in livelihood crisis",
+  "zh": "生计危机的外国人居民",
+  "vi": "Cư dân nước ngoài gặp khủng hoảng sinh kế"
+ },
+ "13988f8b6a4b0a1eed85eb9486f85a73": {
+  "en": "The person themselves, family, or organization staff",
+  "zh": "本人、家人、机构工作人员",
+  "vi": "Bản thân, gia đình, nhân viên cơ quan"
+ },
+ "f1cdaa84333421596d01603523b0b806": {
+  "en": "Children and youth, or\nparents or legal custodians",
+  "zh": "儿童及青少年或\n父母、抚养权人",
+  "vi": "Trẻ em và thanh thiếu niên, hoặc\ncha mẹ, người có quyền nuôi dưỡng"
+ },
+ "cd6d5c5a4480d748efe239d1cb8a153c": {
+  "en": "Foreign residents",
+  "zh": "外国人居民",
+  "vi": "Cư dân nước ngoài"
+ },
+ "d71ed386c6c8ba7a59a5b41a57cf499c": {
+  "en": "Parents of children and youth,\nlegal custodians",
+  "zh": "儿童及青少年的父母、\n抚养权人",
+  "vi": "Cha mẹ của trẻ em và thanh thiếu niên,\nngười có quyền nuôi dưỡng"
+ },
+ "de493456dd51e79744c2c8dadcb2a1cb": {
+  "en": "School\n(guardians apply through the school)",
+  "zh": "学校\n(监护人通过学校申请)",
+  "vi": "Nhà trường\n(người giám hộ đăng ký qua nhà trường)"
+ },
+ "f415d9c750ad4f464a02c3a7705881cb": {
+  "en": "Child's parents or the person themselves",
+  "zh": "儿童的父母、本人",
+  "vi": "Cha mẹ của trẻ hoặc bản thân"
+ },
+ "e4b2a2dbd69ef4aa1df9ca80aa6ca2c2": {
+  "en": "Student's guardian",
+  "zh": "学生监护人",
+  "vi": "Người giám hộ của học sinh"
+ },
+ "f6eae3e2304d41a59047a33ff35da6d9": {
+  "en": "The person themselves or organization staff",
+  "zh": "本人、机构工作人员",
+  "vi": "Bản thân hoặc nhân viên cơ quan"
+ },
+ "52381527e65a238b191c33fc4ddeca64": {
+  "en": "People who wish to start\na social economy enterprise",
+  "zh": "希望创办\n社会经济企业者",
+  "vi": "Người muốn thành lập\ndoanh nghiệp kinh tế xã hội"
+ },
+ "908284c271166d90459ff35b748abf9b": {
+  "en": "Persons with disabilities, persons without disabilities, guardians",
+  "zh": "残疾人、非残疾人、监护人",
+  "vi": "Người khuyết tật, người không khuyết tật, người giám hộ"
+ },
+ "59d1af73c8dd354fbbf043bcc56e7fa7": {
+  "en": "The person themselves, family (spouse, children, children's spouses, siblings, blood relatives within the 8th degree, in-laws within the 4th degree), or organization staff",
+  "zh": "本人、家人(配偶、子女、子女的配偶、兄弟姐妹、8亲等以内血亲、4亲等以内姻亲)、机构工作人员",
+  "vi": "Bản thân, người nhà (vợ/chồng, con, vợ/chồng của con, anh chị em, họ hàng cùng huyết thống trong phạm vi 8 đời, họ hàng bên thông gia trong phạm vi 4 đời), nhân viên cơ quan"
+ },
+ "47cf1555c6fb162475557dea3d7a8349": {
+  "en": "Low-income persons with disabilities\n(recipients of basic livelihood security and near-poor households)",
+  "zh": "低收入(受助者及次贫困阶层)\n残疾人",
+  "vi": "Người khuyết tật có thu nhập thấp\n(người thụ hưởng trợ cấp và hộ cận nghèo)"
+ },
+ "bd34939d9932f6d5b6f285a6b9460f4b": {
+  "en": "Persons with disabilities themselves and guardians",
+  "zh": "残疾人本人及监护人",
+  "vi": "Người khuyết tật và người giám hộ"
+ },
+ "6a39a7cf5a9242221a36a1c105257baa": {
+  "en": "Parents or legal custodians of persons with disabilities",
+  "zh": "残疾人的父母、抚养权人",
+  "vi": "Cha mẹ hoặc người có quyền nuôi dưỡng của người khuyết tật"
+ },
+ "0a8a95f4c13ba4d8f7871fa8edd5ec31": {
+  "en": "User's parents",
+  "zh": "使用者的父母",
+  "vi": "Cha mẹ của người sử dụng"
+ },
+ "a7b7d051aad7dba800a1d4a21148318a": {
+  "en": "Persons with disabilities themselves and guardians",
+  "zh": "残疾人当事人及监护人",
+  "vi": "Người khuyết tật và người giám hộ"
+ },
+ "fa6bcc82b62fc68fc9f5eab56392a351": {
+  "en": "Parents and families\nof children with disabilities",
+  "zh": "育有残疾子女的\n父母及家人",
+  "vi": "Cha mẹ và gia đình\ncó con khuyết tật"
+ },
+ "18f8ca0df61e7914ff88d80963535cec": {
+  "en": "Parents or legal custodians of children and adults with disabilities",
+  "zh": "残疾儿童及成年残疾人的父母、抚养权人",
+  "vi": "Cha mẹ hoặc người có quyền nuôi dưỡng của trẻ em và người lớn khuyết tật"
+ },
+ "fe45b8970b1dc6a42d218a71f88dd3da": {
+  "en": "Parents or legal custodians of children with disabilities",
+  "zh": "残疾儿童的父母、抚养权人",
+  "vi": "Cha mẹ hoặc người có quyền nuôi dưỡng của trẻ em khuyết tật"
+ },
+ "c9ece49217664b045ea30092eed940bd": {
+  "en": "User or guardian",
+  "zh": "使用者或监护人",
+  "vi": "Người sử dụng hoặc người giám hộ"
+ },
+ "227692b16593035d8d187e6cbd20d7bf": {
+  "en": "The user themselves / guardian",
+  "zh": "使用者本人 / 监护人",
+  "vi": "Chính người sử dụng / người giám hộ"
+ },
+ "e0f14e6ab60a7c70b8b98e18a4c3fadb": {
+  "en": "Persons with disabilities themselves, guardians, citizens without disabilities, etc.",
+  "zh": "残疾当事人、监护人、非残疾市民等",
+  "vi": "Người khuyết tật, người giám hộ, công dân không khuyết tật, v.v."
+ },
+ "c1701a0cd9b081617d98586ac6c7c6a0": {
+  "en": "Persons with disabilities themselves, guardians, citizens without disabilities, etc.",
+  "zh": "残疾当事人、监护人、非残疾市民等",
+  "vi": "Người khuyết tật, người giám hộ, công dân không khuyết tật, v.v."
+ },
+ "31e27666afa5863b7007073861e34382": {
+  "en": "Persons with disabilities themselves, guardians, citizens without disabilities, etc.",
+  "zh": "残疾当事人、监护人、非残疾市民等",
+  "vi": "Người khuyết tật, người giám hộ, công dân không khuyết tật, v.v."
+ },
+ "5c4c35334f3e8e4acaaa3ba7f0935f94": {
+  "en": "The eligible person themselves, or by organization referral",
+  "zh": "对象本人、机构推荐",
+  "vi": "Chính đối tượng, hoặc do cơ quan giới thiệu"
+ },
+ "aee2a261569ab1f34fd8251bcf997f9c": {
+  "en": "Persons enrolled in guarantee insurance",
+  "zh": "保证保险投保人",
+  "vi": "Người tham gia bảo hiểm bảo lãnh"
+ },
+ "18bec822b418850fc99289c3f9931910": {
+  "en": "Child's parents, legal custodians,\nor by organization referral",
+  "zh": "儿童的父母、抚养权人、\n机构推荐",
+  "vi": "Cha mẹ của trẻ, người có quyền nuôi dưỡng,\nhoặc do cơ quan giới thiệu"
+ },
+ "c8b72ffb095a66043bd76049363bac16": {
+  "en": "Program participants",
+  "zh": "事业对象",
+  "vi": "Đối tượng của chương trình"
+ },
+ "44356b82f0243e8896346ab0c32ff70f": {
+  "en": "Youth themselves, guardians, youth counselors, etc.",
+  "zh": "青少年本人、监护人、青少年咨询师等",
+  "vi": "Thanh thiếu niên, người giám hộ, chuyên viên tư vấn thanh thiếu niên, v.v."
+ },
+ "3882258204fa71e2f97b41bf1bdd22ef": {
+  "en": "The eligible person and household members, or their relatives or other related persons",
+  "zh": "援助对象本人及家庭成员或其亲属、其他相关人员",
+  "vi": "Đối tượng được hỗ trợ và các thành viên hộ gia đình, hoặc người thân, người có liên quan khác"
+ }
+}

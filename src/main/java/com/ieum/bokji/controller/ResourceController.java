@@ -38,7 +38,7 @@ public class ResourceController {
             session.setAttribute(ReportController.TOKEN_KEY, java.util.UUID.randomUUID().toString());
         }
         row.setApplyUrl(LinkText.normalizeUrl(row.getApplyUrl()));
-        model.addAttribute("applyMethodHtml", LinkText.toHtml(row.getApplyMethod()));
+        model.addAttribute("applyMethodHtml", LinkText.toHtml(row.getApplyMethodTr() != null && !row.getApplyMethodTr().trim().isEmpty() ? row.getApplyMethodTr() : row.getApplyMethod()));
         model.addAttribute("resource", row);
         model.addAttribute("judged", cond != null);
         if (cond != null) model.addAttribute("compare", judgeCompare.build(row, cond, locale));

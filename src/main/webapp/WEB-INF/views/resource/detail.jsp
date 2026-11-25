@@ -11,16 +11,16 @@
 </div>
 <p class="text-secondary mb-3">
     <spring:message code="cat.${resource.category}" text="${resource.category}" htmlEscape="true"/>
-    <c:if test="${not empty resource.subCategory}"> · <c:out value="${resource.subCategory}"/></c:if>
+    <c:if test="${not empty resource.subCategory}"> · <spring:message code="val.${fn:trim(resource.subCategory)}" text="${fn:trim(resource.subCategory)}" htmlEscape="true"/></c:if>
 </p>
 
 <%-- 한눈에 보기: 담당·주기·제공유형·문의 (값이 없으면 칸 자체를 만들지 않는다 — 추정해 채우지 않음) --%>
 <div class="bk-facts d-flex flex-wrap align-items-start gap-3 mb-3">
     <dl class="bk-xmeta mb-0" aria-label="<spring:message code='detail.facts'/>">
-        <c:if test="${not empty resource.deptName}"><div><dt><spring:message code="card.dept"/></dt><dd><c:out value="${resource.deptName}"/></dd></div></c:if>
-        <c:if test="${not empty resource.serviceCycle and fn:length(resource.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${fn:trim(resource.serviceCycle)}" htmlEscape="true"/></dd></div></c:if>
-        <c:if test="${not empty resource.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><c:out value="${resource.serviceType}"/></dd></div></c:if>
-        <c:if test="${not empty resource.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(resource.phone, ',')[0])}"/></dd></div></c:if>
+        <c:if test="${not empty resource.deptName}"><div><dt><spring:message code="card.dept"/></dt><dd><c:out value="${empty resource.deptNameTr ? resource.deptName : resource.deptNameTr}"/></dd></div></c:if>
+        <c:if test="${not empty resource.serviceCycle and fn:length(resource.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${empty resource.serviceCycleTr ? fn:trim(resource.serviceCycle) : resource.serviceCycleTr}" htmlEscape="true"/></dd></div></c:if>
+        <c:if test="${not empty resource.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceType)}" text="${fn:trim(resource.serviceType)}" htmlEscape="true"/></dd></div></c:if>
+        <c:if test="${not empty resource.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(empty resource.phoneTr ? resource.phone : resource.phoneTr, ',')[0])}"/></dd></div></c:if>
     </dl>
     <button type="button" class="bk-fav ms-auto bk-noprint" data-id="${resource.resourceId}" aria-pressed="false"
             data-on="<spring:message code='explore.favOn'/>" data-off="<spring:message code='explore.fav'/>" aria-label="<spring:message code='explore.fav'/>" hidden>
@@ -32,7 +32,7 @@
 <%-- 지원 내용 --%>
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.support"/></h2>
-    <p class="bk-ws mb-0"><c:choose><c:when test="${not empty resource.summaryTr}"><c:out value="${resource.summaryTr}"/></c:when><c:otherwise><c:out value="${fn:trim(resource.supportContent)}"/></c:otherwise></c:choose></p>
+    <p class="bk-ws mb-0"><c:choose><c:when test="${not empty resource.summaryTr}"><c:out value="${resource.summaryTr}"/></c:when><c:otherwise><c:out value="${empty resource.summaryTr ? fn:trim(resource.supportContent) : resource.summaryTr}"/></c:otherwise></c:choose></p>
 </section>
 
 <%-- 자격 판정표 (조건 입력 후에만) --%>
@@ -69,7 +69,7 @@
             </tbody>
         </table>
         <c:if test="${not empty resource.uncertainNote}">
-            <p class="mt-2 mb-0"><strong><spring:message code="detail.note"/>:</strong> <c:out value="${resource.uncertainNote}"/></p>
+            <p class="mt-2 mb-0"><strong><spring:message code="detail.note"/>:</strong> <c:out value="${empty resource.uncertainNoteTr ? resource.uncertainNote : resource.uncertainNoteTr}"/></p>
         </c:if>
     </section>
 </c:if>
@@ -77,7 +77,7 @@
 <%-- 조건 입력 없이 들어온 상세에도 '추가 조건' 안내(출처 병존·연도 한정 등)는 보여 준다 --%>
 <c:if test="${not judged and not empty resource.uncertainNote}">
     <section class="bk-section">
-        <p class="mb-0"><strong><spring:message code="detail.note"/>:</strong> <c:out value="${resource.uncertainNote}"/></p>
+        <p class="mb-0"><strong><spring:message code="detail.note"/>:</strong> <c:out value="${empty resource.uncertainNoteTr ? resource.uncertainNote : resource.uncertainNoteTr}"/></p>
     </section>
 </c:if>
 
@@ -85,7 +85,7 @@
 <c:if test="${not empty resource.eligibilityRaw}">
     <section class="bk-section">
         <h2>&#9670; <spring:message code="detail.eligibility"/></h2>
-        <p class="bk-ws mb-0"><c:out value="${resource.eligibilityRaw}"/></p>
+        <p class="bk-ws mb-0"><c:out value="${empty resource.eligibilityTr ? resource.eligibilityRaw : resource.eligibilityTr}"/></p>
     </section>
 </c:if>
 
@@ -95,19 +95,19 @@
     <p class="bk-ws"><c:choose><c:when test="${not empty resource.applyMethod}">${applyMethodHtml}</c:when><c:otherwise><spring:message code="detail.askOrg"/></c:otherwise></c:choose></p>
     <p><strong><spring:message code="detail.docs"/>:</strong>
         <c:choose>
-            <c:when test="${not empty resource.documents}"><c:out value="${resource.documents}"/></c:when>
+            <c:when test="${not empty resource.documents}"><c:out value="${empty resource.documentsTr ? resource.documents : resource.documentsTr}"/></c:when>
             <c:otherwise><spring:message code="detail.askOrg"/></c:otherwise>
         </c:choose>
     </p>
     <p class="mb-1 text-secondary">
-        <c:if test="${not empty resource.applicant}"><spring:message code="detail.applicant"/>: <spring:message code="val.${fn:trim(resource.applicant)}" text="${fn:trim(resource.applicant)}" htmlEscape="true"/> · </c:if>
-        <c:if test="${not empty resource.decisionPeriod}"><spring:message code="detail.decision"/>: <c:out value="${resource.decisionPeriod}"/> · </c:if>
-        <c:if test="${not empty resource.serviceCycle}"><spring:message code="detail.cycle"/>: <spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${fn:trim(resource.serviceCycle)}" htmlEscape="true"/></c:if>
+        <c:if test="${not empty resource.applicant}"><spring:message code="detail.applicant"/>: <spring:message code="val.${fn:trim(resource.applicant)}" text="${empty resource.applicantTr ? fn:trim(resource.applicant) : resource.applicantTr}" htmlEscape="true"/> · </c:if>
+        <c:if test="${not empty resource.decisionPeriod}"><c:set var="dp" value="${fn:trim(resource.decisionPeriod)}"/><spring:message code="detail.decision"/>: <c:choose><c:when test="${dp.matches('[0-9]+')}"><spring:message code="detail.days" arguments="${dp}" htmlEscape="true"/></c:when><c:otherwise><spring:message code="val.${dp}" text="${empty resource.decisionPeriodTr ? dp : resource.decisionPeriodTr}" htmlEscape="true"/></c:otherwise></c:choose> · </c:if>
+        <c:if test="${not empty resource.serviceCycle}"><spring:message code="detail.cycle"/>: <spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${empty resource.serviceCycleTr ? fn:trim(resource.serviceCycle) : resource.serviceCycleTr}" htmlEscape="true"/></c:if>
     </p>
     <c:if test="${not empty resource.costFlag}">
         <p class="mb-1 text-secondary"><spring:message code="detail.cost"/>:
             <spring:message code="cost.${resource.costFlag}" text="${resource.costFlag}" htmlEscape="true"/>
-            <c:if test="${not empty resource.costAmount and not (fn:trim(resource.costAmount) eq '-' or fn:trim(resource.costAmount) eq '무료' or fn:trim(resource.costAmount) eq '해당없음' or fn:trim(resource.costAmount) eq '0')}"> — <c:out value="${resource.costAmount}"/></c:if>
+            <c:if test="${not empty resource.costAmount and not (fn:trim(resource.costAmount) eq '-' or fn:trim(resource.costAmount) eq '무료' or fn:trim(resource.costAmount) eq '해당없음' or fn:trim(resource.costAmount) eq '0')}"> — <c:out value="${empty resource.costAmountTr ? resource.costAmount : resource.costAmountTr}"/></c:if>
         </p>
     </c:if>
     <c:if test="${not empty resource.applyUrl}">
@@ -122,17 +122,17 @@
 <section class="bk-section">
     <h2>&#9670; <spring:message code="detail.org"/></h2>
     <p class="mb-1">
-        <c:out value="${resource.orgName}"/>
-        <c:if test="${not empty resource.deptName}"> <c:out value="${resource.deptName}"/></c:if>
+        <c:out value="${empty resource.orgNameTr ? resource.orgName : resource.orgNameTr}"/>
+        <c:if test="${not empty resource.deptName}"> <c:out value="${empty resource.deptNameTr ? resource.deptName : resource.deptNameTr}"/></c:if>
     </p>
     <c:if test="${not empty resource.address}">
-        <p class="mb-1 text-secondary"><c:out value="${resource.address}"/></p>
+        <p class="mb-1 text-secondary"><c:out value="${empty resource.addressTr ? resource.address : resource.addressTr}"/></p>
     </c:if>
     <c:if test="${not empty resource.phone}">
         <c:set var="firstPhone" value="${fn:trim(fn:split(resource.phone, ',')[0])}"/>
-        <p class="mb-1"><c:out value="${resource.phone}"/></p>
+        <p class="mb-1"><c:out value="${empty resource.phoneTr ? resource.phone : resource.phoneTr}"/></p>
         <a class="btn btn-bk bk-tel-btn bk-noprint" href="tel:${fn:replace(firstPhone, ' ', '')}" data-beacon="A">
-            &#128222; <spring:message code="detail.call"/> <c:out value="${firstPhone}"/>
+            &#128222; <spring:message code="detail.call"/> <c:out value="${fn:trim(fn:split(empty resource.phoneTr ? resource.phone : resource.phoneTr, ',')[0])}"/>
         </a>
     </c:if>
 </section>

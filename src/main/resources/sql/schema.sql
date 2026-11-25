@@ -72,8 +72,20 @@ CREATE TABLE resource (
 CREATE TABLE resource_i18n (
     resource_id INT          NOT NULL,
     lang        CHAR(2)      NOT NULL,
-    name_tr     VARCHAR(200) NOT NULL,
-    summary_tr  VARCHAR(500) NULL,
+    name_tr     VARCHAR(500) NOT NULL,
+    summary_tr  TEXT         NULL     COMMENT '지원 내용(support_content) 번역',
+    org_name_tr      VARCHAR(300) NULL,
+    dept_name_tr     VARCHAR(300) NULL,
+    address_tr       VARCHAR(500) NULL,
+    apply_method_tr  TEXT         NULL,
+    applicant_tr       VARCHAR(500) NULL,
+    service_cycle_tr   VARCHAR(300) NULL,
+    decision_period_tr VARCHAR(300) NULL,
+    phone_tr           VARCHAR(300) NULL,
+    documents_tr     TEXT         NULL,
+    eligibility_tr   TEXT         NULL     COMMENT '지원 기준(eligibility_raw) 번역',
+    cost_amount_tr   TEXT         NULL,
+    uncertain_note_tr TEXT        NULL,
     PRIMARY KEY (resource_id, lang),
     CONSTRAINT fk_i18n_resource FOREIGN KEY (resource_id) REFERENCES resource (resource_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
