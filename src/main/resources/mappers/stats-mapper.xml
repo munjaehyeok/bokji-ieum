@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+  관리자 이용 통계 (읽기 전용 — INSERT/UPDATE 없음).
+  match_log: 결과 화면(/match/result)을 열 때마다 1줄 (새로고침 포함)
+  event_log: D 상세 조회 / A 신청 안내(전화·신청 링크·인쇄) / R 오류 제보
+  날짜 기준은 한국 시간(UTC+9). 도커 MySQL은 UTC로 저장하므로 DB 시각과 한국 시각의 차이(분)를
+  매번 계산해서 맞춘다: 540 - TIMESTAMPDIFF(MINUTE, UTC_TIMESTAMP(), NOW())
+-->
+<mapper namespace="com.ieum.bokji.mapper.StatsMapper">
+
+    <!-- 기간 조건. days=0이면 전체, 아니면 '오늘(한국 날짜) 포함 최근 days일' -->
+    <sql id="since">
+        <if test="days > 0">
+            AND created_at >= TIMESTAMP(DATE(UTC_TIMESTAMP() + INTERVAL 540 MINUTE))
+            - INTERVAL (#{days} - 1) DAY
+            - INTERVAL (540 - TIMESTAMPDIFF(MINUTE, UTC_TIMESTAMP(), NOW())) MINUTE
+        </if>
+    </sql>
+
+    <!-- created_at을 한국 날짜로 -->
+    <sql id="kstDay">
+        DATE(created_at + INTERVAL (540 - TIMESTAMPDIFF(MINUTE, UTC_TIMESTAMP(), NOW())) MINUTE)
+    </sql>
+
+    <!-- 조건 검색 1건 = 세션 + 입력 조건 조합 (같은 세션에서 같은 조건을 다시 본 건 1건으로) -->
+    <sql id="searchCols">
+        session_hash, age_band, dong, household_types, income_rank, disability, nationality, edu_work
+    </sql>
+
+    <select id="summary" resultType="StatsSummary">
+        WITH m AS (  /* 결과 화면까지 본 세션 */
+        SELECT DISTINCT session_hash
+        FROM match_log
+        WHERE 1 = 1 <include refid="since"/>
+        ),
+        e AS (       /* 세션별로 상세(D)·신청 안내(A)를 했는지 */
+        SELECT session_hash,
+        MAX(event = 'D' AND resource_id IS NOT NULL) AS has_d,
+        MAX(event = 'A')                             AS has_a
+        FROM event_log
+        WHERE 1 = 1 <include refid="since"/>
+        GROUP BY session_hash
+        )
+        SELECT
+        (SELECT COUNT(*)
+        FROM (SELECT DISTINCT <include refid="searchCols"/>
+        FROM match_log
+        WHERE 1 = 1 <include refid="since"/>) s)                       AS searches,
+        (SELECT COUNT(*) FROM m)                                                    AS matched_sessions,
+        (SELECT COUNT(*) FROM m JOIN e ON e.session_hash = m.session_hash
+        WHERE e.has_d = 1)                                                        AS viewed_sessions,
+        (SELECT COUNT(*) FROM m JOIN e ON e.session_hash = m.session_hash
+        WHERE e.has_d = 1 AND e.has_a = 1)                                        AS applied_sessions,
+        (SELECT COUNT(*) FROM e
+        WHERE e.has_d = 1
+        AND NOT EXISTS (SELECT 1 FROM m WHERE m.session_hash = e.session_hash)) AS browse_only_sessions,
+        (SELECT COUNT(*) FROM event_log
+        WHERE event = 'D' AND resource_id IS NOT NULL <include refid="since"/>)  AS detail_views,
+        (SELECT COUNT(*) FROM event_log
+        WHERE event = 'A' <include refid="since"/>)                               AS apply_clicks,
+        (SELECT COUNT(*) FROM event_log
+        WHERE event = 'R' <include refid="since"/>)                               AS reports,
+        (SELECT ROUND(AVG(result_count)) FROM match_log
+        WHERE 1 = 1 <include refid="since"/>)                                     AS avg_results,
+        (SELECT MIN(result_count) FROM match_log
+        WHERE 1 = 1 <include refid="since"/>)                                     AS min_results,
+        (SELECT MAX(result_count) FROM match_log
+        WHERE 1 = 1 <include refid="since"/>)                                     AS max_results
+    </select>
+
+    <!-- 많이 본 자원 TOP 10 (상세 조회 수 → 신청 안내 수 순) -->
+    <select id="popularResources" resultType="StatsResourceRow">
+        SELECT e.resource_id, r.name, r.org_name, r.category, r.status, e.views, e.applies
+        FROM (SELECT resource_id,
+        SUM(event = 'D') AS views,
+        SUM(event = 'A') AS applies
+        FROM event_log
+        WHERE resource_id IS NOT NULL AND event IN ('D', 'A') <include refid="since"/>
+        GROUP BY resource_id) e
+        LEFT JOIN resource r ON r.resource_id = e.resource_id
+        ORDER BY e.views DESC, e.applies DESC, e.resource_id
+        LIMIT 10
+    </select>
+
+    <!-- 조건 분포: 분류(dim)별 값(code)과 검색 수(cnt). 복수 선택 값은 서비스에서 쉼표로 나눈다 -->
+    <select id="conditionCounts" resultType="StatsDimRow">
+        WITH s AS (
+        SELECT DISTINCT <include refid="searchCols"/>
+        FROM match_log
+        WHERE 1 = 1 <include refid="since"/>
+        )
+        SELECT 'AGE' AS dim, age_band AS code, COUNT(*) AS cnt FROM s GROUP BY age_band
+        UNION ALL
+        SELECT 'DONG', dong, COUNT(*) FROM s GROUP BY dong
+        UNION ALL
+        SELECT 'HH', household_types, COUNT(*) FROM s GROUP BY household_types
+        UNION ALL
+        SELECT 'INCOME',
+        CASE income_rank WHEN 1 THEN '1' WHEN 2 THEN '2' WHEN 3 THEN '3' WHEN 4 THEN '4' END,
+        COUNT(*)
+        FROM s GROUP BY income_rank
+        UNION ALL
+        SELECT 'DIS', disability, COUNT(*) FROM s GROUP BY disability
+        UNION ALL
+        SELECT 'NAT', nationality, COUNT(*) FROM s GROUP BY nationality
+        UNION ALL
+        SELECT 'EDU', edu_work, COUNT(*) FROM s GROUP BY edu_work
+    </select>
+
+    <!-- 날짜별 건수 (기록이 있는 날만, 최근 31일) -->
+    <select id="daily" resultType="StatsDailyRow">
+        SELECT log_day,
+        SUM(searches) AS searches,
+        SUM(views)    AS views,
+        SUM(applies)  AS applies,
+        SUM(reports)  AS reports
+        FROM (SELECT log_day, COUNT(*) AS searches, 0 AS views, 0 AS applies, 0 AS reports
+        FROM (SELECT DISTINCT <include refid="kstDay"/> AS log_day, <include refid="searchCols"/>
+        FROM match_log
+        WHERE 1 = 1 <include refid="since"/>) ms
+        GROUP BY log_day
+        UNION ALL
+        SELECT <include refid="kstDay"/> AS log_day,
+        0,
+        SUM(event = 'D' AND resource_id IS NOT NULL),
+        SUM(event = 'A'),
+        SUM(event = 'R')
+        FROM event_log
+        WHERE event IN ('D', 'A', 'R') <include refid="since"/>
+        GROUP BY log_day) t
+        GROUP BY log_day
+        ORDER BY log_day DESC
+        LIMIT 31
+    </select>
+</mapper>
