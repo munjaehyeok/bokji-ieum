@@ -416,8 +416,7 @@ section[aria-label=examples] > p { grid-column: 1 / -1; margin: 0 0 .2rem !impor
 .bk-xmore { margin-left: .6rem; font-weight: 700; color: var(--bk-primary); }
 .bk-fav { margin-left: auto; background: none; border: 0; padding: .3rem; color: #6a7276; cursor: pointer; line-height: 0; min-width: 2.4rem; min-height: 2.4rem; }
 .bk-fav svg { width: 1.5rem; height: 1.5rem; }
-.bk-fav.on { color: #b3382c; }
-.bk-fav.on svg path { fill: currentColor; }
+.bk-fav.on { color: #d92d3f; --fav-fill: currentColor; }
 .bk-fav:focus-visible, .bk-explore-bar a:focus-visible { outline: 3px solid var(--bk-primary); outline-offset: 2px; }
 .bk-pager { display: flex; justify-content: center; align-items: center; gap: 1.4rem; margin: 1.6rem 0 .6rem; font-weight: 700; }
 .bk-pager a { color: var(--bk-primary); }
