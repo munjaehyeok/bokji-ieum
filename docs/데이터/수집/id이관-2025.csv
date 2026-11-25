@@ -1,0 +1,44 @@
+패치 파일,구 resource_id,구 자원명,새 resource_id(빈칸=이관 불가·문장 제거),방식
+gov24-update-20261014.sql,758,시흥시 국가보훈대상자 지원,1867,offset
+gov24-update-20261014.sql,15,노인일자리지원사업,,새 목록에 없음
+gov24-update-20261014.sql,65,시흥형 주거비(아동주거비)지원사업,,이름만 일치(기관 상이) 1건
+gov24-update-20261014.sql,200,시흥시 청각장애인 재활치료,,이름만 일치(기관 상이) 1건
+gov24-update-20261014.sql,750,효도수당,1859,offset
+gov24-update-20261014.sql,66,신혼부부 전세대출금 이자지원사업,,이름만 일치(기관 상이) 1건
+gov24-update-20261014.sql,764,출생축하금 지원,1873,offset
+gov24-update-20261014.sql,765,중증장애인활동지원 사업(자체),1874,offset
+gov24-update-20261014.sql,315,산모·신생아 건강관리 지원사업,,이름만 일치(기관 상이) 1건
+gov24-update-20261014.sql,766,시흥시 산후조리비 지원,1875,offset
+gov24-update-20261014.sql,747,장애인보장구수리센터운영,1856,offset
+gov24-update-20261014.sql,234,자활참여자 건강검진 지원사업,,이름만 일치(기관 상이) 1건
+gov24-update-20261014.sql,761,장애학생 교내활동지원 사업,1870,offset
+gov24-update-20261014.sql,748,장애인특별운송사업,1857,offset
+gov24-update-20261014.sql,768,시흥시 어르신 기본교통비 지원사업,1877,offset
+gov24-update-20261014.sql,67,시흥형 집수리지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,15,노인일자리지원사업,,새 목록에 없음
+reliability-provenance.sql,65,시흥형 주거비(아동주거비)지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,66,신혼부부 전세대출금 이자지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,67,시흥형 집수리지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,200,시흥시 청각장애인 재활치료,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,234,자활참여자 건강검진 지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,315,산모·신생아 건강관리 지원사업,,이름만 일치(기관 상이) 1건
+reliability-provenance.sql,747,장애인보장구수리센터운영,1856,offset
+reliability-provenance.sql,748,장애인특별운송사업,1857,offset
+reliability-provenance.sql,750,효도수당,1859,offset
+reliability-provenance.sql,758,시흥시 국가보훈대상자 지원,1867,offset
+reliability-provenance.sql,761,장애학생 교내활동지원 사업,1870,offset
+reliability-provenance.sql,764,출생축하금 지원,1873,offset
+reliability-provenance.sql,765,중증장애인활동지원 사업(자체),1874,offset
+reliability-provenance.sql,766,시흥시 산후조리비 지원,1875,offset
+reliability-provenance.sql,768,시흥시 어르신 기본교통비 지원사업,1877,offset
+reliability-tagging.sql,181,고위험 임산부 의료비 지원사업,1224,name+org
+reliability-tagging.sql,479,이주배경청소년문화지원사업,,새 목록에 없음
+reliability-tagging.sql,755,결혼이민자 한국사회 이해증진,1864,offset
+reliability-tagging.sql,100,다문화가족 사례관리,,새 목록에 없음
+reliability-tagging.sql,103,다문화가족 서포터즈사업,1595,name+org
+reliability-tagging.sql,104,다문화가정 통번역서비스,,새 목록에 없음
+reliability-tagging.sql,260,결혼이민자가족코칭상담사파견사업,1624,name+org
+reliability-tagging.sql,530,다문화교육지원,,새 목록에 없음
+api-update-20261014.sql,99,외국인주민 긴급지원(생계비),,새 목록에 없음
+api-update-20261014.sql,67,시흥형 집수리지원사업,,이름만 일치(기관 상이) 1건
+api-update-20261014.sql,66,신혼부부 전세대출금 이자지원사업,,이름만 일치(기관 상이) 1건

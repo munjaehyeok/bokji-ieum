@@ -6,4 +6,4 @@ for f in schema seed api-update-20261014 facility-refresh-20261014 gov24-update-
   echo "[bokji] loading $f.sql"
   mysql --default-character-set=utf8mb4 -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE" < "/sql/$f.sql"
 done
-echo "[bokji] 적재 완료: 활성 자원 $(mysql -N -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE" -e "select count(*) from resource where status='A'")건 (기대값 792)"
+echo "[bokji] 적재 완료: 활성 자원 $(mysql -N -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE" -e "select count(*) from resource where status='A'")건 (기대값 901)"

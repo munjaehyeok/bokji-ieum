@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """탐색 모드(GET /resources) 계약 회귀 — docs/설계/07-탐색모드.md 계약에서 기대값을 DB로 따로 계산해 HTTP 결과와 대조한다.
 usage: python3 -I docs/검증/resource-search-regression.py <base_url> [컨테이너=bokji-verify]   종료코드 = FAIL 수
-DB 조회 실패는 SKIP이 아니라 FAIL. 검증 DB(792건) 전용: 비활성 테스트 시 resource 1행의 status를 바꿨다가 복원한다."""
+DB 조회 실패는 SKIP이 아니라 FAIL. 검증 DB(활성 901건) 전용: 비활성 테스트 시 resource 1행의 status를 바꿨다가 복원한다."""
 import re, subprocess, sys, urllib.parse, urllib.request
 
 base = sys.argv[1].rstrip('/')
 C = sys.argv[2] if len(sys.argv) > 2 else 'bokji-verify'
 fails = 0
+N = 901  # 2025판 활성 전체(안내서 853 + 복지로API 24 + 보조금24 24)
 
 def check(name, ok, detail=''):
     global fails
@@ -50,7 +51,7 @@ def overlap(lo, hi): return f"({AGE} and coalesce(r.age_min,0)<={hi} and coalesc
 # 1) 기본 = 활성 전체, 쪽 이동에 중복·누락 없음
 t, got = all_ids('')
 act = oracle('1=1')
-check('1 기본 호출 = 활성 전체', t == len(act) == 792, f'{t}/{len(act)}')
+check('1 기본 호출 = 활성 전체', t == len(act) == N, f'{t}/{len(act)}')
 check('1 전 쪽 순회: 중복·누락 없음', len(got) == len(set(got)) == t and set(got) == act)
 order = [int(x) for x in sql("select resource_id from resource where status='A' order by name, resource_id")]
 names = {int(a): b for a, b in (l.split('\t') for l in sql("select resource_id,name from resource where status='A'"))}
@@ -83,7 +84,7 @@ for code, w in HH.items():
 check('4 hh 복수 OR', set(all_ids(q(hh=['SPAR', 'DIS']))[1]) == oracle(HH['SPAR']) | oracle(HH['DIS']))
 check('4 FOR(국적 F) ≠ MCUL (섞이지 않음)', set(all_ids(q(hh='FOR'))[1]) != set(all_ids(q(hh='MCUL'))[1]))
 check('4 LOW+incx=1 은 income_uncertain 포함', set(all_ids(q(hh='LOW', incx=1))[1]) == oracle("r.income_rank in (1,2) or r.income_uncertain='Y'"))
-check('4 incx 단독은 hh 없으면 영향 없음', all_ids(q(incx=1))[0] == 792)
+check('4 incx 단독은 hh 없으면 영향 없음', all_ids(q(incx=1))[0] == N)
 
 # 5) 동
 check('5 dong=JWB: 동 미지정 자원 + 해당 동 포함', set(all_ids(q(dong='JWB'))[1]) == oracle("r.dong_codes is null or find_in_set('JWB',r.dong_codes)"))
@@ -121,20 +122,20 @@ check('8 인기순도 전체 유지(중복·누락 없음)', set(got_pop) == act
 # 9) 잘못된 입력은 SQL 오류 없이 무시
 for qs in ('cat=XX&life=ZZ&hh=Q&age=abc&dong=ZZ&sort=zzz&page=-1', 'age=999', 'age=-3', 'page=abc', 'cat=JOB&cat=JOB&cat=JOB'):
     st, h = fetch(qs); check(f'9 {qs[:40]}', st == 200 and total(h) >= 0)
-st, h = fetch('cat=XX&life=ZZ&hh=Q&age=abc&dong=ZZ&sort=zzz&page=-1'); check('9 허용값 밖 입력은 필터 없음(792)', total(h) == 792)
-st, h = fetch('', 99999); check('9 쪽 번호 초과는 마지막 쪽으로 보정', st == 200 and ids(h) == order[-(792 % 12 or 12):], str(len(ids(h))))
+st, h = fetch('cat=XX&life=ZZ&hh=Q&age=abc&dong=ZZ&sort=zzz&page=-1'); check('9 허용값 밖 입력은 필터 없음(N)', total(h) == N)
+st, h = fetch('', 99999); check('9 쪽 번호 초과는 마지막 쪽으로 보정', st == 200 and ids(h) == order[-(N % 12 or 12):], str(len(ids(h))))
 
 # 10) 찜 ids
 st, h = fetch('ids=abc'); check('10 ids 무효 → 0건·200', st == 200 and total(h) == 0)
-st, h = fetch('ids=1,2,999999,1'); check('10 ids 중복·없는 ID 제거', st == 200 and total(h) == 2 and set(ids(h)) == {1, 2})
-st, h = fetch('ids=' + ','.join(str(i) for i in range(1, 80))); check('10 ids 최대 50개', st == 200 and total(h) == 50)
+st, h = fetch('ids=1001,1002,999999,1001'); check('10 ids 중복·없는 ID 제거', st == 200 and total(h) == 2 and set(ids(h)) == {1001, 1002})
+st, h = fetch('ids=' + ','.join(str(i) for i in range(1001, 1080))); check('10 ids 최대 50개', st == 200 and total(h) == 50)
 
 # 11) 비활성 자원은 반환하지 않는다
-sql("update resource set status='I' where resource_id=1")
+sql("update resource set status='I' where resource_id=1001")
 st, h = fetch(''); t_off = total(h)
-sql("update resource set status='A' where resource_id=1")
-check('11 비활성(status<>A) 제외', t_off == 791, str(t_off))
-st, h = fetch(''); check('11 복원 후 792', total(h) == 792)
+sql("update resource set status='A' where resource_id=1001")
+check('11 비활성(status<>A) 제외', t_off == N - 1, str(t_off))
+st, h = fetch(''); check('11 복원 후 N', total(h) == N)
 
 # 12) 쪽·정렬 링크가 필터를 보존
 st, h = fetch(q(cat='EDU')); check('12 쪽 이동 링크에 cat=EDU 보존', 'cat=EDU' in h and 'page=2' in h)
