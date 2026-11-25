@@ -2,3 +2,7 @@
 db.url=jdbc:mysql://127.0.0.1:3306/bokji?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
 db.username=bokji
 db.password=bokji11
+
+# 네이버 지도 Client ID (선택). 비워 두면 상세 페이지에 지도가 나오지 않는다.
+# 네이버 클라우드 플랫폼 > Maps > Application 의 Client ID. 웹 서비스 URL에 http://localhost:8080 등록 필요.
+naver.map.clientId=

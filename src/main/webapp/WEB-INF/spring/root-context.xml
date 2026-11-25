@@ -13,6 +13,11 @@
     <!-- 비밀값: config.properties (.gitignore 등재, 예시는 config.properties.example) -->
     <context:property-placeholder location="classpath:config.properties"/>
 
+    <!-- 네이버 지도 Client ID: 없으면 빈 문자열 → 상세 페이지에서 지도를 그리지 않는다 -->
+    <bean id="naverMapClientId" class="java.lang.String">
+        <constructor-arg value="${naver.map.clientId:}"/>
+    </bean>
+
     <!-- Service 레이어 컴포넌트 스캔 (Controller는 servlet-context에서) -->
     <context:component-scan base-package="com.ieum.bokji">
         <context:exclude-filter type="annotation"
