@@ -88,7 +88,7 @@
             </button>
         </div>
         <h3><a href="${ctx}/resources/${row.resourceId}"><c:out value="${row.displayName}"/></a></h3>
-        <p class="bk-xorg"><c:out value="${row.orgName}"/><c:if test="${not empty row.deptName}"> · <c:out value="${row.deptName}"/></c:if></p>
+        <p class="bk-xorg"><c:out value="${empty row.orgNameTr ? row.orgName : row.orgNameTr}"/><c:if test="${not empty row.deptName}"> · <c:out value="${empty row.deptNameTr ? row.deptName : row.deptNameTr}"/></c:if></p>
         <p class="bk-xsum"><c:choose><c:when test="${not empty row.summaryTr}"><c:out value="${row.summaryTr}"/></c:when><c:otherwise><c:out value="${row.supportContent}"/></c:otherwise></c:choose></p>
         <div class="bk-xtags">
             <c:forTokens items="${row.householdTypes}" delims="," var="ht"><span class="bk-xtag"><spring:message code="hh.${ht}" text="${ht}" htmlEscape="true"/></span></c:forTokens>
@@ -96,9 +96,9 @@
             <c:if test="${row.nationality == 'F'}"><span class="bk-xtag"><spring:message code="nat.F"/></span></c:if>
         </div>
         <dl class="bk-xmeta">
-            <c:if test="${not empty row.serviceCycle and fn:length(row.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(row.serviceCycle)}" text="${fn:trim(row.serviceCycle)}" htmlEscape="true"/></dd></div></c:if>
-            <c:if test="${not empty row.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><c:out value="${row.serviceType}"/></dd></div></c:if>
-            <c:if test="${not empty row.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(row.phone, ',')[0])}"/></dd></div></c:if>
+            <c:if test="${not empty row.serviceCycle and fn:length(row.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(row.serviceCycle)}" text="${empty row.serviceCycleTr ? fn:trim(row.serviceCycle) : row.serviceCycleTr}" htmlEscape="true"/></dd></div></c:if>
+            <c:if test="${not empty row.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><spring:message code="val.${fn:trim(row.serviceType)}" text="${fn:trim(row.serviceType)}" htmlEscape="true"/></dd></div></c:if>
+            <c:if test="${not empty row.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(empty row.phoneTr ? row.phone : row.phoneTr, ',')[0])}"/></dd></div></c:if>
         </dl>
         <p class="bk-date mb-0">
             <c:if test="${not empty row.dataBaseDate}"><spring:message code="result.baseDate"/> <c:out value="${row.dataBaseDate}"/></c:if>

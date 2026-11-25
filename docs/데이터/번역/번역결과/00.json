@@ -1,0 +1,852 @@
+{
+ "02129bb861061d1a052c592e2dc6b383": {
+  "en": "X",
+  "zh": "X",
+  "vi": "X"
+ },
+ "336d5ebc5436534e61d16e63ddfca327": {
+  "en": "-",
+  "zh": "-",
+  "vi": "-"
+ },
+ "9dd4e461268c8034f5c8564e155c67a6": {
+  "en": "x",
+  "zh": "x",
+  "vi": "x"
+ },
+ "cfcd208495d565ef66e7dff9f98764da": {
+  "en": "0",
+  "zh": "0",
+  "vi": "0"
+ },
+ "c6e966a1d50c82db8fc4f93cb1e269a8": {
+  "en": "Visit in person",
+  "zh": "亲自到访",
+  "vi": "Đến trực tiếp"
+ },
+ "a245e6fedccb429c3032c62dab658482": {
+  "en": "None",
+  "zh": "无",
+  "vi": "Không có"
+ },
+ "be3d19c69daa5d5fb127d0dc74f82461": {
+  "en": "Varies by level (sliding scale)",
+  "zh": "按等级差别收费",
+  "vi": "Phân biệt theo mức (thang bậc)"
+ },
+ "667dd4fcf17117dc8edfd08d7add2638": {
+  "en": "Free",
+  "zh": "免费",
+  "vi": "Miễn phí"
+ },
+ "dfdc4153e6218752293b1c2dfc989ab4": {
+  "en": "Varies",
+  "zh": "各不相同",
+  "vi": "Khác nhau tùy trường hợp"
+ },
+ "1aefd97c669229d64df5208ab71a06f6": {
+  "en": "Table tennis",
+  "zh": "乒乓球",
+  "vi": "Bóng bàn"
+ },
+ "2314aa8b6372f142761a01230d8e92b2": {
+  "en": "Nanta (percussion performance)",
+  "zh": "乱打(打击乐表演)",
+  "vi": "Nanta (biểu diễn gõ nhịp)"
+ },
+ "90d10f40ae446cf292d756be6e8b393d": {
+  "en": "To be decided",
+  "zh": "待定",
+  "vi": "Chưa xác định"
+ },
+ "c1ac6289c969d964edce77fe0410b768": {
+  "en": "Singing",
+  "zh": "唱歌",
+  "vi": "Hát"
+ },
+ "407dd21975431c8c091167b66eab051e": {
+  "en": "Calligraphy",
+  "zh": "书法",
+  "vi": "Thư pháp"
+ },
+ "e9168eca1c98b43085595837f8ccd334": {
+  "en": "Yoga",
+  "zh": "瑜伽",
+  "vi": "Yoga"
+ },
+ "b70c5aec9d3089b05cf71549fc54eda6": {
+  "en": "Same",
+  "zh": "相同",
+  "vi": "Giống nhau"
+ },
+ "b1282394b5dcfb6b0e838fa940d8448b": {
+  "en": "No restriction",
+  "zh": "不限",
+  "vi": "Không giới hạn"
+ },
+ "c68d3418cbf38c0e40b65455dfdab02c": {
+  "en": "Green (Geurin)",
+  "zh": "格林(Geurin)",
+  "vi": "Green (Geurin)"
+ },
+ "4e070fedb70068d5fa5716af3dfdc4ac": {
+  "en": "ID card",
+  "zh": "身份证件",
+  "vi": "Giấy tờ tùy thân"
+ },
+ "61f9f0efb66745ded7f585cde07b33aa": {
+  "en": "KBS",
+  "zh": "KBS",
+  "vi": "KBS"
+ },
+ "d73d6b80a0ce13fef1fa9f1305a52c99": {
+  "en": "Application form",
+  "zh": "申请书",
+  "vi": "Đơn đăng ký"
+ },
+ "75ab44b390be1d06a0008efc305136fe": {
+  "en": "Acoustic guitar",
+  "zh": "民谣吉他",
+  "vi": "Guitar thùng"
+ },
+ "0edec4012e54ad8e058f71f4d68b754c": {
+  "en": "Administration Team",
+  "zh": "行政组",
+  "vi": "Nhóm Hành chính"
+ },
+ "9fd351671100ff4cdb8d636f09c68926": {
+  "en": "Request form",
+  "zh": "委托书",
+  "vi": "Giấy yêu cầu"
+ },
+ "b015e2fa661009bc17d57a6224fb820e": {
+  "en": "Haulhoe",
+  "zh": "Haulhoe",
+  "vi": "Haulhoe"
+ },
+ "c676be2c4a5086d4777a802a713a63a5": {
+  "en": "Neutisup",
+  "zh": "Neutisup",
+  "vi": "Neutisup"
+ },
+ "cb28ff206bfa167fefc8be5dc753182b": {
+  "en": "Hanarin",
+  "zh": "Hanarin",
+  "vi": "Hanarin"
+ },
+ "6c17825a1470ee6a0d0e1853b4993123": {
+  "en": "Byeokjinwon",
+  "zh": "Byeokjinwon",
+  "vi": "Byeokjinwon"
+ },
+ "cbe9d919601da41a3add21ee3b0ebc0e": {
+  "en": "Siheung City",
+  "zh": "始兴市",
+  "vi": "Thành phố Siheung"
+ },
+ "ef10393c28728714605bb3e2adb16f07": {
+  "en": "Siheung City residents",
+  "zh": "始兴市市民",
+  "vi": "Cư dân thành phố Siheung"
+ },
+ "b4953ef26e431ffeaa44789155a773c9": {
+  "en": "Families bereaved by suicide",
+  "zh": "自杀遗属",
+  "vi": "Thân nhân của người đã tự tử"
+ },
+ "5ead84335517ebe92b64b030e626fab9": {
+  "en": "Not applicable",
+  "zh": "不适用",
+  "vi": "Không áp dụng"
+ },
+ "46bec0ba1ef7e6353abe5427f11b33ca": {
+  "en": "Phone counseling",
+  "zh": "电话咨询",
+  "vi": "Tư vấn qua điện thoại"
+ },
+ "d255a309d5e620954f075e289021ea60": {
+  "en": "Debt counseling",
+  "zh": "债务咨询",
+  "vi": "Tư vấn nợ"
+ },
+ "afd36bbb1c5873878517be7351412111": {
+  "en": "Visit the facility in person",
+  "zh": "到设施现场访问",
+  "vi": "Đến trực tiếp cơ sở"
+ },
+ "2fb63bb7f6dc6c6dfc74aa33fcb190a9": {
+  "en": "See the list",
+  "zh": "参见名单",
+  "vi": "Xem danh sách"
+ },
+ "9779467988941ef612d0e7d2af6aef54": {
+  "en": "Happy Taxi",
+  "zh": "幸福出租车",
+  "vi": "Taxi Hạnh Phúc"
+ },
+ "7ce6cbd015a4e6b533a849c9e5cd8691": {
+  "en": "Line dance",
+  "zh": "排舞",
+  "vi": "Nhảy line dance"
+ },
+ "695c3f00610afa8c71cf99ea4ea6bca0": {
+  "en": "Belly dance",
+  "zh": "肚皮舞",
+  "vi": "Múa bụng"
+ },
+ "045995215b368b616ac9ae2a19ab6862": {
+  "en": "Spanish",
+  "zh": "西班牙语",
+  "vi": "Tiếng Tây Ban Nha"
+ },
+ "2ad0c6cdf1d428af60f48bed3d474892": {
+  "en": "Yoga class",
+  "zh": "瑜伽班",
+  "vi": "Lớp yoga"
+ },
+ "10595a64bb0b1fdc72ef97d2fac354e5": {
+  "en": "Health Day",
+  "zh": "健康日",
+  "vi": "Ngày Sức khỏe"
+ },
+ "703bc572f436ce98d15aafcab658391b": {
+  "en": "Wellness check",
+  "zh": "问安确认",
+  "vi": "Hỏi thăm sức khỏe"
+ },
+ "97f3a9ae4156bf48980815834eb0dc26": {
+  "en": "Singing class",
+  "zh": "歌唱班",
+  "vi": "Lớp hát"
+ },
+ "d1f5896292a0b3aaf28007aa6b4cf47a": {
+  "en": "Siheung Daham",
+  "zh": "始兴Daham",
+  "vi": "Siheung Daham"
+ },
+ "04c42e24d0de54ba3c238ffd22bc48e6": {
+  "en": "Pop song janggu (Korean drum)",
+  "zh": "歌谣长鼓",
+  "vi": "Trống janggu với nhạc đại chúng"
+ },
+ "e5d8ff7ff8414b2d71f7fc369b22d07c": {
+  "en": "Farm experience",
+  "zh": "农村体验",
+  "vi": "Trải nghiệm nông thôn"
+ },
+ "376a5fc038d9e762b95626800e9d20ee": {
+  "en": "Aerobics",
+  "zh": "有氧操",
+  "vi": "Aerobic"
+ },
+ "0f314d382e731b02a8e569d32a3c1527": {
+  "en": "Kind Meal Table",
+  "zh": "爱心餐桌",
+  "vi": "Bữa ăn nghĩa tình"
+ },
+ "8abe981a7bdd8318abed44877973ba1e": {
+  "en": "Designated sponsorship",
+  "zh": "指定赞助",
+  "vi": "Tài trợ chỉ định"
+ },
+ "143f33803e4b76739049d108dea0e439": {
+  "en": "Basic English",
+  "zh": "基础英语",
+  "vi": "Tiếng Anh cơ bản"
+ },
+ "abb04a3e1752d342a9812b6f3ea99b42": {
+  "en": "Toddler ballet",
+  "zh": "幼儿芭蕾",
+  "vi": "Ballet cho trẻ nhỏ"
+ },
+ "a2f6a654b693aeb56272736b043078f4": {
+  "en": "Zumba dance",
+  "zh": "尊巴舞",
+  "vi": "Nhảy Zumba"
+ },
+ "ddfa634b138b3742810890167c72e8a5": {
+  "en": "Vulnerable groups",
+  "zh": "弱势群体",
+  "vi": "Nhóm yếu thế"
+ },
+ "cadbc07fdb871708ac63dd3ac5d7b9bd": {
+  "en": "Jeongwang 3-dong",
+  "zh": "正往3洞",
+  "vi": "Phường Jeongwang 3"
+ },
+ "0047821cf5dc99cedf974fe58de42cf2": {
+  "en": "Siheung Federation of Arts (Siheung Yechong)",
+  "zh": "始兴艺术团体总联合会",
+  "vi": "Liên đoàn Văn hóa Nghệ thuật Siheung (Siheung Yechong)"
+ },
+ "c78df6d5191b79b31d5a9bbc9db2811b": {
+  "en": "No eligibility requirements",
+  "zh": "无资格要求",
+  "vi": "Không yêu cầu điều kiện"
+ },
+ "7b11c5e347fca066436cd0ca7b20e939": {
+  "en": "Housing safety",
+  "zh": "居住安全",
+  "vi": "An toàn nhà ở"
+ },
+ "103b54365b8b8eb3859db5caac298e55": {
+  "en": "Waterworks Division",
+  "zh": "自来水科",
+  "vi": "Phòng Cấp nước"
+ },
+ "70f1190a37ba08ab4f89a5bbcd41aa42": {
+  "en": "Furniture support",
+  "zh": "家具支援",
+  "vi": "Hỗ trợ đồ nội thất"
+ },
+ "8b47b43d1ca9acbc212a8e1dcacb7a49": {
+  "en": "Senior Appreciation Feast",
+  "zh": "敬老宴",
+  "vi": "Tiệc mừng người cao tuổi"
+ },
+ "29a88e1cdd6ec25e0dfd1615805ff916": {
+  "en": "Kimchi-making event",
+  "zh": "腌制泡菜活动",
+  "vi": "Sự kiện làm kim chi"
+ },
+ "22c6225920a7b41f3a40070cd56efc82": {
+  "en": "Case management",
+  "zh": "个案管理",
+  "vi": "Quản lý ca"
+ },
+ "d54d8a615fee40125ef87f144f72fd57": {
+  "en": "Birthday party for seniors",
+  "zh": "寿辰宴",
+  "vi": "Tiệc sinh nhật cho người cao tuổi"
+ },
+ "a0407cdb141e1426ee7d1189fa55fca9": {
+  "en": "Local residents",
+  "zh": "当地居民",
+  "vi": "Cư dân địa phương"
+ },
+ "d2443984b53216511e6484e2a9aebe70": {
+  "en": "Dementia education",
+  "zh": "失智症教育",
+  "vi": "Giáo dục về sa sút trí tuệ"
+ },
+ "0d138b073e5eaa8dbfb367c2594586e9": {
+  "en": "Welfare Division 1",
+  "zh": "福利一科",
+  "vi": "Phòng Phúc lợi 1"
+ },
+ "0f6b4938be21fa0d5c5b3da9453514fc": {
+  "en": "Parent education",
+  "zh": "家长教育",
+  "vi": "Giáo dục phụ huynh"
+ },
+ "f6937aa9f8679dafea020fe5041bcaa9": {
+  "en": "Meal support",
+  "zh": "供餐支援",
+  "vi": "Hỗ trợ bữa ăn"
+ },
+ "703d52462dd6532ee37886d80faa09f5": {
+  "en": "Learning School",
+  "zh": "学习学校",
+  "vi": "Trường học tập"
+ },
+ "d1dd0636c47b11338a71889c9847eb98": {
+  "en": "10,000 won per month",
+  "zh": "每月1万韩元",
+  "vi": "10.000 won mỗi tháng"
+ },
+ "152382d77f45e51def878c0cceef2c84": {
+  "en": "Silver yoga",
+  "zh": "银发瑜伽",
+  "vi": "Yoga cho người cao tuổi"
+ },
+ "c91dfd87733d9cc16019b3c244285014": {
+  "en": "Physical therapy",
+  "zh": "物理治疗",
+  "vi": "Vật lý trị liệu"
+ },
+ "0f9cb6fcd986d09cd9437e717d419d0d": {
+  "en": "On-site registration",
+  "zh": "现场报名",
+  "vi": "Đăng ký tại chỗ"
+ },
+ "17e6a69a7b44e13ee5b7836940329b3d": {
+  "en": "Saesol Shelter",
+  "zh": "Saesol庇护所",
+  "vi": "Nhà tạm lánh Saesol"
+ },
+ "cbfaf2aaec1e8de7974481dfcc2818e6": {
+  "en": "Ieum Shelter",
+  "zh": "Ieum庇护所",
+  "vi": "Nhà tạm lánh Ieum"
+ },
+ "9fac0c99ce398239d795f7099d1ccc9b": {
+  "en": "One-person households",
+  "zh": "单人家庭",
+  "vi": "Hộ gia đình một người"
+ },
+ "6f7627dcf33891594bdb7bd43ac611e9": {
+  "en": "Soccer tournament",
+  "zh": "足球比赛",
+  "vi": "Giải bóng đá"
+ },
+ "06e2f17a9424b68bbbefc201e88efd67": {
+  "en": "Content deleted",
+  "zh": "内容已删除",
+  "vi": "Nội dung đã bị xóa"
+ },
+ "10ef187884c6a74ec96ac11caf53db58": {
+  "en": "Job counseling",
+  "zh": "就业咨询",
+  "vi": "Tư vấn việc làm"
+ },
+ "543e94221aed4024a8b55d76593600fe": {
+  "en": "Disability allowance",
+  "zh": "残疾津贴",
+  "vi": "Trợ cấp khuyết tật"
+ },
+ "f1896a06fd1633fbbc2291697d4d547b": {
+  "en": "The Make",
+  "zh": "The Make",
+  "vi": "The Make"
+ },
+ "ac2d0ae69fd2b8ffdd9a37981404f7aa": {
+  "en": "Lunch support",
+  "zh": "午餐支援",
+  "vi": "Hỗ trợ bữa trưa"
+ },
+ "c12135d7eddc2c466b2f5e72abeeeade": {
+  "en": "Children's dance",
+  "zh": "儿童舞蹈",
+  "vi": "Múa thiếu nhi"
+ },
+ "1bfe84e71d55de2962c69e0da182b90f": {
+  "en": "On-site participation",
+  "zh": "现场参加",
+  "vi": "Tham gia tại chỗ"
+ },
+ "21206f055a54ae45df685634976b9c82": {
+  "en": "Cognitive therapy",
+  "zh": "认知治疗",
+  "vi": "Trị liệu nhận thức"
+ },
+ "592fbbdf36d3319298874f5745ab8a47": {
+  "en": "Stepping Stones",
+  "zh": "垫脚石",
+  "vi": "Bước đệm"
+ },
+ "7a3fc6f9f89ab4c83c1da352c3dcfc11": {
+  "en": "Music therapy",
+  "zh": "音乐治疗",
+  "vi": "Âm nhạc trị liệu"
+ },
+ "d4c3000999b67b49524869801e24f682": {
+  "en": "House of Peace",
+  "zh": "平安之家",
+  "vi": "Ngôi nhà Bình An"
+ },
+ "200f13920cb437dd15de3ad9244743de": {
+  "en": "Joyful House",
+  "zh": "快乐之家",
+  "vi": "Ngôi nhà Vui Vẻ"
+ },
+ "76d2f787464db694c1472b86ac4fa7ca": {
+  "en": "Happy Home",
+  "zh": "幸福之家",
+  "vi": "Mái ấm Hạnh Phúc"
+ },
+ "99680ac8c2ed328899654dd5d0db8474": {
+  "en": "Well No. 2",
+  "zh": "水井2号",
+  "vi": "Giếng số 2"
+ },
+ "fa36a7434cf5d2786432ff31afde8178": {
+  "en": "Well No. 1",
+  "zh": "水井1号",
+  "vi": "Giếng số 1"
+ },
+ "2b1b9f63f5312fc35a0ac24ef378498d": {
+  "en": "Areumdaun",
+  "zh": "Areumdaun",
+  "vi": "Areumdaun"
+ },
+ "82076e87cf7601c6e8530d1d26a31404": {
+  "en": "Children's gugak (Korean traditional music)",
+  "zh": "儿童国乐",
+  "vi": "Quốc nhạc Hàn Quốc cho thiếu nhi"
+ },
+ "2bb180a2b94affa065a1d9a86101f168": {
+  "en": "Broadcast dance (K-pop dance)",
+  "zh": "综艺舞蹈(K-pop舞)",
+  "vi": "Nhảy K-pop"
+ },
+ "5d1042cb82a021f6d4bc79dc41d37c04": {
+  "en": "Reserve by phone",
+  "zh": "电话预约",
+  "vi": "Đặt chỗ qua điện thoại"
+ },
+ "7af7247a50ca3c00c10c7a473f386630": {
+  "en": "Neighbor Connection",
+  "zh": "邻里相连",
+  "vi": "Kết nối hàng xóm"
+ },
+ "868943fff1d7fa3b86d9351fb2222964": {
+  "en": "Low-income households",
+  "zh": "低收入阶层",
+  "vi": "Tầng lớp thu nhập thấp"
+ },
+ "c6468d5bdebd410e97c44cd4bf246f82": {
+  "en": "Sports activities",
+  "zh": "体育活动",
+  "vi": "Hoạt động thể thao"
+ },
+ "d5bf105789a177f09aad367ad1061552": {
+  "en": "Contact the facility",
+  "zh": "咨询设施",
+  "vi": "Liên hệ cơ sở"
+ },
+ "3dfb7bf99d6eb765384dd5f796855a10": {
+  "en": "Siheung City Hall",
+  "zh": "始兴市政府",
+  "vi": "Ủy ban thành phố Siheung"
+ },
+ "d0aba0eb3c602accdc104a964163ded6": {
+  "en": "Filial piety allowance",
+  "zh": "孝道津贴",
+  "vi": "Trợ cấp hiếu đạo"
+ },
+ "506e806e784dd9c9c315a59ae0a70805": {
+  "en": "Apply in person",
+  "zh": "到访申请",
+  "vi": "Đăng ký trực tiếp"
+ },
+ "66a61a89323b834ab628e55c3e0b7b10": {
+  "en": "Direct entry",
+  "zh": "直接输入",
+  "vi": "Nhập trực tiếp"
+ },
+ "4f7a905681ed8f4816b013a84c914d7b": {
+  "en": "Quit-smoking clinic",
+  "zh": "戒烟门诊",
+  "vi": "Phòng khám cai thuốc lá"
+ },
+ "f655dc0e3981dd6de125499bfa2a1ec1": {
+  "en": "Healthy City Division",
+  "zh": "健康城市科",
+  "vi": "Phòng Thành phố Khỏe mạnh"
+ },
+ "d83cf6694a8a4a93671948690f4e7a29": {
+  "en": "Health Promotion Team",
+  "zh": "健康促进组",
+  "vi": "Nhóm Nâng cao Sức khỏe"
+ },
+ "1ea07768818e40f84054eb82b8875f94": {
+  "en": "People who have experienced disasters",
+  "zh": "灾难经历者",
+  "vi": "Người từng trải qua thảm họa"
+ },
+ "5a4ef3df14932aa0482850cad519f9a4": {
+  "en": "Apply by official letter",
+  "zh": "公文申请",
+  "vi": "Đăng ký bằng công văn"
+ },
+ "968eabbabbe9b2f91e11674f9d60d502": {
+  "en": "Senior Welfare Division",
+  "zh": "老人福利科",
+  "vi": "Phòng Phúc lợi Người cao tuổi"
+ },
+ "b5e305065bad753e4d38b4a05b530e0b": {
+  "en": "See the list",
+  "zh": "参见名单",
+  "vi": "Xem danh sách"
+ },
+ "9faefd8f437265cab0b6b5c6476900b9": {
+  "en": "Visit the facility in person",
+  "zh": "到设施现场访问",
+  "vi": "Đến trực tiếp cơ sở"
+ },
+ "7bcdcc6f4566f5dedec1e601e1f4b148": {
+  "en": "Hope Wheels (Huimangne Bakwi)",
+  "zh": "希望之轮",
+  "vi": "Bánh xe Hy vọng"
+ },
+ "af07ba32dc822e3710f3c8841dbeabb1": {
+  "en": "Low-income households",
+  "zh": "低收入阶层",
+  "vi": "Tầng lớp thu nhập thấp"
+ },
+ "6e0ccda5c2fb60475e456b7aa7af354c": {
+  "en": "Samchully Co., Ltd.",
+  "zh": "三千里股份有限公司",
+  "vi": "Công ty Cổ phần Samchully"
+ },
+ "5e30777f53be39e0b2593d806e40d1db": {
+  "en": "Mobile carriers",
+  "zh": "移动通信公司",
+  "vi": "Nhà mạng di động"
+ },
+ "ba976d748e0ed1660ba68cf66a51e501": {
+  "en": "Varies by individual",
+  "zh": "因人而异",
+  "vi": "Khác nhau tùy từng người"
+ },
+ "f57fc2eb63093533250b11110203c7c4": {
+  "en": "Urban sketching",
+  "zh": "都市速写",
+  "vi": "Phác họa đô thị"
+ },
+ "cc709111911ea5c1325724b510e23404": {
+  "en": "Acoustic guitar class",
+  "zh": "民谣吉他班",
+  "vi": "Lớp guitar thùng"
+ },
+ "6bd21c3b4243dd60cc9c172c6dee22a6": {
+  "en": "Residents of the city",
+  "zh": "辖区内居民",
+  "vi": "Cư dân trong thành phố"
+ },
+ "f2280f4b8ccd8e76500d8f3ee4b66aa0": {
+  "en": "Note: -",
+  "zh": "备注:-",
+  "vi": "Ghi chú: -"
+ },
+ "c377f7a09a768b5aebb4e63697c97d9e": {
+  "en": "Dancesport",
+  "zh": "体育舞蹈",
+  "vi": "Khiêu vũ thể thao"
+ },
+ "11a60bd06d211230dbb8627e915a28e8": {
+  "en": "Siheung Daham",
+  "zh": "始兴Daham",
+  "vi": "Siheung Daham"
+ },
+ "0b4c237e43807c058acdb6dbf14d68ee": {
+  "en": "Senior modeling",
+  "zh": "银发模特",
+  "vi": "Người mẫu cao tuổi"
+ },
+ "8f2c31ab5cf7537f5d666db95e6705f3": {
+  "en": "Village Chat Room",
+  "zh": "村里聊天室",
+  "vi": "Phòng trò chuyện của làng"
+ },
+ "94dbdbdf61f98cd232a6b6ac2cb25f58": {
+  "en": "Residents' Autonomy Association",
+  "zh": "居民自治会",
+  "vi": "Hội tự quản cư dân"
+ },
+ "647aa389327601ec26576cb6fa6157b4": {
+  "en": "Meal coupon",
+  "zh": "餐券",
+  "vi": "Phiếu ăn"
+ },
+ "cc6f6ddeddac59fb7c7f35ee7f3bf659": {
+  "en": "Children's ballet",
+  "zh": "儿童芭蕾",
+  "vi": "Ballet thiếu nhi"
+ },
+ "831cd8ee9a4b1787aac3236227196912": {
+  "en": "Movie viewing",
+  "zh": "观影",
+  "vi": "Xem phim"
+ },
+ "57ce1e66f68ccc075a0babf87254f982": {
+  "en": "Asak Matdeurim",
+  "zh": "Asak Matdeurim",
+  "vi": "Asak Matdeurim"
+ },
+ "0a27de2ceb71e376bc4152c9a02e66d4": {
+  "en": "Gayeon Food Ingredients",
+  "zh": "Gayeon食材",
+  "vi": "Nguyên liệu thực phẩm Gayeon"
+ },
+ "24dc009915412f4db8ec65d77d10b913": {
+  "en": "Noodle sharing",
+  "zh": "分享面条",
+  "vi": "Chia sẻ mì"
+ },
+ "e8840cbf470efb7320b50f8e68ae6407": {
+  "en": "Village Care Team",
+  "zh": "村庄照护组",
+  "vi": "Nhóm Chăm sóc Cộng đồng làng"
+ },
+ "fdc9d40f59736cdec20658674b73435a": {
+  "en": "Village Connection Team",
+  "zh": "村庄连接组",
+  "vi": "Nhóm Kết nối Cộng đồng làng"
+ },
+ "4201a3c3121cddadb4523a677d6c4d9c": {
+  "en": "Village Growth Team",
+  "zh": "村庄成长组",
+  "vi": "Nhóm Phát triển Cộng đồng làng"
+ },
+ "f8b779e0602b2f80cc0d621c6a9305b7": {
+  "en": "Happy N Party",
+  "zh": "Happy N 派对",
+  "vi": "Happy N Party"
+ },
+ "3d77c0db0c52dbd888ad8fa4a894c106": {
+  "en": "Welfare Division 1",
+  "zh": "福利一科",
+  "vi": "Phòng Phúc lợi 1"
+ },
+ "aac1b9b564b397c6443b93d67bd1ed14": {
+  "en": "Social Integration Team",
+  "zh": "社会融合组",
+  "vi": "Nhóm Hòa nhập Xã hội"
+ },
+ "abe42871246a52f8916115bfa477f153": {
+  "en": "Referral request form",
+  "zh": "推荐委托书",
+  "vi": "Giấy giới thiệu"
+ },
+ "e2616c899f470d776496bd85d147ecda": {
+  "en": "Community Organization Team",
+  "zh": "社区组织组",
+  "vi": "Nhóm Tổ chức Cộng đồng"
+ },
+ "686a7ecd9735432b05d9480c812a358c": {
+  "en": "Contact the organization",
+  "zh": "向机构咨询",
+  "vi": "Liên hệ cơ quan"
+ },
+ "b328d8a784d1b322645cfd44ca492b8d": {
+  "en": "Side dish support",
+  "zh": "小菜支援",
+  "vi": "Hỗ trợ món ăn kèm"
+ },
+ "f2c4d29f5c4ecbd077bcd3844e7b6502": {
+  "en": "Guitar playing",
+  "zh": "吉他演奏",
+  "vi": "Chơi guitar"
+ },
+ "9ee0ddcaf1060a4bc689ecc65c2b0d4b": {
+  "en": "10,000 won per month",
+  "zh": "每月1万韩元",
+  "vi": "10.000 won mỗi tháng"
+ },
+ "4d190ab66f431fa5ec8ec71dbf02dd6a": {
+  "en": "After-school class",
+  "zh": "课后班",
+  "vi": "Lớp học sau giờ học"
+ },
+ "351840c500bd14a7f2486f167f336055": {
+  "en": "20,000 won per month",
+  "zh": "每月2万韩元",
+  "vi": "20.000 won mỗi tháng"
+ },
+ "ed96d49b3ad6214ea5f5779962d96020": {
+  "en": "Local residents",
+  "zh": "当地居民",
+  "vi": "Cư dân địa phương"
+ },
+ "3565438a6c9eb885ebca0c06181dc9f4": {
+  "en": "Up to 80,000 won",
+  "zh": "最高8万韩元",
+  "vi": "Tối đa 80.000 won"
+ },
+ "f9811ca66dac3a68ed7e55e326155d93": {
+  "en": "Case Management Division",
+  "zh": "个案管理科",
+  "vi": "Phòng Quản lý ca"
+ },
+ "9e33ee4c1798db7ce9625f7d608bfe58": {
+  "en": "Community Organization Division",
+  "zh": "社区组织科",
+  "vi": "Phòng Tổ chức Cộng đồng"
+ },
+ "60e8dbfe3a4ef6efb02df20b9cfc95a8": {
+  "en": "Participation application form",
+  "zh": "参与申请书",
+  "vi": "Đơn đăng ký tham gia"
+ },
+ "9f68e0a48ba2554c93278a9bed55b976": {
+  "en": "Resident Connection Division",
+  "zh": "居民连接科",
+  "vi": "Phòng Kết nối Cư dân"
+ },
+ "a2f72210d3d8812a0220695fb72a6f24": {
+  "en": "Women's Startup Team",
+  "zh": "女性创业组",
+  "vi": "Nhóm Khởi nghiệp Phụ nữ"
+ },
+ "d040d79569609b4a049240bd0f208ec1": {
+  "en": "Women's Employment Team",
+  "zh": "女性就业组",
+  "vi": "Nhóm Việc làm Phụ nữ"
+ },
+ "350725a32d49c05269ed7d4da3b769ba": {
+  "en": "Education Program Team",
+  "zh": "教育事业组",
+  "vi": "Nhóm Dự án Giáo dục"
+ },
+ "6723fc06d4db5e562ad0ab559ed64e6b": {
+  "en": "Undisclosed facility",
+  "zh": "非公开设施",
+  "vi": "Cơ sở không công khai"
+ },
+ "bcda04195570dd67b32b221650249459": {
+  "en": "Adoption celebration payment",
+  "zh": "收养祝贺金",
+  "vi": "Tiền chúc mừng nhận con nuôi"
+ },
+ "3d25cd849cfe8a6cea5b684489491371": {
+  "en": "School care center",
+  "zh": "学校托管中心",
+  "vi": "Điểm chăm sóc tại trường"
+ },
+ "75911c9061b668232287c60486f5ac75": {
+  "en": "Women and Childcare Division",
+  "zh": "女性保育科",
+  "vi": "Phòng Phụ nữ và Chăm sóc trẻ"
+ },
+ "83a5056104303f925f75412d4bc28a0b": {
+  "en": "Part-time childcare",
+  "zh": "临时托育",
+  "vi": "Giữ trẻ theo giờ"
+ },
+ "1417f48669cbcaf49a9583325c0b180a": {
+  "en": "Family Counseling Team",
+  "zh": "家庭咨询组",
+  "vi": "Nhóm Tư vấn Gia đình"
+ },
+ "cd6d5c5a4480d748efe239d1cb8a153c": {
+  "en": "Foreign residents",
+  "zh": "外国人居民",
+  "vi": "Cư dân nước ngoài"
+ },
+ "82ef1e5dd58ceed333e8471b72d4a87c": {
+  "en": "Placement referral letter",
+  "zh": "委托推荐书",
+  "vi": "Thư giới thiệu gửi nuôi"
+ },
+ "2a2017df04f97c9c2f65292e0eecfafa": {
+  "en": "Application form, etc.",
+  "zh": "申请书等",
+  "vi": "Đơn đăng ký, v.v."
+ },
+ "9ada8d93e01dc22e259fc4ab8fac15f6": {
+  "en": "PT/Class A",
+  "zh": "PT/A班",
+  "vi": "PT/Lớp A"
+ },
+ "4ae42ad2e3f731bbf15415d41fd53d4d": {
+  "en": "PT/Class B",
+  "zh": "PT/B班",
+  "vi": "PT/Lớp B"
+ },
+ "44d1519cb849aadbb5097364c53565bd": {
+  "en": "Pension for persons with disabilities",
+  "zh": "残疾人养老金",
+  "vi": "Lương hưu cho người khuyết tật"
+ },
+ "7319f9ac27395ff963a7172f39e2d0a9": {
+  "en": "Hana Deohagi (One Plus One)",
+  "zh": "一加一",
+  "vi": "Một cộng một (Hana Deohagi)"
+ },
+ "9c15876eebe5a6fcaadaafafb5fcf1fa": {
+  "en": "Move-in application form",
+  "zh": "入住申请书",
+  "vi": "Đơn đăng ký nhập ở"
+ }
+}

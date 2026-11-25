@@ -1,0 +1,517 @@
+{
+ "5adc833fcc11753d562040025cbc8a4a": {
+  "en": "Crisis/emergency situation requirements; eligible persons are listed (any one applies) — check the original text for income, household and disability conditions; personal contact details (mobile phone, email) are not published — contact the responsible agency",
+  "zh": "危机/紧急情况要求;列出了对象(符合其一即可)——收入、家庭、残疾条件请查看原文;不公布个人联系方式(手机、电子邮箱)——请咨询负责机构",
+  "vi": "Điều kiện về tình huống khủng hoảng/khẩn cấp; liệt kê các đối tượng (chỉ cần thuộc một nhóm) — vui lòng xem văn bản gốc về điều kiện thu nhập, hộ gia đình, khuyết tật; thông tin liên lạc cá nhân (điện thoại di động, email) không được đăng — vui lòng liên hệ cơ quan phụ trách"
+ },
+ "f273016d064c8fabc962113c08c2e634": {
+  "en": "Adults (as of the date of the tenant recruitment notice) who are members of a household without a home and who meet the income and asset standards for their housing type.\n(Standards differ by type and by notice, so you must check the notice.)",
+  "zh": "招募公告发布之日已成年、属于无房家庭成员,并符合各类型收入和资产标准的人。\n(各类型、各公告的标准不同,务必查看公告)",
+  "vi": "Thành viên hộ gia đình không có nhà ở đã đủ tuổi thành niên tại ngày thông báo tuyển người vào ở, và đáp ứng tiêu chuẩn về thu nhập, tài sản theo từng loại hình.\n(Tiêu chuẩn khác nhau tùy loại hình và từng thông báo nên bắt buộc phải xem thông báo.)"
+ },
+ "c1b8041da75d1705a67201fa5db12d83": {
+  "en": "Operating college admission consulting\nOutside consulting support for teenagers who are thinking about going to college through the high school equivalency exam, or who are considering other ways to enter college, including regular admission.",
+  "zh": "开展升学咨询\n为正在考虑通过资格考试(高中同等学力考试)升入大学,或考虑包括正时招生在内的其他多种升学方式的青少年提供外部咨询支持",
+  "vi": "Tổ chức tư vấn học lên đại học\nHỗ trợ tư vấn bên ngoài cho thanh thiếu niên đang cân nhắc vào đại học bằng kỳ thi tương đương tốt nghiệp trung học, hoặc đang cân nhắc các cách khác để vào đại học, kể cả xét tuyển chính quy."
+ },
+ "69bd69ad9b55d5025342a88911d752ad": {
+  "en": "Visit — Applicant applies -> Gyeonggi-do Cochlear Implant Surgery Support for persons with hearing disabilities (applicant selected) -> Gyeonggi-do (notifies the city/county of the selected applicant) -> City/county (pays rehabilitation treatment costs)",
+  "zh": "上门办理——对象申请 -> 京畿道听障人士人工耳蜗手术支援(选定对象) -> 京畿道(通知对象所在市·郡) -> 市·郡(发放康复治疗费)",
+  "vi": "Đến trực tiếp — Đối tượng nộp đơn -> Chương trình hỗ trợ phẫu thuật cấy ốc tai điện tử cho người khiếm thính của tỉnh Gyeonggi (chọn đối tượng) -> Tỉnh Gyeonggi (thông báo đối tượng cho thành phố/huyện) -> Thành phố/huyện (chi trả chi phí điều trị phục hồi chức năng)"
+ },
+ "1e31acde1feefe2dfbeaa6d1fdd6a632": {
+  "en": "Collected from the Bokjiro API (2026) — Target: Living alone: 10 hours of support / Dual-income household: 20 hours of support / Paraplegia: 30 hours of support / Quadriplegia or bedridden: 40 hours of support",
+  "zh": "来自Bokjiro(国家福利门户)API(2026)——对象:独居家庭:支持10小时 双职工家庭:支持20小时 下肢瘫痪:支持30小时 四肢瘫痪·卧床:支持40小时",
+  "vi": "Dữ liệu thu thập từ API Bokjiro (2026) — Đối tượng: Hộ sống một mình: hỗ trợ 10 giờ / Hộ vợ chồng cùng đi làm: hỗ trợ 20 giờ / Liệt hai chân: hỗ trợ 30 giờ / Liệt tứ chi, nằm liệt giường: hỗ trợ 40 giờ"
+ },
+ "5d904ffab98fb36145ed4c39d5e3ba70": {
+  "en": "Protects older adults with a long-term care grade not only on weekday daytime but also on weekday evenings and weekends, and provides physical activities, cognitive activities, senior care, programs, meals, and a pick-up and drop-off service.",
+  "zh": "不仅在工作日白天,还在工作日晚上和周末照护拥有长期护理等级的老人,提供身体活动、认知活动、老人照护、课程、膳食和接送服务",
+  "vi": "Chăm sóc người cao tuổi có cấp độ chăm sóc dài hạn không chỉ vào ban ngày các ngày trong tuần mà cả buổi tối các ngày trong tuần và cuối tuần, cung cấp hoạt động thể chất, hoạt động nhận thức, chăm sóc người cao tuổi, chương trình, bữa ăn và dịch vụ đưa đón."
+ },
+ "e02f6f12d5e2961a6e36b39e63d90907": {
+  "en": "Application form, consent form for personal information, \nhealth insurance documents, documents proving needs criteria and priority \n(such as a doctor's opinion, a letter of recommendation, etc.) \n※ Check the needs criteria and priority on the website",
+  "zh": "申请表、个人信息提供同意书、\n健康保险相关文件、需求标准及优先顺序\n证明文件等(诊断意见书、推荐信等)\n※ 需求标准、优先顺序请在网站查看",
+  "vi": "Đơn đăng ký, giấy đồng ý cung cấp thông tin cá nhân, \ntài liệu liên quan đến bảo hiểm y tế, giấy tờ chứng minh tiêu chí nhu cầu và thứ tự ưu tiên \n(như giấy nhận xét của bác sĩ, thư giới thiệu, v.v.) \n※ Xem tiêu chí nhu cầu và thứ tự ưu tiên trên trang web"
+ },
+ "c375a5691ab6d8a7955764c68abaceee": {
+  "en": "Application form, consent form for personal information, \nhealth insurance documents, documents proving needs criteria and priority \n(such as a single-parent family certificate, etc.) \n※ Check the needs criteria and priority on the website",
+  "zh": "申请表、个人信息提供同意书、\n健康保险相关文件、需求标准及优先顺序\n证明文件等(单亲家庭证明书等)\n※ 需求标准、优先顺序请在网站查看",
+  "vi": "Đơn đăng ký, giấy đồng ý cung cấp thông tin cá nhân, \ntài liệu liên quan đến bảo hiểm y tế, giấy tờ chứng minh tiêu chí nhu cầu và thứ tự ưu tiên \n(như giấy chứng nhận gia đình một cha/mẹ, v.v.) \n※ Xem tiêu chí nhu cầu và thứ tự ưu tiên trên trang web"
+ },
+ "197ffefd11f7ed9a38a843811a108da6": {
+  "en": "Disability-related items are priority/reduction conditions — check the original text; criteria related to persons of national merit; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "与残疾相关的是优先/减免条件——请查看原文;与国家有功者相关的标准;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Các mục liên quan đến khuyết tật là điều kiện ưu tiên/giảm miễn — vui lòng xem văn bản gốc; tiêu chí liên quan đến người có công với đất nước; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều, và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "d44696479173440402eb3bdecd632d68": {
+  "en": "Supports vulnerable and crisis families by solving their complex problems and meeting their needs through ongoing counseling and case management, to restore family functioning and strengthen emotional and economic self-reliance.",
+  "zh": "通过持续咨询和个案管理,解决脆弱家庭、危机家庭的复合问题并满足其需求,以恢复家庭功能,增强情感和经济自立能力",
+  "vi": "Hỗ trợ các gia đình dễ bị tổn thương và gia đình khủng hoảng giải quyết các vấn đề phức hợp và đáp ứng nhu cầu thông qua tư vấn và quản lý ca liên tục, nhằm khôi phục chức năng gia đình và tăng cường năng lực tự lập về tinh thần và kinh tế."
+ },
+ "61f884b17bf326a7ca31bb8f47081aaf": {
+  "en": "Provides after-school activity services for students with developmental disabilities to support meaningful leisure activities and preparation for independence in adulthood.\n\nService hours: 66 hours\n\nService unit price: 16,150 won",
+  "zh": "为发育障碍学生提供课后活动服务,支持其开展有意义的休闲活动并为成年后的自立做准备\n\n服务时间:66小时\n\n服务单价:16,150韩元",
+  "vi": "Cung cấp dịch vụ hoạt động sau giờ học cho học sinh khuyết tật phát triển, hỗ trợ các hoạt động giải trí có ý nghĩa và chuẩn bị cho cuộc sống tự lập khi trưởng thành.\n\nThời gian cung cấp: 66 giờ\n\nĐơn giá dịch vụ: 16.150 won"
+ },
+ "86c01080fd164897fa8454523c3a88fd": {
+  "en": "*Eligibility:\n1) Aged 18 or older, persons with intellectual disabilities or autism registered under the Welfare of Persons with Disabilities Act\n2) Persons with developmental disabilities who have no experience using services or were refused services because of challenging behavior",
+  "zh": "*申请资格:\n1) 年满18周岁、依据《残疾人福利法》登记的智力障碍及自闭症残疾人\n2) 因挑战性行为而没有使用过服务经历或被拒绝服务的发育障碍人士",
+  "vi": "*Điều kiện đăng ký:\n1) Người từ 18 tuổi trở lên, là người khuyết tật trí tuệ và tự kỷ đã đăng ký theo Luật Phúc lợi người khuyết tật\n2) Người khuyết tật phát triển chưa từng sử dụng dịch vụ hoặc bị từ chối dịch vụ do hành vi thách thức"
+ },
+ "7e2ad87165d4c3d2465019231b6b36c1": {
+  "en": "For homes supplied by LH and GH, after checking an applicant household's eligibility under the tenant recruitment notice, recommends eligible households to the project operator corporation to support move-in to public rental housing.",
+  "zh": "对于LH和GH供应的住宅,根据入住者招募公告查询申请家庭的资格后,向项目实施公社推荐符合条件的家庭,支持其入住公共租赁住宅",
+  "vi": "Đối với nhà do LH và GH cung cấp, sau khi tra cứu tư cách của hộ đăng ký theo thông báo tuyển người vào ở, sẽ giới thiệu các hộ đủ điều kiện cho công ty thực hiện dự án để hỗ trợ vào ở nhà cho thuê công."
+ },
+ "b06dd15779b606eed88f58527c77092a": {
+  "en": "Living expenses can be paid, after a case review meeting, only to eligible persons within 100% of the income ranking.\nOut-of-school teenagers in a welfare blind spot can also be supported through the review meeting.",
+  "zh": "仅限收入排名100%以内的对象,经个案判定会议后可发放生活费\n福利死角的校外青少年也可通过判定会议获得支持",
+  "vi": "Chỉ đối với đối tượng trong phạm vi 100% xếp hạng thu nhập, có thể chi trả tiền sinh hoạt phí sau khi qua cuộc họp xét ca.\nThanh thiếu niên ngoài nhà trường nằm trong vùng chưa được phúc lợi bao phủ cũng có thể được hỗ trợ thông qua cuộc họp xét duyệt."
+ },
+ "1b7023f7cdb9be630e96e1d29747c11c": {
+  "en": "Collected from Subsidy24 (2026) — Target: ○ Children under age 18 who were born in the Republic of Korea but could not register their birth for various reasons, and who live in Siheung City",
+  "zh": "来自补助金24(Subsidy24)(2026)——对象:○ 在大韩民国出生但因各种原因未能办理出生登记、居住在始兴市的18岁以下儿童",
+  "vi": "Dữ liệu thu thập từ Subsidy24 (2026) — Đối tượng: ○ Trẻ em dưới 18 tuổi sinh ra tại Hàn Quốc nhưng vì nhiều lý do chưa đăng ký khai sinh và đang sống tại Thành phố Siheung"
+ },
+ "926ee59db8bb24a6efb47bfbadc13f2b": {
+  "en": "- Visit: Mokgam Art House 27\n - Online: Mokgam Art House 27 blog\n   (blog.naver.com/arthouse27)\n   ※ First come, first served",
+  "zh": "- 上门:木监艺术之家27(Mokgam Art House 27)\n - 线上:Mokgam Art House 27博客\n   (blog.naver.com/arthouse27)\n   ※ 先到先得",
+  "vi": "- Đến trực tiếp: Mokgam Art House 27\n - Trực tuyến: blog của Mokgam Art House 27\n   (blog.naver.com/arthouse27)\n   ※ Tiếp nhận theo thứ tự đến trước được phục vụ trước"
+ },
+ "2305860bf51e6dab69e22c708c20b7f8": {
+  "en": "- Visit: Siheung Women's New Job Support Center\n           (bring your ID)\n- Register for job seeking on Worknet, then call\n - Phone: 031-310-6029~6037",
+  "zh": "- 上门:始兴女性再就业支援中心\n           (请携带身份证)\n- 在Worknet(就业网)登记求职后致电\n - 电话:031-310-6029~6037",
+  "vi": "- Đến trực tiếp: Trung tâm hỗ trợ phụ nữ tìm việc mới Siheung\n           (mang theo giấy tờ tùy thân)\n- Đăng ký tìm việc trên Worknet rồi gọi điện\n - Điện thoại: 031-310-6029~6037"
+ },
+ "d47fb7637686694d604540d730a016ca": {
+  "en": "Provides cash every month, equal to 50% of the standard rent of the basic housing benefit, to households with members who have been registered as residents in the city for at least 1 month, have no home, and meet the housing, income and asset standards.",
+  "zh": "对在辖区内住民登记满1个月以上的无房家庭成员中,符合住宅、收入、财产标准的家庭,每月以现金形式支付基础住房补贴标准租金的50%",
+  "vi": "Hỗ trợ bằng tiền mặt hằng tháng bằng 50% tiền thuê chuẩn của trợ cấp nhà ở cơ bản cho hộ gia đình có thành viên đã đăng ký cư trú trong thành phố từ 1 tháng trở lên, không có nhà ở và đáp ứng tiêu chuẩn về nhà ở, thu nhập, tài sản."
+ },
+ "0b58b4a1a47e86af14f62f5f35ad07be": {
+  "en": "Supports moving and settling in for households living in non-residential buildings, semi-basements at risk of flooding, or conditions below the minimum housing standard, using local welfare capacity so they can move to public rental housing.",
+  "zh": "利用地区福利力量,支持居住在非住宅、有淹水隐患的半地下室或低于最低居住标准环境中的家庭迁入公共租赁住宅并安顿下来",
+  "vi": "Hỗ trợ chuyển chỗ ở và ổn định cuộc sống, tận dụng năng lực phúc lợi địa phương, để các hộ đang sống trong nơi không phải nhà ở, tầng bán hầm có nguy cơ ngập hoặc điều kiện dưới tiêu chuẩn nhà ở tối thiểu có thể chuyển đến nhà cho thuê công."
+ },
+ "20858d006c861185cf3069e6bd0d772b": {
+  "en": "- Actual cost support for language and qualification exam fees (up to 300,000 won per person)\n- Eligible exam types: 1,004 types (language, national technical qualifications, nationally recognized private qualifications, national professional qualifications)",
+  "zh": "- 按实际费用补助语言及资格考试报名费(每人最高30万韩元)\n- 支持的资格种类:1,004种(语言、国家技术资格、国家认可民间资格、国家专业资格)",
+  "vi": "- Hỗ trợ theo chi phí thực tế lệ phí thi ngoại ngữ và thi chứng chỉ (tối đa 300.000 won mỗi người)\n- Các loại chứng chỉ được hỗ trợ: 1.004 loại (ngoại ngữ, chứng chỉ kỹ thuật quốc gia, chứng chỉ tư nhân được nhà nước công nhận, chứng chỉ chuyên môn quốc gia)"
+ },
+ "035a11f6bdcc38e410eebda82e61bbca": {
+  "en": "Application form, consent form for personal information, health insurance documents, \ndocuments proving needs criteria and priority, etc.\n(such as a doctor's opinion, a medical confirmation certificate, etc.)\n※ Check the needs criteria and priority on the website",
+  "zh": "申请表、个人信息提供同意书、健康保险相关文件、\n需求标准及优先顺序证明文件等\n(诊断意见书、就诊证明等)\n※ 需求标准、优先顺序请在网站查看",
+  "vi": "Đơn đăng ký, giấy đồng ý cung cấp thông tin cá nhân, tài liệu liên quan đến bảo hiểm y tế, \ngiấy tờ chứng minh tiêu chí nhu cầu và thứ tự ưu tiên, v.v.\n(giấy nhận xét của bác sĩ, giấy xác nhận khám bệnh, v.v.)\n※ Xem tiêu chí nhu cầu và thứ tự ưu tiên trên trang web"
+ },
+ "2e4201b0ebe220b5d8cd3721e89fed8f": {
+  "en": "Visit: Siheung Senior Welfare Center\nPhone: 031-404-3100\nOnline: https://shsenior.e-ncom.co.kr/main/index.do",
+  "zh": "上门:始兴市老人综合福利馆\n电话:031-404-3100\n线上:https://shsenior.e-ncom.co.kr/main/index.do",
+  "vi": "Đến trực tiếp: Trung tâm phúc lợi tổng hợp người cao tuổi Siheung\nĐiện thoại: 031-404-3100\nTrực tuyến: https://shsenior.e-ncom.co.kr/main/index.do"
+ },
+ "1021ab9132fb160d4383292c057f7ce2": {
+  "en": "Visit: Siheung Senior Welfare Center\nPhone: 031-403-3103\nOnline: https://shsenior.e-ncom.co.kr/main/index.do",
+  "zh": "上门:始兴市老人综合福利馆\n电话:031-403-3103\n线上:https://shsenior.e-ncom.co.kr/main/index.do",
+  "vi": "Đến trực tiếp: Trung tâm phúc lợi tổng hợp người cao tuổi Siheung\nĐiện thoại: 031-403-3103\nTrực tuyến: https://shsenior.e-ncom.co.kr/main/index.do"
+ },
+ "1bda9cc9a07901c7eba11fd738ed7184": {
+  "en": "Visit: Siheung Senior Welfare Center\nPhone: 031-8063-2581\nOnline: https://shsenior.e-ncom.co.kr/main/index.do",
+  "zh": "上门:始兴市老人综合福利馆\n电话:031-8063-2581\n线上:https://shsenior.e-ncom.co.kr/main/index.do",
+  "vi": "Đến trực tiếp: Trung tâm phúc lợi tổng hợp người cao tuổi Siheung\nĐiện thoại: 031-8063-2581\nTrực tuyến: https://shsenior.e-ncom.co.kr/main/index.do"
+ },
+ "0641ea7c86923d8f8c4df659a8d5a46f": {
+  "en": "1) Residents of crisis households living in Sinchon-dong, Eunhaeng-dong, and Sinhyeon-dong\n2) Whether to carry out case management is decided at the integrated case meeting, based on the household's situation and needs identified during the first consultation",
+  "zh": "1) 居住在新川洞、银行洞、新贤洞的危机家庭居民\n2) 由综合个案会议根据初次咨询时了解到的家庭状况和需求,决定是否实施个案管理",
+  "vi": "1) Cư dân thuộc hộ gia đình khủng hoảng sống ở phường Sinchon-dong, Eunhaeng-dong, Sinhyeon-dong\n2) Cuộc họp ca tổng hợp quyết định có thực hiện quản lý ca hay không, dựa trên hoàn cảnh và nhu cầu của gia đình được nắm khi tư vấn ban đầu"
+ },
+ "5ab3b260bd44437d45e17d1895173aa7": {
+  "en": "Note: An education activity fee is paid for every 40 hours of attendance; Nationality: It is marked for foreigners/multicultural families, but Korean nationals may be included — it cannot be assumed to be for foreigners only, needs checking",
+  "zh": "备注:每出勤满40小时发放一次教育活动费;国籍:虽标注为外国人·多元文化,但可能包括本国人——不能断定仅限外国人,需要确认",
+  "vi": "Ghi chú: Phí hoạt động giáo dục được chi trả theo mỗi 40 giờ tham dự; Quốc tịch: Có ghi người nước ngoài/đa văn hóa nhưng có thể bao gồm cả công dân Hàn Quốc — không thể khẳng định chỉ dành cho người nước ngoài, cần xác nhận"
+ },
+ "bac1a3e172e781cd6a691d2edcbd6fe9": {
+  "en": "Runs a resource recycling store that gives 1 volume-based waste bag for every 20 recyclable items (PET bottles, sterilized cartons, batteries, cans) brought in washed clean and dried, to encourage correct waste sorting.",
+  "zh": "为引导居民正确分类投放垃圾,运营资源循环商店:每带来20件洗净并晾干的可回收物(塑料瓶、无菌包装盒、电池、易拉罐),赠送1个计量垃圾袋",
+  "vi": "Vận hành cửa hàng tuần hoàn tài nguyên để khuyến khích phân loại rác đúng cách: cứ mang đến 20 đồ tái chế (chai nhựa PET, hộp giấy vô trùng, pin, lon) đã rửa sạch và phơi khô sẽ được tặng 1 túi rác tính phí theo thể tích."
+ },
+ "63cfe485a830f7c3a4d6d4ce889e6906": {
+  "en": "○ Compensation for damage to third parties caused by accidents while using an electric mobility aid\n - (Limit of 20,000,000 won per accident / 50,000 won paid by the user) ※ The user's own damage is not covered",
+  "zh": "○ 补助使用电动辅助器具时发生的事故中对第三人的损害赔偿金\n - (每次事故限额2,000万韩元 / 自付5万韩元) ※ 本人受到的损害不予赔偿",
+  "vi": "○ Hỗ trợ tiền bồi thường thiệt hại cho bên thứ ba trong các tai nạn xảy ra khi vận hành thiết bị hỗ trợ chạy điện\n - (Hạn mức 20.000.000 won mỗi vụ tai nạn / tự chi trả 50.000 won) ※ Thiệt hại của bản thân không được bồi thường"
+ },
+ "27ac1e1fb586a39b6679b487fd9a6a6a": {
+  "en": "Area check: 40 hospitals in the city and 6 neighboring areas outside the city; illness/diagnosis criteria; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "地区确认:辖区内及辖区外相邻6个地区的40家医院;疾病/诊断标准;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Kiểm tra khu vực: 40 bệnh viện trong thành phố và 6 khu vực liền kề ngoài thành phố; tiêu chí bệnh/chẩn đoán; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "66e2c1da8e89aa44cf2adc11624cfb3a": {
+  "en": "Provides services to solve facility-related problems inside the user's home, such as simple repairs and maintenance, inspection and checks, and installation and moving, as well as cleaning, disinfection and laundry services to improve the user's living environment.",
+  "zh": "提供解决用户家中设施相关问题的服务,如简单维修保养、检查确认、安装搬移等,以及改善居住环境的清洁、消毒和洗涤服务",
+  "vi": "Cung cấp dịch vụ giải quyết các vấn đề liên quan đến cơ sở vật chất trong nhà người sử dụng như sửa chữa, bảo trì đơn giản, kiểm tra, lắp đặt, di chuyển, cùng dịch vụ dọn dẹp, khử khuẩn và giặt giũ để cải thiện môi trường sống."
+ },
+ "37bb17af030ac51b1ddc81b273c71dfc": {
+  "en": "Visit: Siheung Senior Welfare Center\nPhone: 031-8063-2581\nOnline: https://shsenior.e-ncom.co.kr/main/index.do",
+  "zh": "上门:始兴市老人综合福利馆\n电话:031-8063-2581\n线上:https://shsenior.e-ncom.co.kr/main/index.do",
+  "vi": "Đến trực tiếp: Trung tâm phúc lợi tổng hợp người cao tuổi Siheung\nĐiện thoại: 031-8063-2581\nTrực tuyến: https://shsenior.e-ncom.co.kr/main/index.do"
+ },
+ "7b46d467bee82bd6cafbf842a0d87405": {
+  "en": "Meetings and activities with a Mind Care activist (counseling, play, etc.)\nSupport for culture and leisure programs\nSupport for resident activity groups (cooking and tea ceremony)\nSupport for mind healing programs (outings, etc.)",
+  "zh": "与心灵关怀活动家会面及开展活动(咨询、游戏等)\n支持文化、休闲活动课程\n支持居民活动小组(烹饪及茶道)\n支持心灵疗愈课程(郊游等)",
+  "vi": "Gặp gỡ và hoạt động cùng nhân viên chăm sóc tâm lý (tư vấn, trò chơi, v.v.)\nHỗ trợ chương trình văn hóa, giải trí\nHỗ trợ nhóm hoạt động của cư dân (nấu ăn và trà đạo)\nHỗ trợ chương trình chữa lành tâm hồn (dã ngoại, v.v.)"
+ },
+ "7399944b22dcbc785dbbcc1ac9c93672": {
+  "en": "Teenagers in vulnerable groups\n(born in 2009, first-year high school students)\nSupport for career exploration programs (dream grants, self-exploration, vision expedition team, etc.)\nSupport for parent education, guardian self-help groups, etc.",
+  "zh": "弱势群体青少年\n(2009年出生、高一学生)\n支持职业探索课程(梦想资助金、自我探索、愿景远征队等)\n支持家长教育、监护人互助小组等",
+  "vi": "Thanh thiếu niên thuộc nhóm yếu thế\n(sinh năm 2009, học sinh lớp 10)\nHỗ trợ chương trình khám phá nghề nghiệp (quỹ hỗ trợ ước mơ, khám phá bản thân, đội thám hiểm tầm nhìn, v.v.)\nHỗ trợ giáo dục phụ huynh, nhóm tự giúp đỡ của người giám hộ, v.v."
+ },
+ "c49dc279713cd067d7dd799feb058d5b": {
+  "en": "Pays a self-reliance settlement fund of 15,000 thousand won (15,000,000 won) to children who have left protective care (one time)\n* Paid in 2 installments: the 1st is 10,000,000 won in the year of leaving care, and the 2nd is 5,000,000 won the following year",
+  "zh": "向保护期结束的儿童发放1,500万韩元的自立安置金(一次性)\n* 分两次发放:第1次在离开保护机构当年发放1,000万韩元,第2次在次年发放500万韩元",
+  "vi": "Chi trả tiền định cư tự lập 15.000 nghìn won (15.000.000 won) cho trẻ em kết thúc bảo hộ (một lần)\n* Chi trả làm 2 đợt: đợt 1 là 10.000.000 won vào năm rời cơ sở, đợt 2 là 5.000.000 won vào năm sau"
+ },
+ "0a466062e0637a6f70077cac6f846619": {
+  "en": "Identifies the job-seeking person with a disability's condition, job needs and abilities, uses standardized tools, and recommends a suitable direction for vocational rehabilitation services.\n\nSupports accompanied interviews with employers through a suitability comparison analysis.",
+  "zh": "了解求职残疾人的残疾状况、职业需求和能力等,利用标准化工具建议合适的职业康复服务方向\n\n通过适合度对比分析,支持陪同面试企业",
+  "vi": "Tìm hiểu tình trạng khuyết tật, nhu cầu nghề nghiệp và năng lực của người khuyết tật đang tìm việc, sử dụng công cụ chuẩn hóa để đề xuất hướng dịch vụ phục hồi chức năng nghề nghiệp phù hợp.\n\nHỗ trợ đi cùng phỏng vấn tại doanh nghiệp thông qua phân tích so sánh mức độ phù hợp."
+ },
+ "badd0944b7be8be792e4bfc911fdbcab": {
+  "en": "□ Admission eligibility: Persons with disabilities who meet the following\n* Residential facility by disability type: adults 120 points or more, children 110 points or more\n(Service Support Comprehensive Assessment, functional limitation (X1) score)",
+  "zh": "□ 入住对象:符合以下条件的残疾人\n* 分类型残疾人居住设施:成人120分以上,儿童110分以上\n(服务支持综合调查功能限制(X1)分数)",
+  "vi": "□ Đối tượng nhập cơ sở: Người khuyết tật thuộc các trường hợp sau\n* Cơ sở nội trú cho người khuyết tật theo loại hình: người lớn từ 120 điểm trở lên, trẻ em từ 110 điểm trở lên\n(Điểm hạn chế chức năng (X1) trong đánh giá tổng hợp hỗ trợ dịch vụ)"
+ },
+ "67c4cacebfb40678297ac44cb8df060b": {
+  "en": "□ Admission eligibility: Persons with disabilities who meet the following\n* Residential facility for persons with severe disabilities: adults 240 points or more, children 190 points or more \n(Service Support Comprehensive Assessment, functional limitation (X1) score)",
+  "zh": "□ 入住对象:符合以下条件的残疾人\n* 重度残疾人居住设施:成人240分以上,儿童190分以上\n(服务支持综合调查功能限制(X1)分数)",
+  "vi": "□ Đối tượng nhập cơ sở: Người khuyết tật thuộc các trường hợp sau\n* Cơ sở nội trú cho người khuyết tật nặng: người lớn từ 240 điểm trở lên, trẻ em từ 190 điểm trở lên \n(Điểm hạn chế chức năng (X1) trong đánh giá tổng hợp hỗ trợ dịch vụ)"
+ },
+ "fbb56ada4fcd1646d0f331b296027892": {
+  "en": "Influenza vaccination support program · One free seasonal influenza (flu) shot · Free vaccination available at designated medical institutions (call the public health center or health subcenter to find out which institutions)",
+  "zh": "流感疫苗接种支持项目· 免费接种1次季节性流感(流行性感冒)疫苗· 可在指定医疗机构免费接种(医疗机构请致电保健所/保健支所确认)",
+  "vi": "Chương trình hỗ trợ tiêm phòng cúm · Hỗ trợ tiêm miễn phí 1 mũi phòng cúm mùa · Có thể tiêm miễn phí tại cơ sở y tế được chỉ định (hãy gọi điện cho trạm y tế công cộng/trạm y tế phụ để biết cơ sở)"
+ },
+ "a3c00ca6b00dc2c0e91aa19ea12b73db": {
+  "en": "- A delivery worker from Korea Yakult Yeokgok branch delivers drinks twice a week and checks on the person's safety\n - If a high-risk case arises, an honorary social welfare official is matched 1:1 to check in and help with daily life",
+  "zh": "- 韩国养乐多驿谷店配送员每周2次通过配送饮品确认安危\n - 出现高危群体时,通过一对一匹配名誉社会福利公务员,进行问候并提供日常生活支持",
+  "vi": "- Nhân viên giao hàng của Korea Yakult chi nhánh Yeokgok giao đồ uống 2 lần mỗi tuần để hỏi thăm sức khỏe, an toàn\n - Khi phát sinh trường hợp nguy cơ cao, sẽ ghép 1:1 với công chức phúc lợi xã hội danh dự để hỏi thăm và hỗ trợ sinh hoạt hằng ngày"
+ },
+ "329a44ba12fd2c61ecc240b93ec8deb9": {
+  "en": "- Online: Social Service Electronic Voucher website (www.socialservice.or.kr) -> After applying, mail the required documents to the Korea Social Security Information Service within 15 days",
+  "zh": "- 线上:社会服务电子凭证网站(www.socialservice.or.kr) -> 申请后15日内将所需文件邮寄至社会保障信息院",
+  "vi": "- Trực tuyến: Trang web phiếu điện tử dịch vụ xã hội (www.socialservice.or.kr) -> Sau khi đăng ký, gửi hồ sơ qua đường bưu điện đến Cơ quan Thông tin An sinh Xã hội trong vòng 15 ngày"
+ },
+ "f00f67bd0a2a0bef8996bcff95e8d956": {
+  "en": "Helps couples prepare for childbirth by providing pregnancy planning tests to couples who are planning to become pregnant, before or after marriage.\n- Test items: 19 types in total (urine test, blood test, x-ray)",
+  "zh": "为婚前或婚后处于备孕阶段的夫妇提供备孕检查,帮助其做好生育准备\n- 检查项目:共19种(尿液检查、血液检查、X光)",
+  "vi": "Giúp các cặp vợ chồng chuẩn bị sinh con bằng cách cung cấp xét nghiệm kế hoạch mang thai cho các cặp đôi đang trong giai đoạn lên kế hoạch mang thai trước hoặc sau khi kết hôn.\n- Hạng mục khám: tổng cộng 19 loại (xét nghiệm nước tiểu, xét nghiệm máu, chụp X-quang)"
+ },
+ "b4712b73b8eadccf542d14838fa867ac": {
+  "en": "Illness/diagnosis criteria; for women (no household type code); Nationality: It is marked for foreigners/multicultural families, but Korean nationals may be included — it cannot be assumed to be for foreigners only, needs checking",
+  "zh": "疾病/诊断标准;以女性为对象(无家庭类型代码);国籍:虽标注为外国人·多元文化,但可能包括本国人——不能断定仅限外国人,需要确认",
+  "vi": "Tiêu chí bệnh/chẩn đoán; đối tượng là phụ nữ (không có mã loại hình hộ gia đình); Quốc tịch: Có ghi người nước ngoài/đa văn hóa nhưng có thể bao gồm cả công dân Hàn Quốc — không thể khẳng định chỉ dành cho người nước ngoài, cần xác nhận"
+ },
+ "095977549783abb8993d5ccd11aa6fee": {
+  "en": "<Type 1> Recipients of National Basic Livelihood Security, household members at 60% or below of the median income, and specific vulnerable groups. <Type 2> Young adults (aged 18-34, regardless of income), middle-aged adults (aged 35-69 with 100% or below of the median income)",
+  "zh": "<第1类型> 基础生活保障受助者、中位收入60%以下家庭成员及特定弱势群体。<第2类型> 青年(18-34岁,不论收入)、中年(35-69岁且中位收入100%以下)",
+  "vi": "<Loại 1> Người hưởng Bảo đảm sinh hoạt cơ bản quốc gia, thành viên hộ có thu nhập từ 60% thu nhập trung vị trở xuống và các nhóm yếu thế đặc thù. <Loại 2> Thanh niên (18-34 tuổi, không xét thu nhập), trung niên (35-69 tuổi có thu nhập từ 100% thu nhập trung vị trở xuống)"
+ },
+ "9f3cbeaf06fb77583d6dc6de1feb43de": {
+  "en": "Visit - Siheung Janggok General Social Welfare Center\nPhone - Siheung Janggok General Social Welfare Center\n031-380-5529, 5530\nOnline - Siheung Janggok General Social Welfare Center website, case management KakaoTalk channel",
+  "zh": "上门-始兴市长谷综合社会福利馆\n电话-始兴市长谷综合社会福利馆\n031-380-5529,5530\n线上-始兴市长谷综合社会福利馆网站、个案管理KakaoTalk频道",
+  "vi": "Đến trực tiếp - Trung tâm phúc lợi xã hội tổng hợp Janggok Siheung\nĐiện thoại - Trung tâm phúc lợi xã hội tổng hợp Janggok Siheung\n031-380-5529, 5530\nTrực tuyến - Trang web của Trung tâm phúc lợi xã hội tổng hợp Janggok Siheung, kênh KakaoTalk quản lý ca"
+ },
+ "82f5f28f6656b2b39a8de57ee61f99f3": {
+  "en": "Families that adopted a child with a disability in Korea through an adoption agency licensed under the Special Adoption Act\n* Severe disability: former disability grades 1 to 3\n* Mild disability: former disability grades 4 to 6",
+  "zh": "通过依据《收养特例法》获得许可的收养机构在国内收养残疾儿童的家庭\n* 重度残疾:原残疾等级1级~3级\n* 轻度残疾:原残疾等级4级~6级",
+  "vi": "Gia đình đã nhận nuôi trong nước trẻ em khuyết tật thông qua cơ quan nhận con nuôi được cấp phép theo Luật Đặc biệt về nhận con nuôi\n* Khuyết tật nặng: mức khuyết tật cũ từ cấp 1 đến cấp 3\n* Khuyết tật nhẹ: mức khuyết tật cũ từ cấp 4 đến cấp 6"
+ },
+ "e0caa922512c85df5d4b36b38b1cfd46": {
+  "en": "- Online: Siheung Family Center website    (https://shcity.familynet.or.kr/center/)\n - Phone: 031-432-7994",
+  "zh": "- 线上:始兴市家庭中心网站    (https://shcity.familynet.or.kr/center/)\n - 电话:031-432-7994",
+  "vi": "- Trực tuyến: Trang web của Trung tâm gia đình Siheung    (https://shcity.familynet.or.kr/center/)\n - Điện thoại: 031-432-7994"
+ },
+ "1bbb6ecaad8264f56d50abc2a19e2197": {
+  "en": "- Online: Siheung Family Center website    (https://shcity.familynet.or.kr/center/)\n - Phone: 031-317-4523",
+  "zh": "- 线上:始兴市家庭中心网站    (https://shcity.familynet.or.kr/center/)\n - 电话:031-317-4523",
+  "vi": "- Trực tuyến: Trang web của Trung tâm gia đình Siheung    (https://shcity.familynet.or.kr/center/)\n - Điện thoại: 031-317-4523"
+ },
+ "6f579b002068714c9e374176a4a38efd": {
+  "en": "1) A postnatal helper visits and provides care services for the mother and newborn, such as preparing meals for the mother, managing swelling, and helping with breastfeeding\n2) Supports part of the voucher amount of the Mother and Newborn Health Care Program",
+  "zh": "1) 产后护理员上门,为产妇和新生儿提供照护服务,如为产妇准备饭菜、护理浮肿、协助母乳喂养等\n2) 补助产妇新生儿健康管理项目凭证金额的一部分",
+  "vi": "1) Người giúp việc sau sinh đến tận nhà cung cấp dịch vụ chăm sóc sản phụ và trẻ sơ sinh như chuẩn bị bữa ăn cho sản phụ, chăm sóc phù nề, hỗ trợ cho con bú, v.v.\n2) Hỗ trợ một phần số tiền phiếu của Chương trình chăm sóc sức khỏe sản phụ và trẻ sơ sinh"
+ },
+ "8e3d04d8395d64d5b5ee13b09013637f": {
+  "en": "When a gap in care occurs and short-term service is urgently needed, a service worker visits the user's home or other place and provides direct care to the user.",
+  "zh": "出现照护空白、紧急需要短期服务时,服务人员上门到用户家中等场所,为用户直接提供照料服务",
+  "vi": "Khi xuất hiện khoảng trống chăm sóc và cần dịch vụ ngắn hạn khẩn cấp, nhân viên dịch vụ sẽ đến nhà hoặc nơi ở của người sử dụng để trực tiếp chăm sóc."
+ },
+ "bdaa7cb32680b2f36ed71ba2211b7fd9": {
+  "en": "Through the Gyeonggi-do Cochlear Implant Surgery Program for persons with hearing disabilities, provides rehabilitation treatment costs of up to 3,000 thousand won (3,000,000 won) per year for 3 years, starting the year after surgery, to persons with hearing disabilities aged 60 or under who received surgery support.",
+  "zh": "对通过京畿道听障人士人工耳蜗手术项目获得手术支援的60周岁以下听障人士,自手术次年起3年内每年提供300万韩元以内的康复治疗费",
+  "vi": "Thông qua Chương trình phẫu thuật cấy ốc tai điện tử cho người khiếm thính của tỉnh Gyeonggi, hỗ trợ chi phí điều trị phục hồi chức năng tối đa 3.000 nghìn won (3.000.000 won) mỗi năm trong 3 năm, bắt đầu từ năm sau phẫu thuật, cho người khiếm thính từ 60 tuổi trở xuống đã được hỗ trợ phẫu thuật."
+ },
+ "82b03451cb6156dd26e9c2c4fbfa2fc6": {
+  "en": "Provides various service programs during the daytime for persons with developmental disabilities (daily living support, educational activity support, hobby and leisure activity support, social adjustment support, community connection, family support, case management, transportation support, etc.)",
+  "zh": "为发育障碍人士在白天提供多种服务课程(日常生活支持、教育活动支持、兴趣休闲活动支持、社会适应支持、社区联系、家庭支持、个案管理、出行支持等)",
+  "vi": "Cung cấp nhiều chương trình dịch vụ vào ban ngày cho người khuyết tật phát triển (hỗ trợ sinh hoạt hằng ngày, hỗ trợ hoạt động giáo dục, hỗ trợ sở thích và giải trí, hỗ trợ thích nghi xã hội, gắn kết cộng đồng, hỗ trợ gia đình, quản lý ca, hỗ trợ di chuyển, v.v.)"
+ },
+ "d075f52ca5fa8550ebc6d5029708241d": {
+  "en": "Housing/lease criteria; crisis/emergency situation requirements; Note: - Location of the emergency temporary housing: Maehwa-dong - Please contact in advance to check for vacancies - 6 months of residence / free rent",
+  "zh": "住宅/租赁标准;危机/紧急情况要求;备注:- 紧急临时住宅所在地:梅花洞 - 请事先联系确认是否有空房 - 居住6个月 / 免租金",
+  "vi": "Tiêu chí về nhà ở/thuê nhà; điều kiện về tình huống khủng hoảng/khẩn cấp; Ghi chú: - Vị trí nhà ở tạm thời khẩn cấp: phường Maehwa-dong - Vui lòng liên hệ trước để kiểm tra còn phòng trống hay không - Ở 6 tháng / miễn tiền thuê"
+ },
+ "4e00209a17d7d6decf10c74f9ae5f321": {
+  "en": "Provides opportunities for young people to develop themselves, grow, and take part in social activities through programs in various fields (fields: daily life, culture, start-ups, psychology, health, networking)",
+  "zh": "通过多个领域的课程,为青年提供自我发展和成长以及参与社会活动的机会(领域:生活·文化·创业·心理·健康·人脉网络)",
+  "vi": "Tạo cơ hội để thanh niên phát triển bản thân, trưởng thành và tham gia hoạt động xã hội thông qua các chương trình ở nhiều lĩnh vực (lĩnh vực: đời sống, văn hóa, khởi nghiệp, tâm lý, sức khỏe, kết nối mạng lưới)"
+ },
+ "e7fe3a7d556493f956c24e7677e8f71f": {
+  "en": "Collected from the Bokjiro API (2026) — Target: Students with disabilities in elementary, middle and high school who have been selected as special education students (and already receive personal assistance services for persons with disabilities) and who have applied for an in-class activity assistant",
+  "zh": "来自Bokjiro(国家福利门户)API(2026)——对象:被选定为特殊教育对象的中小学残疾学生(已享受残疾人活动支援服务者)中申请班级内活动支援人员的学生",
+  "vi": "Dữ liệu thu thập từ API Bokjiro (2026) — Đối tượng: Học sinh khuyết tật tiểu học, trung học cơ sở và trung học phổ thông được chọn là đối tượng giáo dục đặc biệt (đã nhận dịch vụ trợ lý hoạt động cho người khuyết tật) và đã đăng ký trợ lý hoạt động trong lớp học"
+ },
+ "f9597dda3371612fe7f2b345d790925c": {
+  "en": "- Visit: Community service center (dong office)\n - Apply by phone, mail or fax\n - When an official of the eup/myeon/dong applies on the person's own initiative, the official obtains the applicant's consent (application form) and fills out and submits the application form on their behalf",
+  "zh": "- 上门:洞居民中心(行政福利中心)\n - 可通过电话、邮寄、传真申请\n - 邑面洞公务员依职权申请时,取得申请人同意(申请表)后代为填写并提交申请表",
+  "vi": "- Đến trực tiếp: Trung tâm hành chính phúc lợi (văn phòng phường)\n - Đăng ký qua điện thoại, thư hoặc fax\n - Khi công chức xã/thị trấn/phường chủ động đăng ký theo thẩm quyền, công chức sẽ nhận sự đồng ý của người đăng ký (đơn đăng ký) rồi điền và nộp đơn thay"
+ },
+ "9856dc14d751f1728b822ff7327e985c": {
+  "en": "Basic pension/health insurance premium criteria — income rank not applied, needs checking; long-term care grade criteria; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "基础养老金/健康保险费标准——未适用收入排名,需要确认;长期护理等级标准;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Tiêu chí lương hưu cơ bản/phí bảo hiểm y tế — không áp dụng xếp hạng thu nhập, cần xác nhận; tiêu chí cấp độ chăm sóc dài hạn; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "c2bba9fb0f02da779fb04b54fa9f8c8e": {
+  "en": "Income ceiling is 180% of the median (outside the rank range) — needs checking; target selected through consultation/review; detailed criteria are separate/different; Note: * The co-payment differs by the grade of the selected person",
+  "zh": "收入上限为中位收入180%(超出排名范围)——需要确认;通过咨询/审议选定对象;细则另行规定/各不相同;备注:* 自付费用根据入选对象的等级而不同",
+  "vi": "Mức trần thu nhập là 180% thu nhập trung vị (vượt ngoài phạm vi xếp hạng) — cần xác nhận; đối tượng được chọn thông qua tư vấn/thẩm định; tiêu chí chi tiết riêng/khác nhau; Ghi chú: * Mức tự chi trả khác nhau tùy theo cấp độ của người được chọn"
+ },
+ "7ab984ad4546fc0dec59c4bf99bc33bc": {
+  "en": "* Child-rearing subsidy: 450,000 won per month per child to families decided for foster care\n* Child supplies purchase cost: 1,000,000 won per family to newly designated foster families (one time, first time only)",
+  "zh": "* 养育补助金:对确定为家庭寄养的家庭,每名儿童每月补助45万韩元\n* 儿童用品购置费:对新认定的寄养家庭,每个家庭发放100万韩元(首次一次性)",
+  "vi": "* Trợ cấp nuôi dưỡng: 450.000 won mỗi tháng cho mỗi trẻ đối với gia đình được quyết định nhận trẻ nuôi dưỡng tại gia đình\n* Chi phí mua đồ dùng cho trẻ: 1.000.000 won mỗi gia đình đối với gia đình nhận nuôi dưỡng mới được xác định (một lần, lần đầu)"
+ },
+ "62f1fc1fabbb620ac9cca808fd82810d": {
+  "en": "Support for operating facilities that provide services such as residence, nursing care and daily life support to persons with severe disabilities who find it hard to live in an ordinary home, and that support community living.",
+  "zh": "对运营设施提供支持,这些设施为难以在普通家庭生活的重度残疾人提供居住、疗养、日常生活支援等服务,并支持其社区生活",
+  "vi": "Hỗ trợ cho việc vận hành cơ sở cung cấp các dịch vụ như nơi ở, điều dưỡng, hỗ trợ sinh hoạt hằng ngày cho người khuyết tật nặng khó sống trong gia đình bình thường và hỗ trợ cuộc sống trong cộng đồng."
+ },
+ "dcc2ab2b77454461afd069cba3362270": {
+  "en": "- Visit: Siheung Youth Counseling and Welfare Center\n - Phone: Siheung Youth Counseling and Welfare Center and 031-318-7100\n - Online: www.shyouth.or.kr/schs",
+  "zh": "- 上门:始兴市青少年咨询福利中心\n - 电话:始兴市青少年咨询福利中心及031-318-7100\n - 线上:www.shyouth.or.kr/schs",
+  "vi": "- Đến trực tiếp: Trung tâm tư vấn và phúc lợi thanh thiếu niên Siheung\n - Điện thoại: Trung tâm tư vấn và phúc lợi thanh thiếu niên Siheung và 031-318-7100\n - Trực tuyến: www.shyouth.or.kr/schs"
+ },
+ "33fc2f50a30808431cd137a2267f5c79": {
+  "en": "Supports medical costs needed for proper treatment and management of high-risk pregnancies, to reduce financial burden and ensure a healthy birth and the health of mother and child.\n- Support amount: up to 3,000,000 won per person",
+  "zh": "补助高危妊娠适当治疗和管理所需的诊疗费,以减轻经济负担,保障健康分娩及母婴健康\n- 补助金额:每人最高300万韩元",
+  "vi": "Hỗ trợ chi phí khám chữa bệnh cần thiết để điều trị và quản lý thích hợp thai kỳ nguy cơ cao, nhằm giảm gánh nặng kinh tế và bảo đảm sinh con khỏe mạnh cùng sức khỏe mẹ và bé.\n- Số tiền hỗ trợ: tối đa 3.000.000 won mỗi người"
+ },
+ "799b25d2f4d7f0c4b6c4e8f951034179": {
+  "en": "Aged 19 or older in households at 160% or below of the standard median income\n① Persons with mental disabilities\n② Persons for whom a psychiatrist can issue a medical opinion and diagnosis stating that psychiatric treatment is needed",
+  "zh": "基准中位收入160%以下家庭中年满19周岁以上的\n① 精神障碍人士\n② 能够获得精神健康医学科专科医生出具的需要接受精神科治疗的意见书及诊断书的人",
+  "vi": "Người từ 19 tuổi trở lên thuộc hộ có thu nhập từ 160% thu nhập trung vị chuẩn trở xuống\n① Người khuyết tật tâm thần\n② Người có thể được bác sĩ chuyên khoa tâm thần cấp giấy nhận xét và giấy chẩn đoán cho biết cần điều trị tâm thần"
+ },
+ "85676eddc4fea302b9d35d792976916b": {
+  "en": "Several age criteria (differ by target) — check the original text; income ceiling is 180% of the median (outside the rank range) — needs checking; Note: The co-payment is supported at different levels depending on the target's income standard",
+  "zh": "年龄标准有多种(因对象而异)——请查看原文;收入上限为中位收入180%(超出排名范围)——需要确认;备注:根据对象的收入标准,自付费用的补助有所差别",
+  "vi": "Có nhiều tiêu chí về độ tuổi (khác nhau theo từng đối tượng) — vui lòng xem văn bản gốc; mức trần thu nhập là 180% thu nhập trung vị (vượt ngoài phạm vi xếp hạng) — cần xác nhận; Ghi chú: Mức tự chi trả được hỗ trợ khác nhau tùy theo tiêu chuẩn thu nhập của đối tượng"
+ },
+ "fd0f63a90cb43e4229854b8298d22f0b": {
+  "en": "1) Video analysis and case meetings for children identified through developmental screening tests\n2) Developmental coaching through consultations with guardians, consultations for the welfare center's treatment waiting list, and connection to community treatment institutions",
+  "zh": "1) 对通过发育筛查检查筛选出的儿童进行影像分析及个案会议\n2) 通过监护人咨询提供发育辅导和福利馆治疗候补咨询,并转介至社区治疗机构",
+  "vi": "1) Phân tích video và họp ca đối với trẻ được sàng lọc qua kiểm tra sàng lọc phát triển\n2) Huấn luyện phát triển thông qua tư vấn người giám hộ, tư vấn danh sách chờ điều trị của trung tâm phúc lợi và kết nối với các cơ sở điều trị trong cộng đồng"
+ },
+ "40eb9442e0c0f8463c5c9a58cb383bcb": {
+  "en": "*Eligibility:\n1) Aged 18 or older, persons with intellectual disabilities or autism registered under the Welfare of Persons with Disabilities Act\n(2) Persons whose score on the selection criteria for the Integrated Care Service for the Most Severe is 70 points or more and less than 80 points",
+  "zh": "*申请资格:\n1) 年满18周岁、依据《残疾人福利法》登记的智力障碍及自闭症残疾人\n(2) 最重度综合照护服务对象选定标准分数在70分以上、80分以下者",
+  "vi": "*Điều kiện đăng ký:\n1) Người từ 18 tuổi trở lên, là người khuyết tật trí tuệ và tự kỷ đã đăng ký theo Luật Phúc lợi người khuyết tật\n(2) Người có điểm theo tiêu chuẩn chọn đối tượng Dịch vụ chăm sóc tổng hợp cho người khuyết tật cực nặng từ 70 điểm trở lên và dưới 80 điểm"
+ },
+ "d76184393069c9fa022d2a2b0faa87d4": {
+  "en": "Free: Recipients of National Basic Livelihood Security, older adults living alone (aged 65 or older), near-poor households (including single-parent families), emergency support, Mugehan Dolbom (unlimited care) recipients, catastrophic medical expense recipients, etc. Paid: Persons with disabilities (user pays the amount exceeding 30,000 won)",
+  "zh": "免费:基础生活保障受助者、独居老人(65周岁以上)、次贫困阶层(含单亲家庭)、紧急支援、无限关怀(Mugehan Dolbom)、灾难性医疗费对象等 收费:残疾人(超过3万韩元的部分自付)",
+  "vi": "Miễn phí: Người hưởng Bảo đảm sinh hoạt cơ bản quốc gia, người cao tuổi sống một mình (từ 65 tuổi trở lên), hộ cận nghèo (bao gồm gia đình một cha/mẹ), hỗ trợ khẩn cấp, Mugehan Dolbom (chăm sóc không giới hạn), đối tượng chi phí y tế thảm họa, v.v. Có phí: Người khuyết tật (tự chi trả phần vượt quá 30.000 won)"
+ },
+ "30f73a5cabf97b551bd9250aa5af4063": {
+  "en": "○ Recipients of living benefits under the 「National Basic Living Security Act」 ○ Persons with severe disabilities under the 「Welfare of Persons with Disabilities Act」 ○ Families with many children under the 「Siheung City Ordinance on Preferential Treatment and Support for Families with Many Children」",
+  "zh": "○ 依据《国民基础生活保障法》的生计补助受助者 ○ 依据《残疾人福利法》的重度残疾人 ○ 依据《始兴市多子女优待及支援条例》的多子女家庭",
+  "vi": "○ Người hưởng trợ cấp sinh hoạt theo 「Luật Bảo đảm sinh hoạt cơ bản quốc gia」 ○ Người khuyết tật nặng theo 「Luật Phúc lợi người khuyết tật」 ○ Gia đình đông con theo 「Pháp lệnh về ưu đãi và hỗ trợ gia đình đông con của Thành phố Siheung」"
+ },
+ "bbf85f2076fd51a3cfe11c8849fe2030": {
+  "en": "Through family education based on a systematic and concrete curriculum, strengthens the understanding and caregiving ability of families and caregivers of people with dementia.\n-Family education, self-help groups, healing programs-",
+  "zh": "通过基于系统具体课程的家属教育,增强痴呆患者家属及监护人对照护痴呆患者的理解和照护能力\n-家属教育、互助小组、疗愈课程-",
+  "vi": "Thông qua giáo dục gia đình dựa trên chương trình có hệ thống và cụ thể, tăng cường sự hiểu biết và năng lực chăm sóc của gia đình và người chăm sóc bệnh nhân sa sút trí tuệ.\n-Giáo dục gia đình, nhóm tự giúp đỡ, chương trình chữa lành-"
+ },
+ "514d1f83ba0f3767fc2d1e4e82dc3cb7": {
+  "en": "Age criteria cannot be interpreted — check the original text; criteria related to persons of national merit; criteria for bereaved families of persons who died or were injured in righteous acts; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "年龄标准无法解读——请查看原文;与国家有功者相关的标准;义死伤者遗属标准;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Không thể diễn giải tiêu chí độ tuổi — vui lòng xem văn bản gốc; tiêu chí liên quan đến người có công với đất nước; tiêu chí về thân nhân của người hy sinh hoặc bị thương vì nghĩa cử cao đẹp; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "adb38f013dea7bd7e8cab4322a39b145": {
+  "en": "Basic pension/health insurance premium criteria — income rank not applied, needs checking; criteria related to persons of national merit; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "基础养老金/健康保险费标准——未适用收入排名,需要确认;与国家有功者相关的标准;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Tiêu chí lương hưu cơ bản/phí bảo hiểm y tế — không áp dụng xếp hạng thu nhập, cần xác nhận; tiêu chí liên quan đến người có công với đất nước; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "4bac31e061c243ef136345df1ad0e2af": {
+  "en": "Regular sponsorship for children from low-income families in the area\n(1:1 matching between individual and group sponsors and the children, to support healthy growth)\n\n*Green Umbrella Children's Foundation\n*Save the Children\n*Individual sponsorship matching",
+  "zh": "对辖区内低收入阶层儿童提供定期资助\n(个人及团体资助者与对象一对一结对,促进健康成长)\n\n*Green Umbrella儿童基金会(Green Umbrella Children's Foundation)\n*救助儿童会(Save the Children)\n*个人结对资助",
+  "vi": "Tài trợ định kỳ cho trẻ em thuộc tầng lớp thu nhập thấp trong khu vực\n(kết nối 1:1 giữa nhà tài trợ cá nhân, tổ chức và đối tượng để hỗ trợ trẻ phát triển khỏe mạnh)\n\n*Quỹ Nhi đồng Green Umbrella (Green Umbrella Children's Foundation)\n*Save the Children\n*Tài trợ kết nghĩa cá nhân"
+ },
+ "d9cd494e5c8faf3d06e86675abe9edaf": {
+  "en": "Supports low-income older adult households living in semi-basements or old houses in Sinchon-dong that need housing improvement, with housing safety inspection, replacement of old switches, replacement with eco-friendly high-efficiency LED lights, and installation of automatic gas shut-off devices.",
+  "zh": "为居住在新川洞半地下室、老旧住宅中需要改善居住环境的低收入老人家庭,提供住宅安全检查、更换老旧开关、更换环保高效LED灯、安装燃气自动切断器等支持",
+  "vi": "Hỗ trợ các hộ người cao tuổi thu nhập thấp sống ở tầng bán hầm, nhà cũ tại phường Sinchon-dong cần cải thiện nhà ở: kiểm tra an toàn nhà ở, thay công tắc cũ, thay đèn LED thân thiện môi trường hiệu suất cao, lắp thiết bị tự động ngắt gas."
+ },
+ "5f2afd86815eee1ad8aba94aa8112964": {
+  "en": "Children born in 2024: 400,000 won in local currency per child (800,000 won for twins)  Children born in 2025: 500,000 won in local currency per child (1,000,000 won for twins)",
+  "zh": "2024年出生儿童:每人40万韩元地区货币(双胞胎80万韩元)2025年出生儿童:每人50万韩元地区货币(双胞胎100万韩元)",
+  "vi": "Trẻ sinh năm 2024: 400.000 won tiền địa phương mỗi trẻ (800.000 won đối với trẻ sinh đôi)  Trẻ sinh năm 2025: 500.000 won tiền địa phương mỗi trẻ (1.000.000 won đối với trẻ sinh đôi)"
+ },
+ "14bb55552233322850302144ba3d2ac8": {
+  "en": "Provides 600,000 won per household when an old boiler, which has become outdated and emits many pollutants such as nitrogen oxides, is replaced with an eco-friendly condensing boiler that emits fewer air pollutants and has higher energy efficiency.",
+  "zh": "将因老旧而产生大量氮氧化物等污染物的旧锅炉,更换为大气污染物排放量少、能效更高的环保冷凝锅炉时,每户补助60万韩元",
+  "vi": "Hỗ trợ 600.000 won mỗi hộ khi thay nồi hơi cũ, đã xuống cấp và thải nhiều chất ô nhiễm như oxit nitơ, bằng nồi hơi ngưng tụ thân thiện môi trường, thải ít chất ô nhiễm không khí và hiệu suất năng lượng cao hơn."
+ },
+ "d3e7ca96c7fad1d01cdd89f502f9bf69": {
+  "en": "1) ID\n2) 1 copy of resident registration certificate\n3) (Before marriage) 1 copy of wedding invitation or wedding hall contract\n4) (After marriage) 1 marriage relationship certificate\n5) 1 pregnancy planning test application form (fill out in person)",
+  "zh": "1) 身份证\n2) 居民登记证明(等本)1份\n3) (婚前)请柬或婚礼场地合同复印件1份\n4) (婚后)婚姻关系证明书1份\n5) 备孕检查申请表1份(上门填写)",
+  "vi": "1) Giấy tờ tùy thân\n2) 1 bản giấy chứng nhận đăng ký cư trú\n3) (Trước khi kết hôn) 1 bản thiệp cưới hoặc bản sao hợp đồng nhà hàng tiệc cưới\n4) (Sau khi kết hôn) 1 bản giấy chứng nhận quan hệ hôn nhân\n5) 1 đơn đăng ký khám kế hoạch mang thai (đến trực tiếp điền)"
+ },
+ "8b4cd0800955083fb3e60bb97017d4f1": {
+  "en": "Supports children and teenagers in forming a positive view of themselves and a vision for the future through programs on social and cultural activities and improving self-directed ability\n(support for self-understanding, improving social skills, career exploration, etc.)",
+  "zh": "通过儿童·青少年时期的社会文化活动及提升自主能力课程,支持其形成对自我的积极认知和未来愿景\n(支持自我理解、提升社交能力、职业探索等)",
+  "vi": "Hỗ trợ trẻ em và thanh thiếu niên hình thành nhận thức tích cực về bản thân và tầm nhìn tương lai thông qua chương trình hoạt động văn hóa xã hội và nâng cao khả năng tự chủ\n(hỗ trợ hiểu bản thân, nâng cao kỹ năng xã hội, khám phá nghề nghiệp, v.v.)"
+ },
+ "f2f69a7c79eb322f4e245f4dc6457d94": {
+  "en": "Self-directed youth volunteer activities\n- Volunteer activities that teenagers plan and carry out themselves, such as making birthday gifts for older adults, environmental cleanup, taking part in local festivals, and activities related to the Siheung Youth Center",
+  "zh": "自主型青少年志愿服务活动\n-由青少年亲自策划并实践的志愿活动,如制作老人生日礼物、环境清洁、参与地区庆典、始兴市青少年修炼馆相关活动等",
+  "vi": "Hoạt động tình nguyện của thanh thiếu niên theo hướng tự chủ\n-Tiến hành các hoạt động tình nguyện do chính thanh thiếu niên lên kế hoạch và thực hiện, như làm quà sinh nhật cho người cao tuổi, dọn dẹp môi trường, tham gia lễ hội địa phương, các hoạt động liên quan đến Trung tâm thanh thiếu niên Siheung"
+ },
+ "4171f7e2be434c55fa3836605a27cd91": {
+  "en": "* Foster families decided under Article 15 of the Child Welfare Act for foster care protection\n* Children adopted through an adoption agency licensed under the Special Adoption Act (children aged 2 to 18)",
+  "zh": "* 依据《儿童福利法》第15条决定家庭寄养保护措施的寄养家庭\n* 通过依据《收养特例法》获得许可的收养机构被收养的儿童(满2周岁~18周岁以下)",
+  "vi": "* Gia đình nhận nuôi dưỡng được quyết định biện pháp bảo hộ nuôi dưỡng tại gia đình theo Điều 15 Luật Phúc lợi trẻ em\n* Trẻ em được nhận nuôi thông qua cơ quan nhận con nuôi được cấp phép theo Luật Đặc biệt về nhận con nuôi (trẻ từ 2 tuổi đến 18 tuổi)"
+ },
+ "81fabb4a78a4f8c9dc0cc71dee612134": {
+  "en": "Provides appropriate developmental rehabilitation services and information to improve mental and sensory functions, such as cognition, communication, adaptive behavior, and sensory-motor skills, and behavioral development, of children with disabilities who are growing and adults with disabilities.",
+  "zh": "为成长期残疾儿童及成年残疾人提供适当的发育康复服务及信息,以提升认知、沟通、适应行为、感觉·运动等精神和感觉功能,促进行为发育",
+  "vi": "Cung cấp dịch vụ phục hồi chức năng phát triển phù hợp và thông tin nhằm nâng cao các chức năng tinh thần và cảm giác như nhận thức, giao tiếp, hành vi thích nghi, cảm giác-vận động, và phát triển hành vi cho trẻ em khuyết tật đang trong giai đoạn lớn lên và người lớn khuyết tật."
+ },
+ "dfb723b02f05c6afbc264463d6f7750c": {
+  "en": "Collected from the Bokjiro API (2026) — Target: Households without a home who pay monthly rent, have lived in Siheung City for at least 1 month as of the application date, and have 60% or below of the standard median income (80% or below for households with children)",
+  "zh": "来自Bokjiro(国家福利门户)API(2026)——对象:申请日当天在始兴市辖区居住满1个月以上、基准中位收入60%以下(有儿童的家庭为80%以下)的无房月租家庭",
+  "vi": "Dữ liệu thu thập từ API Bokjiro (2026) — Đối tượng: Hộ không có nhà ở, thuê nhà trả tiền hàng tháng, đã sinh sống tại Thành phố Siheung từ 1 tháng trở lên tính đến ngày đăng ký, có thu nhập từ 60% thu nhập trung vị chuẩn trở xuống (80% trở xuống đối với hộ có trẻ em)"
+ },
+ "802c7eef3a38b32de3b7322e248b593b": {
+  "en": "ㅇ Visit - Baegot 1-dong Community Service Center\nㅇ Phone - Baegot 1-dong Community Service Center (☎ 031-310-6919)\n            * Only simple health consultations are available *",
+  "zh": "ㅇ 上门或到访 - 排谷1洞行政福利中心\nㅇ 电话 - 排谷1洞行政福利中心(☎ 031-310-6919)\n            * 仅可进行简单的健康咨询 *",
+  "vi": "ㅇ Đến trực tiếp hoặc thăm - Trung tâm hành chính phúc lợi phường Baegot 1-dong\nㅇ Điện thoại - Trung tâm hành chính phúc lợi phường Baegot 1-dong (☎ 031-310-6919)\n            * Chỉ có thể tư vấn sức khỏe đơn giản *"
+ },
+ "a3a7bd33c6c97f02d94926a8c005c48c": {
+  "en": "Please ask for details of the income standard (described as low-income/vulnerable groups); childcare gap (dual-income, etc.) requirement; Note: -; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "收入标准详情请咨询(描述为低收入/弱势群体);育儿空白(双职工等)要求;备注:-;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Vui lòng hỏi chi tiết về tiêu chuẩn thu nhập (mô tả là tầng lớp thu nhập thấp/yếu thế); điều kiện về khoảng trống chăm sóc con (vợ chồng cùng đi làm, v.v.); Ghi chú: -; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "4a8bb2e2b0bc06f5f833ae1b00a937b4": {
+  "en": "Groups vulnerable in employment\nCitizens of the city aged 18 or older, with 65% or below of the standard median income and assets of less than 400 million won\n(Bonus point factors) Persons with disabilities, persons under employment protection, North Korean defectors, marriage migrant women, etc.",
+  "zh": "就业弱势群体\n辖区内年满18周岁的市民,基准中位收入65%以下且财产不足4亿韩元者\n(加分因素)残疾人、就业保护对象、脱北者、结婚移民女性等",
+  "vi": "Nhóm yếu thế về việc làm\nCư dân thành phố từ 18 tuổi trở lên, có thu nhập từ 65% thu nhập trung vị chuẩn trở xuống và tài sản dưới 400 triệu won\n(Yếu tố cộng điểm) Người khuyết tật, đối tượng được bảo hộ việc làm, người thoát ly Triều Tiên, phụ nữ kết hôn di cư, v.v."
+ },
+ "927e3a9b2d3ade6112e26abfd372bb36": {
+  "en": "- Visit: Siheung Women's New Job Support Center\n - Phone: 031-310-6022, 6028, 6298\n - Fax: 031-318-5012\n - Email: (email not included)",
+  "zh": "- 上门:始兴女性再就业支援中心\n - 电话:031-310-6022,6028, 6298\n - 传真:031-318-5012\n - 电子邮箱:(不含电子邮箱)",
+  "vi": "- Đến trực tiếp: Trung tâm hỗ trợ phụ nữ tìm việc mới Siheung\n - Điện thoại: 031-310-6022, 6028, 6298\n - Fax: 031-318-5012\n - Email: (không bao gồm email)"
+ },
+ "022e1f3c0a638381180068dedf3b2288": {
+  "en": "Income standard and local residents listed together (open to all) — needs checking; persons with disabilities and local residents listed together (open to all) — needs checking; personal contact details (mobile phone, email) are not published — contact the responsible agency",
+  "zh": "收入标准与地区居民并列标注(全部开放)——需要确认;残疾人与地区居民并列标注(全部开放)——需要确认;不公布个人联系方式(手机、电子邮箱)——请咨询负责机构",
+  "vi": "Tiêu chuẩn thu nhập và cư dân địa phương được ghi song song (mở cho tất cả) — cần xác nhận; người khuyết tật và cư dân địa phương được ghi song song (mở cho tất cả) — cần xác nhận; thông tin liên lạc cá nhân (điện thoại di động, email) không được đăng — vui lòng liên hệ cơ quan phụ trách"
+ },
+ "212cc1fba81cfa6e50ce2bbfe722f99f": {
+  "en": "Supports persons with disabilities and local residents in experiencing one-day classes together in various spaces around the neighborhood, creating a place for community communication where they can meet naturally and build relationships in daily life.",
+  "zh": "支持残疾人与地区居民共同在社区的各种空间体验一日课程,打造让人们在日常生活中自然相遇、建立关系的社区交流平台",
+  "vi": "Hỗ trợ người khuyết tật và cư dân địa phương cùng trải nghiệm các lớp học một ngày tại nhiều không gian trong khu phố, tạo ra nơi giao lưu cộng đồng để mọi người gặp gỡ và xây dựng mối quan hệ một cách tự nhiên trong cuộc sống hằng ngày."
+ },
+ "6aee86568bd220ad2e666b7f8c6e7a79": {
+  "en": "1) Aged 19 to 34, young people without a home who live separately from their parents (must hold a Youth Savings Account)\n      (Original household) 100% or below of the standard median income & (Young person) 60% or below of the standard median income",
+  "zh": "1) 19周岁~34周岁以下、与父母分开居住的无房青年(必须加入青年存折)\n      (原家庭)基准中位收入100%以下 & (青年)基准中位收入60%以下",
+  "vi": "1) Thanh niên từ 19 đến 34 tuổi, không có nhà ở, sống riêng với cha mẹ (bắt buộc tham gia tài khoản tiết kiệm thanh niên)\n      (Hộ gốc) từ 100% thu nhập trung vị chuẩn trở xuống & (Thanh niên) từ 60% thu nhập trung vị chuẩn trở xuống"
+ },
+ "e184c2e8b3c7626418dbf8296a99e84f": {
+  "en": "Collected from the Bokjiro API (2026) — Target: Eligible participants: Native residents and migrants in the city / Nationality: Native residents (Korean nationals) in the city are included among participants — not for foreigners only, needs checking",
+  "zh": "来自Bokjiro(国家福利门户)API(2026)——对象:参与对象:辖区内原住居民及移民者 / 国籍:参与对象包括辖区内原住居民(本国人)——并非仅限外国人,需要确认",
+  "vi": "Dữ liệu thu thập từ API Bokjiro (2026) — Đối tượng: Đối tượng tham gia: cư dân bản địa và người nhập cư trong thành phố / Quốc tịch: Đối tượng tham gia bao gồm cư dân bản địa (công dân Hàn Quốc) trong thành phố — không chỉ dành riêng cho người nước ngoài, cần xác nhận"
+ },
+ "2076e7f371fa76f191cf8659b263d73e": {
+  "en": "1) Proof of coverage eligibility\n - Recipients and near-poor households: certificate of recipient or near-poor status\n - General: health insurance eligibility status certificate\n           health insurance premium payment certificate (3 months)\n2) ID",
+  "zh": "1) 保障资格证明书\n - 受助者及次贫困阶层:受助者、次贫困阶层证明书\n - 一般:健康保险资格得失确认书\n           健康保险费缴纳确认书(3个月)\n2) 身份证",
+  "vi": "1) Giấy chứng nhận tư cách được bảo hộ\n - Người hưởng trợ cấp và hộ cận nghèo: giấy chứng nhận hưởng trợ cấp, giấy chứng nhận cận nghèo\n - Thông thường: giấy xác nhận tư cách bảo hiểm y tế\n           giấy xác nhận đóng phí bảo hiểm y tế (3 tháng)\n2) Giấy tờ tùy thân"
+ },
+ "9314cd4f98345b67aace0ad7cd25b68f": {
+  "en": "<Health checkups for infants and young children>\n1) Medical Aid beneficiaries\n2) Health insurance subscribers\n\n<Detailed test for developmental disabilities>\nChildren whose health checkup result notice for infants and young children shows \"In-depth evaluation recommended\" in the \"developmental evaluation result\" section",
+  "zh": "<婴幼儿健康检查>\n1) 医疗救助受助权者\n2) 健康保险参保者\n\n<发育障碍精密检查>\n婴幼儿健康检查结果通知书“发育评估结果”栏中被判定为“建议深入评估”的对象",
+  "vi": "<Khám sức khỏe cho trẻ sơ sinh và trẻ nhỏ>\n1) Người được hưởng Trợ cấp y tế\n2) Người tham gia bảo hiểm y tế\n\n<Kiểm tra chuyên sâu về khuyết tật phát triển>\nĐối tượng được xác định là \"khuyến nghị đánh giá chuyên sâu\" ở mục \"kết quả đánh giá phát triển\" trong phiếu thông báo kết quả khám sức khỏe trẻ sơ sinh và trẻ nhỏ"
+ },
+ "657d6d9168c43af122040849192d7296": {
+  "en": "Residents of the designated dong\n* Based on basic consultation, an internal meeting discusses whether to carry out case management\n* Whether to carry out case management is decided at the integrated case meeting, based on the household's situation and needs identified during the first consultation",
+  "zh": "管辖洞的地区居民\n* 在基础咨询的基础上,通过内部会议讨论是否实施个案管理\n* 由综合个案会议根据初次咨询时了解到的家庭状况和需求,决定是否实施个案管理",
+  "vi": "Cư dân địa phương thuộc phường phụ trách\n* Dựa trên tư vấn cơ bản, thảo luận trong cuộc họp nội bộ về việc có thực hiện quản lý ca hay không\n* Cuộc họp ca tổng hợp quyết định có thực hiện quản lý ca hay không, dựa trên hoàn cảnh và nhu cầu của gia đình được nắm khi tư vấn ban đầu"
+ },
+ "3cce4286f35813f4109622e7d874e853": {
+  "en": "1) Application form for self-reliance allowance for children who have left protective care\n2) 1 online course completion certificate (print the certificate after taking the \"Self-reliance Education for Children Leaving Care\" course on the Financial Education Portal of the Korea Inclusive Finance Agency)\n3) ID",
+  "zh": "1) 保护期结束儿童自立津贴申请表\n2) 网络课程结业证明1份(在小额金融振兴院金融教育门户听完“保护期结束儿童自立教育”课程后打印结业证明)\n3) 身份证",
+  "vi": "1) Đơn đăng ký trợ cấp tự lập cho trẻ em kết thúc bảo hộ\n2) 1 giấy chứng nhận hoàn thành khóa học trực tuyến (học khóa \"Giáo dục tự lập cho trẻ em kết thúc bảo hộ\" trên cổng giáo dục tài chính của Cơ quan Thúc đẩy Tài chính cho người dân rồi in giấy chứng nhận)\n3) Giấy tờ tùy thân"
+ },
+ "c6f0df629d59da90e3385b77e319793f": {
+  "en": "Child age criteria (not the applicant's age) — needs checking; Note: -; Nationality: It is marked for foreigners/multicultural families, but Korean nationals may be included — it cannot be assumed to be for foreigners only, needs checking",
+  "zh": "子女年龄标准(非申请人年龄)——需要确认;备注:-;国籍:虽标注为外国人·多元文化,但可能包括本国人——不能断定仅限外国人,需要确认",
+  "vi": "Tiêu chí độ tuổi của con (không phải tuổi người đăng ký) — cần xác nhận; Ghi chú: -; Quốc tịch: Có ghi người nước ngoài/đa văn hóa nhưng có thể bao gồm cả công dân Hàn Quốc — không thể khẳng định chỉ dành cho người nước ngoài, cần xác nhận"
+ },
+ "40fec1996965b6b89e5ee61dbea65047": {
+  "en": "Provides rehabilitation programs and education needed for daily life and social life to persons with disabilities who are hard to care for at home during the daytime.\nProvides individual support services suited to the disability and age characteristics.",
+  "zh": "为白天难以在家照护的残疾人提供日常生活和社会生活所需的康复课程及教育\n提供适合残疾及年龄特点的个人支持服务",
+  "vi": "Cung cấp chương trình phục hồi chức năng và giáo dục cần thiết cho sinh hoạt hằng ngày và đời sống xã hội đối với người khuyết tật khó được chăm sóc tại nhà vào ban ngày.\nCung cấp dịch vụ hỗ trợ cá nhân phù hợp với đặc điểm khuyết tật và độ tuổi."
+ },
+ "8cf6d8248dd2f043a5ebe16b0a80fcbe": {
+  "en": "- Visit: Community service center of the eup/myeon/dong of the child's registered address\n- Online: Gyeonggi Minwon 24 (https://gg24.gg.go.kr)\n※ Online application is only possible for the Gyeonggi-do postpartum care cost",
+  "zh": "- 上门:儿童住民登记地址所在邑面洞的行政福利中心\n- 线上:京畿民愿24(https://gg24.gg.go.kr)\n※ 线上申请仅限京畿道产后护理费",
+  "vi": "- Đến trực tiếp: Trung tâm hành chính phúc lợi xã/thị trấn/phường nơi có địa chỉ đăng ký cư trú của trẻ\n- Trực tuyến: Gyeonggi Minwon 24 (https://gg24.gg.go.kr)\n※ Đăng ký trực tuyến chỉ áp dụng cho chi phí chăm sóc sau sinh của tỉnh Gyeonggi"
+ },
+ "655c8e1963f1359b90f131044ff9ff32": {
+  "en": "1) When applying in person\n<Form No. 1> Application for Customized Care Service for Older Adults\nApplicant's ID\n\n2) When applying by proxy\n<Form No. 1> Application form\nApplicant's ID\nPower of attorney and the proxy applicant's ID",
+  "zh": "1) 本人申请时\n<第1号表格> 老人个性化照护服务申请表\n申请人身份证\n\n2) 代理申请时\n<第1号表格> 申请表\n申请人身份证\n委托书及代理申请人身份证",
+  "vi": "1) Khi đăng ký trực tiếp\n<Mẫu số 1> Đơn đăng ký dịch vụ chăm sóc theo nhu cầu cho người cao tuổi\nGiấy tờ tùy thân của người đăng ký\n\n2) Khi đăng ký thay\n<Mẫu số 1> Đơn đăng ký\nGiấy tờ tùy thân của người đăng ký\nGiấy ủy quyền và giấy tờ tùy thân của người đăng ký thay"
+ },
+ "3c1107fb2b4be86f54389c8b8eecc8f0": {
+  "en": "Operates humanities and arts and culture programs for older adults aged 60 or older\n\n* Run by semester: yoga, qigong, health line dance,\nacoustic guitar, folk songs, calligraphy, Chinese characters, table tennis, silver band,\ncalligraphy art",
+  "zh": "为60周岁以上老人开办人文、文化艺术课程\n\n* 按学期制开设瑜伽、气功、健康排舞、\n民谣吉他、民谣、书法、汉字、乒乓球、银发乐队、\n手写美术字",
+  "vi": "Tổ chức chương trình nhân văn, văn hóa nghệ thuật dành cho người cao tuổi từ 60 tuổi trở lên\n\n* Vận hành theo học kỳ: yoga, khí công, nhảy line dance sức khỏe,\nguitar mộc, dân ca, thư pháp, Hán tự, bóng bàn, ban nhạc người cao tuổi,\nthư pháp nghệ thuật"
+ },
+ "da756ca2ef0f49022ca1071524fd9386": {
+  "en": "1) Application form for providing or changing care service\n2) If the child is a priority care child, the relevant certificate or confirmation\n3) If the child is from a dual-income family under the special care provision, an employment confirmation document such as a certificate of employment",
+  "zh": "1) 照护服务提供·变更申请表\n2) 属于优先照护儿童的,提交相应证明书或确认书\n3) 属于照护特例双职工家庭儿童的,提交在职证明等就业确认文件",
+  "vi": "1) Đơn đăng ký cung cấp/thay đổi dịch vụ chăm sóc\n2) Nếu thuộc trẻ em được chăm sóc ưu tiên, giấy chứng nhận hoặc giấy xác nhận tương ứng\n3) Nếu là trẻ em thuộc gia đình vợ chồng cùng đi làm theo diện đặc biệt về chăm sóc, giấy tờ xác nhận việc làm như giấy chứng nhận đang làm việc"
+ },
+ "55a8600cff3c783679f086ae343c401d": {
+  "en": "Supports families who give birth to a second child or more with a birth incentive, to reduce the financial burden of raising children. \n- Second child: 500,000 won, third child: 1,000,000 won, fourth child or more: 8,000,000 won (2,000,000 won each year for 4 years)",
+  "zh": "向生育二胎及以上的家庭发放生育奖励金,减轻养育儿童带来的经济负担\n- 二胎50万韩元,三胎100万韩元,四胎及以上800万韩元(4年内每年发放200万韩元)",
+  "vi": "Hỗ trợ tiền khuyến khích sinh con cho gia đình sinh con thứ hai trở lên, nhằm giảm gánh nặng kinh tế khi nuôi dạy con. \n- Con thứ hai: 500.000 won, con thứ ba: 1.000.000 won, con thứ tư trở lên: 8.000.000 won (chi trả 2.000.000 won mỗi năm trong 4 năm)"
+ },
+ "481fe023fc32066a17a165b7772f1b55": {
+  "en": "For families of persons with disabilities — check the original text; illness/diagnosis criteria; adoptive family criteria; target selected through consultation/review; reduction, priority, either-or and family conditions are mixed, so they cannot be taken as required qualifications — check the original text",
+  "zh": "以残疾人家庭为对象——请查看原文;疾病/诊断标准;收养家庭标准;通过咨询/审议选定对象;减免、优先、择一和家庭条件混合在一起,不能断定为必备资格——请查看原文",
+  "vi": "Dành cho gia đình có người khuyết tật — vui lòng xem văn bản gốc; tiêu chí bệnh/chẩn đoán; tiêu chí gia đình nhận con nuôi; đối tượng được chọn thông qua tư vấn/thẩm định; các điều kiện giảm miễn, ưu tiên, chọn một trong nhiều và điều kiện gia đình bị trộn lẫn nên không thể coi là tư cách bắt buộc — vui lòng xem văn bản gốc"
+ },
+ "f5c624125b668d1741cdaa23c82ad279": {
+  "en": "Internet — · Application period: March 9, 2026 ~ December 11, 2026 - If the budget runs out, payment is not possible for the current year and will be made the following year · How to apply: Online (Gyeonggi Minwon 24)",
+  "zh": "网络——· 申请期间:2026. 3. 9. ~ 2026. 12. 11. - 预算用完时当年无法发放,将于次年发放· 申请方式:线上(京畿民愿24)",
+  "vi": "Internet — · Thời gian đăng ký: 09/03/2026 ~ 11/12/2026 - Nếu hết ngân sách thì không thể chi trả trong năm nay và sẽ chi trả vào năm sau · Cách đăng ký: Trực tuyến (Gyeonggi Minwon 24)"
+ },
+ "d9a35b4d5f34e87a007e0a2695ffc6e0": {
+  "en": "Supports postpartum care costs to ease the financial burden on families who give birth and to help the health care of mothers and newborns\n- Gyeonggi-do: 500,000 won per newborn (local currency)\n- Siheung City: 400,000 won per newborn (local currency)",
+  "zh": "为减轻生育家庭的经济负担、促进产妇和新生儿健康管理,补助产后护理费\n- 京畿道:每名新生儿50万韩元(地区货币)\n- 始兴市:每名新生儿40万韩元(地区货币)",
+  "vi": "Hỗ trợ chi phí chăm sóc sau sinh nhằm giảm gánh nặng kinh tế cho gia đình sinh con và hỗ trợ chăm sóc sức khỏe sản phụ, trẻ sơ sinh\n- Tỉnh Gyeonggi: 500.000 won mỗi trẻ sơ sinh (tiền địa phương)\n- Thành phố Siheung: 400.000 won mỗi trẻ sơ sinh (tiền địa phương)"
+ },
+ "3eff24f3e5e8c8c7bea73124b5aa1f92": {
+  "en": "- 1 claim form for the detailed developmental disability test fee (fill out in person)\n- 1 original medical expense receipt\n- 1 result notice that records the test items and results (no set format)\n- 1 copy of the deposit bankbook",
+  "zh": "- 发育障碍精密检查费申请书1份(上门填写)\n- 诊疗费收据原件1份\n- 记载检查项目及检查结果的结果通知书(无固定格式)1份\n- 入账存折复印件1份",
+  "vi": "- 1 đơn yêu cầu thanh toán chi phí kiểm tra chuyên sâu về khuyết tật phát triển (đến trực tiếp điền)\n- 1 bản gốc hóa đơn viện phí\n- 1 phiếu thông báo kết quả ghi hạng mục và kết quả kiểm tra (không có mẫu quy định)\n- 1 bản sao sổ tài khoản nhận tiền"
+ }
+}

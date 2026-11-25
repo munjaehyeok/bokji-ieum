@@ -18,6 +18,19 @@ public class MatchResultRow extends Resource {
     private boolean oldData;        // data_base_date 12개월 경과(표시용)
     private String displayName;     // i18n 번역명, 없으면 한국어 name
     private String summaryTr;       // i18n 번역 요약 (없으면 null)
+    // i18n 상세 필드 번역 (없으면 null → 화면에서 한국어 원문 폴백)
+    private String orgNameTr;
+    private String phoneTr;
+    private String applicantTr;
+    private String serviceCycleTr;
+    private String decisionPeriodTr;
+    private String deptNameTr;
+    private String addressTr;
+    private String applyMethodTr;
+    private String documentsTr;
+    private String eligibilityTr;
+    private String costAmountTr;
+    private String uncertainNoteTr;
 
     private List<String> matchedLabels = Collections.emptyList();
     private List<String> needCheckLabels = Collections.emptyList();
@@ -37,6 +50,30 @@ public class MatchResultRow extends Resource {
     public void setDisplayName(String displayName) { this.displayName = displayName; }
     public String getSummaryTr() { return summaryTr; }
     public void setSummaryTr(String summaryTr) { this.summaryTr = summaryTr; }
+    public String getOrgNameTr() { return orgNameTr; }
+    public void setOrgNameTr(String orgNameTr) { this.orgNameTr = orgNameTr; }
+    public String getDeptNameTr() { return deptNameTr; }
+    public void setDeptNameTr(String deptNameTr) { this.deptNameTr = deptNameTr; }
+    public String getAddressTr() { return addressTr; }
+    public void setAddressTr(String addressTr) { this.addressTr = addressTr; }
+    public String getApplyMethodTr() { return applyMethodTr; }
+    public void setApplyMethodTr(String applyMethodTr) { this.applyMethodTr = applyMethodTr; }
+    public String getDocumentsTr() { return documentsTr; }
+    public void setDocumentsTr(String documentsTr) { this.documentsTr = documentsTr; }
+    public String getEligibilityTr() { return eligibilityTr; }
+    public void setEligibilityTr(String eligibilityTr) { this.eligibilityTr = eligibilityTr; }
+    public String getCostAmountTr() { return costAmountTr; }
+    public void setCostAmountTr(String costAmountTr) { this.costAmountTr = costAmountTr; }
+    public String getUncertainNoteTr() { return uncertainNoteTr; }
+    public void setUncertainNoteTr(String uncertainNoteTr) { this.uncertainNoteTr = uncertainNoteTr; }
+    public String getApplicantTr() { return applicantTr; }
+    public void setApplicantTr(String applicantTr) { this.applicantTr = applicantTr; }
+    public String getServiceCycleTr() { return serviceCycleTr; }
+    public void setServiceCycleTr(String serviceCycleTr) { this.serviceCycleTr = serviceCycleTr; }
+    public String getDecisionPeriodTr() { return decisionPeriodTr; }
+    public void setDecisionPeriodTr(String decisionPeriodTr) { this.decisionPeriodTr = decisionPeriodTr; }
+    public String getPhoneTr() { return phoneTr; }
+    public void setPhoneTr(String phoneTr) { this.phoneTr = phoneTr; }
     public List<String> getMatchedLabels() { return matchedLabels; }
     public void setMatchedLabels(List<String> matchedLabels) { this.matchedLabels = matchedLabels; }
     public List<String> getNeedCheckLabels() { return needCheckLabels; }

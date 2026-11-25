@@ -1,0 +1,852 @@
+{
+ "c23b6e2a121dc34251c01115cfe859ba": {
+  "en": "Online application form",
+  "zh": "在线申请表",
+  "vi": "Đơn đăng ký trực tuyến"
+ },
+ "3a6220b2ef0ea0f3ea7dacc1b4d732d9": {
+  "en": "Safety Education Program",
+  "zh": "安全教育运营",
+  "vi": "Tổ chức giáo dục an toàn"
+ },
+ "4b63a09686a7a42793f1040a18c64b02": {
+  "en": "Startup Space Support",
+  "zh": "创业空间支持",
+  "vi": "Hỗ trợ không gian khởi nghiệp"
+ },
+ "79d6d5d6a87a5211b5178a76e6ac36f9": {
+  "en": "A Day in the Life of a Job Seeker",
+  "zh": "求职者的一天",
+  "vi": "Một ngày của người tìm việc"
+ },
+ "f4b309b07e7a60ab702f66db780d6d8e": {
+  "en": "Youth Phone Counseling",
+  "zh": "青少年电话咨询",
+  "vi": "Tư vấn qua điện thoại cho thanh thiếu niên"
+ },
+ "cc0ef9f3bc1db3ff120072ce6fa84141": {
+  "en": "Free Meal Support",
+  "zh": "免费供餐支持",
+  "vi": "Hỗ trợ bữa ăn miễn phí"
+ },
+ "987589b5114bd469f7c55027bdae3bb2": {
+  "en": "Future Strategy Office",
+  "zh": "未来战略负责官",
+  "vi": "Văn phòng Chiến lược Tương lai"
+ },
+ "7b5a449c1490bdce42674cb47d1fad94": {
+  "en": "Illness/diagnosis criteria",
+  "zh": "疾病/诊断标准",
+  "vi": "Tiêu chí về bệnh/chẩn đoán"
+ },
+ "bd8f35e0ff2e96d83d9558fffe820d11": {
+  "en": "Youth Mental Health Program",
+  "zh": "青年心理健康项目",
+  "vi": "Chương trình sức khỏe tâm thần thanh niên"
+ },
+ "889e08b66f4ddcec09677fd1f15b9f3c": {
+  "en": "National Health Insurance Service",
+  "zh": "国民健康保险公团",
+  "vi": "Cơ quan Bảo hiểm Y tế Quốc gia"
+ },
+ "d431bd605305fa4f1315b2420523bde0": {
+  "en": "Early Dementia Screening Program",
+  "zh": "痴呆早期筛查项目",
+  "vi": "Chương trình tầm soát sớm bệnh sa sút trí tuệ"
+ },
+ "c2ff9db552a1387836f1b7cd747d1142": {
+  "en": "Health condition criteria",
+  "zh": "健康状况标准",
+  "vi": "Tiêu chí về tình trạng sức khỏe"
+ },
+ "af9c273eb1b4c6e2547389889047f0fd": {
+  "en": "Dementia Prevention Program",
+  "zh": "痴呆预防项目",
+  "vi": "Chương trình phòng ngừa sa sút trí tuệ"
+ },
+ "d5e7e0be83d3918ad23a67ccf296d084": {
+  "en": "Credit recovery procedure support",
+  "zh": "信用恢复程序支持",
+  "vi": "Hỗ trợ thủ tục phục hồi tín dụng"
+ },
+ "55e14a19b4be34d97aed6db01a0629ac": {
+  "en": "Korea Gas Safety Corporation",
+  "zh": "韩国燃气安全公社",
+  "vi": "Tổng công ty An toàn Khí đốt Hàn Quốc"
+ },
+ "4582880790adfcdab67192a807820d28": {
+  "en": "Community service center (dong office)",
+  "zh": "洞行政福利中心(居民中心)",
+  "vi": "Trung tâm hành chính phúc lợi phường (dong)"
+ },
+ "b6106400e2f19597f9c60186d7da426d": {
+  "en": "Requirement of limited mobility",
+  "zh": "行动不便条件",
+  "vi": "Điều kiện đi lại khó khăn"
+ },
+ "368d84a70a224d233630136f0b2e9924": {
+  "en": "TV license fee reduction",
+  "zh": "电视收视费减免",
+  "vi": "Giảm phí thu xem truyền hình (TV)"
+ },
+ "5a09d62f876bca8364a0e0610891070a": {
+  "en": "Korea Electric Power Corporation Siheung Branch",
+  "zh": "韩国电力始兴支社",
+  "vi": "Chi nhánh Siheung của Công ty Điện lực Hàn Quốc"
+ },
+ "c86ec4b193e4b114427af43e852b681a": {
+  "en": "Our Neighborhood Lawyer",
+  "zh": "我们社区的律师",
+  "vi": "Luật sư của khu phố chúng ta"
+ },
+ "22233d7092cba20343d5df713ffcfcc9": {
+  "en": "Geobukseom-dong\nAdministration Team",
+  "zh": "龟岛洞\n行政组",
+  "vi": "Phường Geobukseom\nĐội hành chính"
+ },
+ "e5f68090e7de07ffe742651e5ba597de": {
+  "en": "Pilates Small Equipment",
+  "zh": "普拉提小器械",
+  "vi": "Dụng cụ nhỏ tập Pilates"
+ },
+ "16b6a885335e366e439c70d7cce26265": {
+  "en": "Gunja-dong (Administration Team)",
+  "zh": "君子洞(行政组)",
+  "vi": "Phường Gunja (Đội hành chính)"
+ },
+ "a3ea0c86f2aaa37a7869a518e0109ebf": {
+  "en": "Health management for seniors",
+  "zh": "老年人健康管理",
+  "vi": "Quản lý sức khỏe cho người cao tuổi"
+ },
+ "77220abc461ea21660b7092b4acbcfe6": {
+  "en": "Low-income vulnerable groups",
+  "zh": "低收入弱势群体",
+  "vi": "Nhóm yếu thế có thu nhập thấp"
+ },
+ "f900101a63a02b3bcce6b9ac7f7ea6b0": {
+  "en": "Early Dementia Screening Test",
+  "zh": "痴呆早期筛查检测",
+  "vi": "Xét nghiệm tầm soát sớm bệnh sa sút trí tuệ"
+ },
+ "d34d33f1df25357885307ddc74561849": {
+  "en": "Varies by program",
+  "zh": "因项目而异",
+  "vi": "Tùy theo từng chương trình"
+ },
+ "1d7ae70c5d52b309407dd8d582a7024f": {
+  "en": "Sincheon-dong (Administration Team)",
+  "zh": "新川洞(行政组)",
+  "vi": "Phường Sincheon (Đội hành chính)"
+ },
+ "89ae9ebce2e76a0d8f5beaa10cfff253": {
+  "en": "Line Dance (Intermediate)",
+  "zh": "排舞(中级)",
+  "vi": "Nhảy line dance (trung cấp)"
+ },
+ "52a269cfc0d3704cdd0ec6c96ce99aa0": {
+  "en": "Basic Pension recipients",
+  "zh": "基础养老金领取对象",
+  "vi": "Đối tượng nhận lương hưu cơ bản"
+ },
+ "91bf4559f83873e51888d363134b0df2": {
+  "en": "Wolgot Red Cross Volunteer Group",
+  "zh": "月串红十字志愿会",
+  "vi": "Hội tình nguyện Chữ thập đỏ Wolgot"
+ },
+ "4c25ec6339c9c081a192a23550d9baf5": {
+  "en": "Mulsujebi Film Festival",
+  "zh": "打水漂电影节",
+  "vi": "Liên hoan phim Mulsujebi"
+ },
+ "f31ab656a1937cbeab4978334db75e15": {
+  "en": "Busking Along the Waterway",
+  "zh": "沿水路街头演出",
+  "vi": "Biểu diễn đường phố dọc theo dòng nước"
+ },
+ "a730b3eac658531d7bda7c277127a807": {
+  "en": "Youth Culture and Arts Pass",
+  "zh": "青年文化艺术通行证",
+  "vi": "Thẻ Văn hóa Nghệ thuật Thanh niên"
+ },
+ "da848c2716293ae252148b6c0ef20d61": {
+  "en": "Sinhyeon Happy Health Center",
+  "zh": "新岘幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Sinhyeon"
+ },
+ "f461d533e65ce0968d35c204dd92f0bc": {
+  "en": "Misan Happy Health Center",
+  "zh": "美山幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Misan"
+ },
+ "baf94ab018120ee7bb8061065050b190": {
+  "en": "Wolgot Happy Health Center",
+  "zh": "月串幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Wolgot"
+ },
+ "40aa3dada07e7a9d9746436197e9d41e": {
+  "en": "Gwarim Happy Health Center",
+  "zh": "果林幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Gwarim"
+ },
+ "f38a534d8265685809a872e7ed4ef19d": {
+  "en": "Neunggok Happy Health Center",
+  "zh": "陵谷幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Neunggok"
+ },
+ "5aa4023c04dbaeee5446b7fd2804d84e": {
+  "en": "Sincheon Happy Health Center",
+  "zh": "新川幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Sincheon"
+ },
+ "d1ad2b9640ca6df5bff010ffdb705146": {
+  "en": "Pregnancy Planning Checkup",
+  "zh": "备孕检查",
+  "vi": "Khám chuẩn bị mang thai"
+ },
+ "38afb3184e2b74052b9b533af1b7297e": {
+  "en": "Postpartum Care Cost Support",
+  "zh": "产后护理费支持",
+  "vi": "Hỗ trợ chi phí chăm sóc sau sinh"
+ },
+ "e31f7e609ae54a973779daff6b1bb064": {
+  "en": "Birth Celebration Money Support",
+  "zh": "新生儿庆贺金支持",
+  "vi": "Hỗ trợ tiền mừng sinh con"
+ },
+ "82084dd82c95502600be3eef247658ef": {
+  "en": "Swimanhan Mulga Nursing Home",
+  "zh": "休憩水边养老院",
+  "vi": "Viện dưỡng lão Swimanhan Mulga"
+ },
+ "c673a611cbea30335262ce49e098077b": {
+  "en": "Nagwon Home Care Welfare Center",
+  "zh": "乐园居家福利中心",
+  "vi": "Trung tâm phúc lợi chăm sóc tại nhà Nagwon"
+ },
+ "4e26abf88f3187f32fd2e6bf7b49079b": {
+  "en": "Haesol Home Care Welfare Center",
+  "zh": "松涛居家福利中心",
+  "vi": "Trung tâm phúc lợi chăm sóc tại nhà Haesol"
+ },
+ "4b772296e20454033416eb60831b80f5": {
+  "en": "Gonggam Psychological Counseling Center",
+  "zh": "共感心理咨询中心",
+  "vi": "Trung tâm tư vấn tâm lý Gonggam"
+ },
+ "7dc58a064be37fac618bdf7aa840ecab": {
+  "en": "Water supply fee reduction",
+  "zh": "自来水费减免",
+  "vi": "Giảm tiền nước sinh hoạt"
+ },
+ "cd651d3b24eb13d611d4e16f192c893b": {
+  "en": "Visit in person: community service center",
+  "zh": "到访:居民中心",
+  "vi": "Đến trực tiếp: trung tâm cộng đồng (dong)"
+ },
+ "f1068844659d21c0495c4aae33a9399c": {
+  "en": "Self-sufficiency program participant criteria",
+  "zh": "自立参与者标准",
+  "vi": "Tiêu chí người tham gia chương trình tự lập"
+ },
+ "efa8674f199e0d36405560c7b1158031": {
+  "en": "National Employment Support Program",
+  "zh": "国民就业支援制度",
+  "vi": "Chương trình Hỗ trợ Việc làm Quốc gia"
+ },
+ "9f4840e0918c2f5e8a03341e0f5f82b3": {
+  "en": "Employment support services",
+  "zh": "就业支援服务",
+  "vi": "Dịch vụ hỗ trợ việc làm"
+ },
+ "22d62dd002d7338ecc1650b39ec1eb45": {
+  "en": "Up to 1,000,000 won",
+  "zh": "最高100万韩元",
+  "vi": "Tối đa 1.000.000 won"
+ },
+ "edbf3c04eb2b078aac28ae622e534ae1": {
+  "en": "Up to 1,500,000 won",
+  "zh": "最高150万韩元",
+  "vi": "Tối đa 1.500.000 won"
+ },
+ "1fc576111a0f98a33c311bbed32ef9cf": {
+  "en": "Jumang G - Resident Education",
+  "zh": "居民G-居民教育",
+  "vi": "Jumang G - Giáo dục cư dân"
+ },
+ "4cf69ea666aeaa7c35dd92bac698785e": {
+  "en": "Welfare center membership card",
+  "zh": "福利馆会员卡",
+  "vi": "Thẻ hội viên trung tâm phúc lợi"
+ },
+ "266576f377e8c3f5d0cae9fd562b07a5": {
+  "en": "Senior Class (Art)",
+  "zh": "老人教室(美术)",
+  "vi": "Lớp học cho người cao tuổi (mỹ thuật)"
+ },
+ "4e23596f0d0eab76c9f7f08b799840cb": {
+  "en": "Senior Class (Exercise)",
+  "zh": "老人教室(运动)",
+  "vi": "Lớp học cho người cao tuổi (thể dục)"
+ },
+ "3480c7e265f3a2488ed9e65dca245350": {
+  "en": "Senior Class (Music)",
+  "zh": "老人教室(音乐)",
+  "vi": "Lớp học cho người cao tuổi (âm nhạc)"
+ },
+ "289dbe2c79c740690a6a8d0f4922dd3c": {
+  "en": "Specialized Counseling for Seniors",
+  "zh": "老年人专业咨询",
+  "vi": "Tư vấn chuyên sâu cho người cao tuổi"
+ },
+ "486b19fa4c866c99f7f9d2d3f18928df": {
+  "en": "Small Group Exercise Service",
+  "zh": "小组运动服务",
+  "vi": "Dịch vụ tập thể dục theo nhóm nhỏ"
+ },
+ "ad6b660446b23085dd4cb94ed878d6bd": {
+  "en": "Day Care Team for Persons with Disabilities",
+  "zh": "残疾人日间照护组",
+  "vi": "Đội chăm sóc ban ngày cho người khuyết tật"
+ },
+ "da39662dfc6e21bb261f57ce11d2f814": {
+  "en": "Any local resident",
+  "zh": "任何本地居民",
+  "vi": "Mọi cư dân trong địa phương"
+ },
+ "61464dc2ce270b7d2daa5701f18a65be": {
+  "en": "Family Culture Program",
+  "zh": "家庭文化项目",
+  "vi": "Chương trình văn hóa gia đình"
+ },
+ "a888314abe37c01a485b23d90fcd727c": {
+  "en": "Program application form",
+  "zh": "项目申请表",
+  "vi": "Đơn đăng ký chương trình"
+ },
+ "dd4b5fbca74a2dde7c8a8344530e5c47": {
+  "en": "Parents or guardians raising children",
+  "zh": "养育子女的监护人",
+  "vi": "Cha mẹ hoặc người giám hộ đang nuôi dạy con"
+ },
+ "8d13af8723ae7d535f1fae213445d2d6": {
+  "en": "Mobile Welfare Center Program",
+  "zh": "流动福利馆项目",
+  "vi": "Chương trình Trung tâm phúc lợi lưu động"
+ },
+ "cbf2f3e74e4f4e57c3f8eab6f32533be": {
+  "en": "Dandelion Small Library",
+  "zh": "蒲公英小型图书馆",
+  "vi": "Thư viện nhỏ Bồ công anh"
+ },
+ "722f208b7ee10b5a3a8c66e7bd60de2d": {
+  "en": "Shelter for Abused Children",
+  "zh": "受虐儿童庇护所",
+  "vi": "Nơi trú ẩn cho trẻ em bị ngược đãi"
+ },
+ "34cc2473a9bf9d0880dd0e7f0b9fbce5": {
+  "en": "Geomo Community Child Center",
+  "zh": "巨母地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Geomo"
+ },
+ "debcb780d87366349820d13e72e4f87d": {
+  "en": "Daeya Community Child Center",
+  "zh": "大野地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Daeya"
+ },
+ "2407d89c4e3bb37dc3aad24d99d2005a": {
+  "en": "Manna Community Child Center",
+  "zh": "吗哪地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Manna"
+ },
+ "c225a428b02e254f6782fd336c93243c": {
+  "en": "Mokgam Community Child Center",
+  "zh": "木甘地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Mokgam"
+ },
+ "603b759e982e22fb6d9e703ad8f101b4": {
+  "en": "Misan Community Child Center",
+  "zh": "美山地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Misan"
+ },
+ "a3999ca4e2d95c7a9a0f0a944dc5bbe7": {
+  "en": "Bitdoen Community Child Center",
+  "zh": "光彩地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Bitdoen"
+ },
+ "e52b62067245029c520c45989dc60744": {
+  "en": "Sarang Community Child Center",
+  "zh": "爱心地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Sarang"
+ },
+ "bceb2ec1756e3984fde8b471829bc116": {
+  "en": "Siwha Community Child Center",
+  "zh": "始华地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Siwha"
+ },
+ "31e012a3d400983dd88d7f0ec1e0468c": {
+  "en": "Sincheon Community Child Center",
+  "zh": "新川地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Sincheon"
+ },
+ "a0a09a1d4278b688ed7f333c58cc01bb": {
+  "en": "Yeonseong Community Child Center",
+  "zh": "衍城地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Yeonseong"
+ },
+ "a065c5cc7037dc67ca3117e6d5923ea8": {
+  "en": "Okteo Community Child Center",
+  "zh": "玉基地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Okteo"
+ },
+ "703af34294d13f3b6aca30f4863fd424": {
+  "en": "Jeongwang Community Child Center",
+  "zh": "正往地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Jeongwang"
+ },
+ "fd76ce90559bc0ea901bd1371978594a": {
+  "en": "Keunbyeol Community Child Center",
+  "zh": "大星地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Keunbyeol"
+ },
+ "c410ef7c7cc2ab61f1de0eeb022b23a7": {
+  "en": "Pureun Community Child Center",
+  "zh": "青色地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Pureun"
+ },
+ "2806f7e573e2a278e4655e504cd507c6": {
+  "en": "Hanul Community Child Center",
+  "zh": "韩蔚地区儿童中心",
+  "vi": "Trung tâm trẻ em cộng đồng Hanul"
+ },
+ "f2e5c52baa6f53ca27783f02a5dbe766": {
+  "en": "Any Siheung City resident",
+  "zh": "始兴市民均可",
+  "vi": "Mọi người dân Thành phố Siheung"
+ },
+ "ecb6e447e1471e97f98e0fef6f213beb": {
+  "en": "Child Care Support Program",
+  "zh": "儿童看护支持项目",
+  "vi": "Chương trình hỗ trợ chăm sóc trẻ em"
+ },
+ "adf80af830d8301056f378dbcc0b230e": {
+  "en": "Expert Parent Counseling",
+  "zh": "专家家长咨询",
+  "vi": "Tư vấn chuyên gia dành cho phụ huynh"
+ },
+ "b8123496bc8a03930bc71bcc0d4215ff": {
+  "en": "Jakeunjari On-Care Co., Ltd.",
+  "zh": "(株)小位置在线护理",
+  "vi": "Công ty cổ phần Jakeunjari On-Care"
+ },
+ "500603132495836e7684b5b768e12e79": {
+  "en": "Gremium Daycare Center",
+  "zh": "格雷米姆托儿所",
+  "vi": "Nhà trẻ Gremium"
+ },
+ "8b1da0f769ca156dfc9b1e66aac3af67": {
+  "en": "Noeul Ippeun Daycare Center",
+  "zh": "美丽晚霞托儿所",
+  "vi": "Nhà trẻ Noeul Ippeun"
+ },
+ "fb8de77d5d7000e690c56f7ad3a19844": {
+  "en": "Parenting Friends Plus",
+  "zh": "育儿朋友Plus",
+  "vi": "Bạn nuôi dạy con Plus"
+ },
+ "58d7611b66defac3aef9a5ec9d631f15": {
+  "en": "Parent self-help group",
+  "zh": "家长自助小组",
+  "vi": "Nhóm tự giúp đỡ của phụ huynh"
+ },
+ "a8a61afad61b565e68d81b5e95249ee8": {
+  "en": "Career Planning Support Program",
+  "zh": "职业规划支持项目",
+  "vi": "Chương trình hỗ trợ định hướng nghề nghiệp"
+ },
+ "fc93228aa0ff56b69eaf53a8886b22dc": {
+  "en": "Wolgot-dong Residents' Autonomous Association",
+  "zh": "月串洞居民自治会",
+  "vi": "Hội tự quản cư dân phường Wolgot"
+ },
+ "32872c339779c7edb7fe850f6a107caf": {
+  "en": "Wheelchair Korea.com",
+  "zh": "轮椅韩国网(Wheelchair Korea.com)",
+  "vi": "Wheelchair Korea.com"
+ },
+ "075124245af0e8d345e0b5964d33cf35": {
+  "en": "Jakeunjari Care Center",
+  "zh": "小位置照护中心",
+  "vi": "Trung tâm chăm sóc Jakeunjari"
+ },
+ "3e7b3a3e5af6f3fe48c97351aaa62468": {
+  "en": "Self-help group for persons with disabilities",
+  "zh": "残疾人自助小组",
+  "vi": "Nhóm tự giúp đỡ của người khuyết tật"
+ },
+ "05a279c9ac61b80405bc2d542c15f483": {
+  "en": "Baegot Child Development Center",
+  "zh": "排谷儿童发展中心",
+  "vi": "Trung tâm phát triển trẻ em Baegot"
+ },
+ "9b4cb6fcadfc586a8e322976409fb8d1": {
+  "en": "Mokgam Child Development Center",
+  "zh": "木甘儿童发展中心",
+  "vi": "Trung tâm phát triển trẻ em Mokgam"
+ },
+ "419ff93590868ad4f1045b0ed9045708": {
+  "en": "300,000 won",
+  "zh": "30万韩元",
+  "vi": "300.000 won"
+ },
+ "a16edb061ddf9c4df9277b45c56d0b9e": {
+  "en": "400,000 won",
+  "zh": "40万韩元",
+  "vi": "400.000 won"
+ },
+ "9d102f91433a19cd6e9cbe65e6ae45bd": {
+  "en": "420,000 won",
+  "zh": "42万韩元",
+  "vi": "420.000 won"
+ },
+ "5f0337a8364267e1abbd0aee5da8ef15": {
+  "en": "200,000 won",
+  "zh": "20万韩元",
+  "vi": "200.000 won"
+ },
+ "ebc2728a0e9a09d58e9b44b4ea8c8330": {
+  "en": "700,000 won",
+  "zh": "70万韩元",
+  "vi": "700.000 won"
+ },
+ "783923d4cc07df07a6ccd03090a3e8a8": {
+  "en": "500,000 won",
+  "zh": "50万韩元",
+  "vi": "500.000 won"
+ },
+ "23875e45d362f00ae3f06c036eae4260": {
+  "en": "750,000 won",
+  "zh": "75万韩元",
+  "vi": "750.000 won"
+ },
+ "ac14db3d6a3d974a0969dda8c449c62c": {
+  "en": "Our Neighborhood Baepeundan",
+  "zh": "我们社区的Baepeundan",
+  "vi": "Baepeundan của khu phố chúng ta"
+ },
+ "aa66f13974e7973a036ae73be4330016": {
+  "en": "Housing/lease criteria",
+  "zh": "住房/租赁标准",
+  "vi": "Tiêu chí về nhà ở/thuê nhà"
+ },
+ "1c32e270d75e865f0f592ce65630fd78": {
+  "en": "Dream Echo Card Support",
+  "zh": "梦想回响卡支持",
+  "vi": "Hỗ trợ thẻ Dream Echo (Kkum Ulim)"
+ },
+ "c8c596bed1936d6720b661329729cfb6": {
+  "en": "Special Support for Youth",
+  "zh": "青少年特别支持",
+  "vi": "Hỗ trợ đặc biệt cho thanh thiếu niên"
+ },
+ "099fc7d1af05d933fafca47c199fb1d5": {
+  "en": "Youth Self-Governance Activities",
+  "zh": "青少年自治活动",
+  "vi": "Hoạt động tự quản của thanh thiếu niên"
+ },
+ "b0d586118699c5f99f199286ff879bce": {
+  "en": "Club Activity Program",
+  "zh": "社团活动运营",
+  "vi": "Tổ chức hoạt động câu lạc bộ"
+ },
+ "3c042c82325680889110bd183832d8dc": {
+  "en": "Independence Preparation Class",
+  "zh": "自立准备课程",
+  "vi": "Lớp chuẩn bị tự lập"
+ },
+ "66b2775f0ff3af95d81a5d262dd0b3c2": {
+  "en": "Mental Health Services",
+  "zh": "心理健康服务",
+  "vi": "Dịch vụ sức khỏe tâm thần"
+ },
+ "31914e7a756488ea447aa1c379ec823f": {
+  "en": "Sports Class Voucher",
+  "zh": "体育课程使用券",
+  "vi": "Phiếu sử dụng lớp thể thao"
+ },
+ "38848349ae67cef5f684bd0b7cad4fc1": {
+  "en": "Other online applications",
+  "zh": "其他在线申请",
+  "vi": "Đăng ký trực tuyến khác"
+ },
+ "71556c52266ab850ae058da253294037": {
+  "en": "Siheung City Suicide Prevention Center",
+  "zh": "始兴市自杀预防中心",
+  "vi": "Trung tâm phòng chống tự tử Thành phố Siheung"
+ },
+ "a81e7a27ee09a221e6eda4781cbcb692": {
+  "en": "Healthy City Division, Public Health Center",
+  "zh": "保健所健康城市科",
+  "vi": "Phòng Thành phố Khỏe mạnh, Trung tâm y tế công cộng"
+ },
+ "c7d7d56c4e36b2eddd2133c45fd2b4d8": {
+  "en": "Mental Health Screening",
+  "zh": "心理健康筛查",
+  "vi": "Tầm soát sức khỏe tâm thần"
+ },
+ "b87734e46dda1d736c33782275afa016": {
+  "en": "Day Rehabilitation Program",
+  "zh": "日间康复项目",
+  "vi": "Chương trình phục hồi chức năng ban ngày"
+ },
+ "5e11566f108c9c4fa355a7db1ffed104": {
+  "en": "Vocational Rehabilitation Program",
+  "zh": "职业康复项目",
+  "vi": "Chương trình phục hồi chức năng nghề nghiệp"
+ },
+ "3b18c6e6eb2081d1a26dddac49fd7002": {
+  "en": "Counseling services provided",
+  "zh": "提供咨询服务",
+  "vi": "Cung cấp dịch vụ tư vấn"
+ },
+ "0843b88cc41b35b94916cc1539be3446": {
+  "en": "Home Visit Health Management Service",
+  "zh": "上门健康管理服务",
+  "vi": "Dịch vụ quản lý sức khỏe tại nhà"
+ },
+ "3894b1d06d814707ca5a356661a146c2": {
+  "en": "Siheung City Dementia Care Center",
+  "zh": "始兴市痴呆安心中心",
+  "vi": "Trung tâm chăm sóc sa sút trí tuệ Thành phố Siheung"
+ },
+ "9eeec7876dc15164b35119108aa374dc": {
+  "en": "Debtor Representative System",
+  "zh": "债务人代理人制度",
+  "vi": "Chế độ người đại diện cho người mắc nợ"
+ },
+ "4ef255c8216ea8dde607048628ffc44c": {
+  "en": "Long-term care grade criteria",
+  "zh": "长期护理等级标准",
+  "vi": "Tiêu chí xếp hạng chăm sóc dài hạn"
+ },
+ "35cf68a54e97fd42cdfc2c11c3ee45e1": {
+  "en": "Admission Support to Facilities",
+  "zh": "机构入住支持",
+  "vi": "Hỗ trợ nhập cơ sở chăm sóc"
+ },
+ "42f3c749559879eec660988c19e38a36": {
+  "en": "Day Care Facility Use",
+  "zh": "日间照护机构使用",
+  "vi": "Sử dụng cơ sở chăm sóc ban ngày"
+ },
+ "7cd8855b28e5f43bd5e741188aa048ba": {
+  "en": "Customized Care Service for Seniors",
+  "zh": "老年人定制照护服务",
+  "vi": "Dịch vụ chăm sóc theo nhu cầu cho người cao tuổi"
+ },
+ "6bf31b524b6a8c38ba05bb3cfb39bbe2": {
+  "en": "Emergency Safety Care Service",
+  "zh": "紧急安全安心服务",
+  "vi": "Dịch vụ an toàn khẩn cấp"
+ },
+ "81ba335b4892a3546da9a13dd5d1ad7d": {
+  "en": "Hamhyeon Sangsaeng Silver Love Chae",
+  "zh": "咸岘共生银发爱心屋",
+  "vi": "Hamhyeon Sangsaeng Eunbit Sarangchae"
+ },
+ "37736a3f50aee9668d34b887c4033344": {
+  "en": "Siheung-type Basic Transportation Fee",
+  "zh": "始兴型基本交通费",
+  "vi": "Phí đi lại cơ bản kiểu Siheung"
+ },
+ "14e4c31194dd6ee7b9a192afc85dcca8": {
+  "en": "Public Transportation Division, Siheung City",
+  "zh": "始兴市公共交通科",
+  "vi": "Phòng Giao thông công cộng Thành phố Siheung"
+ },
+ "4f5ff972cc3f979eb5b30648b49fdd11": {
+  "en": "City gas fee reduction",
+  "zh": "城市燃气费减免",
+  "vi": "Giảm giá khí đốt đô thị"
+ },
+ "4354a03794f9c8c6baf37457b0ba8277": {
+  "en": "Mobile phone fee reduction",
+  "zh": "移动通信费减免",
+  "vi": "Giảm cước điện thoại di động"
+ },
+ "a02f85f8dd60de455892446a2d35cf48": {
+  "en": "District heating fee reduction",
+  "zh": "区域供暖费减免",
+  "vi": "Giảm phí sưởi ấm khu vực"
+ },
+ "cc8d97646e069ad610a1b43bd72b722f": {
+  "en": "Birthday Celebration for Seniors Living Alone",
+  "zh": "独居老人生日祝贺",
+  "vi": "Chúc mừng sinh nhật người cao tuổi sống một mình"
+ },
+ "a903d6d62818709ea4b1053a60f29fa5": {
+  "en": "Delivery of Drinks with Love",
+  "zh": "爱心饮品配送",
+  "vi": "Giao đồ uống yêu thương"
+ },
+ "3debf35504f3f11a7ff9befa0ce16431": {
+  "en": "Gunja-dong Residents' Autonomous Association",
+  "zh": "君子洞居民自治会",
+  "vi": "Hội tự quản cư dân phường Gunja"
+ },
+ "94b14fb8506bc3dc4c348121e246abbc": {
+  "en": "Maehwa-dong community service center (dong office)",
+  "zh": "梅花洞行政福利中心",
+  "vi": "Trung tâm hành chính phúc lợi phường Maehwa"
+ },
+ "ed63d20bfd0435c97808ea019b4f4fc6": {
+  "en": "Varies by income bracket",
+  "zh": "因收入段而异",
+  "vi": "Tùy theo mức thu nhập"
+ },
+ "7834fed4d495cdf80d69268d6f461822": {
+  "en": "Sincheon-dong Residents' Autonomy Center",
+  "zh": "新川洞居民自治中心",
+  "vi": "Trung tâm tự quản cư dân phường Sincheon"
+ },
+ "62de2db706bf2ac0d4abe1b5b82c819a": {
+  "en": "72 Podowon-ro",
+  "zh": "葡萄园路72号",
+  "vi": "72 đường Podowon-ro"
+ },
+ "5624e0de486177e6e755be63a6a12672": {
+  "en": "Dieting Belly Dance",
+  "zh": "减肥肚皮舞",
+  "vi": "Múa bụng giảm cân"
+ },
+ "a9cb2a360940b9d965751da5b0957ae0": {
+  "en": "Dieting Zumba Dance",
+  "zh": "减肥尊巴舞",
+  "vi": "Nhảy Zumba giảm cân"
+ },
+ "d51ab1da4ff6cf13b3b6ede407be281a": {
+  "en": "Happy Diet Yoga",
+  "zh": "快乐减肥瑜伽",
+  "vi": "Yoga giảm cân vui vẻ"
+ },
+ "48c47797c79ad635bcaa290ce5a39bc1": {
+  "en": "Children's Village Reporter Group",
+  "zh": "儿童村庄记者团",
+  "vi": "Nhóm phóng viên nhí của làng"
+ },
+ "7a7d7848bede7f9fb2578895436bbbdb": {
+  "en": "55 Hohyeon-ro, Siheung City",
+  "zh": "始兴市好岘路55号",
+  "vi": "55 đường Hohyeon-ro, Thành phố Siheung"
+ },
+ "8e3eba3127f39c3d6fc82a7ebe452b78": {
+  "en": "Community Social Security Council",
+  "zh": "地区社会保障协议体",
+  "vi": "Hội đồng bảo đảm xã hội địa phương"
+ },
+ "26054601686fd5090fb5153325083df2": {
+  "en": "Personal information consent form",
+  "zh": "个人信息提供同意书",
+  "vi": "Giấy đồng ý cung cấp thông tin cá nhân"
+ },
+ "3747ef70e00638bd761d9394a86c2bb6": {
+  "en": "Beauty Salon Volunteer Service of Love",
+  "zh": "爱心美容美发志愿服务",
+  "vi": "Tình nguyện cắt tóc làm đẹp yêu thương"
+ },
+ "3c38f67fcaf71725c6be29c6af723173": {
+  "en": "Wolgot-dong Residents' Autonomous Association",
+  "zh": "月串洞居民自治会",
+  "vi": "Hội tự quản cư dân phường Wolgot"
+ },
+ "86612049a7bbd7a0bbfc3eecb5f51b4c": {
+  "en": "Discovering Welfare Blind Spots",
+  "zh": "发掘福利死角",
+  "vi": "Phát hiện các trường hợp chưa được hưởng phúc lợi"
+ },
+ "fc0dddf24463348a9c154676d1486749": {
+  "en": "Mokgam Art House 27",
+  "zh": "木甘艺术之家27",
+  "vi": "Mokgam Art House 27"
+ },
+ "ccf6204a1bbf0a9091318b5b22587ac3": {
+  "en": "Culture and Arts Division, Siheung City",
+  "zh": "始兴市文化艺术科",
+  "vi": "Phòng Văn hóa Nghệ thuật Thành phố Siheung"
+ },
+ "251462c2b6b7c368e9534463a8f6fc36": {
+  "en": "Street art performances",
+  "zh": "街头艺术演出",
+  "vi": "Biểu diễn nghệ thuật đường phố"
+ },
+ "c7a2cb87d7fd6ff0fcf6fb73c6266bf7": {
+  "en": "Proceed after identity verification",
+  "zh": "身份验证后办理",
+  "vi": "Thực hiện sau khi xác minh danh tính"
+ },
+ "03931b840a107aa98bffa378d2391ed0": {
+  "en": "Small Movie Outing",
+  "zh": "小小电影之旅",
+  "vi": "Buổi xem phim nhỏ"
+ },
+ "8dbf026d07cfd93036b35f8903949dd4": {
+  "en": "Material cost 15,000 won",
+  "zh": "材料费1万5千韩元",
+  "vi": "Chi phí nguyên liệu 15.000 won"
+ },
+ "79a63a8e849ce116b769f3f58c598299": {
+  "en": "Material cost 35,000 won",
+  "zh": "材料费3万5千韩元",
+  "vi": "Chi phí nguyên liệu 35.000 won"
+ },
+ "1463fb5c9288aaa2e3ebc7d00742d790": {
+  "en": "Phone and in-person applications",
+  "zh": "电话及上门受理",
+  "vi": "Tiếp nhận qua điện thoại và trực tiếp"
+ },
+ "df5594665b8dd22f499e482814221936": {
+  "en": "Wolgot 2 Happy Health Center",
+  "zh": "月串2幸福健康中心",
+  "vi": "Trung tâm Sức khỏe Hạnh phúc Wolgot 2"
+ },
+ "c11a818b87a0c17129191a3060139dfc": {
+  "en": "Early Pregnancy Checkup",
+  "zh": "孕妇早期检查",
+  "vi": "Khám thai giai đoạn đầu"
+ },
+ "53f117ec991025a735717660c082719e": {
+  "en": "Huimang Dongheng Co., Ltd.",
+  "zh": "希望同行株式会社",
+  "vi": "Công ty cổ phần Huimang Dongheng"
+ },
+ "31671a1661ece5f475623c1b1fa8d2c7": {
+  "en": "Senior Home Visit Care Center",
+  "zh": "老人上门护理中心",
+  "vi": "Trung tâm chăm sóc tại nhà cho người cao tuổi"
+ },
+ "0aa871f3978a69954a6e5db2b37d3aff": {
+  "en": "Livelihood Security Division, Siheung City",
+  "zh": "始兴市生活保障科",
+  "vi": "Phòng Bảo đảm đời sống Thành phố Siheung"
+ },
+ "3181ca333ecde4df11f62b99343ef015": {
+  "en": "Siheung 1% Welfare Foundation",
+  "zh": "始兴市1%福利财团",
+  "vi": "Quỹ Phúc lợi 1% Siheung"
+ },
+ "9de6594c2703bd23d5fdec8a504b079e": {
+  "en": "Geomo Comprehensive Social Welfare Center",
+  "zh": "巨母综合社会福利馆",
+  "vi": "Trung tâm phúc lợi xã hội tổng hợp Geomo"
+ },
+ "ddb94d87369848706897a9396736c33d": {
+  "en": "Jumang G - Resident Clubs",
+  "zh": "居民G-居民社团",
+  "vi": "Jumang G - Câu lạc bộ cư dân"
+ },
+ "5daa27ea059815a10d5bed321d2d9547": {
+  "en": "Senior Rights Promotion Education",
+  "zh": "老年人权益增进教育",
+  "vi": "Giáo dục nâng cao quyền lợi người cao tuổi"
+ }
+}

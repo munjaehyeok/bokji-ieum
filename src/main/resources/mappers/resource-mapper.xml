@@ -29,6 +29,18 @@
     <sql id="displayCols">
         COALESCE(i.name_tr, r.name) AS display_name,
         i.summary_tr AS summary_tr,
+        i.org_name_tr AS org_name_tr,
+        i.dept_name_tr AS dept_name_tr,
+        i.address_tr AS address_tr,
+        i.apply_method_tr AS apply_method_tr,
+        i.applicant_tr AS applicant_tr,
+        i.service_cycle_tr AS service_cycle_tr,
+        i.decision_period_tr AS decision_period_tr,
+        i.phone_tr AS phone_tr,
+        i.documents_tr AS documents_tr,
+        i.eligibility_tr AS eligibility_tr,
+        i.cost_amount_tr AS cost_amount_tr,
+        i.uncertain_note_tr AS uncertain_note_tr,
         CASE WHEN r.data_base_date &lt; DATE_SUB(CURDATE(), INTERVAL 12 MONTH) THEN 1 ELSE 0 END AS old_data
     </sql>
 
@@ -243,10 +255,10 @@
         </if>
         <if test="s.dong != null">AND (r.dong_codes IS NULL OR FIND_IN_SET(#{s.dong}, r.dong_codes))</if>
         <foreach collection="s.words" item="w">
-            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, r.org_name, r.applicant) LIKE CONCAT('%', #{w}, '%')
+            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, i.summary_tr, r.org_name, i.org_name_tr, r.applicant, i.applicant_tr) LIKE CONCAT('%', #{w}, '%')
         </foreach>
         <foreach collection="s.exWords" item="w">
-            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, r.org_name, r.applicant) NOT LIKE CONCAT('%', #{w}, '%')
+            AND CONCAT_WS(' ', r.name, i.name_tr, r.support_content, i.summary_tr, r.org_name, i.org_name_tr, r.applicant, i.applicant_tr) NOT LIKE CONCAT('%', #{w}, '%')
         </foreach>
         <if test="s.online">AND r.apply_method REGEXP '온라인|인터넷 ?신청|복지로|정부24|e보건소|누리집 ?신청|홈페이지 ?신청'</if>
         <if test="s.idsMode">AND r.resource_id IN <foreach collection="s.ids" item="id" open="(" separator="," close=")">#{id}</foreach></if>
