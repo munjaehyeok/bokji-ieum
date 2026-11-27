@@ -560,3 +560,6 @@ html[lang="en"] .bk-how, html[lang="en"] .bk-how-card h3, html[lang="en"] .bk-ho
 .bk-orgmap { height: 260px; border: 1px solid var(--bk-line); border-radius: var(--bk-radius); overflow: hidden; background: var(--bk-bg); }
 .bk-orgmap-link { display: inline-block; margin-top: .5rem; font-size: .95rem; }
 @media (max-width: 575.98px) { .bk-orgmap { height: 220px; } }
+
+/* 매칭 결과 조건 요약의 [수정] 버튼: 최소 높이(44px) 안에서 글자를 세로 가운데 정렬 */
+.bk-summary .btn { display: inline-flex; align-items: center; justify-content: center; padding-block: 0; padding-inline: 1rem; }
