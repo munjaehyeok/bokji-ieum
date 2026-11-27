@@ -42,4 +42,21 @@ public class TextUtilPhoneTest {
         assertEquals("", TextUtil.telDigits("각 시군 노인복지과"));
         assertEquals("", TextUtil.telDigits(null));
     }
+
+    @Test
+    public void formatsReportedByReview() {
+        assertEquals("0311234567", TextUtil.telDigits("(031)123-4567"));
+        assertEquals("0314319114", TextUtil.telDigits("031)431-9114"));
+        assertEquals(Arrays.asList("031  123 4567"), TextUtil.splitPhones("031  123 4567"));
+        assertEquals(Arrays.asList("031 123 4567", "032 234 5678"), TextUtil.splitPhones("031 123 4567 032 234 5678"));
+        assertEquals(Arrays.asList("031-123-4567", "1588-0000"), TextUtil.splitPhones("031-123-4567 1588-0000"));
+        assertEquals("0311234567", TextUtil.telDigits("(2026-11-27 기준)031-123-4567"));
+        assertEquals("+82311234567", TextUtil.telDigits("+82 31 123 4567"));
+    }
+
+    @Test
+    public void deletedNumberHasNoLink() {
+        assertEquals("", TextUtil.telDigits("031-310-0724(삭제)"));
+        assertEquals("0313105833", TextUtil.telDigits("031-310-5833"));
+    }
 }

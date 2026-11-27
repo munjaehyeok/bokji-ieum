@@ -132,19 +132,28 @@
     </c:if>
     <c:if test="${not empty resource.phone}">
         <c:set var="phoneList" value="${bk:phones(resource.phone)}"/>
+        <c:set var="phoneTrList" value="${bk:phones(resource.phoneTr)}"/>
+        <%-- 통화 대상은 원문 번호, 표시 라벨은 번역(조각 수가 같을 때만 번호별로 대응) --%>
+        <c:set var="pairTr" value="${not empty phoneTrList and fn:length(phoneTrList) == fn:length(phoneList)}"/>
         <div class="d-flex flex-wrap gap-2 mb-1">
-            <c:forEach var="ph" items="${phoneList}">
+            <c:forEach var="ph" items="${phoneList}" varStatus="st">
                 <c:set var="tel" value="${bk:tel(ph)}"/>
+                <c:set var="label" value="${pairTr ? phoneTrList[st.index] : ph}"/>
                 <c:choose>
                     <c:when test="${not empty tel}">
                         <a class="btn btn-bk bk-tel-btn bk-noprint" href="tel:${tel}" data-beacon="A">
-                            &#128222; <spring:message code="detail.call"/> <c:out value="${ph}"/>
+                            &#128222; <spring:message code="detail.call"/> <c:out value="${label}"/>
                         </a>
                     </c:when>
-                    <c:otherwise><span><c:out value="${ph}"/></span></c:otherwise>
+                    <c:otherwise><span class="bk-noprint"><c:out value="${label}"/></span></c:otherwise>
                 </c:choose>
             </c:forEach>
         </div>
+        <c:if test="${not empty phoneTrList and not pairTr}">
+            <p class="mb-1 bk-noprint"><c:out value="${resource.phoneTr}"/></p>
+        </c:if>
+        <%-- 인쇄본에는 버튼이 숨겨지므로 전체 연락처를 글자로 남긴다 --%>
+        <p class="mb-1 d-none d-print-block"><c:out value="${empty resource.phoneTr ? resource.phone : resource.phoneTr}"/></p>
     </c:if>
     <%-- 위치 지도: Client ID와 주소가 모두 있을 때만. 주소→좌표 변환 실패 시 JS가 영역을 통째로 지운다. --%>
     <c:if test="${not empty naverMapClientId and not empty fn:trim(resource.address)}">
