@@ -99,4 +99,24 @@ public class TextUtilPhoneTest {
         assertEquals(true, TextUtil.sameNumbers(k, e));
         assertEquals("(Provincial center)1666-0420", TextUtil.firstPhone(k, e));
     }
+
+    @Test
+    public void r051Cases() {
+        // 단축번호 123 (ID 1067)과 문자 안내 (ID 1854)
+        assertEquals("123", TextUtil.telDigits("123"));
+        assertEquals("", TextUtil.telDigits("각 시군 노인복지과"));
+        // 폐기 라벨이 앞 줄에 있어도 번호에 붙는다
+        assertEquals(Collections.singletonList("폐기 번호: 031-123-4567"), TextUtil.splitPhones("폐기 번호:\n031-123-4567"));
+        assertEquals("", TextUtil.telDigits("폐기 번호: 031-123-4567"));
+        assertEquals("0311234567", TextUtil.telDigits("031-123-4567"));
+        // 삭제 표시를 잃은 번역·바뀐 번호의 번역은 쓰지 않는다
+        assertEquals(false, TextUtil.sameNumbers("031-123-4567(삭제)", "031-123-4567"));
+        assertEquals(false, TextUtil.phonesAligned("대야 031-123-4567 정왕 032-234-5678", "Daeya 031-999-9999 Jeongwang 032-234-5678"));
+        assertEquals("대야 031-123-4567 정왕 032-234-5678",
+                TextUtil.firstPhone("대야 031-123-4567 정왕 032-234-5678", "Daeya 031-999-9999 Jeongwang 032-234-5678"));
+        // 실제 ID 1001 번역(삭제 반영)은 유지
+        String ko = "310-5833, 5845\n310-5935\n310-0724(삭제)";
+        assertEquals(true, TextUtil.phonesAligned(ko, "310-5833, 5845\n310-5935\n310-0724(deleted)"));
+        assertEquals(true, TextUtil.phonesAligned(ko, "310-5833, 5845\n310-5935\n310-0724(已删除)"));
+    }
 }

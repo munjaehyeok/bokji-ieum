@@ -37,7 +37,7 @@ public final class TextUtil {
     private static final Pattern PHONE = Pattern.compile(PHONE_RE);
     // 칸 구분: 쉼표·세미콜론·슬래시·줄바꿈 (공백만으로 이어진 여러 번호는 아래에서 번호 단위로 나눈다)
     private static final Pattern SEG_SEP = Pattern.compile("\\s*[,;/\\r\\n]+\\s*");
-    private static final Pattern DEAD = Pattern.compile("삭제|폐지|폐기|종료|중단");
+    private static final Pattern DEAD = Pattern.compile("삭제|폐지|폐기|종료|중단|deleted|discontinued|closed|已删除|删除|废止|đã xóa|ngừng");
 
     /**
      * 여러 전화번호가 한 칸에 들어 있는 값을 번호별로 나눈다 (JSP 함수 bk:phones). null·빈 값은 빈 목록.
@@ -49,10 +49,20 @@ public final class TextUtil {
         if (v == null) {
             return out;
         }
+        String pending = "";
         for (String part : SEG_SEP.split(v.trim())) {
             String t = part.trim();
             if (t.isEmpty()) {
                 continue;
+            }
+            // "폐기 번호:\n031-…" — 번호 없는 상태 라벨은 이어지는 번호에 붙여 상태를 잃지 않게 한다
+            if (!PHONE.matcher(t).find() && !t.matches("\\d{1,4}") && (DEAD.matcher(t).find() || t.endsWith(":"))) {
+                pending = pending.isEmpty() ? t : pending + " " + t;
+                continue;
+            }
+            if (!pending.isEmpty()) {
+                t = pending + " " + t;
+                pending = "";
             }
             if (!out.isEmpty() && t.matches("\\d{1,4}")) {
                 out.set(out.size() - 1, out.get(out.size() - 1) + ", " + t);
@@ -84,6 +94,9 @@ public final class TextUtil {
             }
             out.add(t.substring(from).trim());
         }
+        if (!pending.isEmpty()) {
+            out.add(pending);
+        }
         return out;
     }
 
@@ -91,6 +104,9 @@ public final class TextUtil {
     public static String telDigits(String v) {
         if (v == null || DEAD.matcher(v).find()) {
             return "";
+        }
+        if (v.trim().matches("1\\d{2}")) {
+            return v.trim(); // 112·119·123 같은 단독 단축번호
         }
         java.util.regex.Matcher m = PHONE.matcher(v);
         if (!m.find()) {
@@ -119,11 +135,16 @@ public final class TextUtil {
             return false;
         }
         for (int i = 0; i < a.size(); i++) {
-            if (!telDigits(a.get(i)).equals(telDigits(b.get(i)))) {
+            if (!pieceMatches(a.get(i), b.get(i))) {
                 return false;
             }
         }
         return true;
+    }
+
+    private static boolean pieceMatches(String a, String b) {
+        return telDigits(a).equals(telDigits(b)) && numbers(a).equals(numbers(b))
+                && DEAD.matcher(a).find() == DEAD.matcher(b).find();
     }
 
     /** 번역 문구를 통째로 보여줘도 되는지: 원문과 같은 번호 집합(순서 무관)일 때만 true. 관리자가 원문만 고친 오래된 번역을 거른다. */
@@ -132,7 +153,7 @@ public final class TextUtil {
         List<String> b = numbers(phoneTr);
         java.util.Collections.sort(a);
         java.util.Collections.sort(b);
-        return a.equals(b);
+        return a.equals(b) && DEAD.matcher(phone == null ? "" : phone).find() == DEAD.matcher(phoneTr == null ? "" : phoneTr).find();
     }
 
     /** 카드용 대표 번호: 번역의 첫 조각이 원문 첫 조각과 같은 번호일 때만 번역을 쓴다. */
@@ -142,6 +163,6 @@ public final class TextUtil {
             return "";
         }
         List<String> b = splitPhones(phoneTr);
-        return (!b.isEmpty() && telDigits(a.get(0)).equals(telDigits(b.get(0)))) ? b.get(0) : a.get(0);
+        return (!b.isEmpty() && pieceMatches(a.get(0), b.get(0))) ? b.get(0) : a.get(0);
     }
 }
