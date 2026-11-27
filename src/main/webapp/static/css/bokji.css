@@ -563,3 +563,8 @@ html[lang="en"] .bk-how, html[lang="en"] .bk-how-card h3, html[lang="en"] .bk-ho
 
 /* 매칭 결과 조건 요약의 [수정] 버튼: 최소 높이(44px) 안에서 글자를 세로 가운데 정렬 */
 .bk-summary .btn { display: inline-flex; align-items: center; justify-content: center; padding-block: 0; padding-inline: 1rem; }
+
+/* 조건 입력 1~6단계: 한 칸에 겹쳐 쌓아 컨테이너 높이 = 가장 큰 단계. 숨은 단계는 visibility:hidden이라 포커스·스크린리더에서도 빠진다. */
+.bk-steps-stack { display: grid; }
+.bk-steps-stack > .bk-step { grid-area: 1 / 1; display: block; visibility: hidden; }
+.bk-steps-stack > .bk-step.active { visibility: visible; }

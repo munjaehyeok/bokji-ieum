@@ -25,6 +25,8 @@
 
 <form id="bkMatchForm" method="post" action="${ctx}/match">
 
+    <%-- 1~6단계는 같은 칸에 겹쳐 쌓아(CSS grid) 가장 큰 단계의 높이로 고정한다: 이전/건너뛰기/다음 버튼이 단계마다 움직이지 않게. 7단계는 가구원 추가로 길이가 늘어 제외. --%>
+    <div class="bk-steps-stack">
     <%-- Q1 출생연도 --%>
     <section class="bk-step" data-step="1" data-q="1">
         <h2 tabindex="-1"><spring:message code="form.q1"/></h2>
@@ -116,6 +118,8 @@
             </label>
         </div>
     </section>
+
+    </div>
 
     <%-- Q7 학업·취업 + 가구원 추가 --%>
     <section class="bk-step" data-step="7" data-q="7">
