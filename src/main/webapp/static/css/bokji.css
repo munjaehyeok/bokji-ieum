@@ -568,3 +568,5 @@ html[lang="en"] .bk-how, html[lang="en"] .bk-how-card h3, html[lang="en"] .bk-ho
 .bk-steps-stack { display: grid; }
 .bk-steps-stack > .bk-step { grid-area: 1 / 1; display: block; visibility: hidden; }
 .bk-steps-stack > .bk-step.active { visibility: visible; }
+/* 7단계가 활성일 때는 1~6단계 묶음이 자리를 차지하지 않게 접는다 */
+.bk-steps-stack:not(:has(> .bk-step.active)) { display: none; }
