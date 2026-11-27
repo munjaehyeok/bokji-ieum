@@ -24,7 +24,7 @@ docker compose up -d
 docker logs -f bokji-mysql      # "[bokji] 적재 완료: 활성 자원 901건"이 보이면 끝 (Ctrl+C로 로그만 닫기, 1~2분)
 ```
 - 컨테이너가 **빈 볼륨으로 처음 뜰 때 한 번만** `docker/initdb/01-load-data.sh`가 `src/main/resources/sql/`의 SQL 7개를 정해진 순서로 적재한다.
-  순서: `schema → seed → api-update-20261014 → facility-refresh-20261014 → gov24-update-20261014 → reliability-tagging → reliability-provenance`
+  순서: `schema → seed → api-update-20261014 → facility-refresh-20261014 → gov24-update-20261014 → reliability-tagging → reliability-provenance → address-typo-fix-20261125 → apply-url-fix-20261127 → content-i18n-20261125`
 - 접속 정보: `127.0.0.1:3306`, DB `bokji`, 계정 `bokji` / `bokji11` (로컬 개발용, 외부에 열지 말 것)
 - 다시 처음부터 적재하려면: `docker compose down -v && docker compose up -d` (**볼륨 삭제 = DB 초기화**)
   ⚠ **볼륨 삭제는 그 DB의 모든 데이터를 지운다.** 이 저장소의 `bokji-mysql` 볼륨처럼 **버려도 되는 로컬 개발 DB에서만** 쓴다. 신고·관리자·이력 등 지켜야 할 데이터가 있는 DB(운영·공유 DB 포함)에는 `down -v`나 `schema.sql` 재적재를 하지 말고, 먼저 `mysqldump`로 백업한 뒤 팀과 전환 절차(구 id 1~792 → 새 id 1001~1901, 옛 찜·URL은 '없는 자원'이 됨)를 확인한다.
@@ -69,7 +69,7 @@ $env:BOKJI_ADMIN_INITIAL_PASSWORD='<직접 정한 값>'; .\mvnw.cmd cargo:run
 MySQL 8에 DB `bokji`(utf8mb4)와 계정 `bokji`/`bokji11`을 만든 뒤, 아래 순서로 SQL을 적재한다. **`--default-character-set=utf8mb4` 필수**(빼면 한글이 깨진다).
 ```bash
 cd src/main/resources/sql
-for f in schema seed api-update-20261014 facility-refresh-20261014 gov24-update-20261014 reliability-tagging reliability-provenance; do
+for f in schema seed api-update-20261014 facility-refresh-20261014 gov24-update-20261014 reliability-tagging reliability-provenance address-typo-fix-20261125 apply-url-fix-20261127 content-i18n-20261125; do
   mysql --default-character-set=utf8mb4 -ubokji -pbokji11 bokji < $f.sql
 done
 ```
