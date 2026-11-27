@@ -20,7 +20,7 @@
         <c:if test="${not empty resource.deptName}"><div><dt><spring:message code="card.dept"/></dt><dd><c:out value="${empty resource.deptNameTr ? resource.deptName : resource.deptNameTr}"/></dd></div></c:if>
         <c:if test="${not empty resource.serviceCycle and fn:length(resource.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceCycle)}" text="${empty resource.serviceCycleTr ? fn:trim(resource.serviceCycle) : resource.serviceCycleTr}" htmlEscape="true"/></dd></div></c:if>
         <c:if test="${not empty resource.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><spring:message code="val.${fn:trim(resource.serviceType)}" text="${fn:trim(resource.serviceType)}" htmlEscape="true"/></dd></div></c:if>
-        <c:if test="${not empty resource.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(empty resource.phoneTr ? resource.phone : resource.phoneTr, ',')[0])}"/></dd></div></c:if>
+        <c:if test="${not empty resource.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${bk:firstPhone(resource.phone, resource.phoneTr)}"/></dd></div></c:if>
     </dl>
     <button type="button" class="bk-fav ms-auto bk-noprint" data-id="${resource.resourceId}" aria-pressed="false"
             data-on="<spring:message code='explore.favOn'/>" data-off="<spring:message code='explore.fav'/>" aria-label="<spring:message code='explore.fav'/>" hidden>
@@ -131,11 +131,29 @@
         <p class="mb-1 text-secondary"><c:out value="${empty resource.addressTr ? resource.address : resource.addressTr}"/></p>
     </c:if>
     <c:if test="${not empty resource.phone}">
-        <c:set var="firstPhone" value="${fn:trim(fn:split(resource.phone, ',')[0])}"/>
-        <p class="mb-1"><c:out value="${empty resource.phoneTr ? resource.phone : resource.phoneTr}"/></p>
-        <a class="btn btn-bk bk-tel-btn bk-noprint" href="tel:${fn:replace(firstPhone, ' ', '')}" data-beacon="A">
-            &#128222; <spring:message code="detail.call"/> <c:out value="${fn:trim(fn:split(empty resource.phoneTr ? resource.phone : resource.phoneTr, ',')[0])}"/>
-        </a>
+        <c:set var="phoneList" value="${bk:phones(resource.phone)}"/>
+        <c:set var="phoneTrList" value="${bk:phones(resource.phoneTr)}"/>
+        <%-- 통화 대상은 원문 번호, 표시 라벨은 번역(조각 수가 같을 때만 번호별로 대응) --%>
+        <c:set var="pairTr" value="${bk:aligned(resource.phone, resource.phoneTr)}"/>
+        <div class="d-flex flex-wrap gap-2 mb-1">
+            <c:forEach var="ph" items="${phoneList}" varStatus="st">
+                <c:set var="tel" value="${bk:tel(ph)}"/>
+                <c:set var="label" value="${pairTr ? phoneTrList[st.index] : ph}"/>
+                <c:choose>
+                    <c:when test="${not empty tel}">
+                        <a class="btn btn-bk bk-tel-btn bk-noprint" href="tel:${tel}" data-beacon="A">
+                            &#128222; <spring:message code="detail.call"/> <c:out value="${label}"/>
+                        </a>
+                    </c:when>
+                    <c:otherwise><span class="bk-noprint"><c:out value="${label}"/></span></c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </div>
+        <c:if test="${not empty phoneTrList and not pairTr and bk:sameNumbers(resource.phone, resource.phoneTr)}">
+            <p class="mb-1 bk-noprint"><c:out value="${resource.phoneTr}"/></p>
+        </c:if>
+        <%-- 인쇄본에는 버튼이 숨겨지므로 전체 연락처를 글자로 남긴다 --%>
+        <p class="mb-1 d-none d-print-block"><c:out value="${bk:sameNumbers(resource.phone, resource.phoneTr) and not empty resource.phoneTr ? resource.phoneTr : resource.phone}"/></p>
     </c:if>
     <%-- 위치 지도: Client ID와 주소가 모두 있을 때만. 주소→좌표 변환 실패 시 JS가 영역을 통째로 지운다. --%>
     <c:if test="${not empty naverMapClientId and not empty fn:trim(resource.address)}">
