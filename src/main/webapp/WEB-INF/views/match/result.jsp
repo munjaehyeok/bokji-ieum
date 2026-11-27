@@ -20,7 +20,7 @@
         <c:if test="${condition.nationality == 'F'}"> · <spring:message code="nat.F"/></c:if>
         <c:forEach var="ew" items="${condition.eduWork}"><c:if test="${ew != 'NONE'}"> · <spring:message code="ew.${ew}"/></c:if></c:forEach>
     </span>
-    <a class="btn btn-bk-outline btn-sm ms-auto" href="${ctx}/match">[<spring:message code="result.edit"/>]</a>
+    <a class="btn btn-bk-outline btn-sm ms-auto" href="${ctx}/match"><spring:message code="result.edit"/></a>
 </div>
 
 <%-- 가구원 탭 (가구원이 있을 때만) --%>
