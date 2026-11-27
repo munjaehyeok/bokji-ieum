@@ -91,7 +91,7 @@
         <dl class="bk-xmeta">
             <c:if test="${not empty row.serviceCycle and fn:length(row.serviceCycle) <= 8}"><div><dt><spring:message code="card.cycle"/></dt><dd><spring:message code="val.${fn:trim(row.serviceCycle)}" text="${empty row.serviceCycleTr ? fn:trim(row.serviceCycle) : row.serviceCycleTr}" htmlEscape="true"/></dd></div></c:if>
             <c:if test="${not empty row.serviceType}"><div><dt><spring:message code="card.type"/></dt><dd><spring:message code="val.${fn:trim(row.serviceType)}" text="${fn:trim(row.serviceType)}" htmlEscape="true"/></dd></div></c:if>
-            <c:if test="${not empty row.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${fn:trim(fn:split(empty row.phoneTr ? row.phone : row.phoneTr, ',')[0])}"/></dd></div></c:if>
+            <c:if test="${not empty row.phone}"><div><dt><spring:message code="card.phone"/></dt><dd><c:out value="${bk:phones(empty row.phoneTr ? row.phone : row.phoneTr)[0]}"/></dd></div></c:if>
         </dl>
         <p class="bk-date mb-0">
             <c:if test="${not empty row.dataBaseDate}"><spring:message code="result.baseDate"/> <c:out value="${row.dataBaseDate}"/></c:if>
