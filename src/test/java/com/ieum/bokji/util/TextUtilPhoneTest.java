@@ -59,4 +59,44 @@ public class TextUtilPhoneTest {
         assertEquals("", TextUtil.telDigits("031-310-0724(삭제)"));
         assertEquals("0313105833", TextUtil.telDigits("031-310-5833"));
     }
+
+    @Test
+    public void localNumberWithoutAreaCodeStillLinks() {
+        assertEquals("3102756", TextUtil.telDigits("310-2756"));
+        assertEquals("4352351", TextUtil.telDigits("435-2351"));
+        // 실제 ID 1001: 일반 번호는 링크, 폐기 번호는 글자만
+        assertEquals("3105935", TextUtil.telDigits("310-5935"));
+        assertEquals("", TextUtil.telDigits("310-0724(삭제)"));
+    }
+
+    @Test
+    public void rejectsPartOfLongerDigitRun() {
+        assertEquals("", TextUtil.telDigits("031-123-45678"));
+        assertEquals("0312345678", TextUtil.telDigits("참조번호 003112345678999, 031-234-5678"));
+    }
+
+    @Test
+    public void labelledNumbersAreNotSplitOrLinked() {
+        assertEquals(Collections.singletonList("대야점 031-123-4567 정왕점 032-234-5678"),
+                TextUtil.splitPhones("대야점 031-123-4567 정왕점 032-234-5678"));
+        assertEquals("", TextUtil.telDigits("대야점 031-123-4567 정왕점 032-234-5678"));
+        assertEquals("", TextUtil.telDigits("대야점 031-123-4567 폐기 번호: 032-234-5678"));
+    }
+
+    @Test
+    public void translationUsedOnlyWhenNumbersMatch() {
+        String ko = "대야점 031-123-4567, 정왕점 032-234-5678";
+        assertEquals(false, TextUtil.phonesAligned(ko, "Jeongwang 032-234-5678, Daeya 031-123-4567"));
+        assertEquals(true, TextUtil.phonesAligned(ko, "Daeya 031-123-4567, Jeongwang 032-234-5678"));
+        // 관리자가 원문만 고친 경우: 오래된 번역은 쓰지 않는다
+        assertEquals(false, TextUtil.sameNumbers("031-123-4567, 032-999-9999", "031-123-4567, 032-234-5678"));
+        assertEquals(true, TextUtil.sameNumbers(ko, "Jeongwang 032-234-5678, Daeya 031-123-4567"));
+        assertEquals("031-123-4567", TextUtil.firstPhone("031-123-4567, 032-234-5678", "032-234-5678, 031-123-4567").equals("032-234-5678")
+                ? "bad" : "031-123-4567");
+        // ID 1061: 번역 라벨 안 구분자로 조각 수가 달라도 번호는 같다
+        String k = "(광역센터)1666-0420\n(시군센터)1522-3650";
+        String e = "(Provincial center)1666-0420\n(City/county center)1522-3650";
+        assertEquals(true, TextUtil.sameNumbers(k, e));
+        assertEquals("(Provincial center)1666-0420", TextUtil.firstPhone(k, e));
+    }
 }

@@ -15,4 +15,22 @@
         <function-class>com.ieum.bokji.util.TextUtil</function-class>
         <function-signature>java.lang.String telDigits(java.lang.String)</function-signature>
     </function>
+    <function>
+        <description>원문·번역 전화번호 조각이 번호별로 대응되는지</description>
+        <name>aligned</name>
+        <function-class>com.ieum.bokji.util.TextUtil</function-class>
+        <function-signature>boolean phonesAligned(java.lang.String, java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>원문·번역이 같은 번호 집합인지</description>
+        <name>sameNumbers</name>
+        <function-class>com.ieum.bokji.util.TextUtil</function-class>
+        <function-signature>boolean sameNumbers(java.lang.String, java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>카드용 대표 번호</description>
+        <name>firstPhone</name>
+        <function-class>com.ieum.bokji.util.TextUtil</function-class>
+        <function-signature>java.lang.String firstPhone(java.lang.String, java.lang.String)</function-signature>
+    </function>
 </taglib>

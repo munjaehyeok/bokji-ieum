@@ -30,8 +30,10 @@ public final class TextUtil {
     }
 
     // 완전한 전화번호: 031)123-4567(여는 괄호 누락 입력 포함) · (031)123-4567 · 031 123 4567 · +82 31 123 4567 · 1588-0000
+    // 숫자열 일부·하이픈 뒤 조각은 번호로 보지 않는다(lookbehind/lookahead). 국번 생략 형식(310-2756)도 번호로 인정.
     private static final String PHONE_RE =
-            "(?:\\(?\\s*0\\d{1,2}\\s*\\)?|\\+82[\\s-]*\\d{1,2})[\\s.-]*\\d{3,4}[\\s.-]*\\d{4}|1[5-9]\\d{2}[\\s-]?\\d{4}";
+            "(?<![\\d-])(?:(?:\\(?\\s*0\\d{1,2}\\s*\\)?|\\+82[\\s-]*\\d{1,2})[\\s.-]*\\d{3,4}[\\s.-]*\\d{4}"
+                    + "|1[5-9]\\d{2}[\\s-]?\\d{4}|\\d{3,4}-\\d{4})(?!\\d)";
     private static final Pattern PHONE = Pattern.compile(PHONE_RE);
     // 칸 구분: 쉼표·세미콜론·슬래시·줄바꿈 (공백만으로 이어진 여러 번호는 아래에서 번호 단위로 나눈다)
     private static final Pattern SEG_SEP = Pattern.compile("\\s*[,;/\\r\\n]+\\s*");
@@ -58,10 +60,20 @@ public final class TextUtil {
             }
             java.util.regex.Matcher m = PHONE.matcher(t);
             List<Integer> starts = new ArrayList<>();
+            List<Integer> ends = new ArrayList<>();
             while (m.find()) {
                 starts.add(m.start());
+                ends.add(m.end());
             }
-            if (starts.size() < 2) {
+            // 번호 사이가 공백·구두점뿐일 때만 번호 단위로 나눈다. 사이에 글자(지점명·상태)가 있으면
+            // 어느 번호에 붙는 말인지 알 수 없으므로 원문 그대로 한 항목으로 둔다(telDigits도 링크를 만들지 않음).
+            boolean pure = starts.size() >= 2;
+            for (int i = 1; pure && i < starts.size(); i++) {
+                if (!t.substring(ends.get(i - 1), starts.get(i)).matches("[\\s.,;·]*")) {
+                    pure = false;
+                }
+            }
+            if (!pure) {
                 out.add(t);
                 continue;
             }
@@ -81,6 +93,55 @@ public final class TextUtil {
             return "";
         }
         java.util.regex.Matcher m = PHONE.matcher(v);
-        return m.find() ? m.group().replaceAll("[^\\d+]", "") : "";
+        if (!m.find()) {
+            return "";
+        }
+        String first = m.group().replaceAll("[^\\d+]", "");
+        return m.find() ? "" : first;
+    }
+
+    private static List<String> numbers(String v) {
+        List<String> r = new ArrayList<>();
+        if (v != null) {
+            java.util.regex.Matcher m = PHONE.matcher(v);
+            while (m.find()) {
+                r.add(m.group().replaceAll("[^\\d+]", ""));
+            }
+        }
+        return r;
+    }
+
+    /** 원문·번역 조각이 같은 수이고 번호별 통화 대상이 모두 같을 때만 true (라벨을 번호별로 대응해도 안전). */
+    public static boolean phonesAligned(String phone, String phoneTr) {
+        List<String> a = splitPhones(phone);
+        List<String> b = splitPhones(phoneTr);
+        if (b.isEmpty() || a.size() != b.size()) {
+            return false;
+        }
+        for (int i = 0; i < a.size(); i++) {
+            if (!telDigits(a.get(i)).equals(telDigits(b.get(i)))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /** 번역 문구를 통째로 보여줘도 되는지: 원문과 같은 번호 집합(순서 무관)일 때만 true. 관리자가 원문만 고친 오래된 번역을 거른다. */
+    public static boolean sameNumbers(String phone, String phoneTr) {
+        List<String> a = numbers(phone);
+        List<String> b = numbers(phoneTr);
+        java.util.Collections.sort(a);
+        java.util.Collections.sort(b);
+        return a.equals(b);
+    }
+
+    /** 카드용 대표 번호: 번역의 첫 조각이 원문 첫 조각과 같은 번호일 때만 번역을 쓴다. */
+    public static String firstPhone(String phone, String phoneTr) {
+        List<String> a = splitPhones(phone);
+        if (a.isEmpty()) {
+            return "";
+        }
+        List<String> b = splitPhones(phoneTr);
+        return (!b.isEmpty() && telDigits(a.get(0)).equals(telDigits(b.get(0)))) ? b.get(0) : a.get(0);
     }
 }
