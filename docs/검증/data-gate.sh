@@ -42,4 +42,14 @@ ok "전동보장구보험: 연령·장애 태그 없음" "$(Q "select count(*) f
 ok "효도수당: 연령 태그 없음" "$(Q "select count(*) from resource where name='효도수당' and age_min is not null")" 0
 ok "해제 3건 메모 보유·중복 없음" "$(Q "select count(*) from resource where name in ('동네관리소 간단 집수리 지원','장애인 전동보장구 배상책임보험','효도수당') and uncertain_note is not null and (length(uncertain_note)-length(replace(uncertain_note,' / ','')))/3 <= 1")" 3
 ok "seed 유래 행 중 기준일 복원 대상(보조금24 매칭)이 2026 기준일로 남지 않음" "$(Q "select count(*) from resource where source_name like '시흥시 복지자원%' and year(data_base_date)=2026")" 0
+# 신청 링크 보완(2026-11-27): 도메인만 적힌 55건에 https:// — 멱등, 원문 도메인과 일치, 이름 불일치 행 무변경
+AU0=$(Q "select count(*) from resource where status='A' and apply_url<>''")
+load apply-url-fix-20261127.sql
+AU1=$(Q "select count(*) from resource where status='A' and apply_url<>''")
+ok "신청 링크 보완: 55건 증가" "$((AU1-AU0))" 55
+SNAPAU=$(Q "select md5(group_concat(concat_ws('|',resource_id,ifnull(apply_url,'N')) order by resource_id)) from resource")
+load apply-url-fix-20261127.sql
+ok "신청 링크 보완 멱등(2회째 무변화)" "$(Q "select md5(group_concat(concat_ws('|',resource_id,ifnull(apply_url,'N')) order by resource_id)) from resource")" "$SNAPAU"
+ok "보완 링크는 https:// 로 시작하고 원문(신청방법)에 같은 도메인이 있음" "$(Q "select count(*) from resource where apply_url like 'https://%' and apply_method is not null and locate(substr(apply_url,9), apply_method)=0 and resource_id in (1002,1058,1073,1181,1454,1851,1852)")" 0
+ok "전 필드 모름 노출 = 활성 − F전용 불변식 유지" "$(Q "select count(*) from resource where status='A' and (nationality is null or nationality<>'F')")" 894
 exit $FAIL

@@ -93,7 +93,7 @@ cp src/main/resources/config.properties.example src/main/resources/config.proper
 ./mvnw cargo:run                                       # http://localhost:8080  (Windows: mvnw.cmd)
 ```
 
-- 빈 볼륨에서 `docker/initdb/01-load-data.sh`가 `schema → seed → api-update → facility-refresh → gov24-update → reliability-tagging → reliability-provenance` 순서로 적재한다. 기대 건수 **901**. 다시 적재: `docker compose down -v && docker compose up -d`(**볼륨 삭제 = DB 초기화 — 버려도 되는 로컬 DB에서만**, 기존 데이터가 있는 DB는 백업 후 [SETUP.md](SETUP.md) 안내를 따를 것). 2022판(792건) DB를 쓰던 환경은 id 대역이 바뀌어 옛 찜·URL이 '없는 자원'이 된다.
+- 빈 볼륨에서 `docker/initdb/01-load-data.sh`가 `schema → seed → api-update → facility-refresh → gov24-update → reliability-tagging → reliability-provenance → address-typo-fix → apply-url-fix → content-i18n` 순서로 적재한다. 기대 건수 **901**. 다시 적재: `docker compose down -v && docker compose up -d`(**볼륨 삭제 = DB 초기화 — 버려도 되는 로컬 DB에서만**, 기존 데이터가 있는 DB는 백업 후 [SETUP.md](SETUP.md) 안내를 따를 것). 2022판(792건) DB를 쓰던 환경은 id 대역이 바뀌어 옛 찜·URL이 '없는 자원'이 된다.
 - `config.properties`는 gitignore 대상이다. 실제 DB 비밀번호·공공데이터 `serviceKey`를 쓸 때는 이 파일에만 적고 **커밋하지 않는다**.
 - 관리자: `/admin/login` — 첫 기동 시 환경변수 `BOKJI_ADMIN_INITIAL_PASSWORD`가 있으면 `admin` 계정을 그 값으로 생성한다(값이 없으면 만들지 않고, 기존 계정은 바꾸지 않음). 예: `BOKJI_ADMIN_INITIAL_PASSWORD=<임의값> ./mvnw cargo:run`
 - 상세 절차·문제 해결: [SETUP.md](SETUP.md) · 발표 시연 순서: [docs/데모.md](docs/데모.md)
